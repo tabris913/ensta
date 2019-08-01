@@ -1,0 +1,69 @@
+{
+  "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+  "workbench.statusBar.visible": true,
+  "workbench.activityBar.visible": false,
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": false,
+  "breadcrumbs.enabled": true,
+  "window.menuBarVisibility": "default",
+  "editor.fontSize": 18,
+  "editor.wordWrap": "wordWrapColumn",
+  "files.autoGuessEncoding": true,
+  "python.pythonPath": "C:\\ProgramData\\Anaconda3\\python.exe",
+  "python.terminal.executeInFileDir": true,
+  "window.zoomLevel": 0,
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.fontFamily": "Consolas, 'Courier New', monospace, 'Yu Gothic'",
+  "editor.minimap.enabled": false,
+  "editor.wordWrapColumn": 79,
+  "files.associations": {
+    "*.md": "markdown"
+  },
+  "workbench.colorTheme": "Monokai",
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "textmarker.savedHighlights": [
+    {
+      "pattern": {
+        "type": "string",
+        "expression": "エラーを詰めて",
+        "ignoreCase": false,
+        "wholeMatch": false
+      },
+      "color": "darkmagenta"
+    },
+    {
+      "pattern": {
+        "type": "string",
+        "expression": "エラー応答",
+        "ignoreCase": false,
+        "wholeMatch": false
+      },
+      "color": "darkolivegreen"
+    },
+    {
+      "pattern": {
+        "type": "string",
+        "expression": "「どの環境でも動くように」という観点で、設定ファイルへの外だしを設計する必要があります",
+        "ignoreCase": false,
+        "wholeMatch": false
+      },
+      "color": "darkslateblue"
+    },
+    {
+      "pattern": {
+        "type": "string",
+        "expression": "明示的に空のオブジェクト・リスト(に相当するJSON)が返るようにする",
+        "ignoreCase": false,
+        "wholeMatch": false
+      },
+      "color": "darkgoldenrod"
+    }
+  ],
+  "workbench.sideBar.location": "right",
+  "explorer.confirmDelete": false,
+  "extensions.ignoreRecommendations": true,
+  "explorer.confirmDragAndDrop": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "python.linting.enabled": false
+}
