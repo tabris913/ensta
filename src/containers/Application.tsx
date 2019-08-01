@@ -31,36 +31,9 @@ const Application = () => (
           {[
             [PageName.TOP, Page.TopPage],
             // [PageName.REVIEW_TOP, Page.ReviewTopPage],
-            [PageName.ABOUT, Page.AboutPage],
-            [PageName.LINK, Page.LinkPage],
           ]
             .map(e => e as MakeRoute)
             .map(e => makeRoute(e))}
-
-          {[
-            [PageName.REVIEW_ARTIST, Page.ArtistsPage],
-            // [PageName.NEW_RELEASE, Page.NewReleasePage],
-            // [PageName.REVIEW_SCHEDULE, Page.ReviewSchedulePage],
-            // [PageName.SCORE, Page.ScorePage],
-            // [PageName.SELECTIONS, Page.SelectionsPage],
-            // [PageName.YEAR_BESTS, Page.YearBestsPage],
-            // [PageName.REVIEW_GENRES, Page.GenresPage],
-            [PageName.SERIES, Page.SeriesPage],
-          ]
-            .map(e => e as MakeRoute)
-            .map(e => makeRoute(e))}
-
-          {[
-            [PageName.ARTIST, Page.ArtistPage, true],
-            // [PageName.GENRE, Page.GenrePage, true],
-            // [PageName.SELECTION, Page.SelectionPage, true],
-            [PageName.SERIES_CONTENT, Page.SeriesContentPage, true],
-            // [PageName.YEAR_BEST, Page.YearBestPage, true],
-            // [PageName.WORK, Page.WorkPage, true],
-          ]
-            .map(e => e as MakeRoute)
-            .map(e => makeRoute(e))}
-
           <Redirect to={toPublicUrl(PageName.TOP)} />
         </Switch>
       </div>
