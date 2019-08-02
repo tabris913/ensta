@@ -30,7 +30,16 @@ const Application = () => (
         <Switch>
           {[
             [PageName.TOP, Page.TopPage],
-            // [PageName.REVIEW_TOP, Page.ReviewTopPage],
+            [PageName.EVENT_LIST, Page.EventListPage],
+            // [PageName.SCOUT_LIST, Page.ScoutListPage],
+            // [PageName.UNIT_LIST, Page.UnitListPage],
+            // [PageName.CHARACTER_LIST, Page.CharacterListPage],
+            // [PageName.CARD_LIST, Page.CardListPage],
+            // [PageName.EVENT, Page.EventPage],
+            // [PageName.SCOUT, Page.ScoutPage],
+            // [PageName.UNIT, Page.UnitPage],
+            // [PageName.CHARACTER, Page.CharacterPage],
+            // [PageName.CARD, Page.CardPage],
           ]
             .map(e => e as MakeRoute)
             .map(e => makeRoute(e))}

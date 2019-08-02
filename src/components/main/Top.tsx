@@ -6,11 +6,11 @@ import { MainContentProps } from '../../models/Main';
 
 const Top = (props: MainContentProps) => {
   const topButtons = [
-    { label: 'Event', linkto: PageName.UNDEFINED },
-    { label: 'Scout' },
-    { label: 'Unit' },
-    { label: 'Character' },
-    { label: 'Card' },
+    { label: 'Event', linkto: PageName.EVENT_LIST },
+    { label: 'Scout', linkto: PageName.SCOUT_LIST },
+    { label: 'Unit', linkto: PageName.UNIT_LIST },
+    { label: 'Character', linkto: PageName.CHARACTER_LIST },
+    { label: 'Card', linkto: PageName.CARD_LIST },
   ];
   return (
     <Row>

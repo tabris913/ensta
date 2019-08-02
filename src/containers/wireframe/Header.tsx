@@ -31,34 +31,38 @@ export const Header = (props: Props) => {
     <Layout.Header style={style}>
       <Menu theme="dark" defaultSelectedKeys={['0']} mode="horizontal" style={{ lineHeight: '40px' }}>
         <Row type="flex">
-          {[{ label: 'Top', linkto: PageName.TOP }, { label: 'Event' }, { label: 'Scout' }].map(
-            ({ label, linkto }, idx) => (
-              <Col key={idx} xs={8} style={{ textAlign: 'center', fontSize: 20 }}>
-                <Menu.Item
-                  key={idx.toString()}
-                  onClick={() => props.history.push(toPublicUrl(linkto || PageName.UNDEFINED))}
-                >
-                  {label}
-                </Menu.Item>
-              </Col>
-            )
-          )}
+          {[
+            { label: 'Top', linkto: PageName.TOP },
+            { label: 'Event', linkto: PageName.EVENT_LIST },
+            { label: 'Scout', linkto: PageName.SCOUT_LIST },
+          ].map(({ label, linkto }, idx) => (
+            <Col key={idx} xs={8} style={{ textAlign: 'center', fontSize: 20 }}>
+              <Menu.Item
+                key={idx.toString()}
+                onClick={() => props.history.push(toPublicUrl(linkto || PageName.UNDEFINED))}
+              >
+                {label}
+              </Menu.Item>
+            </Col>
+          ))}
         </Row>
       </Menu>
       <Menu theme="dark" defaultSelectedKeys={[]} mode="horizontal" style={{ lineHeight: '40px' }}>
         <Row>
-          {[{ label: 'Unit', linkto: PageName.UNDEFINED }, { label: 'Character' }, { label: 'Card' }].map(
-            ({ label, linkto }, idx) => (
-              <Col key={idx} xs={8} style={{ textAlign: 'center', fontSize: 20 }}>
-                <Menu.Item
-                  key={idx.toString()}
-                  onClick={() => props.history.push(toPublicUrl(linkto || PageName.UNDEFINED))}
-                >
-                  {label}
-                </Menu.Item>
-              </Col>
-            )
-          )}
+          {[
+            { label: 'Unit', linkto: PageName.UNIT_LIST },
+            { label: 'Character', linkto: PageName.CHARACTER_LIST },
+            { label: 'Card', linkto: PageName.CARD_LIST },
+          ].map(({ label, linkto }, idx) => (
+            <Col key={idx} xs={8} style={{ textAlign: 'center', fontSize: 20 }}>
+              <Menu.Item
+                key={idx.toString()}
+                onClick={() => props.history.push(toPublicUrl(linkto || PageName.UNDEFINED))}
+              >
+                {label}
+              </Menu.Item>
+            </Col>
+          ))}
         </Row>
       </Menu>
     </Layout.Header>

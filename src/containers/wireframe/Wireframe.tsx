@@ -9,8 +9,6 @@ import breadCrump from './BreadCrump';
 import { Footer } from './Footer';
 import Header from './Header';
 
-// @ts-ignore
-import PageName, { toPublicUrl } from '../../constants/PageName';
 import { IBreadCrump } from '../../models/wireframe/BreadCrump';
 import { IStoreState } from '../../reducers';
 

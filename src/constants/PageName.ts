@@ -3,6 +3,18 @@ import * as Q from 'querystring';
 enum PageName {
   TOP = '/top',
 
+  EVENT_LIST = '/event/list',
+  EVENT = '/event',
+  SCOUT_LIST = '/scout/list',
+  SCOUT = '/scout',
+
+  UNIT_LIST = '/unit/list',
+  UNIT = '/unit',
+  CHARACTER_LIST = '/character/list',
+  CHARACTER = '/character',
+  CARD_LIST = '/card/list',
+  CARD = '/card',
+
   UNDEFINED = '',
 }
 
