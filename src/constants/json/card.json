@@ -1,0 +1,27 @@
+{
+  "card": {
+    "00001a": {
+      "uid": "00001a",
+      "character": "",
+      "rank": 5,
+      "skill": {
+        "lesson": "",
+        "produce": ""
+      },
+      "parameter": {
+        "initial": {
+          "dance": 0,
+          "vocal": 0,
+          "performance": 0
+        },
+        "max": {
+          "dance": 0,
+          "vocal": 0,
+          "performance": 0
+        }
+      },
+      "content": [],
+      "img": ""
+    }
+  }
+}

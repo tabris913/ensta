@@ -1,0 +1,18 @@
+{
+  "scout": {
+    "s01": {
+      "uid": "s01",
+      "name": "",
+      "description": "",
+      "start": "",
+      "end": "",
+      "cards": {
+        "5": [],
+        "4": [],
+        "3": []
+      },
+      "relation": [],
+      "banner": ""
+    }
+  }
+}

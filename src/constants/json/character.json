@@ -1,0 +1,16 @@
+{
+  "character": {
+    "subaru": {
+      "uid": "subaru",
+      "name": "",
+      "birthday": "",
+      "bloodType": "",
+      "height": 0,
+      "weight": 0,
+      "catchPhrase": "",
+      "favorite": [],
+      "unfavorite": [],
+      "imgs": []
+    }
+  }
+}

@@ -12,7 +12,7 @@
 .App-header {
   background-color: #222;
   height: 150px;
-  padding: 20px;
+  /* padding: 20px; */
   color: white;
 }
 
@@ -61,7 +61,7 @@ body {
   text-align: initial;
 }
 .App-header {
-  padding: 10px;
+  /* padding: 10px; */
   text-align: center;
   background-color: #001529;
 }
@@ -82,10 +82,11 @@ body {
 }
 
 /* Header */
-/* .ant-layout-header {
-  height: 55px;
-  line-height: 55px;
-} */
+.ant-layout-header {
+  height: unset;
+  /* line-height: 64px; */
+  /* padding: unset; */
+}
 
 /* Sider */
 /* lg: 992 -> window width 1008:1009 */

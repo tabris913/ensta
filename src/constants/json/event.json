@@ -1,0 +1,18 @@
+{
+  "event": {
+    "e01": {
+      "uid": "e01",
+      "name": "",
+      "description": "",
+      "description_short": "",
+      "start": "",
+      "end": "",
+      "bonus": {
+        "ranking": { "5": [], "4": [], "3": [] },
+        "point": { "5": [], "4": [], "3": [] }
+      },
+      "relation": [],
+      "banner": ""
+    }
+  }
+}
