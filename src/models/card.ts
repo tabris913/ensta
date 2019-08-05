@@ -1,13 +1,16 @@
 export interface ICard {
   uid: string;
+  name: string;
   character: string; // character uid
   rank: 1 | 2 | 3 | 4 | 5;
+  type: 'Da' | 'Vo' | 'Pf';
   skill?: ISkill;
   parameter?: {
     initial?: IParameter;
     max?: IParameter;
   };
   content: string[]; // event or scout uid
+  bonus?: string;
   img: string;
 }
 

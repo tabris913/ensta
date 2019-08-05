@@ -9,4 +9,6 @@ export interface ICharacter {
   favorite?: string[];
   unfavorite?: string[];
   imgs: [];
+  club?: string;
+  unit: string[]; // unit uids
 }
