@@ -35,8 +35,11 @@ export const Header = (props: Props) => {
             { label: 'Top', linkto: PageName.TOP },
             { label: 'Event', linkto: PageName.EVENT_LIST },
             { label: 'Scout', linkto: PageName.SCOUT_LIST },
+            { label: 'Unit', linkto: PageName.UNIT_LIST },
+            { label: 'Character', linkto: PageName.CHARACTER_LIST },
+            { label: 'Card', linkto: PageName.CARD_LIST },
           ].map(({ label, linkto }, idx) => (
-            <Col key={idx} xs={8} style={{ textAlign: 'center', fontSize: 20 }}>
+            <Col key={idx} xs={8} lg={4} style={{ textAlign: 'center', fontSize: 20 }}>
               <Menu.Item
                 key={idx.toString()}
                 onClick={() => props.history.push(toPublicUrl(linkto || PageName.UNDEFINED))}
@@ -47,7 +50,7 @@ export const Header = (props: Props) => {
           ))}
         </Row>
       </Menu>
-      <Menu theme="dark" defaultSelectedKeys={[]} mode="horizontal" style={{ lineHeight: '40px' }}>
+      {/* <Menu theme="dark" defaultSelectedKeys={[]} mode="horizontal" style={{ lineHeight: '40px' }}>
         <Row>
           {[
             { label: 'Unit', linkto: PageName.UNIT_LIST },
@@ -64,7 +67,7 @@ export const Header = (props: Props) => {
             </Col>
           ))}
         </Row>
-      </Menu>
+      </Menu> */}
     </Layout.Header>
   );
 };
