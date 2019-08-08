@@ -8,5 +8,7 @@ export interface IScout {
   end: string;
   cards: ICards;
   relation?: string[];
-  banner?: string;
+  banner?: string[];
+  img?: string;
+  skill?: string;
 }

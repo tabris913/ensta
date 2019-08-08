@@ -1,18 +1,1684 @@
 {
   "scout": {
-    "s01": {
-      "uid": "s01",
-      "name": "",
-      "description": "",
-      "start": "",
-      "end": "",
+    "e001": {
+      "uid": "001",
+      "name": "マーチングバンド",
+      "description": "Ra*bitsのメンバーがマーチングバンド衣装で登場！",
+      "start": "2015-05-21",
+      "end": "2015-05-30",
       "cards": {
-        "5": [],
-        "4": [],
-        "3": []
+        "5": ["nazuna"]
       },
-      "relation": [],
-      "banner": ""
+      "relation": ["Ra*bits"],
+      "banner": ["nazuna"],
+      "img": "",
+      "skill": "マーチングバンド"
+    },
+    "e002": {
+      "uid": "002",
+      "name": "スイーツパティシエ",
+      "description": "Knightsのメンバーがパティシエ衣装で登場！",
+      "start": "2015-05-31",
+      "end": "2015-06-14",
+      "cards": {
+        "5": ["ritsu"]
+      },
+      "relation": ["Knights"],
+      "banner": ["ritsu"],
+      "img": "",
+      "skill": "スイーツパティシエ"
+    },
+    "e003": {
+      "uid": "003",
+      "name": "新緑の武芸者",
+      "description": "武道に精通したメンバーが登場！",
+      "start": "2015-06-17",
+      "end": "2015-06-28",
+      "cards": {
+        "5": ["keito"]
+      },
+      "relation": ["紅月"],
+      "banner": ["keito"],
+      "img": "",
+      "skill": "新緑の武芸者"
+    },
+    "e004": {
+      "uid": "004",
+      "name": "ヒーローショウ",
+      "description": "ヒーローに紛したメンバーが登場！",
+      "start": "2015-06-30",
+      "end": "2015-07-10",
+      "cards": {
+        "5": ["chiaki"]
+      },
+      "relation": ["流星隊"],
+      "banner": ["chiaki"],
+      "img": "",
+      "skill": "ヒーローショウ"
+    },
+    "e005": {
+      "uid": "005",
+      "name": "プール開き",
+      "description": "プール開きを楽しむメンバー達が登場！",
+      "start": "2015-07-15",
+      "end": "2015-07-26",
+      "cards": {
+        "5": ["yuzuru"]
+      },
+      "relation": ["生徒会"],
+      "banner": ["yuzuru"],
+      "img": "",
+      "skill": "プール掃除班"
+    },
+    "e006": {
+      "uid": "006",
+      "name": "夜の怪談",
+      "description": "怪談を楽しむメンバー達が登場！",
+      "start": "2015-08-01",
+      "end": "2015-08-13",
+      "cards": {
+        "5": ["yuta"]
+      },
+      "relation": [""],
+      "banner": ["yuta"],
+      "img": "",
+      "skill": "妖怪の仕業"
+    },
+    "e007": {
+      "uid": "007",
+      "name": "夢ノ咲レストラン",
+      "description": "校内アルバイトで食堂のお手伝いをすることになったメンバー達が登場！",
+      "start": "2015-08-17",
+      "end": "2015-08-28",
+      "cards": {
+        "5": ["wataru"]
+      },
+      "relation": [""],
+      "banner": ["wataru"],
+      "img": "",
+      "skill": "リストランテ夢ノ咲"
+    },
+    "e008": {
+      "uid": "008",
+      "name": "ホリデー",
+      "description": "それぞれの休日を過ごすメンバー達が登場！",
+      "start": "2015-08-31",
+      "end": "2015-09-11",
+      "cards": {
+        "5": ["hajime"]
+      },
+      "relation": [""],
+      "banner": ["hajime"],
+      "img": "",
+      "skill": "オフショット"
+    },
+    "e009": {
+      "uid": "009",
+      "name": "深海の神秘",
+      "description": "『体育祭』に部活で参加表明をした奏汰。『部活対抗リレー』に向けて薫と颯馬も練習に付きあうが……？",
+      "start": "2015-09-15",
+      "end": "2015-09-26",
+      "cards": {
+        "5": ["kanata"]
+      },
+      "relation": ["海洋生物部"],
+      "banner": ["kanata"],
+      "img": "",
+      "skill": "深海の神秘"
+    },
+    "e010": {
+      "uid": "010",
+      "name": "レオ登場編",
+      "description": "",
+      "start": "2015-09-26",
+      "end": "2015-10-03",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["leo"],
+      "img": "",
+      "skill": ""
+    },
+    "e011": {
+      "uid": "011",
+      "name": "カンフー",
+      "description": "とある中華飯店でお手伝いをするひなたと友也。思うように連携が取れない二人はどうする…？",
+      "start": "2015-09-30",
+      "end": "2015-10-11",
+      "cards": {
+        "5": ["hinata"]
+      },
+      "relation": [""],
+      "banner": ["hinata"],
+      "img": "",
+      "skill": "カンフーアクション"
+    },
+    "e012": {
+      "uid": "012",
+      "name": "ポリスマン",
+      "description": "一日署長として各ユニットから選抜されたメンバー。警察官らしい振る舞いを勉強…？",
+      "start": "2015-10-16",
+      "end": "2015-10-27",
+      "cards": {
+        "5": ["adnis"]
+      },
+      "relation": [""],
+      "banner": ["adnis"],
+      "img": "",
+      "skill": "ポリスマン"
+    },
+    "e013": {
+      "uid": "013",
+      "name": "千秋編",
+      "description": "",
+      "start": "2015-10-27",
+      "end": "2015-11-03",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["chiaki"],
+      "img": "",
+      "skill": ""
+    },
+    "e014": {
+      "uid": "014",
+      "name": "お医者さん",
+      "description": "久しぶりにテニス部のアイドル科が揃ってラリー開始！と思いきや…？",
+      "start": "2015-10-30",
+      "end": "2015-11-10",
+      "cards": {
+        "5": ["izumi"]
+      },
+      "relation": ["テニス部"],
+      "banner": ["izumi"],
+      "img": "",
+      "skill": "お医者さんごっこ"
+    },
+    "e015": {
+      "uid": "015",
+      "name": "熱血硬派",
+      "description": "学園もののドラマ出演の依頼を受けた紅郎。ドラマに疎い紅郎は、千秋たちから熱血指導をしてもらうことに！",
+      "start": "2015-11-15",
+      "end": "2015-11-26",
+      "cards": {
+        "5": ["kuro"]
+      },
+      "relation": ["空手部", "流星隊"],
+      "banner": ["kuro"],
+      "img": "",
+      "skill": "男の中の漢"
+    },
+    "e016": {
+      "uid": "016",
+      "name": "翠編",
+      "description": "",
+      "start": "2015-11-26",
+      "end": "2015-12-03",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["midori"],
+      "img": "",
+      "skill": ""
+    },
+    "e017": {
+      "uid": "017",
+      "name": "ギリシャ神話",
+      "description": "風邪をひいてしまった颯馬。自分の修練不足を気にした颯馬はアドニスの制止も聞かずにどこかへ走り去ってしまう。",
+      "start": "2015-11-29",
+      "end": "2015-12-11",
+      "cards": {
+        "5": ["soma"]
+      },
+      "relation": ["陸上部"],
+      "banner": ["soma"],
+      "img": "",
+      "skill": "神々の輪舞"
+    },
+    "e018": {
+      "uid": "018",
+      "name": "エージェント",
+      "description": "敬人に何やら個人的な任務を与えられた真緒。一方転校生も、英智から秘密の指令を与えられて…？",
+      "start": "2015-12-14",
+      "end": "2015-12-26",
+      "cards": {
+        "5": ["mao"]
+      },
+      "relation": ["生徒会"],
+      "banner": ["mao"],
+      "img": "",
+      "skill": "ミッションコンプリート"
+    },
+    "e019": {
+      "uid": "019",
+      "name": "北斗編",
+      "description": "",
+      "start": "2015-12-26",
+      "end": "2016-01-03",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["hokuto"],
+      "img": "",
+      "skill": ""
+    },
+    "e020": {
+      "uid": "020",
+      "name": "冬の初詣",
+      "description": "大吉と初詣に来たスバル。神社の境内で迷子になっていた司と出会い、そこに桃李たちの姿も見えて賑やかな1日の予感…",
+      "start": "2015-12-30",
+      "end": "2016-01-11",
+      "cards": {
+        "5": ["subaru"]
+      },
+      "relation": [""],
+      "banner": ["subaru"],
+      "img": "",
+      "skill": "新春初詣"
+    },
+    "e021": {
+      "uid": "021",
+      "name": "遊園地ショウ",
+      "description": "『UNDEAD』単独のライブの仕事に張り切る晃牙。しかし手違いで子供向けのショーステージに出演することに…!?",
+      "start": "2016-01-14",
+      "end": "2016-01-26",
+      "cards": {
+        "5": ["kaoru"]
+      },
+      "relation": ["UNDEAD"],
+      "banner": ["kaoru"],
+      "img": "",
+      "skill": "夜闇の魔物ランド"
+    },
+    "e022": {
+      "uid": "022",
+      "name": "泉編",
+      "description": "",
+      "start": "2016-01-27",
+      "end": "2016-02-04",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["izumi"],
+      "img": "",
+      "skill": ""
+    },
+    "e023": {
+      "uid": "023",
+      "name": "ティーパーティー",
+      "description": "普段はガーデンテラスでお茶をしている紅茶部。天気のいい日に外でのお茶会で敬人の秘密がひとつ明らかに。",
+      "start": "2016-01-30",
+      "end": "2016-02-11",
+      "cards": {
+        "5": ["eichi"]
+      },
+      "relation": ["紅茶部"],
+      "banner": ["eichi"],
+      "img": "",
+      "skill": "マッド・ティー・パーティ"
+    },
+    "e024": {
+      "uid": "024",
+      "name": "夢ノ咲青春RADIO♪",
+      "description": "なずなが用事で真と忍だけで放送を担当することに。忍がパーソナリティを務めるがプレッシャーを感じているようで…",
+      "start": "2016-02-14",
+      "end": "2016-02-26",
+      "cards": {
+        "5": ["makoto"]
+      },
+      "relation": ["放送委員会"],
+      "banner": ["makoto"],
+      "img": "",
+      "skill": "青春RADIO放送局"
+    },
+    "e025": {
+      "uid": "025",
+      "name": "花鳥風月",
+      "description": "グラビア撮影の仕事が入った『Knights』。モデル経験者の嵐と泉は慣れているが、不安要素は他にあるようで… ",
+      "start": "2016-02-28",
+      "end": "2016-03-11",
+      "cards": {
+        "5": ["arashi"]
+      },
+      "relation": ["Knights"],
+      "banner": ["arashi"],
+      "img": "",
+      "skill": "花鳥風月"
+    },
+    "e026": {
+      "uid": "026",
+      "name": "Valkyrie登場編",
+      "description": "",
+      "start": "2016-03-11",
+      "end": "2016-03-18",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["valkyrie"],
+      "img": "",
+      "skill": ""
+    },
+    "e027": {
+      "uid": "027",
+      "name": "ワンぱくピクニック",
+      "description": "世間はもうじき春休み。働き詰めの転校生に、晃牙とスバルは愛犬と一緒に出かける提案をするが…？",
+      "start": "2016-03-14",
+      "end": "2016-03-25",
+      "cards": {
+        "5": ["koga"]
+      },
+      "relation": [""],
+      "banner": ["koga"],
+      "img": "",
+      "skill": "春休みのピクニック"
+    },
+    "e028": {
+      "uid": "028",
+      "name": "苺狩り",
+      "description": "翠は親戚の苺農園で作業のお手伝いをすることに。憂鬱な翠をよそに、元気なメンバーもいるようで…？",
+      "start": "2016-03-30",
+      "end": "2016-04-11",
+      "cards": {
+        "5": ["shinobu"]
+      },
+      "relation": ["1年生"],
+      "banner": ["shinobu"],
+      "img": "",
+      "skill": "春色ベリ－ズ"
+    },
+    "e029": {
+      "uid": "029",
+      "name": "海洋の城",
+      "description": "海洋生物部には様々な生き物が飼われており、颯馬は最近お気に入りの亀の世話に夢中なようす。",
+      "start": "2016-04-14",
+      "end": "2016-04-26",
+      "cards": {
+        "5": ["soma"]
+      },
+      "relation": ["海洋生物部"],
+      "banner": ["soma"],
+      "img": "",
+      "skill": "母なる海の仲間たち"
+    },
+    "e030": {
+      "uid": "030",
+      "name": "あんスタ！1周年記念スカウト",
+      "description": "",
+      "start": "2016-04-28",
+      "end": "2016-05-05",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["trickstar"],
+      "img": "",
+      "skill": ""
+    },
+    "e031": {
+      "uid": "031",
+      "name": "トイボックス",
+      "description": "ユニット活動が少ないせいで資金繰りに悩むみか。転校生にライブがしたい心の内をぽろっとこぼしてしまい…？",
+      "start": "2016-04-29",
+      "end": "2016-05-10",
+      "cards": {
+        "5": ["mika"]
+      },
+      "relation": ["Valkyrie"],
+      "banner": ["mika"],
+      "img": "",
+      "skill": "玩具の見る夢"
+    },
+    "e032": {
+      "uid": "032",
+      "name": "夢色王子様",
+      "description": "学院で不思議な出会いをした渉。次の劇の演目にと張り切り部員を呼び集めるが、友也は相変わらず警戒しているようで…",
+      "start": "2016-05-14",
+      "end": "2016-05-26",
+      "cards": {
+        "5": ["wataru"]
+      },
+      "relation": ["演劇部"],
+      "banner": ["wataru"],
+      "img": "",
+      "skill": "夢の王国の王子様"
+    },
+    "e033": {
+      "uid": "033",
+      "name": "宗編",
+      "description": "",
+      "start": "2016-05-26",
+      "end": "2016-06-03",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["shu"],
+      "img": "",
+      "skill": ""
+    },
+    "e034": {
+      "uid": "034",
+      "name": "梅雨の華",
+      "description": "梅雨入りしてちょぴり暇な葵兄弟。放課後部室へ行くと、いつもいる零の姿が見えず転校生の上着が残されていて…？",
+      "start": "2016-05-30",
+      "end": "2016-06-11",
+      "cards": {
+        "5": ["rei"]
+      },
+      "relation": ["軽音部"],
+      "banner": ["rei"],
+      "img": "",
+      "skill": "雨音のハーモニー"
+    },
+    "e035": {
+      "uid": "035",
+      "name": "荒野のガンマン",
+      "description": "「ゲームセンター」に興味がある英智。薫に声をかけるもクラスメイトでいくことになって……？",
+      "start": "2016-06-14",
+      "end": "2016-06-26",
+      "cards": {
+        "5": ["kaoru"]
+      },
+      "relation": ["3A"],
+      "banner": ["kaoru"],
+      "img": "",
+      "skill": "舞台上の暴れん坊たち"
+    },
+    "e036": {
+      "uid": "036",
+      "name": "みか編",
+      "description": "",
+      "start": "2016-06-26",
+      "end": "2016-07-03",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["mika"],
+      "img": "",
+      "skill": ""
+    },
+    "e037": {
+      "uid": "037",
+      "name": "ドッグファイト",
+      "description": "【七夕祭】が終わり、『ユニット』の活動が落ち着いているスバルたち。強化合宿を控えているせいか、千秋の熱はぐんぐん上昇…！",
+      "start": "2016-06-29",
+      "end": "2016-07-11",
+      "cards": {
+        "5": ["chiaki"]
+      },
+      "relation": ["バスケ部"],
+      "banner": ["chiaki"],
+      "img": "",
+      "skill": "空を駆ける青春"
+    },
+    "e038": {
+      "uid": "038",
+      "name": "フローズンアイス",
+      "description": "放送委員の仕事が終わった真となずな。アイス片手に廊下を歩いていると誰かが倒れているようで…",
+      "start": "2016-07-14",
+      "end": "2016-07-29",
+      "cards": {
+        "5": ["nazuna"]
+      },
+      "relation": [""],
+      "banner": ["nazuna"],
+      "img": "",
+      "skill": "夏のお伴にアイスクリーム！"
+    },
+    "e039": {
+      "uid": "039",
+      "name": "紅郎編",
+      "description": "",
+      "start": "2016-07-26",
+      "end": "2016-08-03",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["kuro"],
+      "img": "",
+      "skill": ""
+    },
+    "e040": {
+      "uid": "040",
+      "name": "ベストショット",
+      "description": "清涼飲料水の広告塔に抜擢された桃李たち。桃李とはじめて仕事をする創は遠慮気味。仕事を通して距離は近づくのか…？",
+      "start": "2016-07-30",
+      "end": "2016-08-14",
+      "cards": {
+        "5": ["tori"]
+      },
+      "relation": [""],
+      "banner": ["tori"],
+      "img": "",
+      "skill": "しゅわしゅわ金魚"
+    },
+    "e041": {
+      "uid": "041",
+      "name": "ロビンフット",
+      "description": "【ジャッジメント】が終わり、いつもどおりの日常が戻る夢ノ咲学院。司は部活のために弓道場へ向かうと、そこにはレオの姿が……",
+      "start": "2016-08-14",
+      "end": "2016-08-29",
+      "cards": {
+        "5": ["leo"]
+      },
+      "relation": ["弓道部"],
+      "banner": ["leo"],
+      "img": "",
+      "skill": "弓矢の名手たち"
+    },
+    "e042": {
+      "uid": "042",
+      "name": "Switch登場編",
+      "description": "",
+      "start": "2016-08-26",
+      "end": "2016-09-11",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["switch"],
+      "img": "",
+      "skill": ""
+    },
+    "e043": {
+      "uid": "043",
+      "name": "情熱のカルメン",
+      "description": "飼育小屋の掃除をすることになった真緒と忍。演劇部の次の演目で動物とのふれあいを勉強しに北斗たちも合流するが…",
+      "start": "2016-08-30",
+      "end": "2016-09-14",
+      "cards": {
+        "5": ["hokuto"]
+      },
+      "relation": [""],
+      "banner": ["hokuto"],
+      "img": "",
+      "skill": "アンダルシアの情熱"
+    },
+    "e044": {
+      "uid": "044",
+      "name": "200万DL記念",
+      "description": "",
+      "start": "2016-09-14",
+      "end": "2016-09-25",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["trickstar"],
+      "img": "",
+      "skill": ""
+    },
+    "e045": {
+      "uid": "045",
+      "name": "千夜一夜",
+      "description": "ラジオ番組への出演依頼がきた『UNDEAD』。トークが苦手なアドニスのために予行演習をすることになるが…",
+      "start": "2016-09-14",
+      "end": "2016-09-29",
+      "cards": {
+        "5": ["adnis"]
+      },
+      "relation": [""],
+      "banner": ["adnis"],
+      "img": "",
+      "skill": "千夜一夜の盗賊団"
+    },
+    "e046": {
+      "uid": "046",
+      "name": "宙編",
+      "description": "",
+      "start": "2016-09-26",
+      "end": "2016-10-04",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["sora"],
+      "img": "",
+      "skill": ""
+    },
+    "e047": {
+      "uid": "047",
+      "name": "フルーツパーラー",
+      "description": "放課後、喫茶店へパフェを食べに行くことになった光たち。注文しようとするが、司はこういったお店に慣れていないようで…",
+      "start": "2016-09-29",
+      "end": "2016-10-14",
+      "cards": {
+        "5": ["tsukasa"]
+      },
+      "relation": [""],
+      "banner": ["tsukasa"],
+      "img": "",
+      "skill": "喫茶の誘惑"
+    },
+    "e048": {
+      "uid": "048",
+      "name": "薔薇十字物語",
+      "description": "「役になりきる」ために、一日「お姫さま」の格好を強いられている友也。最初は嫌々ながらも、段々「お姫さま」らしくなってきて…？",
+      "start": "2016-10-14",
+      "end": "2016-10-29",
+      "cards": {
+        "5": ["tomoya"]
+      },
+      "relation": ["演劇部"],
+      "banner": ["tomoya"],
+      "img": "",
+      "skill": "舞台の額縁"
+    },
+    "e049": {
+      "uid": "049",
+      "name": "つむぎ編",
+      "description": "",
+      "start": "2016-10-26",
+      "end": "2016-11-03",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["tsumugi"],
+      "img": "",
+      "skill": ""
+    },
+    "e050": {
+      "uid": "050",
+      "name": "彩りオータム",
+      "description": "商店街のフェア用に看板をたくさん作らなければならなくなった翠。意気消沈していたところ、鉄虎や奏汰たちが申し出て、手分けして作ることに。",
+      "start": "2016-10-30",
+      "end": "2016-11-14",
+      "cards": {
+        "5": ["midori"]
+      },
+      "relation": [""],
+      "banner": ["midori"],
+      "img": "",
+      "skill": "カラフルベジタブル"
+    },
+    "e051": {
+      "uid": "051",
+      "name": "BADBOYS",
+      "description": "怪我したままグラウンドを走っていた光に手当てをしていた転校生は、仕事でグラビア撮影の話を持ちかける。話を聞いたなずなは方向性に難色を示すが…",
+      "start": "2016-11-14",
+      "end": "2016-11-29",
+      "cards": {
+        "5": ["mitsuru"]
+      },
+      "relation": ["Ra*bits"],
+      "banner": ["mitsuru"],
+      "img": "",
+      "skill": "BADBOYS"
+    },
+    "e052": {
+      "uid": "052",
+      "name": "夏目編",
+      "description": "",
+      "start": "2016-11-26",
+      "end": "2016-12-03",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["natsume"],
+      "img": "",
+      "skill": ""
+    },
+    "e053": {
+      "uid": "053",
+      "name": "賢者の導",
+      "description": "【スタフェス】を目前に、生徒会は多忙を極めていた。放送委員の仕事で真はそんな生徒会室へと足を運ぶ。",
+      "start": "2016-11-29",
+      "end": "2016-12-14",
+      "cards": {
+        "5": ["keito"]
+      },
+      "relation": [""],
+      "banner": ["keito"],
+      "img": "",
+      "skill": "叡智への回顧"
+    },
+    "e054": {
+      "uid": "054",
+      "name": "ノクターン",
+      "description": "手芸部は【スタフェス】の衣装依頼が殺到していた。明らかな人員不足のため、みかの呼びかけにより裁縫の得意なメンバーが集合することに。",
+      "start": "2016-12-14",
+      "end": "2016-12-29",
+      "cards": {
+        "5": ["shu"]
+      },
+      "relation": ["手芸部"],
+      "banner": ["shu"],
+      "img": "",
+      "skill": "静夜のノクターン"
+    },
+    "e055": {
+      "uid": "055",
+      "name": "凛月編",
+      "description": "",
+      "start": "2016-12-26",
+      "end": "2017-01-03",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["ritsu"],
+      "img": "",
+      "skill": ""
+    },
+    "e056": {
+      "uid": "056",
+      "name": "エキセントリック",
+      "description": "冬休み、仕事のため繁華街に繰り出していた転校生と夏目は偶然の出会いで、奇人の先輩たちに遭遇する…",
+      "start": "2016-12-30",
+      "end": "2017-01-14",
+      "cards": {
+        "5": ["natsume"]
+      },
+      "relation": ["五奇人"],
+      "banner": ["natsume"],
+      "img": "",
+      "skill": "エキセントリックな時間"
+    },
+    "e057": {
+      "uid": "057",
+      "name": "氷上のダンス",
+      "description": "ピンナップ撮影でスケート場に来た『Knights』。『UNDEAD』も同じ撮影で来ており、薫は撮影勝負を泉に誘う…",
+      "start": "2017-01-14",
+      "end": "2017-01-30",
+      "cards": {
+        "5": ["izumi"]
+      },
+      "relation": ["Knights", "UNDEAD"],
+      "banner": ["izumi"],
+      "img": "",
+      "skill": "氷上に咲く華"
+    },
+    "e058": {
+      "uid": "058",
+      "name": "颯馬編",
+      "description": "",
+      "start": "2017-01-26",
+      "end": "2017-02-03",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["soma"],
+      "img": "",
+      "skill": ""
+    },
+    "e059": {
+      "uid": "059",
+      "name": "サロン・ド・テ",
+      "description": "『ショコラフェス』フェアのため募集されていたアルバイトに創とスバルが応募して、創はスバルとのお仕事が嬉しいようす♪",
+      "start": "2017-01-30",
+      "end": "2017-02-14",
+      "cards": {
+        "5": ["hajime"]
+      },
+      "relation": [""],
+      "banner": ["hajime"],
+      "img": "",
+      "skill": "香り立つ茶館"
+    },
+    "e060": {
+      "uid": "060",
+      "name": "拳闘の四獣",
+      "description": "【ショコラフェス】の少し前、紅郎により申請された『B1』の『龍王戦』。晃牙から企画の話を聞かされるが、鉄虎は何も知らず困惑する……",
+      "start": "2017-02-14",
+      "end": "2017-02-27",
+      "cards": {
+        "5": ["tetora"]
+      },
+      "relation": ["空手部"],
+      "banner": ["tetora"],
+      "img": "",
+      "skill": "拳闘の四獣"
+    },
+    "e061": {
+      "uid": "061",
+      "name": "想いの花束",
+      "description": "花屋でアルバイトをしていたみか。嵐の手伝いはあるものの、ホワイトデーの時期でお店は大忙し！",
+      "start": "2017-02-27",
+      "end": "2017-03-14",
+      "cards": {
+        "5": ["arashi"]
+      },
+      "relation": [""],
+      "banner": ["arashi"],
+      "img": "",
+      "skill": "心の花束"
+    },
+    "e062": {
+      "uid": "062",
+      "name": "高貴なる遊戯",
+      "description": "使用人のアルバイトとして姫宮家に来た転校生。しかし失敗続きのようすを見た桃李がお手本を見せると言い……",
+      "start": "2017-03-14",
+      "end": "2017-03-30",
+      "cards": {
+        "5": ["yuzuru"]
+      },
+      "relation": ["セレブ組"],
+      "banner": ["yuzuru"],
+      "img": "",
+      "skill": "絶対服従"
+    },
+    "e063": {
+      "uid": "063",
+      "name": "ひなた編",
+      "description": "",
+      "start": "2017-03-26",
+      "end": "2017-04-03",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["hinata"],
+      "img": "",
+      "skill": ""
+    },
+    "e064": {
+      "uid": "064",
+      "name": "ピカピカの一年生",
+      "description": "入学して日も浅いころ。一年生たちは部活や自分が活動するユニットを決め、クラスメイトにも気が向く春のある日のお話。",
+      "start": "2017-03-30",
+      "end": "2017-04-14",
+      "cards": {
+        "5": ["yuta"]
+      },
+      "relation": ["一年生"],
+      "banner": ["yuta"],
+      "img": "",
+      "skill": "ピカピカの一年生"
+    },
+    "e065": {
+      "uid": "065",
+      "name": "カードバトラー",
+      "description": "最近カードゲームに嵌まる司。連戦連勝の様子を見た晃牙も腕試しに勝負を挑む！",
+      "start": "2017-04-14",
+      "end": "2017-04-29",
+      "cards": {
+        "5": ["koga"]
+      },
+      "relation": [""],
+      "banner": ["koga"],
+      "img": "",
+      "skill": "カード使いたち"
+    },
+    "e066": {
+      "uid": "066",
+      "name": "斑登場編",
+      "description": "",
+      "start": "2017-04-26",
+      "end": "2017-05-03",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["madara"],
+      "img": "",
+      "skill": ""
+    },
+    "e067": {
+      "uid": "067",
+      "name": "パジャマ",
+      "description": "春から一人暮らしを始めた晃牙。寝具探しをしているところに凛月が興味を持ち、クラスメイトを誘って買い物に行くことに",
+      "start": "2017-04-29",
+      "end": "2017-05-14",
+      "cards": {
+        "5": ["ritsu"]
+      },
+      "relation": ["2B"],
+      "banner": ["ritsu"],
+      "img": "",
+      "skill": "パジャマタイム"
+    },
+    "e068": {
+      "uid": "068",
+      "name": "ランウェイ",
+      "description": "『前夜祭』で『UNDEAD』との競演を前に演奏に自信が持てない真。頼まれた交換条件で泉に指導してもらうことになるが…",
+      "start": "2017-05-14",
+      "end": "2017-05-29",
+      "cards": {
+        "5": ["makoto"]
+      },
+      "relation": ["モデル"],
+      "banner": ["makoto"],
+      "img": "",
+      "skill": "ランウェイ"
+    },
+    "e069": {
+      "uid": "069",
+      "name": "アドニス編",
+      "description": "",
+      "start": "2017-05-26",
+      "end": "2017-06-03",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["adnis"],
+      "img": "",
+      "skill": ""
+    },
+    "e070": {
+      "uid": "070",
+      "name": "浮き世エアライド",
+      "description": "忍の忍者修行に興味がある光たちは修行に参加するが、壁をよじ登っていたところを敬人に見られてしまい…",
+      "start": "2017-05-30",
+      "end": "2017-06-14",
+      "cards": {
+        "5": ["shinobu"]
+      },
+      "relation": [""],
+      "banner": ["shinobu"],
+      "img": "",
+      "skill": "忍者集団『忍ばず者』"
+    },
+    "e071": {
+      "uid": "071",
+      "name": "ビブリオ",
+      "description": "図書室で書架の整理を行っていたつむぎ。しかし、眼鏡を貸したため作業がままならず創と翠が手伝うことになり……",
+      "start": "2017-06-14",
+      "end": "2017-06-29",
+      "cards": {
+        "5": ["tsumugi"]
+      },
+      "relation": [""],
+      "banner": ["tsumugi"],
+      "img": "",
+      "skill": "本の虫"
+    },
+    "e072": {
+      "uid": "072",
+      "name": "弓弦編",
+      "description": "",
+      "start": "2017-06-26",
+      "end": "2017-07-03",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["yuzuru"],
+      "img": "",
+      "skill": ""
+    },
+    "e073": {
+      "uid": "073",
+      "name": "ちいさな王さま",
+      "description": "光と翠に案内されて司は駄菓子屋に初めて足を踏み入れるが、そこは初めて見るものばかりだった…！",
+      "start": "2017-06-29",
+      "end": "2017-07-14",
+      "cards": {
+        "5": ["tsukasa"]
+      },
+      "relation": [""],
+      "banner": ["tsukasa"],
+      "img": "",
+      "skill": "小さな王さまたち"
+    },
+    "e074": {
+      "uid": "074",
+      "name": "コンチェルト",
+      "description": "夏休み、ひとり隣町に出かけていたレオは敬人や斑と出会う。一方、英智も隣町に足を運んでいて…",
+      "start": "2017-07-14",
+      "end": "2017-07-29",
+      "cards": {
+        "5": ["madara"]
+      },
+      "relation": [""],
+      "banner": ["madara"],
+      "img": "",
+      "skill": "コンチェルト"
+    },
+    "e075": {
+      "uid": "075",
+      "name": "なずな編",
+      "description": "",
+      "start": "2017-07-26",
+      "end": "2017-08-03",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["nazuna"],
+      "img": "",
+      "skill": ""
+    },
+    "e076": {
+      "uid": "076",
+      "name": "妖怪七変化",
+      "description": "悪戯が原因で章臣に注意されるひなたは心を入れ替えて『良い子』になるべく、クラス委員長の友也に成ろうとトライする！",
+      "start": "2017-07-30",
+      "end": "2017-08-14",
+      "cards": {
+        "5": ["hinata"]
+      },
+      "relation": [""],
+      "banner": ["hinata"],
+      "img": "",
+      "skill": "妖怪七変化"
+    },
+    "e077": {
+      "uid": "077",
+      "name": "ダンスフロア",
+      "description": "授業の課題で出された『創作ダンス』に不安なところがあり、桃李は『fine』のメンバーに相談すると…？",
+      "start": "2017-08-14",
+      "end": "2017-08-30",
+      "cards": {
+        "5": ["wataru"]
+      },
+      "relation": ["fine"],
+      "banner": ["wataru"],
+      "img": "",
+      "skill": ""
+    },
+    "e078": {
+      "uid": "078",
+      "name": "光編",
+      "description": "",
+      "start": "2017-08-26",
+      "end": "2017-09-03",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["mitsuru"],
+      "img": "",
+      "skill": ""
+    },
+    "e079": {
+      "uid": "079",
+      "name": "クッキング",
+      "description": "料理を焦がしてしまう鉄虎。克服のため、近日行われる料理コンテストで料理の上達を目指そうとするが…",
+      "start": "2017-08-30",
+      "end": "2017-09-14",
+      "cards": {
+        "5": ["tetora"]
+      },
+      "relation": [""],
+      "banner": ["tetora"],
+      "img": "",
+      "skill": ""
+    },
+    "e080": {
+      "uid": "080",
+      "name": "メルクストーリア",
+      "description": "ゲームの新作発表イベントに呼ばれた『Ra*bits』。天使の姿をしているという共演者と一緒にお仕事をするが、どうも不思議なひとたちで…？",
+      "start": "2017-09-14",
+      "end": "2017-09-29",
+      "cards": {
+        "5": ["nazuna"]
+      },
+      "relation": ["Ra*bits"],
+      "banner": ["nazuna"],
+      "img": "",
+      "skill": ""
+    },
+    "e081": {
+      "uid": "081",
+      "name": "流星隊編",
+      "description": "",
+      "start": "2017-09-20",
+      "end": "2017-10-04",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["ryuseitai"],
+      "img": "",
+      "skill": ""
+    },
+    "e082": {
+      "uid": "082",
+      "name": "ショウタイム",
+      "description": "渉の手品に興味を持った宙。渉が出演するマジックショウの助手として手品を教わることに！",
+      "start": "2017-09-29",
+      "end": "2017-10-14",
+      "cards": {
+        "5": ["sora"]
+      },
+      "relation": [""],
+      "banner": ["sora"],
+      "img": "",
+      "skill": ""
+    },
+    "e083": {
+      "uid": "083",
+      "name": "Knights編",
+      "description": "",
+      "start": "2017-10-04",
+      "end": "2017-10-18",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["knights"],
+      "img": "",
+      "skill": ""
+    },
+    "e084": {
+      "uid": "084",
+      "name": "花の色札",
+      "description": "紅郎から預かっている花札で颯馬と遊んでいた転校生。一枚足りないことに気づくが、その札には『紅月』の過去が絡んでおり…",
+      "start": "2017-10-14",
+      "end": "2017-10-30",
+      "cards": {
+        "5": ["soma"]
+      },
+      "relation": ["紅月"],
+      "banner": ["soma"],
+      "img": "",
+      "skill": ""
+    },
+    "e085": {
+      "uid": "085",
+      "name": "fine編",
+      "description": "",
+      "start": "2017-10-18",
+      "end": "2017-11-01",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["fine"],
+      "img": "",
+      "skill": ""
+    },
+    "e086": {
+      "uid": "086",
+      "name": "桃李編",
+      "description": "",
+      "start": "2017-10-27",
+      "end": "2017-11-03",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["tori"],
+      "img": "",
+      "skill": ""
+    },
+    "e087": {
+      "uid": "087",
+      "name": "ブティック",
+      "description": "撮影のお仕事を受けたスバル。ところが、条件となっていた自前のスーツを持っていなかったため転校生と一緒に繁華街へ出かけることに",
+      "start": "2017-10-30",
+      "end": "2017-11-14",
+      "cards": {
+        "5": ["subaru"]
+      },
+      "relation": [""],
+      "banner": ["subaru"],
+      "img": "",
+      "skill": ""
+    },
+    "e088": {
+      "uid": "088",
+      "name": "Valkyrie編",
+      "description": "",
+      "start": "2017-11-01",
+      "end": "2017-11-16",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["valkyrie"],
+      "img": "",
+      "skill": ""
+    },
+    "e089": {
+      "uid": "089",
+      "name": "狼と赤ずきん",
+      "description": "『子供向け番組』の仕事の依頼を受けた紅郎。子供と仲良くできるように幼稚園で人形劇を行う放送委員会のお手伝いをするが…",
+      "start": "2017-11-15",
+      "end": "2017-11-29",
+      "cards": {
+        "5": ["kuro"]
+      },
+      "relation": [""],
+      "banner": ["kuro"],
+      "img": "",
+      "skill": ""
+    },
+    "e090": {
+      "uid": "090",
+      "name": "2wink編",
+      "description": "",
+      "start": "2017-11-16",
+      "end": "2017-12-01",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["2wink"],
+      "img": "",
+      "skill": ""
+    },
+    "e091": {
+      "uid": "091",
+      "name": "真編",
+      "description": "",
+      "start": "2017-11-26",
+      "end": "2017-12-03",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["makoto"],
+      "img": "",
+      "skill": ""
+    },
+    "e092": {
+      "uid": "092",
+      "name": "テディベア",
+      "description": "行き倒れていたところをレオに拾われたみか。事情を聞くと、宗が大事にしていたテディベアを壊してしまったようで…",
+      "start": "2017-11-29",
+      "end": "2017-12-14",
+      "cards": {
+        "5": ["mika"]
+      },
+      "relation": [""],
+      "banner": ["mika"],
+      "img": "",
+      "skill": ""
+    },
+    "e093": {
+      "uid": "093",
+      "name": "UNDEAD編",
+      "description": "",
+      "start": "2017-12-01",
+      "end": "2017-12-16",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["undead"],
+      "img": "",
+      "skill": ""
+    },
+    "e094": {
+      "uid": "094",
+      "name": "ウィンターサンタ",
+      "description": "イルミネーションを見に繁華街へ来た友也と創。もうじき訪れるクリスマスを前にパーティの話で盛り上がるが、創のようすがいつもと違い…",
+      "start": "2017-12-14",
+      "end": "2017-12-29",
+      "cards": {
+        "5": ["tomoya"]
+      },
+      "relation": [""],
+      "banner": ["tomoya"],
+      "img": "",
+      "skill": ""
+    },
+    "e095": {
+      "uid": "095",
+      "name": "Ra*bits編",
+      "description": "",
+      "start": "2017-12-16",
+      "end": "2018-01-01",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["rabbits"],
+      "img": "",
+      "skill": ""
+    },
+    "e096": {
+      "uid": "096",
+      "name": "十二支（前編）",
+      "description": "千秋が犬になってしまい慌てる翠、二年前の冬にふたりで過ごした宗となずな……今回はそれぞれの冬の物語",
+      "start": "2017-12-30",
+      "end": "2018-01-14",
+      "cards": {
+        "5": ["midori"]
+      },
+      "relation": [""],
+      "banner": ["midori"],
+      "img": "",
+      "skill": ""
+    },
+    "e097": {
+      "uid": "097",
+      "name": "紅月編",
+      "description": "",
+      "start": "2018-01-01",
+      "end": "2018-01-16",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["akatsuki"],
+      "img": "",
+      "skill": ""
+    },
+    "e098": {
+      "uid": "098",
+      "name": "十二支（後編）",
+      "description": "",
+      "start": "2018-01-14",
+      "end": "2018-01-30",
+      "cards": {
+        "5": ["kanata"]
+      },
+      "relation": [""],
+      "banner": ["kanata"],
+      "img": "",
+      "skill": ""
+    },
+    "e099": {
+      "uid": "099",
+      "name": "Switch編",
+      "description": "",
+      "start": "2018-01-16",
+      "end": "2018-02-01",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["switch"],
+      "img": "",
+      "skill": ""
+    },
+    "e100": {
+      "uid": "100",
+      "name": "零編",
+      "description": "",
+      "start": "2018-01-26",
+      "end": "2018-02-03",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["rei"],
+      "img": "",
+      "skill": ""
+    },
+    "e101": {
+      "uid": "101",
+      "name": "ジュエルキャンディ",
+      "description": "",
+      "start": "2018-01-30",
+      "end": "2018-02-14",
+      "cards": {
+        "5": ["natsume"]
+      },
+      "relation": [""],
+      "banner": ["natsume"],
+      "img": "",
+      "skill": ""
+    },
+    "e102": {
+      "uid": "102",
+      "name": "Trickstar編",
+      "description": "",
+      "start": "2018-02-01",
+      "end": "2018-02-16",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["trickstar"],
+      "img": "",
+      "skill": ""
+    },
+    "e103": {
+      "uid": "103",
+      "name": "ラストピリオド",
+      "description": "",
+      "start": "2018-02-14",
+      "end": "2018-02-27",
+      "cards": {
+        "5": ["mao"]
+      },
+      "relation": ["2B"],
+      "banner": ["mao"],
+      "img": "",
+      "skill": ""
+    },
+    "e104": {
+      "uid": "104",
+      "name": "MaM編",
+      "description": "",
+      "start": "2018-02-16",
+      "end": "2018-03-01",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["mam"],
+      "img": "",
+      "skill": ""
+    },
+    "e105": {
+      "uid": "105",
+      "name": "ホームパーティ",
+      "description": "",
+      "start": "2018-02-27",
+      "end": "2018-03-14",
+      "cards": {
+        "5": ["tori"]
+      },
+      "relation": [""],
+      "banner": ["tori"],
+      "img": "",
+      "skill": ""
+    },
+    "e106": {
+      "uid": "106",
+      "name": "ケダモノ",
+      "description": "",
+      "start": "2018-03-14",
+      "end": "2018-03-29",
+      "cards": {
+        "5": ["arashi"]
+      },
+      "relation": [""],
+      "banner": ["arashi"],
+      "img": "",
+      "skill": ""
+    },
+    "e107": {
+      "uid": "107",
+      "name": "流星隊編2",
+      "description": "",
+      "start": "2018-03-20",
+      "end": "2018-04-25",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["ryuseitai"],
+      "img": "",
+      "skill": ""
+    },
+    "e108": {
+      "uid": "108",
+      "name": "英智編",
+      "description": "",
+      "start": "2018-03-26",
+      "end": "2018-04-03",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["eichi"],
+      "img": "",
+      "skill": ""
+    },
+    "e109": {
+      "uid": "109",
+      "name": "郵便配達",
+      "description": "",
+      "start": "2018-03-29",
+      "end": "2018-04-14",
+      "cards": {
+        "5": ["mitsuru"]
+      },
+      "relation": [""],
+      "banner": ["mitsuru"],
+      "img": "",
+      "skill": ""
+    },
+    "e110": {
+      "uid": "110",
+      "name": "ギャング",
+      "description": "",
+      "start": "2018-04-14",
+      "end": "2018-04-29",
+      "cards": {
+        "5": ["yuzuru"]
+      },
+      "relation": [""],
+      "banner": ["yuzuru"],
+      "img": "",
+      "skill": ""
+    },
+    "e111": {
+      "uid": "111",
+      "name": "Ra*bits編2",
+      "description": "",
+      "start": "2018-04-25",
+      "end": "2018-05-30",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["rabbits"],
+      "img": "",
+      "skill": ""
+    },
+    "e112": {
+      "uid": "112",
+      "name": "忍編",
+      "description": "",
+      "start": "2018-04-26",
+      "end": "2018-05-03",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["shinobu"],
+      "img": "",
+      "skill": ""
+    },
+    "e113": {
+      "uid": "113",
+      "name": "天使の翼",
+      "description": "",
+      "start": "2018-04-29",
+      "end": "2018-05-14",
+      "cards": {
+        "5": ["eichi"]
+      },
+      "relation": ["生徒会"],
+      "banner": ["eichi"],
+      "img": "",
+      "skill": ""
+    },
+    "e114": {
+      "uid": "114",
+      "name": "悪魔の館",
+      "description": "",
+      "start": "2018-05-14",
+      "end": "2018-05-30",
+      "cards": {
+        "5": ["rei"]
+      },
+      "relation": [""],
+      "banner": ["rei"],
+      "img": "",
+      "skill": ""
+    },
+    "e115": {
+      "uid": "115",
+      "name": "ブライダル",
+      "description": "",
+      "start": "2018-05-30",
+      "end": "2018-06-14",
+      "cards": {
+        "5": ["kaoru"]
+      },
+      "relation": [""],
+      "banner": ["kaoru"],
+      "img": "",
+      "skill": ""
+    },
+    "e116": {
+      "uid": "116",
+      "name": "Knights編2",
+      "description": "",
+      "start": "2018-05-30",
+      "end": "2018-06-27",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["knights"],
+      "img": "",
+      "skill": ""
+    },
+    "e117": {
+      "uid": "117",
+      "name": "ヴィクトリア",
+      "description": "",
+      "start": "2018-06-14",
+      "end": "2018-06-29",
+      "cards": {
+        "5": ["shu"]
+      },
+      "relation": [""],
+      "banner": ["shu"],
+      "img": "",
+      "skill": ""
+    },
+    "e118": {
+      "uid": "118",
+      "name": "エースクライマー",
+      "description": "",
+      "start": "2018-06-19",
+      "end": "2018-06-29",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["巻島裕介"],
+      "img": "",
+      "skill": ""
+    },
+    "e119": {
+      "uid": "119",
+      "name": "紅月編2",
+      "description": "",
+      "start": "2018-06-27",
+      "end": "2018-07-25",
+      "cards": {
+        "5": [""]
+      },
+      "relation": [""],
+      "banner": ["akatsuki"],
+      "img": "",
+      "skill": ""
+    },
+    "e120": {
+      "uid": "120",
+      "name": "ゴンドラ",
+      "description": "",
+      "start": "2018-06-29",
+      "end": "2018-07-14",
+      "cards": {
+        "5": ["tsumugi"]
+      },
+      "relation": [""],
+      "banner": ["tsumugi"],
+      "img": "",
+      "skill": ""
     }
   }
 }

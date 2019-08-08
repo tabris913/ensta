@@ -10,14 +10,14 @@
       "end": "2015-05-29",
       "bonus": {
         "ranking": {
-          "5": ["明星スバル"]
+          "5": ["subaru"]
         },
         "point": {
-          "5": ["氷鷹北斗"]
+          "5": ["hokuto"]
         }
       },
       "relation": ["Trickstar"],
-      "banner": ["氷鷹北斗"],
+      "banner": ["hokuto"],
       "img": ""
     },
     "e002": {
@@ -30,14 +30,14 @@
       "end": "2015-06-14",
       "bonus": {
         "ranking": {
-          "5": ["姫宮桃李"]
+          "5": ["tori"]
         },
         "point": {
-          "5": ["天祥院英智", "葵ひなた"]
+          "5": ["eichi", "hinata"]
         }
       },
       "relation": ["fine", "2wink"],
-      "banner": ["葵ひなた"],
+      "banner": ["hinata"],
       "img": ""
     },
     "e003": {
@@ -50,14 +50,14 @@
       "end": "2015-06-27",
       "bonus": {
         "ranking": {
-          "5": ["大神晃牙"]
+          "5": ["koga"]
         },
         "point": {
-          "5": ["羽風薫"]
+          "5": ["kaoru"]
         }
       },
       "relation": ["UNDEAD"],
-      "banner": ["大神晃牙"],
+      "banner": ["koga"],
       "img": ""
     },
     "e004": {
@@ -70,14 +70,14 @@
       "end": "2015-07-09",
       "bonus": {
         "ranking": {
-          "5": ["遊木真", "鳴上嵐"]
+          "5": ["makoto", "arashi"]
         },
         "point": {
-          "5": ["瀬名泉"]
+          "5": ["izumi"]
         }
       },
       "relation": ["Knights", "Trickstar"],
-      "banner": ["瀬名泉"],
+      "banner": ["izumi"],
       "img": ""
     },
     "e005": {
@@ -90,14 +90,14 @@
       "end": "2015-07-25",
       "bonus": {
         "ranking": {
-          "5": ["神崎颯馬"]
+          "5": ["soma"]
         },
         "point": {
-          "5": ["真白友也", "天満光"]
+          "5": ["tomoya", "mitsuru"]
         }
       },
       "relation": ["Ra*bits", "紅月"],
-      "banner": ["天満光"],
+      "banner": ["mitsuru"],
       "img": ""
     },
     "e006": {
@@ -110,14 +110,14 @@
       "end": "2015-08-12",
       "bonus": {
         "ranking": {
-          "5": ["朔間零"]
+          "5": ["rei"]
         },
         "point": {
-          "5": ["乙狩アドニス", "高峯翠"]
+          "5": ["adnis", "midori"]
         }
       },
       "relation": ["UNDEAD", "流星隊"],
-      "banner": ["乙狩アドニス"],
+      "banner": ["adnis"],
       "img": ""
     },
     "e007": {
@@ -130,14 +130,14 @@
       "end": "2015-08-27",
       "bonus": {
         "ranking": {
-          "5": ["衣更真緒"]
+          "5": ["mao"]
         },
         "point": {
-          "5": ["氷鷹北斗"]
+          "5": ["hokuto"]
         }
       },
       "relation": ["Trickstar"],
-      "banner": ["衣更真緒"],
+      "banner": ["mao"],
       "img": ""
     },
     "e008": {
@@ -150,14 +150,14 @@
       "end": "2015-09-10",
       "bonus": {
         "ranking": {
-          "5": ["天祥院英智"]
+          "5": ["eichi"]
         },
         "point": {
-          "5": ["蓮巳敬人"]
+          "5": ["keito"]
         }
       },
       "relation": ["fine", "紅月"],
-      "banner": ["天祥院英智"],
+      "banner": ["eichi"],
       "img": ""
     },
     "e009": {
@@ -170,14 +170,14 @@
       "end": "2015-09-25",
       "bonus": {
         "ranking": {
-          "5": ["守沢千秋"]
+          "5": ["chiaki"]
         },
         "point": {
-          "5": ["南雲鉄虎"]
+          "5": ["tetora"]
         }
       },
       "relation": ["バスケ部"],
-      "banner": ["守沢千秋"],
+      "banner": ["chiaki"],
       "img": ""
     },
     "e010": {
@@ -190,14 +190,14 @@
       "end": "2015-10-10",
       "bonus": {
         "ranking": {
-          "5": ["朱桜司"]
+          "5": ["tsukasa"]
         },
         "point": {
-          "5": ["月永レオ"]
+          "5": ["leo"]
         }
       },
       "relation": ["Knights"],
-      "banner": ["朱桜司"],
+      "banner": ["tsukasa"],
       "img": ""
     },
     "e011": {
@@ -210,14 +210,14 @@
       "end": "2015-10-26",
       "bonus": {
         "ranking": {
-          "5": ["葵ゆうた"]
+          "5": ["yuta"]
         },
         "point": {
-          "5": ["仙石忍"]
+          "5": ["shinobu"]
         }
       },
       "relation": [""],
-      "banner": ["仙石忍"],
+      "banner": ["shinobu"],
       "img": ""
     },
     "e012": {
@@ -230,14 +230,14 @@
       "end": "2015-11-10",
       "bonus": {
         "ranking": {
-          "5": ["大神晃牙"]
+          "5": ["koga"]
         },
         "point": {
-          "5": ["朔間凛月"]
+          "5": ["ritsu"]
         }
       },
       "relation": ["UNDEAD"],
-      "banner": ["朔間凛月"],
+      "banner": ["ritsu"],
       "img": ""
     },
     "e013": {
@@ -250,14 +250,14 @@
       "end": "2015-11-25",
       "bonus": {
         "ranking": {
-          "5": ["伏見弓弦"]
+          "5": ["yuzuru"]
         },
         "point": {
-          "5": ["鳴上嵐"]
+          "5": ["arashi"]
         }
       },
       "relation": ["2年生"],
-      "banner": ["鳴上嵐"],
+      "banner": ["arashi"],
       "img": ""
     },
     "e014": {
@@ -270,14 +270,14 @@
       "end": "2015-12-10",
       "bonus": {
         "ranking": {
-          "5": ["仁兎なずな"]
+          "5": ["nazuna"]
         },
         "point": {
-          "5": ["深海奏汰"]
+          "5": ["kanata"]
         }
       },
       "relation": [""],
-      "banner": ["深海奏汰"],
+      "banner": ["kanata"],
       "img": ""
     },
     "e015": {
@@ -290,14 +290,14 @@
       "end": "2015-12-25",
       "bonus": {
         "ranking": {
-          "5": ["高峯翠"]
+          "5": ["midori"]
         },
         "point": {
-          "5": ["南雲鉄虎"]
+          "5": ["tetora"]
         }
       },
       "relation": ["流星隊"],
-      "banner": ["高峯翠"],
+      "banner": ["midori"],
       "img": ""
     },
     "e016": {
@@ -310,14 +310,14 @@
       "end": "2016-01-10",
       "bonus": {
         "ranking": {
-          "5": ["真白友也"]
+          "5": ["tomoya"]
         },
         "point": {
-          "5": ["日々樹渉"]
+          "5": ["wataru"]
         }
       },
       "relation": ["Knights", "Ra*bits"],
-      "banner": ["日々樹渉"],
+      "banner": ["wataru"],
       "img": ""
     },
     "e017": {
@@ -330,14 +330,14 @@
       "end": "2016-01-25",
       "bonus": {
         "ranking": {
-          "5": ["月永レオ"]
+          "5": ["leo"]
         },
         "point": {
-          "5": ["鬼龍紅郎"]
+          "5": ["kuro"]
         }
       },
       "relation": ["紅月"],
-      "banner": ["鬼龍紅郎"],
+      "banner": ["kuro"],
       "img": ""
     },
     "e018": {
@@ -350,14 +350,14 @@
       "end": "2016-02-10",
       "bonus": {
         "ranking": {
-          "5": ["氷鷹北斗"]
+          "5": ["hokuto"]
         },
         "point": {
-          "5": ["天満光"]
+          "5": ["mitsuru"]
         }
       },
       "relation": ["Trickstar", "陸上部"],
-      "banner": ["氷鷹北斗"],
+      "banner": ["hokuto"],
       "img": ""
     },
     "e019": {
@@ -370,14 +370,14 @@
       "end": "2016-02-25",
       "bonus": {
         "ranking": {
-          "5": ["姫宮桃李"]
+          "5": ["tori"]
         },
         "point": {
-          "5": ["守沢千秋"]
+          "5": ["chiaki"]
         }
       },
       "relation": ["fine"],
-      "banner": ["姫宮桃李"],
+      "banner": ["tori"],
       "img": ""
     },
     "e020": {
@@ -390,14 +390,14 @@
       "end": "2016-03-10",
       "bonus": {
         "ranking": {
-          "5": ["葵ひなた"]
+          "5": ["hinata"]
         },
         "point": {
-          "5": ["朔間零"]
+          "5": ["rei"]
         }
       },
       "relation": ["軽音部"],
-      "banner": ["葵ひなた"],
+      "banner": ["hinata"],
       "img": ""
     },
     "e021": {
@@ -410,14 +410,14 @@
       "end": "2016-03-25",
       "bonus": {
         "ranking": {
-          "5": ["仁兎なずな"]
+          "5": ["nazuna"]
         },
         "point": {
-          "5": ["斎宮宗"]
+          "5": ["shu"]
         }
       },
       "relation": ["Valkyrie", "Ra*bits"],
-      "banner": ["仁兎なずな"],
+      "banner": ["nazuna"],
       "img": ""
     },
     "e022": {
@@ -430,14 +430,14 @@
       "end": "2016-04-10",
       "bonus": {
         "ranking": {
-          "5": ["朱桜司"]
+          "5": ["tsukasa"]
         },
         "point": {
-          "5": ["紫之創"]
+          "5": ["hajime"]
         }
       },
       "relation": ["1年生"],
-      "banner": ["紫乃創"],
+      "banner": ["hajime"],
       "img": ""
     },
     "e023": {
@@ -450,14 +450,14 @@
       "end": "2016-04-25",
       "bonus": {
         "ranking": {
-          "5": ["蓮巳敬人"]
+          "5": ["keito"]
         },
         "point": {
-          "5": ["伏見弓弦"]
+          "5": ["yuzuru"]
         }
       },
       "relation": ["fine", "紅月"],
-      "banner": ["伏見弓弦"],
+      "banner": ["yuzuru"],
       "img": ""
     },
     "e024": {
@@ -470,14 +470,14 @@
       "end": "2016-05-10",
       "bonus": {
         "ranking": {
-          "5": ["衣更真緒"]
+          "5": ["mao"]
         },
         "point": {
-          "5": ["朔間凛月"]
+          "5": ["ritsu"]
         }
       },
       "relation": ["Trickstar", "UNDEAD"],
-      "banner": ["衣更真緒"],
+      "banner": ["mao"],
       "img": ""
     },
     "e025": {
@@ -490,14 +490,14 @@
       "end": "2016-05-25",
       "bonus": {
         "ranking": {
-          "5": ["瀬名泉"]
+          "5": ["izumi"]
         },
         "point": {
-          "5": ["鳴上嵐"]
+          "5": ["arashi"]
         }
       },
       "relation": ["Knights", "Ra*bits"],
-      "banner": ["瀬名泉"],
+      "banner": ["izumi"],
       "img": ""
     },
     "e026": {
@@ -510,14 +510,14 @@
       "end": "2016-06-10",
       "bonus": {
         "ranking": {
-          "5": ["高峯翠"]
+          "5": ["midori"]
         },
         "point": {
-          "5": ["深海奏汰"]
+          "5": ["kanata"]
         }
       },
       "relation": ["流星隊"],
-      "banner": ["深海奏汰"],
+      "banner": ["kanata"],
       "img": ""
     },
     "e027": {
@@ -530,14 +530,14 @@
       "end": "2016-06-25",
       "bonus": {
         "ranking": {
-          "5": ["鬼龍紅郎"]
+          "5": ["kuro"]
         },
         "point": {
-          "5": ["葵ゆうた"]
+          "5": ["yuta"]
         }
       },
       "relation": ["紅月"],
-      "banner": ["鬼龍紅郎"],
+      "banner": ["kuro"],
       "img": ""
     },
     "e028": {
@@ -550,14 +550,14 @@
       "end": "2016-07-10",
       "bonus": {
         "ranking": {
-          "5": ["斎宮宗"]
+          "5": ["shu"]
         },
         "point": {
-          "5": ["天祥院英智"]
+          "5": ["eichi"]
         }
       },
       "relation": ["fine", "Valkyrie"],
-      "banner": ["斎宮宗"],
+      "banner": ["shu"],
       "img": ""
     },
     "e029": {
@@ -570,14 +570,14 @@
       "end": "2016-07-25",
       "bonus": {
         "ranking": {
-          "5": ["乙狩アドニス"]
+          "5": ["adnis"]
         },
         "point": {
-          "5": ["天満光"]
+          "5": ["mitsuru"]
         }
       },
       "relation": ["UNDEAD", "Ra*bits"],
-      "banner": ["乙狩アドニス"],
+      "banner": ["adnis"],
       "img": ""
     },
     "e030": {
@@ -590,14 +590,14 @@
       "end": "2016-08-10",
       "bonus": {
         "ranking": {
-          "5": ["遊木真"]
+          "5": ["makoto"]
         },
         "point": {
-          "5": ["瀬名泉"]
+          "5": ["izumi"]
         }
       },
       "relation": ["Trickstar", "Knights"],
-      "banner": ["遊木真"],
+      "banner": ["makoto"],
       "img": ""
     },
     "e031": {
@@ -610,14 +610,14 @@
       "end": "2016-08-25",
       "bonus": {
         "ranking": {
-          "5": ["葵ひなた"]
+          "5": ["hinata"]
         },
         "point": {
-          "5": ["南雲鉄虎"]
+          "5": ["tetora"]
         }
       },
       "relation": ["流星隊", "2wink"],
-      "banner": ["南雲鉄虎"],
+      "banner": ["tetora"],
       "img": ""
     },
     "e032": {
@@ -630,14 +630,14 @@
       "end": "2016-09-10",
       "bonus": {
         "ranking": {
-          "5": ["日々樹渉"]
+          "5": ["wataru"]
         },
         "point": {
-          "5": ["逆先夏目"]
+          "5": ["natsume"]
         }
       },
       "relation": ["Switch"],
-      "banner": ["逆先夏目"],
+      "banner": ["natsume"],
       "img": ""
     },
     "e033": {
@@ -650,14 +650,14 @@
       "end": "2016-09-25",
       "bonus": {
         "ranking": {
-          "5": ["紫之創"]
+          "5": ["hajime"]
         },
         "point": {
-          "5": ["朔間凛月"]
+          "5": ["ritsu"]
         }
       },
       "relation": [""],
-      "banner": ["朔間凛月"],
+      "banner": ["ritsu"],
       "img": ""
     },
     "e034": {
@@ -670,14 +670,14 @@
       "end": "2016-10-10",
       "bonus": {
         "ranking": {
-          "5": ["仙石忍"]
+          "5": ["shinobu"]
         },
         "point": {
-          "5": ["神崎颯馬"]
+          "5": ["soma"]
         }
       },
       "relation": ["流星隊", "紅月"],
-      "banner": ["仙石忍"],
+      "banner": ["shinobu"],
       "img": ""
     },
     "e035": {
@@ -690,14 +690,14 @@
       "end": "2016-10-25",
       "bonus": {
         "ranking": {
-          "5": ["明星スバル"]
+          "5": ["subaru"]
         },
         "point": {
-          "5": ["大神晃牙"]
+          "5": ["koga"]
         }
       },
       "relation": ["Trickstar", "UNDEAD"],
-      "banner": ["明星スバル"],
+      "banner": ["subaru"],
       "img": ""
     },
     "e036": {
@@ -710,14 +710,14 @@
       "end": "2016-11-10",
       "bonus": {
         "ranking": {
-          "5": ["影片みか"]
+          "5": ["mika"]
         },
         "point": {
-          "5": ["春川宙"]
+          "5": ["sora"]
         }
       },
       "relation": ["Switch", "Valkyrie"],
-      "banner": ["春川宙"],
+      "banner": ["sora"],
       "img": ""
     },
     "e037": {
@@ -730,14 +730,14 @@
       "end": "2016-11-25",
       "bonus": {
         "ranking": {
-          "5": ["葵ゆうた"]
+          "5": ["yuta"]
         },
         "point": {
-          "5": ["伏見弓弦"]
+          "5": ["yuzuru"]
         }
       },
       "relation": ["2wink", "fine"],
-      "banner": ["葵ゆうた"],
+      "banner": ["yuta"],
       "img": ""
     },
     "e038": {
@@ -750,14 +750,14 @@
       "end": "2016-12-10",
       "bonus": {
         "ranking": {
-          "5": ["鳴上嵐"]
+          "5": ["arashi"]
         },
         "point": {
-          "5": ["月永レオ"]
+          "5": ["leo"]
         }
       },
       "relation": ["Knights", "Valkyrie"],
-      "banner": ["月永レオ"],
+      "banner": ["leo"],
       "img": ""
     },
     "e039": {
@@ -770,14 +770,14 @@
       "end": "2016-12-25",
       "bonus": {
         "ranking": {
-          "5": ["羽風薫"]
+          "5": ["kaoru"]
         },
         "point": {
-          "5": ["守沢千秋"]
+          "5": ["chiaki"]
         }
       },
       "relation": ["UNDEAD", "流星隊"],
-      "banner": ["羽風薫"],
+      "banner": ["kaoru"],
       "img": ""
     },
     "e040": {
@@ -790,14 +790,14 @@
       "end": "2017-01-10",
       "bonus": {
         "ranking": {
-          "5": ["蓮巳敬人"]
+          "5": ["keito"]
         },
         "point": {
-          "5": ["衣更真緒"]
+          "5": ["mao"]
         }
       },
       "relation": ["Trickstar", "紅月"],
-      "banner": ["蓮巳敬人"],
+      "banner": ["keito"],
       "img": ""
     },
     "e041": {
@@ -810,14 +810,14 @@
       "end": "2017-01-25",
       "bonus": {
         "ranking": {
-          "5": ["天祥院英智"]
+          "5": ["eichi"]
         },
         "point": {
-          "5": ["姫宮桃李"]
+          "5": ["tori"]
         }
       },
       "relation": ["fine"],
-      "banner": ["天祥院英智"],
+      "banner": ["eichi"],
       "img": ""
     },
     "e042": {
@@ -830,14 +830,14 @@
       "end": "2017-02-10",
       "bonus": {
         "ranking": {
-          "5": ["朔間零"]
+          "5": ["rei"]
         },
         "point": {
-          "5": ["葵ひなた"]
+          "5": ["hinata"]
         }
       },
       "relation": ["2wink"],
-      "banner": ["朔間零"],
+      "banner": ["rei"],
       "img": ""
     },
     "e043": {
@@ -850,14 +850,14 @@
       "end": "2017-02-25",
       "bonus": {
         "ranking": {
-          "5": ["仁兎なずな"]
+          "5": ["nazuna"]
         },
         "point": {
-          "5": ["朱桜司"]
+          "5": ["tsukasa"]
         }
       },
       "relation": ["Knights，Ra*bits"],
-      "banner": ["朱桜司"],
+      "banner": ["tsukasa"],
       "img": ""
     },
     "e044": {
@@ -870,14 +870,14 @@
       "end": "2017-03-10",
       "bonus": {
         "ranking": {
-          "5": ["守沢千秋"]
+          "5": ["chiaki"]
         },
         "point": {
-          "5": ["高峯翠"]
+          "5": ["midori"]
         }
       },
       "relation": ["流星隊"],
-      "banner": ["守沢千秋"],
+      "banner": ["chiaki"],
       "img": ""
     },
     "e045": {
@@ -890,14 +890,14 @@
       "end": "2017-03-25",
       "bonus": {
         "ranking": {
-          "5": ["神崎颯馬"]
+          "5": ["soma"]
         },
         "point": {
-          "5": ["乙狩アドニス"]
+          "5": ["adnis"]
         }
       },
       "relation": ["UNDEAD", "紅月"],
-      "banner": ["神崎颯馬"],
+      "banner": ["soma"],
       "img": ""
     },
     "e046": {
@@ -910,14 +910,14 @@
       "end": "2017-04-10",
       "bonus": {
         "ranking": {
-          "5": ["氷鷹北斗"]
+          "5": ["hokuto"]
         },
         "point": {
-          "5": ["明星スバル"]
+          "5": ["subaru"]
         }
       },
       "relation": ["Trickstar"],
-      "banner": ["明星スバル"],
+      "banner": ["subaru"],
       "img": ""
     },
     "e047": {
@@ -930,14 +930,14 @@
       "end": "2017-04-25",
       "bonus": {
         "ranking": {
-          "5": ["青葉つむぎ"]
+          "5": ["tsumugi"]
         },
         "point": {
-          "5": ["影平みか"]
+          "5": ["mika"]
         }
       },
       "relation": ["Switch", "Valkyrie"],
-      "banner": ["青葉つむぎ"],
+      "banner": ["tsumugi"],
       "img": ""
     },
     "e048": {
@@ -950,14 +950,14 @@
       "end": "2017-05-10",
       "bonus": {
         "ranking": {
-          "5": ["深海奏汰"]
+          "5": ["kanata"]
         },
         "point": {
-          "5": ["三毛縞斑"]
+          "5": ["madara"]
         }
       },
       "relation": ["MaM", "陸上部"],
-      "banner": ["三毛縞斑"],
+      "banner": ["madara"],
       "img": ""
     },
     "e049": {
@@ -970,14 +970,14 @@
       "end": "2017-05-25",
       "bonus": {
         "ranking": {
-          "5": ["真白友也"]
+          "5": ["tomoya"]
         },
         "point": {
-          "5": ["鬼龍紅郎"]
+          "5": ["kuro"]
         }
       },
       "relation": ["演劇部，紅月"],
-      "banner": ["真白友也"],
+      "banner": ["tomoya"],
       "img": ""
     },
     "e050": {
@@ -990,14 +990,14 @@
       "end": "2017-06-10",
       "bonus": {
         "ranking": {
-          "5": ["月永レオ"]
+          "5": ["leo"]
         },
         "point": {
-          "5": ["瀬名泉"]
+          "5": ["izumi"]
         }
       },
       "relation": ["Knights"],
-      "banner": ["月永レオ"],
+      "banner": ["leo"],
       "img": ""
     },
     "e051": {
@@ -1010,14 +1010,14 @@
       "end": "2017-06-25",
       "bonus": {
         "ranking": {
-          "5": ["春川宙"]
+          "5": ["sora"]
         },
         "point": {
-          "5": ["葵ゆうた"]
+          "5": ["yuta"]
         }
       },
       "relation": ["Switch，2wink"],
-      "banner": ["春川宙"],
+      "banner": ["sora"],
       "img": ""
     },
     "e052": {
@@ -1030,14 +1030,14 @@
       "end": "2017-07-10",
       "bonus": {
         "ranking": {
-          "5": ["南雲鉄虎"]
+          "5": ["tetora"]
         },
         "point": {
-          "5": ["斎宮宗"]
+          "5": ["shu"]
         }
       },
       "relation": ["流星隊"],
-      "banner": ["南雲鉄虎"],
+      "banner": ["tetora"],
       "img": ""
     },
     "e053": {
@@ -1050,14 +1050,14 @@
       "end": "2017-07-25",
       "bonus": {
         "ranking": {
-          "5": ["氷鷹北斗"]
+          "5": ["hokuto"]
         },
         "point": {
-          "5": ["巴日和"]
+          "5": ["hiyori"]
         }
       },
       "relation": ["Trickstar", "Eve"],
-      "banner": ["巴日和"],
+      "banner": ["hiyori"],
       "img": ""
     },
     "e054": {
@@ -1070,14 +1070,14 @@
       "end": "2017-08-10",
       "bonus": {
         "ranking": {
-          "5": ["蓮巳敬人"]
+          "5": ["keito"]
         },
         "point": {
-          "5": ["朔間零"]
+          "5": ["rei"]
         }
       },
       "relation": ["デッドマンズ"],
-      "banner": ["朔間零"],
+      "banner": ["rei"],
       "img": ""
     },
     "e055": {
@@ -1090,14 +1090,14 @@
       "end": "2017-08-25",
       "bonus": {
         "ranking": {
-          "5": ["逆先夏目"]
+          "5": ["natsume"]
         },
         "point": {
-          "5": ["青葉つむぎ"]
+          "5": ["tsumugi"]
         }
       },
       "relation": ["Switch", "Trickstar"],
-      "banner": ["逆先夏目"],
+      "banner": ["natsume"],
       "img": ""
     },
     "e056": {
@@ -1110,14 +1110,14 @@
       "end": "2017-09-10",
       "bonus": {
         "ranking": {
-          "5": ["伏見弓弦"]
+          "5": ["yuzuru"]
         },
         "point": {
-          "5": ["影片みか"]
+          "5": ["mika"]
         }
       },
       "relation": ["弓道部", "Valkyrie"],
-      "banner": ["伏見弓弦"],
+      "banner": ["yuzuru"],
       "img": ""
     },
     "e057": {
@@ -1130,14 +1130,14 @@
       "end": "2017-09-25",
       "bonus": {
         "ranking": {
-          "5": ["羽風薫"]
+          "5": ["kaoru"]
         },
         "point": {
-          "5": ["深海奏汰"]
+          "5": ["kanata"]
         }
       },
       "relation": ["海洋生物部"],
-      "banner": ["深海奏汰"],
+      "banner": ["kanata"],
       "img": ""
     },
     "e058": {
@@ -1150,14 +1150,14 @@
       "end": "2017-10-10",
       "bonus": {
         "ranking": {
-          "5": ["朔間凛月"]
+          "5": ["ritsu"]
         },
         "point": {
-          "5": ["鳴上嵐"]
+          "5": ["arashi"]
         }
       },
       "relation": ["Knights"],
-      "banner": ["朔間凛月"],
+      "banner": ["ritsu"],
       "img": ""
     },
     "e059": {
@@ -1170,14 +1170,14 @@
       "end": "2017-10-25",
       "bonus": {
         "ranking": {
-          "5": ["衣更真緒"]
+          "5": ["mao"]
         },
         "point": {
-          "5": ["乱凪砂"]
+          "5": ["nagisa"]
         }
       },
       "relation": ["Trickstar", "Adam"],
-      "banner": ["乱凪砂"],
+      "banner": ["nagisa"],
       "img": ""
     },
     "e060": {
@@ -1190,14 +1190,14 @@
       "end": "2017-11-10",
       "bonus": {
         "ranking": {
-          "5": ["紫之創"]
+          "5": ["hajime"]
         },
         "point": {
-          "5": ["守沢千秋"]
+          "5": ["chiaki"]
         }
       },
       "relation": ["流星隊", "Ra*bits", "MaM"],
-      "banner": ["守沢千秋"],
+      "banner": ["chiaki"],
       "img": ""
     },
     "e061": {
@@ -1210,14 +1210,14 @@
       "end": "2017-11-25",
       "bonus": {
         "ranking": {
-          "5": ["仙石忍"]
+          "5": ["shinobu"]
         },
         "point": {
-          "5": ["三毛縞斑"]
+          "5": ["madara"]
         }
       },
       "relation": [""],
-      "banner": ["仙石忍"],
+      "banner": ["shinobu"],
       "img": ""
     },
     "e062": {
@@ -1230,14 +1230,14 @@
       "end": "2017-12-10",
       "bonus": {
         "ranking": {
-          "5": ["姫宮桃李"]
+          "5": ["tori"]
         },
         "point": {
-          "5": ["天祥院英智"]
+          "5": ["eichi"]
         }
       },
       "relation": ["fine"],
-      "banner": ["姫宮桃李"],
+      "banner": ["tori"],
       "img": ""
     },
     "e063": {
@@ -1250,14 +1250,14 @@
       "end": "2017-12-25",
       "bonus": {
         "ranking": {
-          "5": ["月永レオ"]
+          "5": ["leo"]
         },
         "point": {
-          "5": ["天満光"]
+          "5": ["mitsuru"]
         }
       },
       "relation": [""],
-      "banner": ["月永レオ"],
+      "banner": ["leo"],
       "img": ""
     },
     "e064": {
@@ -1270,14 +1270,14 @@
       "end": "2018-01-10",
       "bonus": {
         "ranking": {
-          "5": ["明星スバル"]
+          "5": ["subaru"]
         },
         "point": {
-          "5": ["氷鷹北斗", "遊木真", "衣更真緒"]
+          "5": ["hokuto", "makoto", "mao"]
         }
       },
       "relation": ["Trickstar", "Eden"],
-      "banner": ["明星スバル", "氷鷹北斗"],
+      "banner": ["subaru", "hokuto"],
       "img": ""
     },
     "e065": {
@@ -1290,14 +1290,14 @@
       "end": "2018-01-25",
       "bonus": {
         "ranking": {
-          "5": ["朱桜司"]
+          "5": ["tsukasa"]
         },
         "point": {
-          "5": ["春川宙"]
+          "5": ["sora"]
         }
       },
       "relation": [""],
-      "banner": ["朱桜司"],
+      "banner": ["tsukasa"],
       "img": ""
     },
     "e066": {
@@ -1310,14 +1310,14 @@
       "end": "2018-02-10",
       "bonus": {
         "ranking": {
-          "5": ["乙狩アドニス"]
+          "5": ["adnis"]
         },
         "point": {
-          "5": ["蓮巳敬人"]
+          "5": ["keito"]
         }
       },
       "relation": ["UNDEAD"],
-      "banner": ["乙狩アドニス"],
+      "banner": ["adnis"],
       "img": ""
     },
     "e067": {
@@ -1330,14 +1330,14 @@
       "end": "2018-02-25",
       "bonus": {
         "ranking": {
-          "5": ["葵ひなた"]
+          "5": ["hinata"]
         },
         "point": {
-          "5": ["守沢千秋"]
+          "5": ["chiaki"]
         }
       },
       "relation": ["2wink", "流星隊"],
-      "banner": ["葵ひなた"],
+      "banner": ["hinata"],
       "img": ""
     },
     "e068": {
@@ -1350,14 +1350,14 @@
       "end": "2018-03-10",
       "bonus": {
         "ranking": {
-          "5": ["斎宮宗"]
+          "5": ["shu"]
         },
         "point": {
-          "5": ["仁兎なずな"]
+          "5": ["nazuna"]
         }
       },
       "relation": ["Valkyrie", "Ra*bits"],
-      "banner": ["斎宮宗"],
+      "banner": ["shu"],
       "img": ""
     },
     "e069": {
@@ -1370,14 +1370,14 @@
       "end": "2018-03-25",
       "bonus": {
         "ranking": {
-          "5": ["神崎颯馬"]
+          "5": ["soma"]
         },
         "point": {
-          "5": ["明星スバル"]
+          "5": ["subaru"]
         }
       },
       "relation": ["2A"],
-      "banner": ["神崎颯馬"],
+      "banner": ["soma"],
       "img": ""
     },
     "e070": {
@@ -1390,14 +1390,14 @@
       "end": "2018-04-10",
       "bonus": {
         "ranking": {
-          "5": ["朔間零"]
+          "5": ["rei"]
         },
         "point": {
-          "5": ["大神晃牙"]
+          "5": ["koga"]
         }
       },
       "relation": ["UNDEAD"],
-      "banner": ["朔間零"],
+      "banner": ["rei"],
       "img": ""
     },
     "e071": {
@@ -1410,14 +1410,14 @@
       "end": "2018-04-25",
       "bonus": {
         "ranking": {
-          "5": ["瀬名泉"]
+          "5": ["izumi"]
         },
         "point": {
-          "5": ["青葉つむぎ"]
+          "5": ["tsumugi"]
         }
       },
       "relation": ["Knights", "Switch"],
-      "banner": ["瀬名泉"],
+      "banner": ["izumi"],
       "img": ""
     },
     "e072": {
@@ -1430,14 +1430,14 @@
       "end": "2018-05-10",
       "bonus": {
         "ranking": {
-          "5": ["日々樹渉"]
+          "5": ["wataru"]
         },
         "point": {
-          "5": ["氷鷹北斗"]
+          "5": ["hokuto"]
         }
       },
       "relation": ["演劇部"],
-      "banner": ["氷鷹北斗"],
+      "banner": ["hokuto"],
       "img": ""
     },
     "e073": {
@@ -1450,14 +1450,14 @@
       "end": "2018-05-25",
       "bonus": {
         "ranking": {
-          "5": ["高峯翠"]
+          "5": ["midori"]
         },
         "point": {
-          "5": ["南雲鉄虎"]
+          "5": ["tetora"]
         }
       },
       "relation": ["流星隊"],
-      "banner": ["高峯翠"],
+      "banner": ["midori"],
       "img": ""
     },
     "e074": {
@@ -1470,14 +1470,14 @@
       "end": "2018-06-10",
       "bonus": {
         "ranking": {
-          "5": ["鬼龍紅郎"]
+          "5": ["kuro"]
         },
         "point": {
-          "5": ["三毛縞斑"]
+          "5": ["madara"]
         }
       },
       "relation": ["紅月", "MaM"],
-      "banner": ["鬼龍紅郎"],
+      "banner": ["kuro"],
       "img": ""
     },
     "e075": {
@@ -1490,14 +1490,14 @@
       "end": "2018-06-25",
       "bonus": {
         "ranking": {
-          "5": ["葵ゆうた"]
+          "5": ["yuta"]
         },
         "point": {
-          "5": ["紫之創"]
+          "5": ["hajime"]
         }
       },
       "relation": ["2wink，Ra*bits"],
-      "banner": ["葵ゆうた"],
+      "banner": ["yuta"],
       "img": ""
     },
     "e076": {
@@ -1510,14 +1510,14 @@
       "end": "2018-07-10",
       "bonus": {
         "ranking": {
-          "5": ["衣更真緒"]
+          "5": ["mao"]
         },
         "point": {
-          "5": ["仙石忍"]
+          "5": ["shinobu"]
         }
       },
       "relation": ["Trickstar，流星隊"],
-      "banner": ["衣更真緒"],
+      "banner": ["mao"],
       "img": ""
     },
     "e077": {
@@ -1530,14 +1530,14 @@
       "end": "2018-07-25",
       "bonus": {
         "ranking": {
-          "5": ["逆先夏目"]
+          "5": ["natsume"]
         },
         "point": {
-          "5": ["真白友也"]
+          "5": ["tomoya"]
         }
       },
       "relation": ["Switch，Ra*bits"],
-      "banner": ["真白友也"],
+      "banner": ["tomoya"],
       "img": ""
     },
     "e078": {
@@ -1550,14 +1550,14 @@
       "end": "2018-08-10",
       "bonus": {
         "ranking": {
-          "5": ["伏見弓弦"]
+          "5": ["yuzuru"]
         },
         "point": {
-          "5": ["乙狩アドニス"]
+          "5": ["adnis"]
         }
       },
       "relation": [""],
-      "banner": ["乙狩アドニス"],
+      "banner": ["adnis"],
       "img": ""
     },
     "e079": {
@@ -1570,14 +1570,14 @@
       "end": "2018-08-25",
       "bonus": {
         "ranking": {
-          "5": ["影片みか"]
+          "5": ["mika"]
         },
         "point": {
-          "5": ["鳴上嵐"]
+          "5": ["arashi"]
         }
       },
       "relation": [""],
-      "banner": ["鳴上嵐"],
+      "banner": ["arashi"],
       "img": ""
     },
     "e080": {
@@ -1590,14 +1590,14 @@
       "end": "2018-09-10",
       "bonus": {
         "ranking": {
-          "5": ["蓮巳敬人"]
+          "5": ["keito"]
         },
         "point": {
-          "5": ["天満光"]
+          "5": ["mitsuru"]
         }
       },
       "relation": [""],
-      "banner": ["蓮巳敬人"],
+      "banner": ["keito"],
       "img": ""
     },
     "e081": {
@@ -1610,14 +1610,14 @@
       "end": "2018-09-25",
       "bonus": {
         "ranking": {
-          "5": ["朔間零"]
+          "5": ["rei"]
         },
         "point": {
-          "5": ["日々樹渉"]
+          "5": ["wataru"]
         }
       },
       "relation": [""],
-      "banner": ["朔間零"],
+      "banner": ["rei"],
       "img": ""
     },
     "e082": {
@@ -1630,14 +1630,14 @@
       "end": "2018-10-10",
       "bonus": {
         "ranking": {
-          "5": ["守沢千秋"]
+          "5": ["chiaki"]
         },
         "point": {
-          "5": ["佐賀美陣"]
+          "5": ["jin"]
         }
       },
       "relation": [""],
-      "banner": ["佐賀美陣"],
+      "banner": ["jin"],
       "img": ""
     },
     "e083": {
@@ -1650,14 +1650,14 @@
       "end": "2018-10-25",
       "bonus": {
         "ranking": {
-          "5": ["大神晃牙"]
+          "5": ["koga"]
         },
         "point": {
-          "5": ["春川宙"]
+          "5": ["sora"]
         }
       },
       "relation": [""],
-      "banner": ["大神晃牙"],
+      "banner": ["koga"],
       "img": ""
     },
     "e084": {
@@ -1670,14 +1670,14 @@
       "end": "2018-11-10",
       "bonus": {
         "ranking": {
-          "5": ["瀬名泉"]
+          "5": ["izumi"]
         },
         "point": {
-          "5": ["遊木真"]
+          "5": ["makoto"]
         }
       },
       "relation": [""],
-      "banner": ["瀬名泉"],
+      "banner": ["izumi"],
       "img": ""
     },
     "e085": {
@@ -1690,14 +1690,14 @@
       "end": "2018-11-25",
       "bonus": {
         "ranking": {
-          "5": ["斎宮宗"]
+          "5": ["shu"]
         },
         "point": {
-          "5": ["影片みか"]
+          "5": ["mika"]
         }
       },
       "relation": [""],
-      "banner": ["影片みか"],
+      "banner": ["mika"],
       "img": ""
     },
     "e086": {
@@ -1710,14 +1710,14 @@
       "end": "2018-12-10",
       "bonus": {
         "ranking": {
-          "5": ["羽風薫"]
+          "5": ["kaoru"]
         },
         "point": {
-          "5": ["紫之創"]
+          "5": ["hajime"]
         }
       },
       "relation": [""],
-      "banner": ["羽風薫"],
+      "banner": ["kaoru"],
       "img": ""
     },
     "e087": {
@@ -1730,14 +1730,14 @@
       "end": "2018-12-25",
       "bonus": {
         "ranking": {
-          "5": ["鬼龍紅郎"]
+          "5": ["kuro"]
         },
         "point": {
-          "5": ["神崎颯馬"]
+          "5": ["soma"]
         }
       },
       "relation": [""],
-      "banner": ["神崎颯馬"],
+      "banner": ["soma"],
       "img": ""
     },
     "e088": {
@@ -1750,14 +1750,14 @@
       "end": "2019-01-10",
       "bonus": {
         "ranking": {
-          "5": ["氷鷹北斗"]
+          "5": ["hokuto"]
         },
         "point": {
-          "5": ["漣ジュン"]
+          "5": ["jun"]
         }
       },
       "relation": [""],
-      "banner": ["氷鷹北斗"],
+      "banner": ["hokuto"],
       "img": ""
     },
     "e089": {
@@ -1770,14 +1770,14 @@
       "end": "2019-01-25",
       "bonus": {
         "ranking": {
-          "5": ["天祥院英智"]
+          "5": ["eichi"]
         },
         "point": {
-          "5": ["日々樹渉"]
+          "5": ["wataru"]
         }
       },
       "relation": [""],
-      "banner": ["日々樹渉"],
+      "banner": ["wataru"],
       "img": ""
     },
     "e090": {
@@ -1790,14 +1790,14 @@
       "end": "2019-02-10",
       "bonus": {
         "ranking": {
-          "5": ["高峯翠"]
+          "5": ["midori"]
         },
         "point": {
-          "5": ["斎宮宗"]
+          "5": ["shu"]
         }
       },
       "relation": [""],
-      "banner": ["高峯翠"],
+      "banner": ["midori"],
       "img": ""
     },
     "e091": {
@@ -1810,14 +1810,14 @@
       "end": "2019-02-25",
       "bonus": {
         "ranking": {
-          "5": ["青葉つむぎ"]
+          "5": ["tsumugi"]
         },
         "point": {
-          "5": ["七種茨"]
+          "5": ["ibara"]
         }
       },
       "relation": [""],
-      "banner": ["青葉つむぎ"],
+      "banner": ["tsumugi"],
       "img": ""
     },
     "e092": {
@@ -1830,14 +1830,14 @@
       "end": "2019-03-10",
       "bonus": {
         "ranking": {
-          "5": ["月永レオ"]
+          "5": ["leo"]
         },
         "point": {
-          "5": ["朱桜司"]
+          "5": ["tsukasa"]
         }
       },
       "relation": [""],
-      "banner": ["月永レオ"],
+      "banner": ["leo"],
       "img": ""
     },
     "e093": {
@@ -1850,14 +1850,14 @@
       "end": "2019-03-25",
       "bonus": {
         "ranking": {
-          "5": ["明星スバル"]
+          "5": ["subaru"]
         },
         "point": {
-          "5": ["葵ひなた"]
+          "5": ["hinata"]
         }
       },
       "relation": [""],
-      "banner": ["明星スバル"],
+      "banner": ["subaru"],
       "img": ""
     },
     "e094": {
@@ -1870,14 +1870,14 @@
       "end": "2019-04-10",
       "bonus": {
         "ranking": {
-          "5": ["深海奏汰"]
+          "5": ["kanata"]
         },
         "point": {
-          "5": ["守沢千秋"]
+          "5": ["chiaki"]
         }
       },
       "relation": [""],
-      "banner": ["深海奏汰"],
+      "banner": ["kanata"],
       "img": ""
     },
     "e095": {
@@ -1890,14 +1890,14 @@
       "end": "2019-04-25",
       "bonus": {
         "ranking": {
-          "5": ["天満光"]
+          "5": ["mitsuru"]
         },
         "point": {
-          "5": ["仁兎なずな"]
+          "5": ["nazuna"]
         }
       },
       "relation": [""],
-      "banner": ["仁兎なずな"],
+      "banner": ["nazuna"],
       "img": ""
     },
     "e096": {
@@ -1910,14 +1910,14 @@
       "end": "2019-05-10",
       "bonus": {
         "ranking": {
-          "5": ["朔間凛月"]
+          "5": ["ritsu"]
         },
         "point": {
-          "5": ["朔間零"]
+          "5": ["rei"]
         }
       },
       "relation": [""],
-      "banner": ["朔間零"],
+      "banner": ["rei"],
       "img": ""
     },
     "e097": {
@@ -1930,14 +1930,14 @@
       "end": "2019-05-25",
       "bonus": {
         "ranking": {
-          "5": ["影片みか"]
+          "5": ["mika"]
         },
         "point": {
-          "5": ["逆先夏目"]
+          "5": ["natsume"]
         }
       },
       "relation": [""],
-      "banner": ["逆先夏目"],
+      "banner": ["natsume"],
       "img": ""
     },
     "e098": {
@@ -1950,14 +1950,14 @@
       "end": "2019-06-10",
       "bonus": {
         "ranking": {
-          "5": ["姫宮桃李"]
+          "5": ["tori"]
         },
         "point": {
-          "5": ["伏見弓弦"]
+          "5": ["yuzuru"]
         }
       },
       "relation": [""],
-      "banner": ["姫宮桃李"],
+      "banner": ["tori"],
       "img": ""
     },
     "e099": {
@@ -1970,14 +1970,14 @@
       "end": "2019-06-25",
       "bonus": {
         "ranking": {
-          "5": ["乙狩アドニス"]
+          "5": ["adnis"]
         },
         "point": {
           "5": ["大和アレクサンダー"]
         }
       },
       "relation": [""],
-      "banner": ["明星スバル", "一条シン"],
+      "banner": ["subaru", "一条シン"],
       "img": ""
     },
     "e100": {
@@ -1990,14 +1990,14 @@
       "end": "2019-07-10",
       "bonus": {
         "ranking": {
-          "5": ["遊木真"]
+          "5": ["makoto"]
         },
         "point": {
-          "5": ["衣更真緒"]
+          "5": ["mao"]
         }
       },
       "relation": [""],
-      "banner": ["衣更真緒"],
+      "banner": ["mao"],
       "img": ""
     },
     "e101": {
@@ -2030,14 +2030,14 @@
       "end": "2019-08-10",
       "bonus": {
         "ranking": {
-          "5": ["紫之創"]
+          "5": ["hajime"]
         },
         "point": {
-          "5": ["神崎颯馬"]
+          "5": ["soma"]
         }
       },
       "relation": [""],
-      "banner": ["神崎颯馬"],
+      "banner": ["soma"],
       "img": ""
     }
   }

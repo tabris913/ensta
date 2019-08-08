@@ -1,7 +1,5 @@
 # coding: utf-8
 
-# eventのバナーとボーナスをuidにする
-
 import argparse
 import datetime
 import pandas
@@ -71,7 +69,35 @@ def makeEvent():
 
 
 def makeScout():
-    df = pandas.read_excel(FILE_NAME, sheet_name="scout")
+    df = pandas.read_excel(FILE_NAME, sheet_name="scout").fillna('')
+
+    json_string = JSON_HEAD.format('scout')
+
+    for idx in df.index:
+        line = df.loc[idx]
+        uid = f'{int(line.No):03d}'
+
+        fmt = f'''    "e{uid}": {{
+      "uid": "{uid}",
+      "name": "{line.scout_name}",
+      "description": "{f'{line.outline}' if line.outline != '' else ''}",
+      "start": "{line.start.strftime('%Y-%m-%d')}",
+      "end": "{line.end.strftime('%Y-%m-%d')}",
+      "cards": {{
+        "5": ["{line.bonus}"]
+      }},
+      "relation": [{', '.join(map(add_quote, line.relation.split('、')))}],
+      "banner": [{', '.join(map(add_quote, line.banner.split('、')))}],
+      "img": "",
+      "skill": "{line.skill}"
+    }}{',' if df.index[-1] != idx else ''}\n'''
+
+        json_string += fmt
+
+    json_string += JSON_FOOT
+
+    with open(f'{JSON_DIR}/scout.json', 'w', encoding='utf-8') as f:
+        f.write(json_string)
 
 
 def makeCard():
@@ -183,4 +209,5 @@ if __name__ == '__main__':
     # makeUnit()
     # makeCharacter()
     # makeCard()
-    makeEvent()
+    # makeEvent()
+    makeScout()
