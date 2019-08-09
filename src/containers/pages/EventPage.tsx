@@ -5,7 +5,7 @@ import * as Redux from 'redux';
 
 import Wireframe from '../wireframe/Wireframe';
 
-import Event from '../../components/main/EventList';
+import Event from '../../components/content/Event';
 import { QueryType } from '../../models/Main';
 import { IStoreState } from '../../reducers';
 

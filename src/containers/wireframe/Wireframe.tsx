@@ -33,13 +33,17 @@ const mapDispatch2Props = (dispatch: Redux.Dispatch, ownProps: IOwnProps) => {
 const Wireframe = (props: Props) => (
   <Layout style={{ height: '100vh' }}>
     <Header {...props} />
-    <Divider />
-    <Layout style={{ padding: '0 50px' }}>
+    <Divider style={{ marginTop: 10, marginBottom: 10 }} />
+    <Layout style={{ padding: '0 40px' }}>
       {breadCrump(props.breadcrump || [], props.history)}
-      {props.title && <Typography.Title underline={true}>{props.title}</Typography.Title>}
+      {props.title && (
+        <Typography.Title underline={true} level={3} style={{ marginBottom: 5 }}>
+          {props.title}
+        </Typography.Title>
+      )}
       {props.children}
     </Layout>
-    <Divider />
+    <Divider style={{ marginTop: 10, marginBottom: 10 }} />
     <Footer />
   </Layout>
 );
