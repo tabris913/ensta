@@ -1,4 +1,4 @@
-import { Button, Col, Row } from 'antd';
+import { Button, Col, Row, Popover } from 'antd';
 import * as React from 'react';
 
 import PageName, { toPublicUrl } from '../../constants/PageName';
@@ -6,24 +6,77 @@ import { MainContentProps } from '../../models/Main';
 
 const Top = (props: MainContentProps) => {
   const topButtons = [
-    { label: 'Event', linkto: PageName.EVENT_LIST },
-    { label: 'Scout', linkto: PageName.SCOUT_LIST },
-    { label: 'Unit', linkto: PageName.UNIT_LIST },
-    { label: 'Character', linkto: PageName.CHARACTER_LIST },
-    { label: 'Card', linkto: PageName.CARD_LIST },
+    {
+      label: 'Event',
+      linkto: PageName.EVENT_LIST,
+      message: <p>→まだ中途半端だけど原型は出来てる</p>,
+      popOver: (
+        <div>
+          <p>
+            <Button
+              type="link"
+              onClick={() => props.history.push(toPublicUrl(PageName.EVENT_LIST || PageName.UNDEFINED))}
+            >
+              通常イベント
+            </Button>
+          </p>
+          <p>
+            <Button
+              type="link"
+              onClick={() =>
+                props.history.push(
+                  toPublicUrl(PageName.EVENT_LIST || PageName.UNDEFINED, undefined, { type: 'special' })
+                )
+              }
+            >
+              スペシャルイベント
+            </Button>
+          </p>
+          <p>
+            <Button
+              type="link"
+              onClick={() =>
+                props.history.push(toPublicUrl(PageName.EVENT_LIST || PageName.UNDEFINED, undefined, { type: 'uc' }))
+              }
+            >
+              ユニットコレクション
+            </Button>
+          </p>
+        </div>
+      ),
+    },
+    { label: 'Scout', linkto: PageName.SCOUT_LIST, message: <p>→未作成</p> },
+    { label: 'Unit', linkto: PageName.UNIT_LIST, message: <p>→未作成</p> },
+    {
+      label: 'Character',
+      linkto: PageName.CHARACTER_LIST,
+      message: (
+        <p>
+          →未作成
+          <br />
+          キャラ別にどのイベントorスカウトで来たか (つまり逆にいつから来てないか) もまとめたりするつもり
+        </p>
+      ),
+    },
+    { label: 'Card', linkto: PageName.CARD_LIST, message: <p>→未作成</p> },
   ];
   return (
-    <Row>
-      {topButtons.map(({ label, linkto }, idx) => (
-        <Col style={{ padding: 5 }} key={idx}>
-          <Button
-            type="link"
-            style={{ fontSize: 30 }}
-            onClick={() => props.history.push(toPublicUrl(linkto || PageName.UNDEFINED))}
-          >
-            {label}
-          </Button>
-        </Col>
+    <Row style={{ overflowY: 'auto' }}>
+      {topButtons.map(({ label, linkto, message, popOver }, idx) => (
+        <>
+          <Col style={{ padding: 5 }} key={idx}>
+            <Popover content={popOver} trigger="click" placement="right">
+              <Button
+                type="link"
+                style={{ fontSize: 30, height: '100%' }}
+                onClick={popOver ? undefined : () => props.history.push(toPublicUrl(linkto || PageName.UNDEFINED))}
+              >
+                {label}
+              </Button>
+            </Popover>
+          </Col>
+          <Col style={{ paddingLeft: 25 }}>{message}</Col>
+        </>
       ))}
     </Row>
   );

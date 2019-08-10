@@ -1,4 +1,6 @@
 import EventListPage from './EventListPage';
 import TopPage from './TopPage';
 
-export { TopPage, EventListPage };
+import EventPage from './EventPage';
+
+export { TopPage, EventListPage, EventPage };

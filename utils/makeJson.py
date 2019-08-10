@@ -29,17 +29,17 @@ def convert_serial(serial: float, f: str = '%m/%d') -> datetime.datetime:
             days=int(serial))).strftime(f)
 
 
-def makeEvent():
-    df = pandas.read_excel(FILE_NAME, sheet_name="event").dropna(
+def makeEvent(pageName: str = 'event'):
+    df = pandas.read_excel(FILE_NAME, sheet_name=pageName).dropna(
         subset=['No']).fillna('')
 
-    json_string = JSON_HEAD.format('event')
+    json_string = JSON_HEAD.format(pageName)
 
     for idx in df.index:
         line = df.loc[idx]
-        uid = f'{int(line.No):03d}'
+        uid = f'{"sp" if pageName == 'special' else pageName[0]}{int(line.No):03d}'
 
-        fmt = f'''    "e{uid}": {{
+        fmt = f'''    "{uid}": {{
       "uid": "{uid}",
       "name": "{line.event_name}",
       "short_name": "{f'{line.short}' if line.short != '' else ''}",
@@ -57,14 +57,14 @@ def makeEvent():
       }},
       "relation": [{', '.join(map(add_quote, line.relation.split('、')))}],
       "banner": [{', '.join(map(add_quote, line.banner.split('、')))}],
-      "img": ""
+      "img": "{uid}.jpg"
     }}{',' if df.index[-1] != idx else ''}\n'''
 
         json_string += fmt
 
     json_string += JSON_FOOT
 
-    with open(f'{JSON_DIR}/event.json', 'w', encoding='utf-8') as f:
+    with open(f'{JSON_DIR}/{pageName}.json', 'w', encoding='utf-8') as f:
         f.write(json_string)
 
 
@@ -75,9 +75,9 @@ def makeScout():
 
     for idx in df.index:
         line = df.loc[idx]
-        uid = f'{int(line.No):03d}'
+        uid = f's{int(line.No):03d}'
 
-        fmt = f'''    "e{uid}": {{
+        fmt = f'''    "{uid}": {{
       "uid": "{uid}",
       "name": "{line.scout_name}",
       "description": "{f'{line.outline}' if line.outline != '' else ''}",
@@ -88,7 +88,7 @@ def makeScout():
       }},
       "relation": [{', '.join(map(add_quote, line.relation.split('、')))}],
       "banner": [{', '.join(map(add_quote, line.banner.split('、')))}],
-      "img": "",
+      "img": "{uid}.png",
       "skill": "{line.skill}"
     }}{',' if df.index[-1] != idx else ''}\n'''
 
@@ -209,5 +209,6 @@ if __name__ == '__main__':
     # makeUnit()
     # makeCharacter()
     # makeCard()
-    # makeEvent()
-    makeScout()
+    makeEvent()
+    makeEvent('uc')
+    # makeScout()

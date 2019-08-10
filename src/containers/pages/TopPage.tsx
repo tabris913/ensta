@@ -20,7 +20,7 @@ interface IDispatchProps {}
 type Props = IOwnProps & IStateProps & IDispatchProps;
 
 const mapState2Props = (state: IStoreState, ownProps: IOwnProps): IStateProps => ({
-  query: ownProps.history.location.search
+  query: ownProps.location.search
     .replace(/^\?/, '')
     .split('&')
     .reduce((o, s) => ({ ...o, [s.replace(/=.+$/, '')]: s.replace(/^.+=/, '') }), {}),

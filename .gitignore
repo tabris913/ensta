@@ -6,6 +6,7 @@
 .pnp.js
 .install
 /utils/output*
+/images
 
 # testing
 /coverage

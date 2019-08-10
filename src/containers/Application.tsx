@@ -35,7 +35,7 @@ const Application = () => (
             // [PageName.UNIT_LIST, Page.UnitListPage],
             // [PageName.CHARACTER_LIST, Page.CharacterListPage],
             // [PageName.CARD_LIST, Page.CardListPage],
-            // [PageName.EVENT, Page.EventPage],
+            [PageName.EVENT, Page.EventPage],
             // [PageName.SCOUT, Page.ScoutPage],
             // [PageName.UNIT, Page.UnitPage],
             // [PageName.CHARACTER, Page.CharacterPage],

@@ -3,6 +3,7 @@ import { History } from 'history';
 export interface QueryType {
   id?: string;
   page?: number;
+  type?: string;
 }
 
 export interface MainContentProps {

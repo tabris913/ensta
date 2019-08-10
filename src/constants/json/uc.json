@@ -1,0 +1,24 @@
+{
+  "uc": {
+    "u001": {
+      "uid": "u001",
+      "name": "ユニットコレクション Trickstar",
+      "short_name": "",
+      "description": "",
+      "description_short": "",
+      "start": "2019-07-15",
+      "end": "2019-07-25",
+      "bonus": {
+        "ranking": {
+          "5": [""]
+        },
+        "point": {
+          "5": [""]
+        }
+      },
+      "relation": [""],
+      "banner": [""],
+      "img": "u001.jpg"
+    }
+  }
+}
