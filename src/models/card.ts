@@ -4,6 +4,7 @@ export interface ICard {
   character: string; // character uid
   rank: 1 | 2 | 3 | 4 | 5;
   type: 'Da' | 'Vo' | 'Pf';
+  date: string;
   skill?: ISkill;
   parameter?: {
     initial?: IParameter;
@@ -11,7 +12,8 @@ export interface ICard {
   };
   content: string[]; // event or scout uid
   bonus?: string;
-  img: string;
+  img: string[];
+  remarks: string;
 }
 
 interface ISkill {

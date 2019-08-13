@@ -16,7 +16,8 @@ def add_quote(s: str) -> str:
 
 
 def convert_list(s: str) -> list:
-    return ', '.join(map(add_quote, s.split('、')))
+    val = ', '.join(map(add_quote, s.split('、')))
+    return val if val != '""' else ''
 
 
 def convert_serial(serial: float, f: str = '%m/%d') -> datetime.datetime:
@@ -60,7 +61,7 @@ def makeEvent():
       }},
       "relation": [{convert_list(line.relation)}],
       "banner": [{convert_list(line.banner)}],
-      "img": "{uid}.jpg"
+      "img": "{line.uid}.jpg"
     }}{',' if df.index[-1] != idx else ''}\n'''
 
         json_string += fmt
@@ -89,7 +90,7 @@ def makeSpecial():
       "end": "{line.end.strftime('%Y-%m-%d')}",
       "relation": [{convert_list(line.relation)}],
       "banner": [{convert_list(line.banner)}],
-      "img": "{uid}.jpg"
+      "img": "{line.uid}.jpg"
     }}{',' if df.index[-1] != idx else ''}\n'''
 
         json_string += fmt
@@ -117,7 +118,7 @@ def makeUC():
       "end": "{line.end.strftime('%Y-%m-%d')}",
       "relation": [{convert_list(line.relation)}],
       "banner": [{convert_list(line.banner)}],
-      "img": "{uid}.jpg",
+      "img": "{line.uid}.jpg",
       "acquirableCards": [{convert_list(line.acquirableCards)}],
       "revivalEvents": [{convert_list(line.revivalEvents)}]
     }}{',' if df.index[-1] != idx else ''}\n'''
@@ -149,7 +150,7 @@ def makeScout():
       }},
       "relation": [{convert_list(line.relation)}],
       "banner": [{convert_list(line.banner)}],
-      "img": "{uid}.png",
+      "img": "{line.uid}.png",
       "skill": "{line.skill}"
     }}{',' if df.index[-1] != idx else ''}\n'''
 
@@ -168,17 +169,26 @@ def makeCard():
         subset=['No']).fillna('')
 
     json_string = JSON_HEAD.format('card')
+    count = {}
 
     for idx in df.index:
         line = df.loc[idx]
-        uid = f'{idx + 1:05d}'
+        # f'{idx + 1:05d}'
+        uid = f'{line.content}_{line.character}_{int(line.rarelity)}'
+        if uid in count:
+            count[uid] += 1
+            uid2 = f'{uid}-{count[uid]:03d}'
+        else:
+            count[uid] = 0
+            uid2 = uid
 
-        fmt = f'''    "{uid}": {{
-      "uid": "{uid}",
+        fmt = f'''    "{uid2}": {{
+      "uid": "{uid2}",
       "name": "{line.card_name}",
       "character": "{line.character}",
       "rank": {int(line.rarelity)},
       "type": "{line.type}",
+      "date": "{line['add'].strftime('%Y-%m-%d')}",
       "skill": {{
         "lesson": "",
         "produce": ""
@@ -195,9 +205,9 @@ def makeCard():
           "performance": {int(line['Max Pf']) if line['Max Pf'] != '' else 0}
         }}
       }},
-      "content": [],
+      "content": ["{line.content}"],
       "bonus": "{line.bonus}",
-      "img": ""m
+      "img": ["{line.content}/{line.character}_A.jpg", "{line.content}/{line.character}_B.jpg"],
       "remarks": "{line.remarks}"
     }}{',' if df.index[-1] != idx else ''}\n'''
 
@@ -268,10 +278,10 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     args = parser.parse_args()
 
-    makeUnit()
-    makeCharacter()
-    makeCard()
+    # makeUnit()
+    # makeCharacter()
+    # makeCard()
     makeEvent()
-    makeUC()
-    makeSpecial()
-    makeScout()
+    # makeUC()
+    # makeSpecial()
+    # makeScout()

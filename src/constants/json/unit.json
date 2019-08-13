@@ -97,6 +97,27 @@
       "member": ["nagisa", "hiyori", "jun", "ibara"],
       "color": [""],
       "logo": ""
+    },
+    "killers": {
+      "uid": "killers",
+      "name": "ナイトキラーズ",
+      "member": ["leo", "eichi", "kuro", "nazuna"],
+      "color": [""],
+      "logo": ""
+    },
+    "raibows": {
+      "uid": "raibows",
+      "name": "Rain-bows",
+      "member": ["jin", "hokuto", "chiaki", "tori"],
+      "color": [""],
+      "logo": ""
+    },
+    "babarrier": {
+      "uid": "babarrier",
+      "name": "Ba-barrier",
+      "member": ["akiomi"],
+      "color": [""],
+      "logo": ""
     }
   }
 }

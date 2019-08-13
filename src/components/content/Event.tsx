@@ -6,7 +6,7 @@ import * as React from 'react';
 import PageName, { toPublicUrl } from '../../constants/PageName';
 import { IEvent, ISpecial, IUnitCollection } from '../../models/event';
 import { MainContentProps } from '../../models/Main';
-import { getCard } from '../../utils/CardUtils';
+import { getCard, searchCard } from '../../utils/CardUtils';
 import { getCharacter } from '../../utils/CharacterUtils';
 import { getEvent, isEvent } from '../../utils/EventUtils';
 import { isUnitCollection } from '../../utils/UCUtils';
@@ -26,10 +26,13 @@ const EventBonus = ({ event, property }: { event: IEvent; property: string }) =>
           <Col>
             <Row style={{ padding: '0px 10px 0px 0px' }}>
               {event.bonus[property][r].map((uid: string) => {
-                const card = getCard(uid);
-                const character = card ? getCharacter(card.character) : '';
+                const cards = searchCard(`${event.uid}_${uid}_${r}`);
+                const card = cards.length === 1 ? cards[0] : cards[0];
+                const character = getCharacter(uid);
                 return (
-                  <Col key={uid}>{card ? `「${card.name}」 ${character ? character.name : card.character}` : uid}</Col>
+                  <Col key={uid}>
+                    「{card.name}」 {character ? character.name : uid}
+                  </Col>
                 );
               })}
             </Row>
