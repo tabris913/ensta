@@ -37,10 +37,9 @@ def makeEvent():
 
     for idx in df.index:
         line = df.loc[idx]
-        uid = f'e{int(line.No):03d}'
 
-        fmt = f'''    "{uid}": {{
-      "uid": "{uid}",
+        fmt = f'''    "{line.uid}": {{
+      "uid": "{line.uid}",
       "name": "{line.event_name}",
       "short_name": "{f'{line.short}' if line.short != '' else ''}",
       "description": "{f'{line.outline2}' if line.outline2 != '' else ''}",
@@ -81,10 +80,9 @@ def makeSpecial():
 
     for idx in df.index:
         line = df.loc[idx]
-        uid = f'sp{int(line.No):03d}'
 
-        fmt = f'''    "{uid}": {{
-      "uid": "{uid}",
+        fmt = f'''    "{line.uid}": {{
+      "uid": "{line.uid}",
       "name": "{line.event_name}",
       "description": "{f'{line.outline}' if line.outline != '' else ''}",
       "start": "{line.start.strftime('%Y-%m-%d')}",
@@ -110,10 +108,9 @@ def makeUC():
 
     for idx in df.index:
         line = df.loc[idx]
-        uid = f'u{int(line.No):03d}'
 
-        fmt = f'''    "{uid}": {{
-      "uid": "{uid}",
+        fmt = f'''    "{line.uid}": {{
+      "uid": "{line.uid}",
       "name": "{line.event_name}",
       "description": "{f'{line.outline}' if line.outline != '' else ''}",
       "start": "{line.start.strftime('%Y-%m-%d')}",
@@ -140,10 +137,9 @@ def makeScout():
 
     for idx in df.index:
         line = df.loc[idx]
-        uid = f's{int(line.No):03d}'
 
-        fmt = f'''    "{uid}": {{
-      "uid": "{uid}",
+        fmt = f'''    "{line.uid}": {{
+      "uid": "{line.uid}",
       "name": "{line.scout_name}",
       "description": "{f'{line.outline}' if line.outline != '' else ''}",
       "start": "{line.start.strftime('%Y-%m-%d')}",
@@ -201,7 +197,8 @@ def makeCard():
       }},
       "content": [],
       "bonus": "{line.bonus}",
-      "img": ""
+      "img": ""m
+      "remarks": "{line.remarks}"
     }}{',' if df.index[-1] != idx else ''}\n'''
 
         json_string += fmt
