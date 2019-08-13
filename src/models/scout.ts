@@ -1,6 +1,6 @@
 import { ICards } from './card';
 
-export interface IScout {
+interface ScoutBody {
   uid: string;
   name: string;
   description: string;
@@ -10,5 +10,14 @@ export interface IScout {
   relation?: string[];
   banner?: string[];
   img?: string;
+}
+
+export interface IScout extends ScoutBody {
   skill?: string;
+}
+
+export interface IStoryScout extends ScoutBody {}
+
+export interface IStoryRevival extends ScoutBody {
+  revivals?: string[]; // uids of scout
 }

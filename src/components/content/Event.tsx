@@ -1,4 +1,4 @@
-import { Col, Descriptions, Row, Button } from 'antd';
+import { Button, Col, Descriptions, Row } from 'antd';
 import * as React from 'react';
 
 // import PageName, { toPublicUrl } from '../../constants/PageName';
@@ -10,7 +10,11 @@ const Event = (props: MainContentProps) => {
   const event = getEvent(props.query.id!);
   return event ? (
     <>
-      <img src={`./images/event/${event.img}`} alt="" style={{ padding: 0, maxWidth: 280, width: '100%' }} />
+      <img
+        src={`./images/${props.query.type || 'event'}/${event.img}`}
+        alt=""
+        style={{ padding: 0, maxWidth: 280, width: '100%' }}
+      />
       <p>{event.description}</p>
       <Descriptions
         title="Event Info"

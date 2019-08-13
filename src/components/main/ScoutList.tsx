@@ -3,22 +3,21 @@ import * as React from 'react';
 
 // import PageName, { toPublicUrl } from '../../constants/PageName';
 import PageName, { toPublicUrl } from '../../constants/PageName';
-import { IEvent } from '../../models/Event';
 import { MainContentProps } from '../../models/Main';
-import { eventIds, getEvent } from '../../utils/EventUtils';
-import { getUnitCollection, unitCollectionIds } from '../../utils/UCUtils';
+import { IScout } from '../../models/scout';
+import { getScout, scoutIds } from '../../utils/ScoutUtils';
 
-const Event = (props: MainContentProps) => {
-  let event: Array<IEvent | undefined>;
+const Scout = (props: MainContentProps) => {
+  let scout: Array<IScout | undefined>;
   switch (props.query.type) {
-    case 'special':
-      event = [];
+    case 'story':
+      scout = [];
       break;
-    case 'uc':
-      event = unitCollectionIds.map(getUnitCollection);
+    case 'revival':
+      scout = []; // unitCollectionIds.map(getUnitCollection);
       break;
     default:
-      event = eventIds.map(getEvent);
+      scout = scoutIds.map(getScout);
       break;
   }
   const [pageKey, setPageKey] = React.useState(0);
@@ -29,12 +28,12 @@ const Event = (props: MainContentProps) => {
         pagination={{
           pageSize: 10,
           onChange: () => {
-            window.scrollTo(0, 0); // 効いてない
+            window.scrollTo(0, 0); // 効㝄㝦㝪㝄
             setPageKey(pageKey + 1);
           },
         }}
         itemLayout="vertical"
-        dataSource={event}
+        dataSource={scout}
         renderItem={(item, idx) =>
           !!item ? (
             <Collapse style={{ width: '100%' }}>
@@ -42,7 +41,7 @@ const Event = (props: MainContentProps) => {
                 key={`${idx}.${pageKey}`}
                 header={
                   <img
-                    src={`./images/${props.query.type || 'event'}/${item.img}`}
+                    src={`./images/${props.query.type || 'scout'}/${item.img}`}
                     alt={item.name}
                     style={{ padding: 0, maxWidth: 280, width: '100%' }}
                   />
@@ -52,18 +51,18 @@ const Event = (props: MainContentProps) => {
                 <Typography.Title level={4} style={{ width: '100%' }} underline={true}>
                   <div
                     onClick={() => {
-                      props.history.push(toPublicUrl(PageName.EVENT, undefined, { id: item.uid }));
+                      props.history.push(toPublicUrl(PageName.SCOUT, undefined, { id: item.uid }));
                       // console.log(toPublicUrl(PageName.EVENT, undefined, { id: item.uid }));
                     }}
                     onTouchEnd={() => {
-                      props.history.push(toPublicUrl(PageName.EVENT, undefined, { id: item.uid }));
+                      props.history.push(toPublicUrl(PageName.SCOUT, undefined, { id: item.uid }));
                       // console.log(toPublicUrl(PageName.EVENT, undefined, { id: item.uid }));
                     }}
                   >
                     {item.name}
                   </div>
                 </Typography.Title>
-                <p>{item.description_short}</p>
+                <p>{item.description}</p>
                 <Descriptions size="small">
                   <Descriptions.Item label="開始">{item.start}</Descriptions.Item>
                   <Descriptions.Item label="終了">{item.end}</Descriptions.Item>
@@ -83,4 +82,4 @@ const Event = (props: MainContentProps) => {
   );
 };
 
-export default Event;
+export default Scout;
