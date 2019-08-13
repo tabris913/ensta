@@ -1,20 +1,30 @@
 import { ICards } from './card';
 
-export interface IEvent {
+interface EventBody {
   uid: string;
   name: string;
-  short_name?: string;
   description: string;
-  description_short?: string;
   start: string;
   end: string;
-  bonus?: IBonus;
   relation?: string[]; // unit uid etc
   banner: string[];
   img?: string;
 }
 
+export interface IEvent extends EventBody {
+  short_name?: string;
+  description_short?: string;
+  bonus: IBonus;
+}
+
 export interface IBonus {
   ranking: ICards;
   point: ICards;
+}
+
+export interface ISpecial extends EventBody {}
+
+export interface IUnitCollection extends EventBody {
+  acquirableCards: string[]; // card uids
+  revivalEvents: string[]; // event uids
 }

@@ -6,10 +6,13 @@ import * as Redux from 'redux';
 import Wireframe from '../wireframe/Wireframe';
 
 import Event from '../../components/content/Event';
-import PageName from '../../constants/PageName';
+import PageName, { toPublicUrl } from '../../constants/PageName';
+import { IEvent, ISpecial, IUnitCollection } from '../../models/event';
 import { QueryType } from '../../models/Main';
 import { IStoreState } from '../../reducers';
 import { getEvent } from '../../utils/EventUtils';
+import { getSpecial } from '../../utils/SpecialUtils';
+import { getUnitCollection } from '../../utils/UCUtils';
 
 interface IOwnProps extends RouteComponentProps<{}> {}
 
@@ -33,11 +36,30 @@ const mapDispatch2Props = (dispatch: Redux.Dispatch, ownProps: IOwnProps): IDisp
 };
 
 const EventPage = (props: Props) => {
-  const event = getEvent(props.query.id!);
+  let event: IEvent | IUnitCollection | ISpecial | undefined;
+  switch (props.query.type) {
+    case 'special':
+      event = getSpecial(props.query.id!);
+      break;
+    case 'uc':
+      event = getUnitCollection(props.query.id!);
+      break;
+    default:
+      event = getEvent(props.query.id!);
+      break;
+  }
 
   return (
-    <Wireframe title={event!.name} breadcrump={[{ label: 'Event', href: PageName.EVENT_LIST }, { label: event!.name }]}>
-      <Event {...props} />
+    <Wireframe
+      title={event!.name}
+      breadcrump={[
+        props.query.type
+          ? { label: 'Event', hrefWithId: toPublicUrl(PageName.EVENT_LIST, undefined, { type: props.query.type }) }
+          : { label: 'Event', href: PageName.EVENT_LIST },
+        { label: event!.name },
+      ]}
+    >
+      <Event {...props} event={event} />
     </Wireframe>
   );
 };

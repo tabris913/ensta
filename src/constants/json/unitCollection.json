@@ -1,0 +1,16 @@
+{
+  "unitCollection": {
+    "u001": {
+      "uid": "u001",
+      "name": "ユニットコレクション Trickstar",
+      "description": "",
+      "start": "2019-07-15",
+      "end": "2019-07-25",
+      "relation": ["Trickstar"],
+      "banner": ["hokuto", "subaru", "makoto", "mao"],
+      "img": "u001.jpg",
+      "acquirableCards": ["hokuto", "subaru", "makoto", "mao"],
+      "revivalEvents": [""]
+    }
+  }
+}

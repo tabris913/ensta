@@ -26,8 +26,10 @@ const BreadCrumpItem = ({ label, key, open }: IBreadCrumpItem) => {
 const breadCrump = (children: IBreadCrump[], history: History) => (
   <Breadcrumb style={{ margin: 0 }}>
     <BreadCrumpItem label={<Icon type="home" />} key="top" open={() => history.push(toPublicUrl(PageName.TOP))} />
-    {children.map(({ href, label }, idx) =>
-      !!href ? (
+    {children.map(({ href, label, hrefWithId }, idx) =>
+      !!hrefWithId ? (
+        <BreadCrumpItem label={label} key={idx} open={() => history.push(hrefWithId)} />
+      ) : !!href ? (
         <BreadCrumpItem label={label} key={idx} open={() => history.push(toPublicUrl(href))} />
       ) : (
         <Breadcrumb.Item key={idx}>{label}</Breadcrumb.Item>

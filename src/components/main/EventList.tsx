@@ -3,16 +3,20 @@ import * as React from 'react';
 
 // import PageName, { toPublicUrl } from '../../constants/PageName';
 import PageName, { toPublicUrl } from '../../constants/PageName';
-import { IEvent } from '../../models/Event';
+import { IEvent, ISpecial, IUnitCollection } from '../../models/event';
 import { MainContentProps } from '../../models/Main';
-import { eventIds, getEvent } from '../../utils/EventUtils';
+import { eventIds, getEvent, isEvent } from '../../utils/EventUtils';
+import { getSpecial, specialEventIds } from '../../utils/SpecialUtils';
 import { getUnitCollection, unitCollectionIds } from '../../utils/UCUtils';
 
+// unit collection 専用のmakeJson作る
+// special も model 必要そう
+
 const Event = (props: MainContentProps) => {
-  let event: (IEvent | undefined)[];
+  let event: Array<IEvent | IUnitCollection | ISpecial | undefined>;
   switch (props.query.type) {
     case 'special':
-      event = [];
+      event = specialEventIds.map(getSpecial);
       break;
     case 'uc':
       event = unitCollectionIds.map(getUnitCollection);
@@ -52,18 +56,30 @@ const Event = (props: MainContentProps) => {
                 <Typography.Title level={4} style={{ width: '100%' }} underline={true}>
                   <div
                     onClick={() => {
-                      props.history.push(toPublicUrl(PageName.EVENT, undefined, { id: item.uid }));
+                      props.history.push(
+                        toPublicUrl(
+                          PageName.EVENT,
+                          undefined,
+                          !props.query.type ? { id: item.uid } : { id: item.uid, type: props.query.type }
+                        )
+                      );
                       // console.log(toPublicUrl(PageName.EVENT, undefined, { id: item.uid }));
                     }}
                     onTouchEnd={() => {
-                      props.history.push(toPublicUrl(PageName.EVENT, undefined, { id: item.uid }));
+                      props.history.push(
+                        toPublicUrl(
+                          PageName.EVENT,
+                          undefined,
+                          !props.query.type ? { id: item.uid } : { id: item.uid, type: props.query.type }
+                        )
+                      );
                       // console.log(toPublicUrl(PageName.EVENT, undefined, { id: item.uid }));
                     }}
                   >
                     {item.name}
                   </div>
                 </Typography.Title>
-                <p>{item.description_short}</p>
+                {isEvent(item) ? <p>{item.description_short}</p> : undefined}
                 <Descriptions size="small">
                   <Descriptions.Item label="開始">{item.start}</Descriptions.Item>
                   <Descriptions.Item label="終了">{item.end}</Descriptions.Item>
@@ -76,8 +92,14 @@ const Event = (props: MainContentProps) => {
         }
         style={{ overflowY: 'auto', overflowX: 'visible' }}
       />
-      <Button onClick={props.history.goBack} type="primary">
-        戻る
+      <Button
+        onClick={() => {
+          props.history.goBack();
+          props.history.replace(toPublicUrl(PageName.TOP));
+        }}
+        type="primary"
+      >
+        TOPに戻る
       </Button>
     </>
   );

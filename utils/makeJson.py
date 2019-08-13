@@ -29,15 +29,15 @@ def convert_serial(serial: float, f: str = '%m/%d') -> datetime.datetime:
             days=int(serial))).strftime(f)
 
 
-def makeEvent(pageName: str = 'event'):
-    df = pandas.read_excel(FILE_NAME, sheet_name=pageName).dropna(
+def makeEvent():
+    df = pandas.read_excel(FILE_NAME, sheet_name='event').dropna(
         subset=['No']).fillna('')
 
-    json_string = JSON_HEAD.format(pageName)
+    json_string = JSON_HEAD.format('event')
 
     for idx in df.index:
         line = df.loc[idx]
-        uid = f'{"sp" if pageName == 'special' else pageName[0]}{int(line.No):03d}'
+        uid = f'e{int(line.No):03d}'
 
         fmt = f'''    "{uid}": {{
       "uid": "{uid}",
@@ -49,14 +49,18 @@ def makeEvent(pageName: str = 'event'):
       "end": "{line.end.strftime('%Y-%m-%d')}",
       "bonus": {{
         "ranking": {{
-          "5": ["{line.ranking1}"{', ' + f'"{line.ranking2}"' if line.ranking2 != '' else ''}]
+          "5": [{convert_list(line.ranking5)}],
+          "4": [{convert_list(line.ranking4)}],
+          "3": [{convert_list(line.ranking3)}]
         }},
         "point": {{
-          "5": ["{line.point1}"{', ' + f'"{line.point2}"' if line.point2 != '' else ''}{', ' + f'"{line.point3}"' if line.point3 != '' else ''}]
+          "5": [{convert_list(line.point5)}],
+          "4": [{convert_list(line.point4)}],
+          "3": [{convert_list(line.point3)}]
         }}
       }},
-      "relation": [{', '.join(map(add_quote, line.relation.split('、')))}],
-      "banner": [{', '.join(map(add_quote, line.banner.split('、')))}],
+      "relation": [{convert_list(line.relation)}],
+      "banner": [{convert_list(line.banner)}],
       "img": "{uid}.jpg"
     }}{',' if df.index[-1] != idx else ''}\n'''
 
@@ -64,7 +68,68 @@ def makeEvent(pageName: str = 'event'):
 
     json_string += JSON_FOOT
 
-    with open(f'{JSON_DIR}/{pageName}.json', 'w', encoding='utf-8') as f:
+    with open(f'{JSON_DIR}/event.json', 'w', encoding='utf-8') as f:
+        f.write(json_string)
+
+
+def makeSpecial():
+    df = pandas.read_excel(
+        FILE_NAME, sheet_name='special').dropna(
+        subset=['No']).fillna('')
+
+    json_string = JSON_HEAD.format('special')
+
+    for idx in df.index:
+        line = df.loc[idx]
+        uid = f'sp{int(line.No):03d}'
+
+        fmt = f'''    "{uid}": {{
+      "uid": "{uid}",
+      "name": "{line.event_name}",
+      "description": "{f'{line.outline}' if line.outline != '' else ''}",
+      "start": "{line.start.strftime('%Y-%m-%d')}",
+      "end": "{line.end.strftime('%Y-%m-%d')}",
+      "relation": [{convert_list(line.relation)}],
+      "banner": [{convert_list(line.banner)}],
+      "img": "{uid}.jpg"
+    }}{',' if df.index[-1] != idx else ''}\n'''
+
+        json_string += fmt
+
+    json_string += JSON_FOOT
+
+    with open(f'{JSON_DIR}/special.json', 'w', encoding='utf-8') as f:
+        f.write(json_string)
+
+
+def makeUC():
+    df = pandas.read_excel(FILE_NAME, sheet_name='uc').dropna(
+        subset=['No']).fillna('')
+
+    json_string = JSON_HEAD.format('unitCollection')
+
+    for idx in df.index:
+        line = df.loc[idx]
+        uid = f'u{int(line.No):03d}'
+
+        fmt = f'''    "{uid}": {{
+      "uid": "{uid}",
+      "name": "{line.event_name}",
+      "description": "{f'{line.outline}' if line.outline != '' else ''}",
+      "start": "{line.start.strftime('%Y-%m-%d')}",
+      "end": "{line.end.strftime('%Y-%m-%d')}",
+      "relation": [{convert_list(line.relation)}],
+      "banner": [{convert_list(line.banner)}],
+      "img": "{uid}.jpg",
+      "acquirableCards": [{convert_list(line.acquirableCards)}],
+      "revivalEvents": [{convert_list(line.revivalEvents)}]
+    }}{',' if df.index[-1] != idx else ''}\n'''
+
+        json_string += fmt
+
+    json_string += JSON_FOOT
+
+    with open(f'{JSON_DIR}/unitCollection.json', 'w', encoding='utf-8') as f:
         f.write(json_string)
 
 
@@ -86,8 +151,8 @@ def makeScout():
       "cards": {{
         "5": ["{line.bonus}"]
       }},
-      "relation": [{', '.join(map(add_quote, line.relation.split('、')))}],
-      "banner": [{', '.join(map(add_quote, line.banner.split('、')))}],
+      "relation": [{convert_list(line.relation)}],
+      "banner": [{convert_list(line.banner)}],
       "img": "{uid}.png",
       "skill": "{line.skill}"
     }}{',' if df.index[-1] != idx else ''}\n'''
@@ -158,8 +223,8 @@ def makeUnit():
         fmt = f'''    "{line.uid}": {{
       "uid": "{line.uid}",
       "name": "{line.unit_name}",
-      "member": ["{line.leader}"{', ' + ', '.join(map(add_quote, line.others.split('、'))) if line.others != '' else ''}],
-      "color": [{', '.join(map(add_quote, line.color.split('、')))}],
+      "member": ["{line.leader}"{', ' + convert_list(line.others) if line.others != '' else ''}],
+      "color": [{convert_list(line.color)}],
       "logo": ""
     }}{',' if df.index[-1] != idx else ''}\n'''
 
@@ -191,7 +256,7 @@ def makeCharacter():
       "unfavorite": [],
       "imgs": [],
       "club": "{line.club}",
-      "unit": [{', '.join(map(add_quote, line.unit.split('、'))) if line.unit else ''}]
+      "unit": [{convert_list(line.unit) if line.unit else ''}]
     }}{',' if df.index[-1] != idx else ''}\n'''
 
         json_string += fmt
@@ -206,9 +271,10 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     args = parser.parse_args()
 
-    # makeUnit()
-    # makeCharacter()
-    # makeCard()
+    makeUnit()
+    makeCharacter()
+    makeCard()
     makeEvent()
-    makeEvent('uc')
-    # makeScout()
+    makeUC()
+    makeSpecial()
+    makeScout()
