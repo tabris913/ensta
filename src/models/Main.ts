@@ -1,9 +1,12 @@
 import { History } from 'history';
 
+export type EventType = '' | 'special' | 'uc';
+export type ScoutType = '' | 'story' | 'revival';
+
 export interface QueryType {
   id?: string;
   page?: number;
-  type?: string;
+  type?: EventType | ScoutType;
 }
 
 export interface MainContentProps {
