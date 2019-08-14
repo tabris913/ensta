@@ -1,6 +1,6 @@
-export interface ICharacter {
-  uid: string;
-  name: string;
+import { IContent } from './content';
+
+export interface ICharacter extends IContent {
   birthday: string;
   bloodType?: 'A' | 'B' | 'O' | 'AB';
   height: number;

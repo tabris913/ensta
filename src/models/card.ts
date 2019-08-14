@@ -1,6 +1,6 @@
-export interface ICard {
-  uid: string;
-  name: string;
+import { IContent } from './content';
+
+export interface ICard extends IContent {
   character: string; // character uid
   rank: 1 | 2 | 3 | 4 | 5;
   type: 'Da' | 'Vo' | 'Pf';

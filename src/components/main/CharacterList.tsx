@@ -9,7 +9,7 @@ import { eventIds, getEvent, isNormalEvent } from '../../utils/EventUtils';
 import { getSpecial, specialEventIds } from '../../utils/SpecialUtils';
 import { getUnitCollection, unitCollectionIds } from '../../utils/UCUtils';
 
-const Event = (props: MainContentProps) => {
+const Character = (props: MainContentProps) => {
   let event: Array<IEvent | IUnitCollection | ISpecial | undefined>;
   switch (props.query.type) {
     case 'special':
@@ -23,6 +23,10 @@ const Event = (props: MainContentProps) => {
       break;
   }
   const [pageKey, setPageKey] = React.useState(0);
+
+  // 学年・クラスごと (デフォ)
+  // 名前順
+  // ソートができるように
 
   return (
     <>
@@ -102,4 +106,4 @@ const Event = (props: MainContentProps) => {
   );
 };
 
-export default Event;
+export default Character;

@@ -9,7 +9,7 @@ import { eventIds, getEvent, isNormalEvent } from '../../utils/EventUtils';
 import { getSpecial, specialEventIds } from '../../utils/SpecialUtils';
 import { getUnitCollection, unitCollectionIds } from '../../utils/UCUtils';
 
-const Event = (props: MainContentProps) => {
+const Unit = (props: MainContentProps) => {
   let event: Array<IEvent | IUnitCollection | ISpecial | undefined>;
   switch (props.query.type) {
     case 'special':
@@ -102,4 +102,4 @@ const Event = (props: MainContentProps) => {
   );
 };
 
-export default Event;
+export default Unit;

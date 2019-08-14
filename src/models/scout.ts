@@ -1,8 +1,7 @@
 import { ICards } from './card';
+import { IContent } from './content';
 
-interface ScoutBody {
-  uid: string;
-  name: string;
+interface ScoutBody extends IContent {
   description: string;
   start: string;
   end: string;

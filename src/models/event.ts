@@ -1,8 +1,7 @@
 import { ICards } from './card';
+import { IContent } from './content';
 
-interface EventBody {
-  uid: string;
-  name: string;
+interface EventBody extends IContent {
   description: string;
   start: string;
   end: string;

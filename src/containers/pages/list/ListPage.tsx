@@ -3,11 +3,10 @@ import { connect } from 'react-redux';
 import { RouteComponentProps, withRouter } from 'react-router-dom';
 import * as Redux from 'redux';
 
-import Wireframe from '../wireframe/Wireframe';
+import Wireframe from '../../wireframe/Wireframe';
 
-import Event from '../../components/main/EventList';
-import { QueryType } from '../../models/Main';
-import { IStoreState } from '../../reducers';
+import { MainContentProps, QueryType } from '../../../models/Main';
+import { IStoreState } from '../../../reducers';
 
 interface IOwnProps extends RouteComponentProps<{}> {}
 
@@ -30,15 +29,21 @@ const mapDispatch2Props = (dispatch: Redux.Dispatch, ownProps: IOwnProps): IDisp
   return {};
 };
 
-const EventListPage = (props: Props) => (
-  <Wireframe title="Event" breadcrump={[{ label: 'Event' }]}>
-    <Event {...props} />
-  </Wireframe>
-);
+interface IPageGenerator {
+  pageTitle: string;
+  component: (props: MainContentProps) => JSX.Element;
+}
 
-export default withRouter(
-  connect(
-    mapState2Props,
-    mapDispatch2Props
-  )(EventListPage)
-);
+const ListPage = ({ pageTitle, component: Component }: IPageGenerator) =>
+  withRouter(
+    connect(
+      mapState2Props,
+      mapDispatch2Props
+    )((props: Props) => (
+      <Wireframe title={pageTitle} breadcrump={[{ label: pageTitle }]}>
+        <Component {...props} />
+      </Wireframe>
+    ))
+  );
+
+export default ListPage;
