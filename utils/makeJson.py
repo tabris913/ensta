@@ -232,7 +232,10 @@ def makeUnit():
       "name": "{line.unit_name}",
       "member": ["{line.leader}"{', ' + convert_list(line.others) if line.others != '' else ''}],
       "color": [{convert_list(line.color)}],
-      "logo": ""
+      "logo": "{line.uid}.jpg",
+      "en": "{line.en if line.en != '' else line.unit_name}",
+      "description": "{line.description}",
+      "description_short": "{line.description_short}"
     }}{',' if df.index[-1] != idx else ''}\n'''
 
         json_string += fmt
@@ -278,10 +281,10 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     args = parser.parse_args()
 
-    # makeUnit()
+    makeUnit()
     # makeCharacter()
     # makeCard()
-    makeEvent()
+    # makeEvent()
     # makeUC()
     # makeSpecial()
     # makeScout()

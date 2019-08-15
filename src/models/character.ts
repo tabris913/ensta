@@ -8,7 +8,8 @@ export interface ICharacter extends IContent {
   catchPhrase: string;
   favorite?: string[];
   unfavorite?: string[];
-  imgs: [];
+  imgs: string[];
   club?: string;
+  class?: string;
   unit: string[]; // unit uids
 }

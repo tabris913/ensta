@@ -1,41 +1,27 @@
-import { Button, Collapse, Descriptions, List, Typography } from 'antd';
+import { Button, Collapse, List, Typography } from 'antd';
 import * as React from 'react';
 
 // import PageName, { toPublicUrl } from '../../constants/PageName';
 import PageName, { toPublicUrl } from '../../constants/PageName';
-import { IEvent, ISpecial, IUnitCollection } from '../../models/event';
 import { MainContentProps } from '../../models/Main';
-import { eventIds, getEvent, isNormalEvent } from '../../utils/EventUtils';
-import { getSpecial, specialEventIds } from '../../utils/SpecialUtils';
-import { getUnitCollection, unitCollectionIds } from '../../utils/UCUtils';
+import { getUnit, unitIds } from '../../utils/UnitUtils';
 
 const Unit = (props: MainContentProps) => {
-  let event: Array<IEvent | IUnitCollection | ISpecial | undefined>;
-  switch (props.query.type) {
-    case 'special':
-      event = specialEventIds.map(getSpecial);
-      break;
-    case 'uc':
-      event = unitCollectionIds.map(getUnitCollection);
-      break;
-    default:
-      event = eventIds.map(getEvent);
-      break;
-  }
+  const unit = unitIds.map(getUnit);
   const [pageKey, setPageKey] = React.useState(0);
 
   return (
     <>
       <List
         pagination={{
-          pageSize: 10,
+          pageSize: 14,
           onChange: () => {
             window.scrollTo(0, 0); // 効いてない
             setPageKey(pageKey + 1);
           },
         }}
         itemLayout="vertical"
-        dataSource={event}
+        dataSource={unit}
         renderItem={(item, idx) =>
           !!item ? (
             <Collapse style={{ width: '100%' }}>
@@ -43,7 +29,7 @@ const Unit = (props: MainContentProps) => {
                 key={`${idx}.${pageKey}`}
                 header={
                   <img
-                    src={`./images/${props.query.type || 'event'}/${item.img}`}
+                    src={`./images/unit/${item.logo}`}
                     alt={item.name}
                     style={{ padding: 0, maxWidth: 280, width: '100%' }}
                   />
@@ -52,35 +38,13 @@ const Unit = (props: MainContentProps) => {
               >
                 <Typography.Title level={4} style={{ width: '100%' }} underline={true}>
                   <div
-                    onClick={() => {
-                      props.history.push(
-                        toPublicUrl(
-                          PageName.EVENT,
-                          undefined,
-                          !props.query.type ? { id: item.uid } : { id: item.uid, type: props.query.type }
-                        )
-                      );
-                      // console.log(toPublicUrl(PageName.EVENT, undefined, { id: item.uid }));
-                    }}
-                    onTouchEnd={() => {
-                      props.history.push(
-                        toPublicUrl(
-                          PageName.EVENT,
-                          undefined,
-                          !props.query.type ? { id: item.uid } : { id: item.uid, type: props.query.type }
-                        )
-                      );
-                      // console.log(toPublicUrl(PageName.EVENT, undefined, { id: item.uid }));
-                    }}
+                    onClick={() => props.history.push(toPublicUrl(PageName.UNIT, undefined, { id: item.uid }))}
+                    onTouchEnd={() => props.history.push(toPublicUrl(PageName.UNIT, undefined, { id: item.uid }))}
                   >
                     {item.name}
                   </div>
                 </Typography.Title>
-                {isNormalEvent(item) ? <p>{item.description_short}</p> : undefined}
-                <Descriptions size="small">
-                  <Descriptions.Item label="開始">{item.start}</Descriptions.Item>
-                  <Descriptions.Item label="終了">{item.end}</Descriptions.Item>
-                </Descriptions>
+                <p>{item.description_short}</p>
               </Collapse.Panel>
             </Collapse>
           ) : (

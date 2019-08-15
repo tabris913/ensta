@@ -5,119 +5,200 @@
       "name": "Trickstar",
       "member": ["hokuto", "subaru", "mao", "makoto"],
       "color": ["赤", "青"],
-      "logo": ""
+      "logo": "trickstar.jpg",
+      "en": "Trickstar",
+      "description": "『打倒、生徒会』の元、夢ノ咲学院に革命を起こした新進気鋭のユニット。氷鷹北斗がリーダーを担当し、転校生がプロデューサーとしてサポートしているが、四人が一丸となって活動している。",
+      "description_short": "学院の一番星をめざす新星ユニット!ピカイチの結束力で、元気に学院を引っかき回す綺羅星たち！"
     },
     "undead": {
       "uid": "undead",
       "name": "UNDEAD",
       "member": ["rei", "kaoru", "koga", "adnis"],
       "color": ["黒", "紫"],
-      "logo": ""
+      "logo": "undead.jpg",
+      "en": "UNDEAD",
+      "description": "『三奇人』のひとり、朔間零が率いる野獣系ユニット。自由奔放なメンバーが多いため、100%の力が発揮されるパフォーマンスやライブの参加頻度は少ない。",
+      "description_short": "夢ノ咲学院で最も過激で背徳的と謳われるユニット! 夜闇の魔物（自称）たちであるメンバーはダークで野性的"
     },
     "knights": {
       "uid": "knights",
       "name": "Knights",
       "member": ["leo", "izumi", "ritsu", "arashi", "tsukasa"],
       "color": ["紺"],
-      "logo": ""
+      "logo": "knights.jpg",
+      "en": "Knights",
+      "description": "月永レオが率いる騎士道ユニット。個人パフォーマンスを得意とし、ファンサービスが一番厚い。ユニットとして活動していない時は、各々の自由を尊重している。",
+      "description_short": "優美かつ華麗な騎士道ユニット!個人のレベルが高く、望むものを魅せてくれる彼らは観客を虜にする"
     },
     "ryuseitai": {
       "uid": "ryuseitai",
       "name": "流星隊",
       "member": ["chiaki", "kanata", "tetora", "midori", "shinobu"],
       "color": ["五色"],
-      "logo": ""
+      "logo": "ryuseitai.jpg",
+      "en": "Meteo Ranger",
+      "description": "隊長の守沢千秋が率いる、正義の戦隊ユニット。アイドルとしての活動に留まらず、困った人には手を差し伸べる正義の味方としてのボランティア活動もしている。",
+      "description_short": "悪は許さない戦隊ヒーローユニット! 奇想天外なメンバーは正義の名の元に集ったらしいが…!?"
     },
     "rabbits": {
       "uid": "rabbits",
       "name": "Ra*bits",
       "member": ["nazuna", "tomoya", "hajime", "mitsuru"],
       "color": ["水"],
-      "logo": ""
+      "logo": "rabbits.jpg",
+      "en": "Ra*bits",
+      "description": "『ちいさくてかわいい』をテーマに、仁兎なずなが率いるファンシーユニット。リーダーを除く全員が一年生で、経験は浅いがどのユニットよりも和やか。",
+      "description_short": "ほわほわ可愛いが売りの初心者ユニット!一年生３人と三年生１人、 あぶなっかしいけど健気に活動中！"
     },
     "2wink": {
       "uid": "2wink",
       "name": "2wink",
       "member": ["hinata", "yuta"],
       "color": ["ネオン"],
-      "logo": ""
+      "logo": "2wink.jpg",
+      "en": "2wink",
+      "description": "シンクロしたパフォーマンスが売りの、双子のテクノポップユニット。ユニットとしての活動はまだ浅いものの、卓越したアクロバティックなパフォーマンスを得意とし、早くも注目を浴びている。",
+      "description_short": "テクノポップな双子ユニット! ２人でもパワフル!息の合ったダンスと はじける笑顔を発信中!"
     },
     "akatsuki": {
       "uid": "akatsuki",
       "name": "紅月",
       "member": ["keito", "kuro", "soma"],
       "color": ["赤"],
-      "logo": ""
+      "logo": "akatsuki.jpg",
+      "en": "Akatsuki",
+      "description": "生徒会副会長の蓮巳敬人が率いる、伝統を重んじる和風ユニット。ユニットの掟もファンサービスも学院一厳しいが、硬派さが人気を呼んでいる。",
+      "description_short": "伝統芸能を重んじる和風ユニット!技術を極めた学院のNo.2、小手先ではない実力で見る人を圧倒させる!"
     },
     "fine": {
       "uid": "fine",
       "name": "fine",
       "member": ["eichi", "wataru", "yuzuru", "tori"],
       "color": ["白", "金"],
-      "logo": ""
+      "logo": "fine.jpg",
+      "en": "fine",
+      "description": "生徒会長の天祥院英智が率いる、常勝無敗のユニット。絶大な人気を誇っているが、体が弱い英智が入退院を繰り返しているため、活動頻度は高くない。英智を除く三名でライブを行うこともある。",
+      "description_short": "常に勝利をおさめてきた夢ノ咲学院最強ユニット!超越的な魅力の生徒会長が率いる メンバーの実力はトップクラス!!"
     },
     "valkyrie": {
       "uid": "valkyrie",
       "name": "Valkyrie",
       "member": ["shu", "mika"],
       "color": ["赤紫", "黒"],
-      "logo": ""
+      "logo": "valkyrie.jpg",
+      "en": "Valkyrie",
+      "description": "元『五奇人』のひとり、斎宮宗が率いる格式高く情熱的なユニット。活動率は高くないが統率と規律を重んじ、どこよりも繊細な表現にこだわるためコアファンが多い。",
+      "description_short": "芸術的な演出にこだわる格式高く情熱的なユニット! コミュニケーションは不得意でも 幕が開けば華麗な演者に!"
     },
     "switch": {
       "uid": "switch",
       "name": "Switch",
       "member": ["natsume", "tsumugi", "sora"],
       "color": ["黄緑", "黄"],
-      "logo": ""
+      "logo": "switch.jpg",
+      "en": "Switch",
+      "description": "元『五奇人』のひとり、逆先夏目が率いる奇抜でエンターテイメントなユニット。『幸せの魔法』をかける魔法使いをモットーに、学院外を中心に活動している。",
+      "description_short": "三人の個性が光るステージ、 奇抜な演出とパフォーマンスで魅了する！"
     },
     "mam": {
       "uid": "mam",
       "name": "MaM",
       "member": ["madara"],
       "color": ["モノクロ"],
-      "logo": ""
+      "logo": "mam.jpg",
+      "en": "MaM",
+      "description": "三毛縞斑が『MaM』名義で活動しているソロユニット。ひとりでも祭りのように盛り上げ、観客も巻き込むようなパフォーマンスを得意としている。",
+      "description_short": "祭のある場所どこへでも! 全国、津々浦々駆けつけて 豪快で楽しいライブへと盛り上げる!"
     },
     "eve": {
       "uid": "eve",
       "name": "Eve",
       "member": ["hiyori", "jun"],
       "color": ["アイボリー", "ライムグリーン"],
-      "logo": ""
+      "logo": "eve.jpg",
+      "en": "Eve",
+      "description": "元『fine』のメンバー巴日和が率いる甘い囁きで虜にするトラップユニット。玲明学園を拠点としている。",
+      "description_short": "元『fine』の二枚看板のひとりと、這い上がってきた新たな獣が始まりを奏でる"
     },
     "adam": {
       "uid": "adam",
       "name": "Adam",
       "member": ["nagisa", "ibara"],
       "color": ["青", "ダークグレー"],
-      "logo": ""
+      "logo": "adam.jpg",
+      "en": "Adam",
+      "description": "元『fine』のメンバー乱凪砂が率いる侵略と支配のルーラーユニット。秀越学園を拠点としている。",
+      "description_short": "元『fine』の二枚看板のひとりと、更なる高みへ誘う戦略家が君臨する"
     },
     "eden": {
       "uid": "eden",
       "name": "Eden",
       "member": ["nagisa", "hiyori", "jun", "ibara"],
-      "color": [""],
-      "logo": ""
+      "color": [],
+      "logo": "eden.jpg",
+      "en": "Eden",
+      "description": "",
+      "description_short": ""
     },
     "killers": {
       "uid": "killers",
       "name": "ナイトキラーズ",
       "member": ["leo", "eichi", "kuro", "nazuna"],
-      "color": [""],
-      "logo": ""
+      "color": [],
+      "logo": "killers.jpg",
+      "en": "Knight Killers",
+      "description": "",
+      "description_short": ""
+    },
+    "deadmans": {
+      "uid": "deadmans",
+      "name": "デッドマンズ",
+      "member": ["rei", "keito", "koga"],
+      "color": [],
+      "logo": "deadmans.jpg",
+      "en": "Dead Man's",
+      "description": "",
+      "description_short": ""
+    },
+    "old_fine": {
+      "uid": "old_fine",
+      "name": "旧fine",
+      "member": ["tsumugi", "eichi", "nagisa", "hiyori"],
+      "color": [],
+      "logo": "old_fine.jpg",
+      "en": "Past fine",
+      "description": "",
+      "description_short": ""
     },
     "raibows": {
       "uid": "raibows",
       "name": "Rain-bows",
       "member": ["jin", "hokuto", "chiaki", "tori"],
-      "color": [""],
-      "logo": ""
+      "color": [],
+      "logo": "raibows.jpg",
+      "en": "Rain-bows",
+      "description": "",
+      "description_short": ""
     },
     "babarrier": {
       "uid": "babarrier",
       "name": "Ba-barrier",
-      "member": ["akiomi"],
-      "color": [""],
-      "logo": ""
+      "member": ["akiomi", "madara", "mika", "sora"],
+      "color": [],
+      "logo": "babarrier.jpg",
+      "en": "Ba-barrier",
+      "description": "",
+      "description_short": ""
+    },
+    "traumerei": {
+      "uid": "traumerei",
+      "name": "トロイメライ",
+      "member": ["wataru", "madara", "keito", "izumi"],
+      "color": [],
+      "logo": "traumerei.jpg",
+      "en": "Träumerei",
+      "description": "",
+      "description_short": ""
     }
   }
 }
