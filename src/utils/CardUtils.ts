@@ -1,4 +1,7 @@
+import { History } from 'history';
+
 import * as Card from '../constants/json/card.json';
+import PageName, { toPublicUrl } from '../constants/PageName';
 import { ICard } from '../models/card';
 
 export const getCard = (uid: string): ICard | undefined => {
@@ -12,3 +15,6 @@ export const searchCard = (str: string): ICard[] =>
     .map(uid => Card.card[uid]);
 
 export const cardIds = Object.keys(Card.card);
+
+export const toCard = (history: History, uid: string) =>
+  history.push(toPublicUrl(PageName.CARD, undefined, { id: uid }));

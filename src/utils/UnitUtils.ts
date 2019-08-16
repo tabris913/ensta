@@ -1,4 +1,8 @@
+import { History } from 'history';
+
 import * as Unit from '../constants/json/unit.json';
+import PageName, { toPublicUrl } from '../constants/PageName';
+import { IContent } from '../models/content';
 import { IUnit } from '../models/unit';
 
 export const getUnit = (uid: string): IUnit | undefined => {
@@ -7,3 +11,8 @@ export const getUnit = (uid: string): IUnit | undefined => {
 };
 
 export const unitIds = Object.keys(Unit.unit);
+
+export const isUnit = (content?: IContent): content is IUnit => content !== undefined;
+
+export const toUnit = (history: History, uid: string) =>
+  history.push(toPublicUrl(PageName.UNIT, undefined, { id: uid }));
