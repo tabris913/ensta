@@ -12,7 +12,11 @@ interface Props extends MainContentProps {}
 const Unit = ({ content: unit, ...props }: Props) =>
   isUnit(unit) ? (
     <>
-      <img src={`./images/unit/${unit.logo}`} alt="" style={{ padding: 0, maxWidth: 280, width: '100%' }} />
+      {unit.logo ? (
+        <img src={`./images/unit/${unit.logo}`} alt="" style={{ padding: 0, maxWidth: 280, width: '100%' }} />
+      ) : (
+        undefined
+      )}
       <p>{unit.description}</p>
       <Descriptions
         title="Event Info"
@@ -31,7 +35,7 @@ const Unit = ({ content: unit, ...props }: Props) =>
             ))}
           </Row>
         </Descriptions.Item>
-        <Descriptions.Item label="テーマカラー">{unit.color}</Descriptions.Item>
+        {unit.color ? <Descriptions.Item label="テーマカラー">{unit.color}</Descriptions.Item> : <></>}
       </Descriptions>
       <Button
         onClick={() => {
