@@ -7,6 +7,7 @@ const CharacterPage = ContentPage({
   pageTitle: 'Character',
   pageName: PageName.CHARACTER,
   component: Character,
+  contentName: 'character',
   getFunc: getCharacter,
 });
 

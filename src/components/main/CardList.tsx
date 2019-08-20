@@ -3,11 +3,12 @@ import * as React from 'react';
 
 // import PageName, { toPublicUrl } from '../../constants/PageName';
 import PageName, { toPublicUrl } from '../../constants/PageName';
-import { MainContentProps } from '../../models/Main';
+import { ICard } from '../../models/card';
+import { ListComponentProps } from '../../models/Main';
 import { cardIds, getCard } from '../../utils/CardUtils';
 import { getCharacter } from '../../utils/CharacterUtils';
 
-const Card = (props: MainContentProps) => {
+const Card = (props: ListComponentProps<ICard>) => {
   const card = cardIds.map(getCard);
   const [pageKey, setPageKey] = React.useState(0);
 

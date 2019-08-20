@@ -5,7 +5,10 @@ import * as Redux from 'redux';
 
 import Wireframe from '../../wireframe/Wireframe';
 
-import { MainContentProps, QueryType } from '../../../models/Main';
+import { contentActions } from '../../../actions';
+import { ContentName } from '../../../constants/ContentName';
+import { IContent } from '../../../models/content';
+import { ListComponentProps, QueryType } from '../../../models/Main';
 import { IStoreState } from '../../../reducers';
 
 interface IOwnProps extends RouteComponentProps<{}> {}
@@ -14,9 +17,13 @@ interface IStateProps {
   query: QueryType;
 }
 
-interface IDispatchProps {}
+interface IDispatchProps<T extends IContent> {
+  actions: {
+    saveContent: (req: T) => void;
+  };
+}
 
-type Props = IOwnProps & IStateProps & IDispatchProps;
+type Props<T extends IContent> = IOwnProps & IStateProps & IDispatchProps<T>;
 
 const mapState2Props = (state: IStoreState, ownProps: IOwnProps): IStateProps => ({
   query: ownProps.location.search
@@ -25,25 +32,27 @@ const mapState2Props = (state: IStoreState, ownProps: IOwnProps): IStateProps =>
     .reduce((o, s) => ({ ...o, [s.replace(/=.+$/, '')]: s.replace(/^.+=/, '') }), {}),
 });
 
-const mapDispatch2Props = (dispatch: Redux.Dispatch, ownProps: IOwnProps): IDispatchProps => {
-  return {};
-};
-
-interface IPageGenerator {
+interface IPageGenerator<T extends IContent> {
   pageTitle: string;
-  component: (props: MainContentProps) => JSX.Element;
+  contentName: ContentName;
+  component: (props: ListComponentProps<T>) => JSX.Element;
 }
 
-const ListPage = ({ pageTitle, component: Component }: IPageGenerator) =>
-  withRouter(
+const ListPage = <T extends IContent>({ pageTitle, component: Component, contentName }: IPageGenerator<T>) => {
+  const mapDispatch2Props = (dispatch: Redux.Dispatch, ownProps: IOwnProps): IDispatchProps<T> => {
+    return { actions: { saveContent: (req: T) => dispatch(contentActions[contentName].saveContent(req)) } };
+  };
+
+  return withRouter(
     connect(
       mapState2Props,
       mapDispatch2Props
-    )((props: Props) => (
+    )((props: Props<T>) => (
       <Wireframe title={pageTitle} breadcrump={[{ label: pageTitle }]}>
-        <Component {...props} />
+        <Component {...props} saveContent={props.actions.saveContent} />
       </Wireframe>
     ))
   );
+};
 
 export default ListPage;

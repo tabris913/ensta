@@ -1,3 +1,4 @@
+import { eventActions } from '../../actions';
 import { IContentState } from '../../models/ContentState';
 import { IEvent, ISpecial, IUnitCollection } from '../../models/event';
 import { contentReducerBuilder } from './content';
@@ -18,4 +19,4 @@ const initialEventValue: IEvent | ISpecial | IUnitCollection = {
 };
 
 export interface IEventState extends IContentState<IEvent | ISpecial | IUnitCollection> {}
-export const reducer = contentReducerBuilder<IEvent | ISpecial | IUnitCollection>(initialEventValue);
+export const reducer = contentReducerBuilder<IEvent | ISpecial | IUnitCollection>(eventActions, initialEventValue);

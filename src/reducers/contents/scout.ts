@@ -1,3 +1,4 @@
+import { scoutActions } from '../../actions';
 import { IContentState } from '../../models/ContentState';
 import { IScout } from '../../models/scout';
 import { contentReducerBuilder } from './content';
@@ -15,4 +16,4 @@ const initialScoutValue: IScout = {
 };
 
 export interface IScoutState extends IContentState<IScout> {}
-export const reducer = contentReducerBuilder(initialScoutValue);
+export const reducer = contentReducerBuilder(scoutActions, initialScoutValue);

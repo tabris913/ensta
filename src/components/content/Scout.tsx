@@ -3,10 +3,11 @@ import * as React from 'react';
 
 // import PageName, { toPublicUrl } from '../../constants/PageName';
 import { MainContentProps } from '../../models/Main';
+import { IScout } from '../../models/scout';
 import { getCharacter } from '../../utils/CharacterUtils';
 import { getScout } from '../../utils/ScoutUtils';
 
-const Scout = (props: MainContentProps) => {
+const Scout = (props: MainContentProps<IScout>) => {
   const scout = getScout(props.query.id!);
   return scout ? (
     <>

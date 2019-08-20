@@ -3,11 +3,11 @@ import * as React from 'react';
 
 // import PageName, { toPublicUrl } from '../../constants/PageName';
 import PageName, { toPublicUrl } from '../../constants/PageName';
-import { MainContentProps } from '../../models/Main';
+import { ListComponentProps } from '../../models/Main';
 import { IScout } from '../../models/scout';
 import { getScout, scoutIds } from '../../utils/ScoutUtils';
 
-const Scout = (props: MainContentProps) => {
+const Scout = (props: ListComponentProps<IScout>) => {
   let scout: Array<IScout | undefined>;
   switch (props.query.type) {
     case 'story':

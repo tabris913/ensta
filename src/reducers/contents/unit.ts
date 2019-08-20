@@ -1,3 +1,4 @@
+import { unitActions } from '../../actions';
 import { IContentState } from '../../models/ContentState';
 import { IUnit } from '../../models/unit';
 import { contentReducerBuilder } from './content';
@@ -14,4 +15,4 @@ const initialUnitValue: IUnit = {
 };
 
 export interface IUnitState extends IContentState<IUnit> {}
-export const reducer = contentReducerBuilder(initialUnitValue);
+export const reducer = contentReducerBuilder(unitActions, initialUnitValue);

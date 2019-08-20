@@ -4,12 +4,12 @@ import * as React from 'react';
 // import PageName, { toPublicUrl } from '../../constants/PageName';
 import PageName, { toPublicUrl } from '../../constants/PageName';
 import { IEvent, ISpecial, IUnitCollection } from '../../models/event';
-import { MainContentProps } from '../../models/Main';
-import { eventIds, getEvent, isNormalEvent } from '../../utils/EventUtils';
+import { EventType, ListComponentProps } from '../../models/Main';
+import { eventIds, getEvent, isNormalEvent, toEvent } from '../../utils/EventUtils';
 import { getSpecial, specialEventIds } from '../../utils/SpecialUtils';
 import { getUnitCollection, unitCollectionIds } from '../../utils/UCUtils';
 
-const Event = (props: MainContentProps) => {
+const Event = (props: ListComponentProps<IEvent | IUnitCollection | ISpecial>) => {
   let event: Array<IEvent | IUnitCollection | ISpecial | undefined>;
   switch (props.query.type) {
     case 'special':
@@ -23,6 +23,12 @@ const Event = (props: MainContentProps) => {
       break;
   }
   const [pageKey, setPageKey] = React.useState(0);
+
+  const handleEventName = (content: IEvent | ISpecial | IUnitCollection, type?: EventType) => {
+    if (!!event) props.saveContent(content);
+
+    toEvent(props.history, content.uid, type);
+  };
 
   return (
     <>
@@ -52,26 +58,8 @@ const Event = (props: MainContentProps) => {
               >
                 <Typography.Title level={4} style={{ width: '100%' }} underline={true}>
                   <div
-                    onClick={() => {
-                      props.history.push(
-                        toPublicUrl(
-                          PageName.EVENT,
-                          undefined,
-                          !props.query.type ? { id: item.uid } : { id: item.uid, type: props.query.type }
-                        )
-                      );
-                      // console.log(toPublicUrl(PageName.EVENT, undefined, { id: item.uid }));
-                    }}
-                    onTouchEnd={() => {
-                      props.history.push(
-                        toPublicUrl(
-                          PageName.EVENT,
-                          undefined,
-                          !props.query.type ? { id: item.uid } : { id: item.uid, type: props.query.type }
-                        )
-                      );
-                      // console.log(toPublicUrl(PageName.EVENT, undefined, { id: item.uid }));
-                    }}
+                    onClick={() => handleEventName(item, props.query.type as EventType)}
+                    onTouchEnd={() => handleEventName(item, props.query.type as EventType)}
                   >
                     {item.name}
                   </div>

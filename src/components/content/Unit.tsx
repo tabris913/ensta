@@ -4,10 +4,11 @@ import * as React from 'react';
 // import PageName, { toPublicUrl } from '../../constants/PageName';
 import PageName, { toPublicUrl } from '../../constants/PageName';
 import { MainContentProps } from '../../models/Main';
+import { IUnit } from '../../models/unit';
 import { getCharacter, toCharacter } from '../../utils/CharacterUtils';
 import { isUnit } from '../../utils/UnitUtils';
 
-interface Props extends MainContentProps {}
+interface Props extends MainContentProps<IUnit> {}
 
 const Unit = ({ content: unit, ...props }: Props) =>
   isUnit(unit) ? (

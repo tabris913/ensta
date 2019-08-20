@@ -1,6 +1,7 @@
 import { IContent } from './content';
 
 export interface IContentState<T extends IContent> {
-  content: T;
-  listPage: number;
+  content?: T;
+  listPage?: number;
+  list?: T[];
 }

@@ -3,10 +3,11 @@ import * as React from 'react';
 
 // import PageName, { toPublicUrl } from '../../constants/PageName';
 import PageName, { toPublicUrl } from '../../constants/PageName';
-import { MainContentProps } from '../../models/Main';
+import { ListComponentProps } from '../../models/Main';
+import { IUnit } from '../../models/unit';
 import { getUnit, unitIds } from '../../utils/UnitUtils';
 
-const Unit = (props: MainContentProps) => {
+const Unit = (props: ListComponentProps<IUnit>) => {
   const unit = unitIds.map(getUnit);
   const [pageKey, setPageKey] = React.useState(0);
 
