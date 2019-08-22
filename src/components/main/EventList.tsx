@@ -4,8 +4,8 @@ import * as React from 'react';
 // import PageName, { toPublicUrl } from '../../constants/PageName';
 import PageName, { toPublicUrl } from '../../constants/PageName';
 import { IEvent, ISpecial, IUnitCollection } from '../../models/event';
-import { MainContentProps } from '../../models/Main';
-import { eventIds, getEvent, isNormalEvent } from '../../utils/EventUtils';
+import { EventType, MainContentProps } from '../../models/Main';
+import { eventIds, getEvent, isNormalEvent, toEvent } from '../../utils/EventUtils';
 import { getSpecial, specialEventIds } from '../../utils/SpecialUtils';
 import { getUnitCollection, unitCollectionIds } from '../../utils/UCUtils';
 
@@ -52,26 +52,8 @@ const Event = (props: MainContentProps) => {
               >
                 <Typography.Title level={4} style={{ width: '100%' }} underline={true}>
                   <div
-                    onClick={() => {
-                      props.history.push(
-                        toPublicUrl(
-                          PageName.EVENT,
-                          undefined,
-                          !props.query.type ? { id: item.uid } : { id: item.uid, type: props.query.type }
-                        )
-                      );
-                      // console.log(toPublicUrl(PageName.EVENT, undefined, { id: item.uid }));
-                    }}
-                    onTouchEnd={() => {
-                      props.history.push(
-                        toPublicUrl(
-                          PageName.EVENT,
-                          undefined,
-                          !props.query.type ? { id: item.uid } : { id: item.uid, type: props.query.type }
-                        )
-                      );
-                      // console.log(toPublicUrl(PageName.EVENT, undefined, { id: item.uid }));
-                    }}
+                    onClick={() => toEvent(props.history, item.uid, props.query.type as EventType)}
+                    onTouchEnd={() => toEvent(props.history, item.uid, props.query.type as EventType)}
                   >
                     {item.name}
                   </div>
