@@ -10,6 +10,7 @@ const EventPage = ContentPage({
   pageTitle: 'Event',
   pageName: PageName.EVENT,
   component: Event,
+  contentName: 'event',
   getFunc: (uid: string, type?: TypeType) => {
     switch (type) {
       case 'special':

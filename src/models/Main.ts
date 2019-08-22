@@ -11,12 +11,19 @@ export interface QueryType {
   type?: TypeType;
 }
 
-export interface MainContentProps {
+export interface MainProps {
   history: History;
   query: QueryType;
-  content?: IContent;
 }
 
-export interface TitleProps extends MainContentProps {}
+export interface ListComponentProps<T extends IContent> extends MainProps {
+  saveContent: (content: T) => void;
+}
 
-export interface BodyProps extends MainContentProps {}
+export interface MainContentProps<T extends IContent> extends MainProps {
+  content?: T;
+}
+
+export interface TitleProps<T extends IContent> extends MainContentProps<T> {}
+
+export interface BodyProps<T extends IContent> extends MainContentProps<T> {}

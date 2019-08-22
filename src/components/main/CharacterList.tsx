@@ -3,10 +3,11 @@ import * as React from 'react';
 
 // import PageName, { toPublicUrl } from '../../constants/PageName';
 import PageName, { toPublicUrl } from '../../constants/PageName';
-import { MainContentProps } from '../../models/Main';
+import { ICharacter } from '../../models/character';
+import { ListComponentProps } from '../../models/Main';
 import { characterIds, getCharacter } from '../../utils/CharacterUtils';
 
-const Character = (props: MainContentProps) => {
+const Character = (props: ListComponentProps<ICharacter>) => {
   const character = characterIds.map(getCharacter);
   const [pageKey, setPageKey] = React.useState(0);
 
@@ -53,8 +54,8 @@ const Character = (props: MainContentProps) => {
                   {item.class ? <Descriptions.Item label="クラス">{item.class}</Descriptions.Item> : <></>}
                   {item.unit.length > 0 ? (
                     <Descriptions.Item label="ユニット">
-                      {item.unit.map(uid => (
-                        <p>{getCharacter(uid)}</p>
+                      {item.unit.map((uid, idx2) => (
+                        <p key={idx2}>{getCharacter(uid)}</p>
                       ))}
                     </Descriptions.Item>
                   ) : (

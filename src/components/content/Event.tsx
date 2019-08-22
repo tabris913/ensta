@@ -4,14 +4,14 @@ import * as React from 'react';
 
 // import PageName, { toPublicUrl } from '../../constants/PageName';
 import PageName, { toPublicUrl } from '../../constants/PageName';
-import { IEvent } from '../../models/event';
+import { IEvent, ISpecial, IUnitCollection } from '../../models/event';
 import { MainContentProps } from '../../models/Main';
 import { getCard, searchCard } from '../../utils/CardUtils';
 import { getCharacter } from '../../utils/CharacterUtils';
 import { getEvent, isEvent, isNormalEvent } from '../../utils/EventUtils';
 import { isUnitCollection } from '../../utils/UCUtils';
 
-interface Props extends MainContentProps {}
+interface Props extends MainContentProps<IEvent | ISpecial | IUnitCollection> {}
 
 const EventBonus = ({ event, property }: { event: IEvent; property: string }) => (
   <>

@@ -4,6 +4,7 @@ import * as React from 'react';
 
 // import PageName, { toPublicUrl } from '../../constants/PageName';
 import PageName, { toPublicUrl } from '../../constants/PageName';
+import { ICharacter } from '../../models/character';
 import { IEvent, ISpecial, IUnitCollection } from '../../models/event';
 import { MainContentProps } from '../../models/Main';
 import { getCard, searchCard } from '../../utils/CardUtils';
@@ -11,7 +12,7 @@ import { getCharacter } from '../../utils/CharacterUtils';
 import { getEvent, isNormalEvent } from '../../utils/EventUtils';
 import { isUnitCollection } from '../../utils/UCUtils';
 
-interface Props extends MainContentProps {
+interface Props extends MainContentProps<ICharacter> {
   event?: IEvent | IUnitCollection | ISpecial;
 }
 

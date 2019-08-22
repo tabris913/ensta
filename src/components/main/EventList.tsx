@@ -4,12 +4,12 @@ import * as React from 'react';
 // import PageName, { toPublicUrl } from '../../constants/PageName';
 import PageName, { toPublicUrl } from '../../constants/PageName';
 import { IEvent, ISpecial, IUnitCollection } from '../../models/event';
-import { EventType, MainContentProps } from '../../models/Main';
+import { EventType, ListComponentProps } from '../../models/Main';
 import { eventIds, getEvent, isNormalEvent, toEvent } from '../../utils/EventUtils';
 import { getSpecial, specialEventIds } from '../../utils/SpecialUtils';
 import { getUnitCollection, unitCollectionIds } from '../../utils/UCUtils';
 
-const Event = (props: MainContentProps) => {
+const Event = (props: ListComponentProps<IEvent | IUnitCollection | ISpecial>) => {
   let event: Array<IEvent | IUnitCollection | ISpecial | undefined>;
   switch (props.query.type) {
     case 'special':
@@ -23,6 +23,12 @@ const Event = (props: MainContentProps) => {
       break;
   }
   const [pageKey, setPageKey] = React.useState(0);
+
+  const handleEventName = (content: IEvent | ISpecial | IUnitCollection, type?: EventType) => {
+    if (!!event) props.saveContent(content);
+
+    toEvent(props.history, content.uid, type);
+  };
 
   return (
     <>
@@ -52,8 +58,8 @@ const Event = (props: MainContentProps) => {
               >
                 <Typography.Title level={4} style={{ width: '100%' }} underline={true}>
                   <div
-                    onClick={() => toEvent(props.history, item.uid, props.query.type as EventType)}
-                    onTouchEnd={() => toEvent(props.history, item.uid, props.query.type as EventType)}
+                    onClick={() => handleEventName(item, props.query.type as EventType)}
+                    onTouchEnd={() => handleEventName(item, props.query.type as EventType)}
                   >
                     {item.name}
                   </div>

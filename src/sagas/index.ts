@@ -1,5 +1,32 @@
-import { all } from 'redux-saga/effects';
+import { all, takeEvery } from 'redux-saga/effects';
+
+import { ActionTypes } from '../actions/types';
+import { ContentName, ContentNames } from '../constants/ContentName';
+import { IContent } from '../models/content';
+import { snakeCase } from '../utils/MiscUtils';
+import { contentSagas } from './contents';
+import { ContentSaga } from './contents/content';
+
+interface IListener extends ReturnType<typeof takeEvery> {}
+
+const createListeners = <T extends IContent>(contentName: ContentName, saga: ContentSaga<T>) => {
+  const listeners: IListener[] = [];
+
+  Object.entries(saga).map(([key, value]) => {
+    if (!value || typeof value !== 'function') return;
+
+    const pattern = `${contentName.toUpperCase()}_${snakeCase(key).toUpperCase()}`;
+    listeners.push(takeEvery(`${ActionTypes[pattern]}`, value));
+  });
+
+  return listeners;
+};
 
 export default function* rootSaga(): IterableIterator<any> {
-  yield all([]);
+  yield all([
+    ...ContentNames.reduce(
+      (names, name) => [...names, ...createListeners(name, contentSagas[name])],
+      [] as IListener[]
+    ),
+  ]);
 }

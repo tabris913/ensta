@@ -2,13 +2,13 @@ import { Button, Col, Popover, Row } from 'antd';
 import * as React from 'react';
 
 import PageName, { toPublicUrl } from '../../constants/PageName';
-import { MainContentProps } from '../../models/Main';
+import { MainProps } from '../../models/Main';
 
 // music
 // cd
 // book
 
-const Top = (props: MainContentProps) => {
+const Top = (props: MainProps) => {
   const topButtons = [
     {
       label: 'Event',
