@@ -9,9 +9,9 @@ export const getCard = (uid: string): ICard | undefined => {
   return undefined;
 };
 
-export const searchCard = (str: string): ICard[] =>
+export const searchCard = (eventUid: string, characterUid: string, cardRank: string): ICard[] =>
   Object.keys(Card.card)
-    .filter(e => e.startsWith(str))
+    .filter(e => e.startsWith(`${eventUid}_${characterUid}_${cardRank}`))
     .map(uid => Card.card[uid]);
 
 export const cardIds = Object.keys(Card.card);

@@ -56,6 +56,10 @@ const ContentPage = <T extends IContent>({
       mapState2Props,
       mapDispatch2Props
     )((props: Props) => {
+      if (R.isEmpty(props.contents[contentName])) {
+        // props.getContent()
+        // getFuncけす
+      }
       const content = R.isEmpty(props.contents[contentName])
         ? getFunc(props.query.id!, props.query.type)
         : props.contents[contentName].content;

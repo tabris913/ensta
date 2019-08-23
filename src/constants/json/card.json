@@ -47879,6 +47879,118 @@
       "bonus": "ranking",
       "img": ["e101/kuro_A.jpg", "e101/kuro_B.jpg"],
       "remarks": ""
+    },
+    "uc002_rei_5": {
+      "uid": "uc002_rei_5",
+      "name": "UNDEADの知性",
+      "character": "rei",
+      "rank": 5,
+      "type": "Pf",
+      "date": "2019-08-15",
+      "skill": {
+        "lesson": "",
+        "produce": ""
+      },
+      "parameter": {
+        "initial": {
+          "dance": 0,
+          "vocal": 0,
+          "performance": 0
+        },
+        "max": {
+          "dance": 0,
+          "vocal": 0,
+          "performance": 0
+        }
+      },
+      "content": ["uc002"],
+      "bonus": "",
+      "img": ["uc002/rei_A.jpg", "uc002/rei_B.jpg"],
+      "remarks": ""
+    },
+    "uc002_kaoru_5": {
+      "uid": "uc002_kaoru_5",
+      "name": "UNDEADの魅惑",
+      "character": "kaoru",
+      "rank": 5,
+      "type": "Vo",
+      "date": "2019-08-15",
+      "skill": {
+        "lesson": "",
+        "produce": ""
+      },
+      "parameter": {
+        "initial": {
+          "dance": 0,
+          "vocal": 0,
+          "performance": 0
+        },
+        "max": {
+          "dance": 0,
+          "vocal": 0,
+          "performance": 0
+        }
+      },
+      "content": ["uc002"],
+      "bonus": "",
+      "img": ["uc002/kaoru_A.jpg", "uc002/kaoru_B.jpg"],
+      "remarks": ""
+    },
+    "uc002_koga_5": {
+      "uid": "uc002_koga_5",
+      "name": "UNDEADの野生",
+      "character": "koga",
+      "rank": 5,
+      "type": "Pf",
+      "date": "2019-08-15",
+      "skill": {
+        "lesson": "",
+        "produce": ""
+      },
+      "parameter": {
+        "initial": {
+          "dance": 0,
+          "vocal": 0,
+          "performance": 0
+        },
+        "max": {
+          "dance": 0,
+          "vocal": 0,
+          "performance": 0
+        }
+      },
+      "content": ["uc002"],
+      "bonus": "",
+      "img": ["uc002/koga_A.jpg", "uc002/koga_B.jpg"],
+      "remarks": ""
+    },
+    "uc002_adnis_5": {
+      "uid": "uc002_adnis_5",
+      "name": "UNDEADの慈愛",
+      "character": "adnis",
+      "rank": 5,
+      "type": "Da",
+      "date": "2019-08-15",
+      "skill": {
+        "lesson": "",
+        "produce": ""
+      },
+      "parameter": {
+        "initial": {
+          "dance": 0,
+          "vocal": 0,
+          "performance": 0
+        },
+        "max": {
+          "dance": 0,
+          "vocal": 0,
+          "performance": 0
+        }
+      },
+      "content": ["uc002"],
+      "bonus": "",
+      "img": ["uc002/adnis_A.jpg", "uc002/adnis_B.jpg"],
+      "remarks": ""
     }
   }
 }

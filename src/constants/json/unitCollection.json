@@ -6,11 +6,23 @@
       "description": "",
       "start": "2019-07-15",
       "end": "2019-07-25",
-      "relation": ["Trickstar"],
-      "banner": ["hokuto", "subaru", "makoto", "mao"],
+      "relation": ["trickstar"],
+      "banner": ["trickstar"],
       "img": "uc001.jpg",
       "acquirableCards": ["hokuto", "subaru", "makoto", "mao"],
-      "revivalEvents": [""]
+      "revivalEvents": []
+    },
+    "uc002": {
+      "uid": "uc002",
+      "name": "ユニットコレクション UNDEAD",
+      "description": "",
+      "start": "2019-08-15",
+      "end": "2019-08-25",
+      "relation": ["undead"],
+      "banner": ["undead"],
+      "img": "uc002.jpg",
+      "acquirableCards": ["rei", "kaoru", "koga", "adnis"],
+      "revivalEvents": []
     }
   }
 }

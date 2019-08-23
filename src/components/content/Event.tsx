@@ -6,7 +6,7 @@ import * as React from 'react';
 import PageName, { toPublicUrl } from '../../constants/PageName';
 import { IEvent, ISpecial, IUnitCollection } from '../../models/event';
 import { MainContentProps } from '../../models/Main';
-import { getCard, searchCard } from '../../utils/CardUtils';
+import { searchCard } from '../../utils/CardUtils';
 import { getCharacter } from '../../utils/CharacterUtils';
 import { getEvent, isEvent, isNormalEvent } from '../../utils/EventUtils';
 import { isUnitCollection } from '../../utils/UCUtils';
@@ -24,7 +24,7 @@ const EventBonus = ({ event, property }: { event: IEvent; property: string }) =>
           <Col>
             <Row style={{ padding: '0px 10px 0px 0px' }}>
               {event.bonus[property][r].map((uid: string) => {
-                const cards = searchCard(`${event.uid}_${uid}_${r}`);
+                const cards = searchCard(event.uid, uid, r);
                 const card = cards.length === 1 ? cards[0] : cards[0];
                 const character = getCharacter(uid);
                 return (
@@ -71,7 +71,8 @@ const Event = ({ content: event, ...props }: Props) =>
           <Descriptions.Item label="獲得カード">
             <Row style={{ padding: '0px 10px 0px 0px' }}>
               {event.acquirableCards.map((uid: string) => {
-                const card = getCard(uid);
+                const cards = searchCard(event.uid, uid, '5');
+                const card = cards.length === 1 ? cards[0] : cards[0];
                 const character = card ? getCharacter(card.character) : '';
                 return (
                   <Col key={uid}>{card ? `「${card.name}」 ${character ? character.name : card.character}` : uid}</Col>

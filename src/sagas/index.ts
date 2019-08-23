@@ -13,10 +13,11 @@ const createListeners = <T extends IContent>(contentName: ContentName, saga: Con
   const listeners: IListener[] = [];
 
   Object.entries(saga).map(([key, value]) => {
-    if (!value || typeof value !== 'function') return;
+    if (!value || typeof value !== 'function') return null;
 
     const pattern = `${contentName.toUpperCase()}_${snakeCase(key).toUpperCase()}`;
     listeners.push(takeEvery(`${ActionTypes[pattern]}`, value));
+    return null;
   });
 
   return listeners;

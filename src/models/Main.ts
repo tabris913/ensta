@@ -18,6 +18,7 @@ export interface MainProps {
 
 export interface ListComponentProps<T extends IContent> extends MainProps {
   saveContent: (content: T) => void;
+  getContent: (uid: string, type?: TypeType) => void;
 }
 
 export interface MainContentProps<T extends IContent> extends MainProps {

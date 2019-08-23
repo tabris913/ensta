@@ -9,6 +9,7 @@ import { contentActions } from '../../../actions';
 import { ContentName } from '../../../constants/ContentName';
 import { IContent } from '../../../models/content';
 import { ListComponentProps, QueryType } from '../../../models/Main';
+import { IContentRequest } from '../../../models/request/ContentRequest';
 import { IStoreState } from '../../../reducers';
 
 interface IOwnProps extends RouteComponentProps<{}> {}
@@ -20,6 +21,7 @@ interface IStateProps {
 interface IDispatchProps<T extends IContent> {
   actions: {
     saveContent: (req: T) => void;
+    getContent: (req: IContentRequest) => void;
   };
 }
 
@@ -40,7 +42,12 @@ interface IPageGenerator<T extends IContent> {
 
 const ListPage = <T extends IContent>({ pageTitle, component: Component, contentName }: IPageGenerator<T>) => {
   const mapDispatch2Props = (dispatch: Redux.Dispatch, ownProps: IOwnProps): IDispatchProps<T> => {
-    return { actions: { saveContent: (req: T) => dispatch(contentActions[contentName].saveContent(req)) } };
+    return {
+      actions: {
+        saveContent: (req: T) => dispatch(contentActions[contentName].saveContent(req)),
+        getContent: (req: IContentRequest) => dispatch(contentActions[contentName].getContent(req)),
+      },
+    };
   };
 
   return withRouter(
@@ -49,7 +56,11 @@ const ListPage = <T extends IContent>({ pageTitle, component: Component, content
       mapDispatch2Props
     )((props: Props<T>) => (
       <Wireframe title={pageTitle} breadcrump={[{ label: pageTitle }]}>
-        <Component {...props} saveContent={props.actions.saveContent} />
+        <Component
+          {...props}
+          saveContent={props.actions.saveContent}
+          getContent={(uid, type) => props.actions.getContent({ uid: uid, type: type })}
+        />
       </Wireframe>
     ))
   );

@@ -27,7 +27,7 @@ const EventBonus = ({ event, property }: { event: IEvent; property: string }) =>
           <Col>
             <Row style={{ padding: '0px 10px 0px 0px' }}>
               {event.bonus[property][r].map((uid: string) => {
-                const cards = searchCard(`${event.uid}_${uid}_${r}`);
+                const cards = searchCard(event.uid, uid, r);
                 const card = cards.length === 1 ? cards[0] : cards[0];
                 const character = getCharacter(uid);
                 return (
