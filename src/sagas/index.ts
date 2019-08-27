@@ -2,14 +2,17 @@ import { all, takeEvery } from 'redux-saga/effects';
 
 import { ActionTypes } from '../actions/types';
 import { ContentName, ContentNames } from '../constants/ContentName';
-import { IContent } from '../models/content';
+import { IContent, IContentAdditionalState } from '../models/content';
 import { snakeCase } from '../utils/MiscUtils';
 import { contentSagas } from './contents';
 import { ContentSaga } from './contents/content';
 
 interface IListener extends ReturnType<typeof takeEvery> {}
 
-const createListeners = <T extends IContent>(contentName: ContentName, saga: ContentSaga<T>) => {
+const createListeners = <T extends IContent, A extends IContentAdditionalState>(
+  contentName: ContentName,
+  saga: ContentSaga<T, A>
+) => {
   const listeners: IListener[] = [];
 
   Object.entries(saga).map(([key, value]) => {

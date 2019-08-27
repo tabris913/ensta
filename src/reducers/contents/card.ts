@@ -1,5 +1,6 @@
 import { cardActions } from '../../actions';
 import { ICard } from '../../models/card';
+import { IContentAdditionalState } from '../../models/content';
 import { IContentState } from '../../models/ContentState';
 import { contentReducerBuilder } from './content';
 
@@ -18,5 +19,6 @@ const initialCardValue: ICard = {
   remarks: '',
 };
 
-export interface ICardState extends IContentState<ICard> {}
+export interface ICardState extends IContentState<ICard, ICardAdditionalState> {}
+export interface ICardAdditionalState extends IContentAdditionalState {}
 export const reducer = contentReducerBuilder(cardActions, initialCardValue);

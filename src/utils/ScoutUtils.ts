@@ -24,3 +24,5 @@ export const scoutIds = Object.keys(Scout.scout);
 
 export const toScout = (history: History, uid: string, type?: ScoutType) =>
   history.push(toPublicUrl(PageName.SCOUT, undefined, type ? { id: uid, type: type } : { id: uid }));
+
+export const getCharacterScout = (uid: string) => getScouts().filter(s => s.cards['5'].includes(uid));

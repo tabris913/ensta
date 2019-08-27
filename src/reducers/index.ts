@@ -2,22 +2,12 @@ import { connectRouter, LocationChangeAction, RouterState } from 'connected-reac
 import { History } from 'history';
 import { combineReducers, Reducer } from 'redux';
 
+import { IContentsState } from '../models/ContentState';
 import * as contentsReducers from './contents';
-import { ICardState } from './contents/card';
-import { ICharacterState } from './contents/character';
-import { IEventState } from './contents/event';
-import { IScoutState } from './contents/scout';
-import { IUnitState } from './contents/unit';
 
 export interface IStoreState {
   router: Reducer<RouterState, LocationChangeAction>;
-  contents: {
-    event: IEventState;
-    scout: IScoutState;
-    unit: IUnitState;
-    character: ICharacterState;
-    card: ICardState;
-  };
+  contents: IContentsState;
 }
 
 export default (history: History) =>

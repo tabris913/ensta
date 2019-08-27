@@ -1,25 +1,29 @@
 import { Action } from 'typescript-fsa';
 import { ContentActions } from '../../actions/content';
 import { ContentName } from '../../constants/ContentName';
-import { IContent } from '../../models/content';
+import { IContent, IContentAdditionalState } from '../../models/content';
 import { IContentRequest } from '../../models/request/ContentRequest';
+import { IContentSaveRequest } from '../../models/request/ContentSaveRequest';
 import { IListRequest } from '../../models/request/ListRequest';
 
-export interface ContentSaga<T extends IContent> {
+export interface ContentSaga<T extends IContent, A extends IContentAdditionalState> {
   getContent: (action: Action<IContentRequest>) => IterableIterator<any>;
-  saveContent: (action: Action<T>) => IterableIterator<any>;
+  saveContent: (action: Action<IContentSaveRequest<T>>) => IterableIterator<any>;
   getList: (action: Action<IListRequest>) => IterableIterator<any>;
   changeListPage: (action: Action<number>) => IterableIterator<any>;
 }
 
-const saga = <T extends IContent>(contentName: ContentName, actions: ContentActions<T>) => ({
+const saga = <T extends IContent, A extends IContentAdditionalState>(
+  contentName: ContentName,
+  actions: ContentActions<T, A>
+) => ({
   getContent: () =>
     function*(action: Action<IContentRequest>): IterableIterator<any> {
       console.log(`get ${contentName} content`);
       yield null;
     },
   saveContent: () =>
-    function*(action: Action<T>): IterableIterator<any> {
+    function*(action: Action<IContentSaveRequest<T>>): IterableIterator<any> {
       console.log(`save ${contentName} content`);
       yield null;
     },

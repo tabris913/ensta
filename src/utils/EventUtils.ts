@@ -37,3 +37,6 @@ export const isNormalEvent = (obj: any): obj is INormalEvent => {
     checkKeys.map(key => Object.keys(obj).includes(key) && !R.isNil(obj[key]) && !R.isEmpty(obj[key]))
   );
 };
+
+export const getCharacterEvent = (uid: string) =>
+  getEvents().filter(e => e.bonus.ranking['5'].includes(uid) || e.bonus.point['5'].includes(uid));

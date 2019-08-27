@@ -266,7 +266,8 @@ def makeCharacter():
       "unfavorite": [],
       "imgs": [],
       "club": "{line.club}",
-      "unit": [{convert_list(line.unit) if line.unit else ''}]
+      "unit": [{convert_list(line.unit) if line.unit else ''}],
+      "class": "{line.class_id}"
     }}{',' if df.index[-1] != idx else ''}\n'''
 
         json_string += fmt
@@ -281,10 +282,10 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     args = parser.parse_args()
 
-    # makeUnit()
-    # makeCharacter()
+    makeUnit()
+    makeCharacter()
     makeCard()
     makeEvent()
     makeUC()
-    # makeSpecial()
+    makeSpecial()
     makeScout()

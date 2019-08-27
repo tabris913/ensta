@@ -9,25 +9,27 @@ import { contentActions } from '../../../actions';
 import { ContentName } from '../../../constants/ContentName';
 import PageName, { toPublicUrl } from '../../../constants/PageName';
 import { IContent } from '../../../models/content';
-import { IContentState } from '../../../models/ContentState';
+import { IContentsState } from '../../../models/ContentState';
 import { MainContentProps, QueryType } from '../../../models/Main';
 import { IContentRequest } from '../../../models/request/ContentRequest';
+import { IContentSaveRequest } from '../../../models/request/ContentSaveRequest';
 import { IStoreState } from '../../../reducers';
 
 interface IOwnProps extends RouteComponentProps<{}> {}
 
 interface IStateProps {
   query: QueryType;
-  contents: { [K in ContentName]: IContentState<any> };
+  contents: IContentsState;
 }
 
-interface IDispatchProps {
+interface IDispatchProps<T extends IContent> {
   actions: {
     getContent: (req: IContentRequest) => void;
+    saveContent: (req: IContentSaveRequest<T>) => void;
   };
 }
 
-type Props = IOwnProps & IStateProps & IDispatchProps;
+type Props<T extends IContent> = IOwnProps & IStateProps & IDispatchProps<T>;
 
 const mapState2Props = (state: IStoreState, ownProps: IOwnProps): IStateProps => ({
   query: ownProps.location.search
@@ -50,10 +52,11 @@ const ContentPage = <T extends IContent>({
   component: Component,
   contentName,
 }: IPageGenerator<T>) => {
-  const mapDispatch2Props = (dispatch: Redux.Dispatch, ownProps: IOwnProps): IDispatchProps => {
+  const mapDispatch2Props = (dispatch: Redux.Dispatch, ownProps: IOwnProps): IDispatchProps<T> => {
     return {
       actions: {
         getContent: (req: IContentRequest) => dispatch(contentActions[contentName].getContent(req)),
+        saveContent: (req: IContentSaveRequest<T>) => dispatch(contentActions[contentName].saveContent(req)),
       },
     };
   };
@@ -62,8 +65,8 @@ const ContentPage = <T extends IContent>({
     connect(
       mapState2Props,
       mapDispatch2Props
-    )((props: Props) => {
-      const localName = props.contents[contentName].content ? props.contents[contentName].content.name : '';
+    )((props: Props<T>) => {
+      const localName = props.contents[contentName].content ? props.contents[contentName].content!.name : '';
       return (
         <Wireframe
           title={localName}

@@ -1,9 +1,11 @@
 import { eventActions } from '../../actions';
+import { ICard } from '../../models/card';
+import { IContentAdditionalState } from '../../models/content';
 import { IContentState } from '../../models/ContentState';
-import { INormalEvent, ISpecialEvent, IUnitCollection } from '../../models/event';
+import { IEvent } from '../../models/event';
 import { contentReducerBuilder } from './content';
 
-const initialEventValue: INormalEvent | ISpecialEvent | IUnitCollection = {
+const initialEventValue: IEvent = {
   uid: '',
   name: '',
   start: '',
@@ -18,8 +20,8 @@ const initialEventValue: INormalEvent | ISpecialEvent | IUnitCollection = {
   revivalEvents: [],
 };
 
-export interface IEventState extends IContentState<INormalEvent | ISpecialEvent | IUnitCollection> {}
-export const reducer = contentReducerBuilder<INormalEvent | ISpecialEvent | IUnitCollection>(
-  eventActions,
-  initialEventValue
-);
+export interface IEventState extends IContentState<IEvent, IEventAdditionalState> {}
+export interface IEventAdditionalState extends IContentAdditionalState {
+  card: ICard[];
+}
+export const reducer = contentReducerBuilder<IEvent, IEventAdditionalState>(eventActions, initialEventValue);

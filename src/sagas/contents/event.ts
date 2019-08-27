@@ -1,10 +1,11 @@
 import { eventActions } from '../../actions';
-import { INormalEvent, ISpecialEvent, IUnitCollection } from '../../models/event';
+import { IEvent } from '../../models/event';
+import { IEventAdditionalState } from '../../reducers/contents/event';
 import saga, { ContentSaga } from './content';
 
 const sagas = saga('event', eventActions);
 
-export const eventSaga: ContentSaga<INormalEvent | ISpecialEvent | IUnitCollection> = {
+export const eventSaga: ContentSaga<IEvent, IEventAdditionalState> = {
   getContent: sagas.getContent(),
   saveContent: sagas.saveContent(),
   getList: sagas.getList(),

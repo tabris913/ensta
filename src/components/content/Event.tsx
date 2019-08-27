@@ -1,19 +1,19 @@
 import { Button, Col, Descriptions, Row } from 'antd';
+import { History } from 'history';
 import * as R from 'ramda';
 import * as React from 'react';
 
 // import PageName, { toPublicUrl } from '../../constants/PageName';
-import PageName, { toPublicUrl } from '../../constants/PageName';
 import { INormalEvent, ISpecialEvent, IUnitCollection } from '../../models/event';
 import { EventType, MainContentProps } from '../../models/Main';
-import { searchCard } from '../../utils/CardUtils';
+import { searchCard, toCard } from '../../utils/CardUtils';
 import { getCharacter } from '../../utils/CharacterUtils';
 import { getEvent, isEvent, isNormalEvent } from '../../utils/EventUtils';
 import { isUnitCollection } from '../../utils/UCUtils';
 
 interface Props extends MainContentProps<INormalEvent | ISpecialEvent | IUnitCollection> {}
 
-const EventBonus = ({ event, property }: { event: INormalEvent; property: string }) => (
+const EventBonus = ({ history, event, property }: { history: History; event: INormalEvent; property: string }) => (
   <>
     {['5', '4', '3']
       .filter(r => Object.keys(event.bonus[property]).includes(r) && !R.isEmpty(event.bonus[property][r]))
@@ -29,7 +29,15 @@ const EventBonus = ({ event, property }: { event: INormalEvent; property: string
                 const character = getCharacter(uid);
                 return (
                   <Col key={uid}>
-                    「{card.name}」 {character ? character.name : uid}
+                    <Button
+                      type="link"
+                      style={{ whiteSpace: 'unset', padding: 0 }}
+                      onClick={() => toCard(history, card.uid)}
+                    >
+                      {card.name}
+                    </Button>
+                    <br />
+                    <span>{character ? character.name : uid}</span>
                   </Col>
                 );
               })}
@@ -42,7 +50,7 @@ const EventBonus = ({ event, property }: { event: INormalEvent; property: string
 
 const Event = (props: Props) => {
   React.useState(() => {
-    if (!props.contents || !props.contents.event.content) {
+    if (!props.contents || !props.contents.event.content || props.contents.event.content.uid !== props.query.id) {
       props.getContent({ uid: props.query.id!, type: props.query.type as EventType, contentName: 'event' });
     }
   });
@@ -65,19 +73,19 @@ const Event = (props: Props) => {
         <Descriptions.Item label="終了">{props.contents.event.content.end}</Descriptions.Item>
         {isNormalEvent(props.contents.event.content) ? (
           <Descriptions.Item label="ランキング">
-            <EventBonus event={props.contents.event.content} property="ranking" />
+            <EventBonus event={props.contents.event.content} property="ranking" history={props.history} />
           </Descriptions.Item>
         ) : null}
         {isNormalEvent(props.contents.event.content) ? (
           <Descriptions.Item label="ポイント">
-            <EventBonus event={props.contents.event.content} property="point" />
+            <EventBonus event={props.contents.event.content} property="point" history={props.history} />
           </Descriptions.Item>
         ) : null}
         {isUnitCollection(props.contents.event.content) ? (
           <Descriptions.Item label="獲得カード">
             <Row style={{ padding: '0px 10px 0px 0px' }}>
               {props.contents.event.content.acquirableCards.map((uid: string) => {
-                const cards = searchCard(props.contents!.event.content.uid, uid, '5');
+                const cards = searchCard(props.contents!.event.content!.uid, uid, '5');
                 const card = cards.length === 1 ? cards[0] : cards[0];
                 const character = card ? getCharacter(card.character) : '';
                 return (
@@ -98,17 +106,8 @@ const Event = (props: Props) => {
           </Descriptions.Item>
         ) : null}
       </Descriptions>
-      <Button
-        onClick={() => {
-          props.history.goBack();
-          props.history.replace(
-            toPublicUrl(PageName.EVENT_LIST, undefined, props.query.type ? { type: props.query.type } : {})
-          );
-        }}
-        type="primary"
-        style={{ width: 'unset' }}
-      >
-        リストに戻る
+      <Button onClick={props.history.goBack} type="primary" style={{ width: 'unset' }}>
+        戻る
       </Button>
     </>
   ) : (

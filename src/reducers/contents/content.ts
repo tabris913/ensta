@@ -1,42 +1,108 @@
 import { reducerWithInitialState } from 'typescript-fsa-reducers';
 import { ContentActions } from '../../actions/content';
-import { IContent } from '../../models/content';
+import { IContent, IContentAdditionalState } from '../../models/content';
 import { IContentState } from '../../models/ContentState';
-import { getCard, getCards } from '../../utils/CardUtils';
+import { getCard, getCards, getCharacterCard, getEventScoutCard } from '../../utils/CardUtils';
 import { getCharacter, getCharacters } from '../../utils/CharacterUtils';
-import { getEvent, getEvents } from '../../utils/EventUtils';
-import { getScout, getScouts } from '../../utils/ScoutUtils';
+import { getCharacterEvent, getEvent, getEvents } from '../../utils/EventUtils';
+import { getCharacterScout, getScout, getScouts } from '../../utils/ScoutUtils';
 import { getSpecial, getSpecials } from '../../utils/SpecialUtils';
 import { getUnitCollection, getUnitCollections } from '../../utils/UCUtils';
 import { getUnit, getUnits } from '../../utils/UnitUtils';
+import { ICharacterAdditionalState } from './character';
+import { IEventAdditionalState } from './event';
+import { IScoutAdditionalState } from './scout';
 
-export const contentReducerBuilder = <T extends IContent>(actions: ContentActions<T>, initialValue: T) =>
-  reducerWithInitialState<IContentState<T>>({})
+export const contentReducerBuilder = <T extends IContent, A extends IContentAdditionalState>(
+  actions: ContentActions<T, A>,
+  initialValue: T
+) =>
+  reducerWithInitialState<IContentState<T, A>>({})
     .caseWithAction(actions.getContent, (state, action) => {
       switch (action.payload.contentName) {
         case 'event':
+          const eventAdditional: IEventAdditionalState = {
+            ...state.additional,
+            card: getEventScoutCard(action.payload.uid),
+          };
           switch (action.payload.type) {
             case 'special':
-              return { ...state, content: getSpecial(action.payload.uid) as any, type: action.payload.type };
+              return {
+                ...state,
+                content: getSpecial(action.payload.uid) as any,
+                type: action.payload.type,
+                additional: eventAdditional as any,
+              };
             case 'uc':
               console.log('get');
-              return { ...state, content: getUnitCollection(action.payload.uid) as any, type: action.payload.type };
+              return {
+                ...state,
+                content: getUnitCollection(action.payload.uid) as any,
+                type: action.payload.type,
+                additional: eventAdditional as any,
+              };
             default:
-              return { ...state, content: getEvent(action.payload.uid) as any, type: action.payload.type };
+              return {
+                ...state,
+                content: getEvent(action.payload.uid) as any,
+                type: action.payload.type,
+                additional: eventAdditional as any,
+              };
           }
         case 'scout':
-          return { ...state, content: getScout(action.payload.uid) as any };
+          const scoutAdditional: IScoutAdditionalState = {
+            ...state.additional,
+            card: getEventScoutCard(action.payload.uid),
+          };
+          return { ...state, content: getScout(action.payload.uid) as any, additional: scoutAdditional as any };
         case 'unit':
-          return { ...state, content: getUnit(action.payload.uid) };
+          return { ...state, content: getUnit(action.payload.uid) as any };
         case 'character':
-          return { ...state, content: getCharacter(action.payload.uid) };
+          const characterAdditional: ICharacterAdditionalState = {
+            ...state.additional,
+            event: getCharacterEvent(action.payload.uid),
+            scout: getCharacterScout(action.payload.uid),
+            card: getCharacterCard(action.payload.uid),
+          };
+          return { ...state, content: getCharacter(action.payload.uid), additional: characterAdditional as any };
         case 'card':
           return { ...state, content: getCard(action.payload.uid) };
         default:
           return { ...state };
       }
     })
-    .caseWithAction(actions.saveContent, (state, action) => ({ ...state, content: action.payload }))
+    .caseWithAction(actions.saveContent, (state, action) => {
+      switch (action.payload.contentName) {
+        case 'event':
+          const eventAdditional: IEventAdditionalState = {
+            ...state.additional,
+            card: action.payload.content ? getEventScoutCard(action.payload.content.uid) : [],
+          };
+          return { ...state, content: action.payload.content, additional: eventAdditional as any };
+        case 'scout':
+          const scoutAdditional: IScoutAdditionalState = {
+            ...state.additional,
+            card: action.payload.content ? getEventScoutCard(action.payload.content.uid) : [],
+          };
+          return { ...state, content: action.payload.content, additional: scoutAdditional };
+        case 'unit':
+          return { ...state, content: action.payload.content };
+        case 'character':
+          const characterAdditional: ICharacterAdditionalState = action.payload.content
+            ? {
+                ...state.additional,
+                event: getCharacterEvent(action.payload.content.uid),
+                scout: getCharacterScout(action.payload.content.uid),
+                card: getCharacterCard(action.payload.content.uid),
+              }
+            : { event: [], scout: [], card: [], ...state.additional };
+          return { ...state, content: action.payload.content, additional: characterAdditional };
+        case 'card':
+          return { ...state, content: action.payload.content };
+        default:
+          return { ...state };
+      }
+    })
     .caseWithAction(actions.getList, (state, action) => {
       switch (action.payload.contentName) {
         case 'event':

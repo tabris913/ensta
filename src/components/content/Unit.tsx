@@ -2,7 +2,6 @@ import { Button, Col, Descriptions, Row } from 'antd';
 import * as React from 'react';
 
 // import PageName, { toPublicUrl } from '../../constants/PageName';
-import PageName, { toPublicUrl } from '../../constants/PageName';
 import { MainContentProps } from '../../models/Main';
 import { IUnit } from '../../models/unit';
 import { getCharacter, toCharacter } from '../../utils/CharacterUtils';
@@ -12,7 +11,7 @@ interface Props extends MainContentProps<IUnit> {}
 
 const Unit = (props: Props) => {
   React.useState(() => {
-    if (!props.contents || !props.contents.unit.content) {
+    if (!props.contents || !props.contents.unit.content || props.contents.unit.content.uid !== props.query.id) {
       props.getContent({ uid: props.query.id!, contentName: 'unit' });
     }
   });
@@ -39,7 +38,11 @@ const Unit = (props: Props) => {
           <Row>
             {props.contents.unit.content.member.map((uid, idx) => (
               <Col key={idx}>
-                <Button type="link" onClick={() => toCharacter(props.history, uid)}>
+                <Button
+                  type="link"
+                  onClick={() => toCharacter(props.history, uid)}
+                  style={{ whiteSpace: 'unset', padding: 0 }}
+                >
                   {getCharacter(uid)!.name}
                 </Button>
               </Col>
@@ -52,17 +55,8 @@ const Unit = (props: Props) => {
           <></>
         )}
       </Descriptions>
-      <Button
-        onClick={() => {
-          props.history.goBack();
-          props.history.replace(
-            toPublicUrl(PageName.EVENT_LIST, undefined, props.query.type ? { type: props.query.type } : {})
-          );
-        }}
-        type="primary"
-        style={{ width: 'unset' }}
-      >
-        リストに戻る
+      <Button onClick={props.history.goBack} type="primary" style={{ width: 'unset' }}>
+        戻る
       </Button>
     </>
   ) : (

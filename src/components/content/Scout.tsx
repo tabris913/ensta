@@ -8,7 +8,7 @@ import { getCharacter } from '../../utils/CharacterUtils';
 
 const Scout = (props: MainContentProps<IScout>) => {
   React.useState(() => {
-    if (!props.contents || !props.contents.scout.content) {
+    if (!props.contents || !props.contents.scout.content || props.contents.scout.content.uid !== props.query.id) {
       props.getContent({ uid: props.query.id!, contentName: 'scout' });
     }
   });
@@ -30,13 +30,13 @@ const Scout = (props: MainContentProps<IScout>) => {
         <Descriptions.Item label="終了">{props.contents.scout.content.end}</Descriptions.Item>
         <Descriptions.Item label="排出カード">
           {['5', '4', '3'].map(r =>
-            Object.keys(props.contents!.scout.content.cards).includes(r) ? (
+            Object.keys(props.contents!.scout.content!.cards).includes(r) ? (
               <Row type="flex" key={`cards.${r}`}>
                 <Col>{r}</Col>
                 <Col style={{ margin: '0 4px' }}>:</Col>
                 <Col>
                   <Row style={{ padding: '0px 10px 0px 0px' }}>
-                    {props.contents!.scout.content.cards[r].map((uid: string) => (
+                    {props.contents!.scout.content!.cards[r].map((uid: string) => (
                       <Col key={uid}>{getCharacter(uid)!.name}</Col>
                     ))}
                   </Row>

@@ -8,7 +8,7 @@ import { unitSaga } from './unit';
 
 export { cardSaga, characterSaga, eventSaga, scoutSaga, unitSaga };
 
-export const contentSagas: { [K in ContentName]: ContentSaga<any> } = {
+export const contentSagas: { [K in ContentName]: ContentSaga<any, any> } = {
   event: eventSaga,
   scout: scoutSaga,
   unit: unitSaga,

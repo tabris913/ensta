@@ -28,3 +28,7 @@ export const cardIds = Object.keys(Card.card);
 
 export const toCard = (history: History, uid: string) =>
   history.push(toPublicUrl(PageName.CARD, undefined, { id: uid }));
+
+export const getEventScoutCard = (uid: string) => getCards().filter(c => c.content.includes(uid));
+
+export const getCharacterCard = (uid: string) => getCards().filter(c => c.character === uid);

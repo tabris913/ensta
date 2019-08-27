@@ -1,8 +1,9 @@
-import { INormalEvent, ISpecialEvent, IUnitCollection } from '../models/event';
+import { IEvent } from '../models/event';
+import { IEventAdditionalState } from '../reducers/contents/event';
 import { contentActionsBuilder } from './content';
 import { ActionTypes } from './types';
 
-export const eventActions = contentActionsBuilder<INormalEvent | ISpecialEvent | IUnitCollection>({
+export const eventActions = contentActionsBuilder<IEvent, IEventAdditionalState>({
   getContent: ActionTypes.EVENT_GET_CONTENT,
   saveContent: ActionTypes.EVENT_SAVE_CONTENT,
   getList: ActionTypes.EVENT_GET_LIST,

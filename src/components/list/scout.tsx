@@ -6,8 +6,9 @@ import ListGenerator from './Base';
 
 import { ListComponentProps } from '../../models/Main';
 import { IScout } from '../../models/scout';
+import { IScoutAdditionalState } from '../../reducers/contents/scout';
 
-const ScoutList = (props: ListComponentProps<IScout>) =>
+const ScoutList = (props: ListComponentProps<IScout, IScoutAdditionalState>) =>
   ListGenerator({
     ...props,
     headers: item => (

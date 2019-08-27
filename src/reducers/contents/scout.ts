@@ -1,4 +1,6 @@
 import { scoutActions } from '../../actions';
+import { ICard } from '../../models/card';
+import { IContentAdditionalState } from '../../models/content';
 import { IContentState } from '../../models/ContentState';
 import { IScout } from '../../models/scout';
 import { contentReducerBuilder } from './content';
@@ -15,5 +17,8 @@ const initialScoutValue: IScout = {
   img: undefined,
 };
 
-export interface IScoutState extends IContentState<IScout> {}
+export interface IScoutState extends IContentState<IScout, IScoutAdditionalState> {}
+export interface IScoutAdditionalState extends IContentAdditionalState {
+  card: ICard[];
+}
 export const reducer = contentReducerBuilder(scoutActions, initialScoutValue);

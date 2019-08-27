@@ -5,9 +5,10 @@ import * as Redux from 'redux';
 
 import { contentActions } from '../../../actions';
 import { ContentName } from '../../../constants/ContentName';
-import { IContent } from '../../../models/content';
-import { IContentState } from '../../../models/ContentState';
+import { IContent, IContentAdditionalState } from '../../../models/content';
+import { IContentsState } from '../../../models/ContentState';
 import { ListComponentProps, QueryType } from '../../../models/Main';
+import { IContentSaveRequest } from '../../../models/request/ContentSaveRequest';
 import { IListRequest } from '../../../models/request/ListRequest';
 import { IStoreState } from '../../../reducers';
 
@@ -15,18 +16,18 @@ interface IOwnProps extends RouteComponentProps<{}> {}
 
 interface IStateProps {
   query: QueryType;
-  contents: { [K in ContentName]: IContentState<any> };
+  contents: IContentsState;
 }
 
-interface IDispatchProps<T extends IContent> {
+interface IDispatchProps<T extends IContent, A extends IContentAdditionalState> {
   actions: {
-    saveContent: (req: T) => void;
+    saveContent: (req: IContentSaveRequest<T>) => void;
     getList: (req: IListRequest) => void;
     changeListPage: (req: number) => void;
   };
 }
 
-type Props<T extends IContent> = IOwnProps & IStateProps & IDispatchProps<T>;
+type Props<T extends IContent, A extends IContentAdditionalState> = IOwnProps & IStateProps & IDispatchProps<T, A>;
 
 const mapState2Props = (state: IStoreState, ownProps: IOwnProps): IStateProps => ({
   query: ownProps.location.search
@@ -36,24 +37,28 @@ const mapState2Props = (state: IStoreState, ownProps: IOwnProps): IStateProps =>
   contents: state.contents,
 });
 
-interface IPageGenerator<T extends IContent> {
+interface IPageGenerator<T extends IContent, A extends IContentAdditionalState> {
   contentName: ContentName;
-  component: (props: ListComponentProps<T>) => JSX.Element;
+  component: (props: ListComponentProps<T, A>) => JSX.Element;
   pageSize?: number;
 }
 
-const ListPage = <T extends IContent>({ component: Component, contentName, pageSize }: IPageGenerator<T>) => {
-  const mapDispatch2Props = (dispatch: Redux.Dispatch, ownProps: IOwnProps): IDispatchProps<T> => {
+const ListPage = <T extends IContent, A extends IContentAdditionalState>({
+  component: Component,
+  contentName,
+  pageSize,
+}: IPageGenerator<T, A>) => {
+  const mapDispatch2Props = (dispatch: Redux.Dispatch, ownProps: IOwnProps): IDispatchProps<T, A> => {
     return {
       actions: {
-        saveContent: (req: T) => dispatch(contentActions[contentName].saveContent(req)),
+        saveContent: (req: IContentSaveRequest<T>) => dispatch(contentActions[contentName].saveContent(req)),
         getList: (req: IListRequest) => dispatch(contentActions[contentName].getList(req as any)),
         changeListPage: (req: number) => dispatch(contentActions[contentName].changeListPage(req)),
       },
     };
   };
 
-  const ListPageBody = (props: Props<T>) => (
+  const ListPageBody = (props: Props<T, A>) => (
     <Component
       {...props}
       pageSize={pageSize}

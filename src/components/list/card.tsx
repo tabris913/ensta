@@ -3,10 +3,11 @@ import * as React from 'react';
 import { Descriptions } from 'antd';
 import { ICard } from '../../models/card';
 import { ListComponentProps } from '../../models/Main';
+import { ICardAdditionalState } from '../../reducers/contents/card';
 import { getCharacter } from '../../utils/CharacterUtils';
 import ListGenerator from './Base';
 
-const CardList = (props: ListComponentProps<ICard>) =>
+const CardList = (props: ListComponentProps<ICard, ICardAdditionalState>) =>
   ListGenerator({
     ...props,
     headers: item => (

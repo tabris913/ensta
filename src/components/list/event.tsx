@@ -6,9 +6,10 @@ import ListGenerator from './Base';
 
 import { IEvent } from '../../models/event';
 import { ListComponentProps } from '../../models/Main';
+import { IEventAdditionalState } from '../../reducers/contents/event';
 import { isNormalEvent } from '../../utils/EventUtils';
 
-const EventList = (props: ListComponentProps<IEvent>) =>
+const EventList = (props: ListComponentProps<IEvent, IEventAdditionalState>) =>
   ListGenerator({
     ...props,
     headers: item => (

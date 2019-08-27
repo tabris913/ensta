@@ -3,20 +3,15 @@ import * as React from 'react';
 import { Descriptions } from 'antd';
 import { ICharacter } from '../../models/character';
 import { ListComponentProps } from '../../models/Main';
+import { ICharacterAdditionalState } from '../../reducers/contents/character';
 import { getUnit } from '../../utils/UnitUtils';
 import ListGenerator from './Base';
 
-const CharacterList = (props: ListComponentProps<ICharacter>) =>
+const CharacterList = (props: ListComponentProps<ICharacter, ICharacterAdditionalState>) =>
   ListGenerator({
     ...props,
     pageSize: 14,
-    headers: item => (
-      <img
-        src={`./images/character/${item.imgs[0]}`}
-        alt={item.name}
-        style={{ padding: 0, maxWidth: 280, width: '100%' }}
-      />
-    ),
+    headers: item => <>{item.name}</>,
     descriptions: ({ item }) => (
       <>
         <p>{item.catchPhrase}</p>

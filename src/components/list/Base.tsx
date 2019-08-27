@@ -4,7 +4,7 @@ import { Button, Collapse, List, Typography } from 'antd';
 import PageName, { toPublicUrl } from '../../constants/PageName';
 import { PageTitle } from '../../constants/PageTitle';
 import Wireframe from '../../containers/wireframe/Wireframe';
-import { IContent } from '../../models/content';
+import { IContent, IContentAdditionalState } from '../../models/content';
 import { EventType, ListComponentProps, ScoutType, TypeType } from '../../models/Main';
 import { toCard } from '../../utils/CardUtils';
 import { toCharacter } from '../../utils/CharacterUtils';
@@ -14,7 +14,10 @@ import { toSpecial } from '../../utils/SpecialUtils';
 import { toUnitCollection } from '../../utils/UCUtils';
 import { toUnit } from '../../utils/UnitUtils';
 
-const ListGenerator = <T extends IContent>({ descriptions: Descriptions, ...props }: ListComponentProps<T>) => {
+const ListGenerator = <T extends IContent, A extends IContentAdditionalState>({
+  descriptions: Descriptions,
+  ...props
+}: ListComponentProps<T, A>) => {
   React.useState(() => {
     switch (props.contentName) {
       case 'event':
@@ -30,7 +33,7 @@ const ListGenerator = <T extends IContent>({ descriptions: Descriptions, ...prop
   });
 
   const handleName = (content: T, type?: TypeType) => {
-    if (props.contents) props.saveContent(content);
+    props.saveContent({ content: content, contentName: props.contentName });
     switch (props.contentName) {
       case 'event':
         switch (type as EventType) {
@@ -72,7 +75,7 @@ const ListGenerator = <T extends IContent>({ descriptions: Descriptions, ...prop
           },
         }}
         itemLayout="vertical"
-        dataSource={props.contents[props.contentName].list}
+        dataSource={props.contents[props.contentName].list as any}
         style={{ overflowY: 'auto', overflowX: 'visible' }}
         renderItem={(item: T, idx) =>
           !!item ? (
