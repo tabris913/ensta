@@ -5,7 +5,7 @@ import * as React from 'react';
 // import PageName, { toPublicUrl } from '../../constants/PageName';
 import PageName, { toPublicUrl } from '../../constants/PageName';
 import { ICard } from '../../models/card';
-import { IEvent, ISpecial, IUnitCollection } from '../../models/event';
+import { INormalEvent, ISpecialEvent, IUnitCollection } from '../../models/event';
 import { MainContentProps } from '../../models/Main';
 import { getCard, searchCard } from '../../utils/CardUtils';
 import { getCharacter } from '../../utils/CharacterUtils';
@@ -13,10 +13,10 @@ import { getEvent, isNormalEvent } from '../../utils/EventUtils';
 import { isUnitCollection } from '../../utils/UCUtils';
 
 interface Props extends MainContentProps<ICard> {
-  event?: IEvent | IUnitCollection | ISpecial;
+  event?: INormalEvent | IUnitCollection | ISpecialEvent;
 }
 
-const EventBonus = ({ event, property }: { event: IEvent; property: string }) => (
+const EventBonus = ({ event, property }: { event: INormalEvent; property: string }) => (
   <>
     {['5', '4', '3']
       .filter(r => Object.keys(event.bonus[property]).includes(r) && !R.isEmpty(event.bonus[property][r]))
@@ -43,37 +43,42 @@ const EventBonus = ({ event, property }: { event: IEvent; property: string }) =>
   </>
 );
 
-const Card = ({ event, ...props }: Props) =>
-  event ? (
+const Card = (props: Props) => {
+  React.useState(() => {
+    if (!props.contents || !props.contents.card.content) {
+      props.getContent({ uid: props.query.id!, contentName: 'card' });
+    }
+  });
+  return props.contents && props.contents.card.content ? (
     <>
       <img
-        src={`./images/${props.query.type || 'event'}/${event.img}`}
+        src={`./images/${props.query.type || 'event'}/${props.contents.card.content.img}`}
         alt=""
         style={{ padding: 0, maxWidth: 280, width: '100%' }}
       />
-      <p>{event.description}</p>
+      <p>{props.contents.card.content.description}</p>
       <Descriptions
         title="Event Info"
         column={{ xs: 1, md: 2 }}
         style={{ height: '100%', overflowY: 'auto' }}
         bordered={true}
       >
-        <Descriptions.Item label="開始">{event.start}</Descriptions.Item>
-        <Descriptions.Item label="終了">{event.end}</Descriptions.Item>
-        {isNormalEvent(event) ? (
+        <Descriptions.Item label="開始">{props.contents.card.content.start}</Descriptions.Item>
+        <Descriptions.Item label="終了">{props.contents.card.content.end}</Descriptions.Item>
+        {isNormalEvent(props.contents.card.content) ? (
           <Descriptions.Item label="ランキング">
-            <EventBonus event={event} property="ranking" />
+            <EventBonus event={props.contents.card.content} property="ranking" />
           </Descriptions.Item>
         ) : null}
-        {isNormalEvent(event) ? (
+        {isNormalEvent(props.contents.card.content) ? (
           <Descriptions.Item label="ポイント">
-            <EventBonus event={event} property="point" />
+            <EventBonus event={props.contents.card.content} property="point" />
           </Descriptions.Item>
         ) : null}
-        {isUnitCollection(event) ? (
+        {isUnitCollection(props.contents.card.content) ? (
           <Descriptions.Item label="獲得カード">
             <Row style={{ padding: '0px 10px 0px 0px' }}>
-              {event.acquirableCards.map((uid: string) => {
+              {props.contents.card.content.acquirableCards.map((uid: string) => {
                 const card = getCard(uid);
                 const character = card ? getCharacter(card.character) : '';
                 return (
@@ -83,10 +88,10 @@ const Card = ({ event, ...props }: Props) =>
             </Row>
           </Descriptions.Item>
         ) : null}
-        {isUnitCollection(event) ? (
+        {isUnitCollection(props.contents.card.content) ? (
           <Descriptions.Item label="過去イベント">
             <Row style={{ padding: '0px 10px 0px 0px' }}>
-              {event.revivalEvents.map((uid: string) => {
+              {props.contents.card.content.revivalEvents.map((uid: string) => {
                 const pastEvent = getEvent(uid);
                 return <Col key={uid}>{pastEvent ? pastEvent.name : uid}</Col>;
               })}
@@ -110,5 +115,6 @@ const Card = ({ event, ...props }: Props) =>
   ) : (
     <></>
   );
+};
 
 export default Card;

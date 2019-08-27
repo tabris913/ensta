@@ -10,6 +10,16 @@ export const getUnit = (uid: string): IUnit | undefined => {
   return undefined;
 };
 
+export const getUnits = () => {
+  const list: IUnit[] = [];
+
+  unitIds
+    .map(getUnit)
+    .filter(u => u !== undefined)
+    .map(u => list.push(u!));
+  return list;
+};
+
 export const unitIds = Object.keys(Unit.unit);
 
 export const isUnit = (content?: IContent): content is IUnit => content !== undefined;

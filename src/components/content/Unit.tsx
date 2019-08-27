@@ -10,15 +10,25 @@ import { isUnit } from '../../utils/UnitUtils';
 
 interface Props extends MainContentProps<IUnit> {}
 
-const Unit = ({ content: unit, ...props }: Props) =>
-  isUnit(unit) ? (
+const Unit = (props: Props) => {
+  React.useState(() => {
+    if (!props.contents || !props.contents.unit.content) {
+      props.getContent({ uid: props.query.id!, contentName: 'unit' });
+    }
+  });
+
+  return props.contents && isUnit(props.contents.unit.content) ? (
     <>
-      {unit.logo ? (
-        <img src={`./images/unit/${unit.logo}`} alt="" style={{ padding: 0, maxWidth: 280, width: '100%' }} />
+      {props.contents.unit.content.logo ? (
+        <img
+          src={`./images/unit/${props.contents.unit.content.logo}`}
+          alt=""
+          style={{ padding: 0, maxWidth: 280, width: '100%' }}
+        />
       ) : (
         undefined
       )}
-      <p>{unit.description}</p>
+      <p>{props.contents.unit.content.description}</p>
       <Descriptions
         title="Event Info"
         column={{ xs: 1, md: 2 }}
@@ -27,7 +37,7 @@ const Unit = ({ content: unit, ...props }: Props) =>
       >
         <Descriptions.Item label="メンバー">
           <Row>
-            {unit.member.map((uid, idx) => (
+            {props.contents.unit.content.member.map((uid, idx) => (
               <Col key={idx}>
                 <Button type="link" onClick={() => toCharacter(props.history, uid)}>
                   {getCharacter(uid)!.name}
@@ -36,7 +46,11 @@ const Unit = ({ content: unit, ...props }: Props) =>
             ))}
           </Row>
         </Descriptions.Item>
-        {unit.color ? <Descriptions.Item label="テーマカラー">{unit.color}</Descriptions.Item> : <></>}
+        {props.contents.unit.content.color ? (
+          <Descriptions.Item label="テーマカラー">{props.contents.unit.content.color}</Descriptions.Item>
+        ) : (
+          <></>
+        )}
       </Descriptions>
       <Button
         onClick={() => {
@@ -54,5 +68,6 @@ const Unit = ({ content: unit, ...props }: Props) =>
   ) : (
     <></>
   );
+};
 
 export default Unit;

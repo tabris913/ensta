@@ -46956,10 +46956,10 @@
       "img": ["e099/tori_A.jpg", "e099/tori_B.jpg"],
       "remarks": ""
     },
-    "e099_ad_5": {
-      "uid": "e099_ad_5",
+    "e099_adnis_5": {
+      "uid": "e099_adnis_5",
       "name": "強気心のスター",
-      "character": "ad",
+      "character": "adnis",
       "rank": 5,
       "type": "Pf",
       "date": "2019-06-15",
@@ -46981,7 +46981,7 @@
       },
       "content": ["e099"],
       "bonus": "ranking",
-      "img": ["e099/ad_A.jpg", "e099/ad_B.jpg"],
+      "img": ["e099/adnis_A.jpg", "e099/adnis_B.jpg"],
       "remarks": ""
     },
     "e099_leo_4": {

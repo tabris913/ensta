@@ -1,6 +1,6 @@
-import Unit from '../../../components/main/UnitList';
+import Unit from '../../../components/list/unit';
 import ListPage from './ListPage';
 
-const UnitListPage = ListPage({ pageTitle: 'Unit', component: Unit, contentName: 'unit' });
+const UnitListPage = ListPage({ component: Unit, contentName: 'unit' });
 
 export default UnitListPage;

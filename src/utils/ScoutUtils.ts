@@ -10,6 +10,16 @@ export const getScout = (uid: string): IScout | undefined => {
   return undefined;
 };
 
+export const getScouts = () => {
+  const list: IScout[] = [];
+
+  scoutIds
+    .map(getScout)
+    .filter(s => s !== undefined)
+    .map(s => list.push(s!));
+  return list;
+};
+
 export const scoutIds = Object.keys(Scout.scout);
 
 export const toScout = (history: History, uid: string, type?: ScoutType) =>

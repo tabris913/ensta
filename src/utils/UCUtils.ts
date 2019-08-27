@@ -2,7 +2,7 @@ import { History } from 'history';
 import * as R from 'ramda';
 
 import * as Event from '../constants/json/unitCollection.json';
-import { IEvent, ISpecial, IUnitCollection } from '../models/event';
+import { INormalEvent, ISpecialEvent, IUnitCollection } from '../models/event';
 import { toEvent } from './EventUtils';
 
 export const getUnitCollection = (uid: string): IUnitCollection | undefined => {
@@ -10,9 +10,19 @@ export const getUnitCollection = (uid: string): IUnitCollection | undefined => {
   return undefined;
 };
 
+export const getUnitCollections = () => {
+  const list: IUnitCollection[] = [];
+
+  unitCollectionIds
+    .map(getUnitCollection)
+    .filter(u => u !== undefined)
+    .map(u => list.push(u!));
+  return list;
+};
+
 export const unitCollectionIds = Object.keys(Event.unitCollection);
 
-export const isUnitCollection = (obj: IEvent | IUnitCollection | ISpecial): obj is IUnitCollection => {
+export const isUnitCollection = (obj: INormalEvent | IUnitCollection | ISpecialEvent): obj is IUnitCollection => {
   const checkKeys = ['acquirableCards', 'revivalEvents'];
 
   return R.all(R.equals<boolean>(true), checkKeys.map(key => Object.keys(obj).includes(key) && !R.isNil(obj[key])));

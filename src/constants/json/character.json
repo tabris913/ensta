@@ -12,7 +12,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "空手",
-      "unit": ["ryuseitai"]
+      "unit": ["ryuseitai"],
+      "class": "1A"
     },
     "hajime": {
       "uid": "hajime",
@@ -26,7 +27,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "紅茶",
-      "unit": ["rabbits"]
+      "unit": ["rabbits"],
+      "class": "1A"
     },
     "tomoya": {
       "uid": "tomoya",
@@ -40,7 +42,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "演劇",
-      "unit": ["rabbits"]
+      "unit": ["rabbits"],
+      "class": "1A"
     },
     "hinata": {
       "uid": "hinata",
@@ -54,7 +57,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "軽音",
-      "unit": ["2wink"]
+      "unit": ["2wink"],
+      "class": "1A"
     },
     "midori": {
       "uid": "midori",
@@ -68,7 +72,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "バスケ",
-      "unit": ["ryuseitai"]
+      "unit": ["ryuseitai"],
+      "class": "1A"
     },
     "tori": {
       "uid": "tori",
@@ -82,7 +87,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "テニス",
-      "unit": ["fine"]
+      "unit": ["fine"],
+      "class": "1B"
     },
     "shinobu": {
       "uid": "shinobu",
@@ -96,7 +102,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "忍者同好会",
-      "unit": ["ryuseitai"]
+      "unit": ["ryuseitai"],
+      "class": "1B"
     },
     "yuta": {
       "uid": "yuta",
@@ -110,7 +117,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "軽音",
-      "unit": ["2wink"]
+      "unit": ["2wink"],
+      "class": "1B"
     },
     "mitsuru": {
       "uid": "mitsuru",
@@ -124,7 +132,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "陸上",
-      "unit": ["rabbits"]
+      "unit": ["rabbits"],
+      "class": "1B"
     },
     "tsukasa": {
       "uid": "tsukasa",
@@ -138,7 +147,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "弓道",
-      "unit": ["knights"]
+      "unit": ["knights"],
+      "class": "1B"
     },
     "sora": {
       "uid": "sora",
@@ -152,7 +162,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "ゲーム研究",
-      "unit": ["switch"]
+      "unit": ["switch"],
+      "class": "1B"
     },
     "subaru": {
       "uid": "subaru",
@@ -166,7 +177,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "バスケ",
-      "unit": ["trickstar"]
+      "unit": ["trickstar"],
+      "class": "2A"
     },
     "hokuto": {
       "uid": "hokuto",
@@ -180,7 +192,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "演劇",
-      "unit": ["trickstar"]
+      "unit": ["trickstar"],
+      "class": "2A"
     },
     "makoto": {
       "uid": "makoto",
@@ -194,7 +207,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "テニス",
-      "unit": ["trickstar"]
+      "unit": ["trickstar"],
+      "class": "2A"
     },
     "soma": {
       "uid": "soma",
@@ -208,7 +222,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "海洋生物",
-      "unit": ["akatsuki"]
+      "unit": ["akatsuki"],
+      "class": "2A"
     },
     "adnis": {
       "uid": "adnis",
@@ -222,7 +237,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "陸上",
-      "unit": ["undead"]
+      "unit": ["undead"],
+      "class": "2A"
     },
     "natsume": {
       "uid": "natsume",
@@ -236,7 +252,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "ゲーム研究",
-      "unit": ["switch"]
+      "unit": ["switch"],
+      "class": "2A"
     },
     "koga": {
       "uid": "koga",
@@ -250,7 +267,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "軽音",
-      "unit": ["undead"]
+      "unit": ["undead"],
+      "class": "2B"
     },
     "ritsu": {
       "uid": "ritsu",
@@ -264,7 +282,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "紅茶",
-      "unit": ["knights"]
+      "unit": ["knights"],
+      "class": "2B"
     },
     "mao": {
       "uid": "mao",
@@ -278,7 +297,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "バスケ",
-      "unit": ["trickstar"]
+      "unit": ["trickstar"],
+      "class": "2B"
     },
     "yuzuru": {
       "uid": "yuzuru",
@@ -292,7 +312,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "弓道",
-      "unit": ["fine"]
+      "unit": ["fine"],
+      "class": "2B"
     },
     "arashi": {
       "uid": "arashi",
@@ -306,7 +327,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "陸上",
-      "unit": ["knights"]
+      "unit": ["knights"],
+      "class": "2B"
     },
     "mika": {
       "uid": "mika",
@@ -320,7 +342,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "手芸",
-      "unit": ["valkyrie"]
+      "unit": ["valkyrie"],
+      "class": "2B"
     },
     "keito": {
       "uid": "keito",
@@ -334,7 +357,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "弓道",
-      "unit": ["akatsuki"]
+      "unit": ["akatsuki"],
+      "class": "3A"
     },
     "eichi": {
       "uid": "eichi",
@@ -348,7 +372,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "紅茶",
-      "unit": ["fine"]
+      "unit": ["fine"],
+      "class": "3A"
     },
     "kaoru": {
       "uid": "kaoru",
@@ -362,7 +387,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "海洋生物",
-      "unit": ["undead"]
+      "unit": ["undead"],
+      "class": "3A"
     },
     "izumi": {
       "uid": "izumi",
@@ -376,7 +402,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "テニス",
-      "unit": ["knights"]
+      "unit": ["knights"],
+      "class": "3A"
     },
     "chiaki": {
       "uid": "chiaki",
@@ -390,7 +417,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "バスケ",
-      "unit": ["ryuseitai"]
+      "unit": ["ryuseitai"],
+      "class": "3A"
     },
     "shu": {
       "uid": "shu",
@@ -404,7 +432,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "手芸",
-      "unit": ["valkyrie"]
+      "unit": ["valkyrie"],
+      "class": "3A"
     },
     "madara": {
       "uid": "madara",
@@ -418,7 +447,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "陸上",
-      "unit": ["mam"]
+      "unit": ["mam"],
+      "class": "3A"
     },
     "kuro": {
       "uid": "kuro",
@@ -432,7 +462,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "空手",
-      "unit": ["akatsuki"]
+      "unit": ["akatsuki"],
+      "class": "3B"
     },
     "wataru": {
       "uid": "wataru",
@@ -446,7 +477,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "演劇",
-      "unit": ["fine"]
+      "unit": ["fine"],
+      "class": "3B"
     },
     "kanata": {
       "uid": "kanata",
@@ -460,7 +492,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "海洋生物",
-      "unit": ["ryuseitai"]
+      "unit": ["ryuseitai"],
+      "class": "3B"
     },
     "rei": {
       "uid": "rei",
@@ -474,7 +507,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "軽音",
-      "unit": ["undead"]
+      "unit": ["undead"],
+      "class": "3B"
     },
     "nazuna": {
       "uid": "nazuna",
@@ -488,7 +522,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "テニス",
-      "unit": ["rabbits"]
+      "unit": ["rabbits"],
+      "class": "3B"
     },
     "leo": {
       "uid": "leo",
@@ -502,7 +537,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "弓道",
-      "unit": ["knights"]
+      "unit": ["knights"],
+      "class": "3B"
     },
     "tsumugi": {
       "uid": "tsumugi",
@@ -516,7 +552,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "手芸",
-      "unit": ["switch"]
+      "unit": ["switch"],
+      "class": "3B"
     },
     "jin": {
       "uid": "jin",
@@ -530,7 +567,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "",
-      "unit": []
+      "unit": [],
+      "class": ""
     },
     "akiomi": {
       "uid": "akiomi",
@@ -544,7 +582,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "",
-      "unit": []
+      "unit": [],
+      "class": ""
     },
     "seiya": {
       "uid": "seiya",
@@ -558,7 +597,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "",
-      "unit": []
+      "unit": [],
+      "class": ""
     },
     "hiyori": {
       "uid": "hiyori",
@@ -572,7 +612,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "華道",
-      "unit": ["eve", "eden"]
+      "unit": ["eve", "eden"],
+      "class": "3S"
     },
     "jun": {
       "uid": "jun",
@@ -586,7 +627,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "テニス",
-      "unit": ["eve", "eden"]
+      "unit": ["eve", "eden"],
+      "class": "2S"
     },
     "nagisa": {
       "uid": "nagisa",
@@ -600,7 +642,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "考古学研究",
-      "unit": ["adam", "eden"]
+      "unit": ["adam", "eden"],
+      "class": "3S"
     },
     "ibara": {
       "uid": "ibara",
@@ -614,7 +657,8 @@
       "unfavorite": [],
       "imgs": [],
       "club": "情報",
-      "unit": ["adam", "eden"]
+      "unit": ["adam", "eden"],
+      "class": "2S"
     }
   }
 }

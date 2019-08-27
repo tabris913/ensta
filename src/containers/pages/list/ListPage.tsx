@@ -3,25 +3,26 @@ import { connect } from 'react-redux';
 import { RouteComponentProps, withRouter } from 'react-router-dom';
 import * as Redux from 'redux';
 
-import Wireframe from '../../wireframe/Wireframe';
-
 import { contentActions } from '../../../actions';
 import { ContentName } from '../../../constants/ContentName';
 import { IContent } from '../../../models/content';
+import { IContentState } from '../../../models/ContentState';
 import { ListComponentProps, QueryType } from '../../../models/Main';
-import { IContentRequest } from '../../../models/request/ContentRequest';
+import { IListRequest } from '../../../models/request/ListRequest';
 import { IStoreState } from '../../../reducers';
 
 interface IOwnProps extends RouteComponentProps<{}> {}
 
 interface IStateProps {
   query: QueryType;
+  contents: { [K in ContentName]: IContentState<any> };
 }
 
 interface IDispatchProps<T extends IContent> {
   actions: {
     saveContent: (req: T) => void;
-    getContent: (req: IContentRequest) => void;
+    getList: (req: IListRequest) => void;
+    changeListPage: (req: number) => void;
   };
 }
 
@@ -32,37 +33,42 @@ const mapState2Props = (state: IStoreState, ownProps: IOwnProps): IStateProps =>
     .replace(/^\?/, '')
     .split('&')
     .reduce((o, s) => ({ ...o, [s.replace(/=.+$/, '')]: s.replace(/^.+=/, '') }), {}),
+  contents: state.contents,
 });
 
 interface IPageGenerator<T extends IContent> {
-  pageTitle: string;
   contentName: ContentName;
   component: (props: ListComponentProps<T>) => JSX.Element;
+  pageSize?: number;
 }
 
-const ListPage = <T extends IContent>({ pageTitle, component: Component, contentName }: IPageGenerator<T>) => {
+const ListPage = <T extends IContent>({ component: Component, contentName, pageSize }: IPageGenerator<T>) => {
   const mapDispatch2Props = (dispatch: Redux.Dispatch, ownProps: IOwnProps): IDispatchProps<T> => {
     return {
       actions: {
         saveContent: (req: T) => dispatch(contentActions[contentName].saveContent(req)),
-        getContent: (req: IContentRequest) => dispatch(contentActions[contentName].getContent(req)),
+        getList: (req: IListRequest) => dispatch(contentActions[contentName].getList(req as any)),
+        changeListPage: (req: number) => dispatch(contentActions[contentName].changeListPage(req)),
       },
     };
   };
+
+  const ListPageBody = (props: Props<T>) => (
+    <Component
+      {...props}
+      pageSize={pageSize}
+      saveContent={props.actions.saveContent}
+      getList={props.actions.getList}
+      contentName={contentName}
+      changeListPage={props.actions.changeListPage}
+    />
+  );
 
   return withRouter(
     connect(
       mapState2Props,
       mapDispatch2Props
-    )((props: Props<T>) => (
-      <Wireframe title={pageTitle} breadcrump={[{ label: pageTitle }]}>
-        <Component
-          {...props}
-          saveContent={props.actions.saveContent}
-          getContent={(uid, type) => props.actions.getContent({ uid: uid, type: type })}
-        />
-      </Wireframe>
-    ))
+    )(ListPageBody)
   );
 };
 

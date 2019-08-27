@@ -10,7 +10,7 @@ interface EventBody extends IContent {
   img?: string;
 }
 
-export interface IEvent extends EventBody {
+export interface INormalEvent extends EventBody {
   short_name?: string;
   description_short?: string;
   bonus: IBonus;
@@ -21,9 +21,11 @@ export interface IBonus {
   point: ICards;
 }
 
-export interface ISpecial extends EventBody {}
+export interface ISpecialEvent extends EventBody {}
 
 export interface IUnitCollection extends EventBody {
   acquirableCards: string[]; // card uids
   revivalEvents: string[]; // event uids
 }
+
+export type IEvent = INormalEvent | ISpecialEvent | IUnitCollection;

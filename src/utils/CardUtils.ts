@@ -9,6 +9,16 @@ export const getCard = (uid: string): ICard | undefined => {
   return undefined;
 };
 
+export const getCards = () => {
+  const list: ICard[] = [];
+
+  cardIds
+    .map(getCard)
+    .filter(c => c !== undefined)
+    .map(c => list.push(c!));
+  return list;
+};
+
 export const searchCard = (eventUid: string, characterUid: string, cardRank: string): ICard[] =>
   Object.keys(Card.card)
     .filter(e => e.startsWith(`${eventUid}_${characterUid}_${cardRank}`))

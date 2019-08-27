@@ -6,7 +6,7 @@
       "description": "",
       "start": "2015-10-27",
       "end": "2015-11-10",
-      "relation": [""],
+      "relation": [],
       "banner": ["姫宮桃李"],
       "img": "sp001.jpg"
     },
@@ -16,7 +16,7 @@
       "description": "",
       "start": "2015-12-28",
       "end": "2016-01-12",
-      "relation": [""],
+      "relation": [],
       "banner": ["紫乃創"],
       "img": "sp002.jpg"
     },
@@ -86,7 +86,7 @@
       "description": "",
       "start": "2018-02-14",
       "end": "2018-02-28",
-      "relation": [""],
+      "relation": [],
       "banner": ["ネロ"],
       "img": "sp009.jpg"
     },
@@ -96,7 +96,7 @@
       "description": "『自転車競技』の体験会が開かれることを知ったスバルたち。インターハイで活躍した生徒たちが、自転車の魅力を伝えるため夢ノ咲学院へやってくる！",
       "start": "2018-06-19",
       "end": "2018-06-29",
-      "relation": [""],
+      "relation": [],
       "banner": ["小野田坂道"],
       "img": "sp010.jpg"
     }

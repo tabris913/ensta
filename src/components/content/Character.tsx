@@ -5,7 +5,7 @@ import * as React from 'react';
 // import PageName, { toPublicUrl } from '../../constants/PageName';
 import PageName, { toPublicUrl } from '../../constants/PageName';
 import { ICharacter } from '../../models/character';
-import { IEvent, ISpecial, IUnitCollection } from '../../models/event';
+import { INormalEvent, ISpecialEvent, IUnitCollection } from '../../models/event';
 import { MainContentProps } from '../../models/Main';
 import { getCard, searchCard } from '../../utils/CardUtils';
 import { getCharacter } from '../../utils/CharacterUtils';
@@ -13,10 +13,10 @@ import { getEvent, isNormalEvent } from '../../utils/EventUtils';
 import { isUnitCollection } from '../../utils/UCUtils';
 
 interface Props extends MainContentProps<ICharacter> {
-  event?: IEvent | IUnitCollection | ISpecial;
+  event?: INormalEvent | IUnitCollection | ISpecialEvent;
 }
 
-const EventBonus = ({ event, property }: { event: IEvent; property: string }) => (
+const EventBonus = ({ event, property }: { event: INormalEvent; property: string }) => (
   <>
     {['5', '4', '3']
       .filter(r => Object.keys(event.bonus[property]).includes(r) && !R.isEmpty(event.bonus[property][r]))
@@ -43,37 +43,42 @@ const EventBonus = ({ event, property }: { event: IEvent; property: string }) =>
   </>
 );
 
-const Character = ({ event, ...props }: Props) =>
-  event ? (
+const Character = (props: Props) => {
+  React.useState(() => {
+    if (!props.contents || !props.contents.character.content) {
+      props.getContent({ uid: props.query.id!, contentName: 'character' });
+    }
+  });
+  return props.contents && props.contents.character.content ? (
     <>
       <img
-        src={`./images/${props.query.type || 'event'}/${event.img}`}
+        src={`./images/${props.query.type || 'event'}/${props.contents.character.content.img}`}
         alt=""
         style={{ padding: 0, maxWidth: 280, width: '100%' }}
       />
-      <p>{event.description}</p>
+      <p>{props.contents.character.content.description}</p>
       <Descriptions
         title="Event Info"
         column={{ xs: 1, md: 2 }}
         style={{ height: '100%', overflowY: 'auto' }}
         bordered={true}
       >
-        <Descriptions.Item label="開始">{event.start}</Descriptions.Item>
-        <Descriptions.Item label="終了">{event.end}</Descriptions.Item>
-        {isNormalEvent(event) ? (
+        <Descriptions.Item label="開始">{props.contents.character.content.start}</Descriptions.Item>
+        <Descriptions.Item label="終了">{props.contents.character.content.end}</Descriptions.Item>
+        {isNormalEvent(props.contents.character.content) ? (
           <Descriptions.Item label="ランキング">
-            <EventBonus event={event} property="ranking" />
+            <EventBonus event={props.contents.character.content} property="ranking" />
           </Descriptions.Item>
         ) : null}
-        {isNormalEvent(event) ? (
+        {isNormalEvent(props.contents.character.content) ? (
           <Descriptions.Item label="ポイント">
-            <EventBonus event={event} property="point" />
+            <EventBonus event={props.contents.character.content} property="point" />
           </Descriptions.Item>
         ) : null}
-        {isUnitCollection(event) ? (
+        {isUnitCollection(props.contents.character.content) ? (
           <Descriptions.Item label="獲得カード">
             <Row style={{ padding: '0px 10px 0px 0px' }}>
-              {event.acquirableCards.map((uid: string) => {
+              {props.contents.character.content.acquirableCards.map((uid: string) => {
                 const card = getCard(uid);
                 const character = card ? getCharacter(card.character) : '';
                 return (
@@ -83,10 +88,10 @@ const Character = ({ event, ...props }: Props) =>
             </Row>
           </Descriptions.Item>
         ) : null}
-        {isUnitCollection(event) ? (
+        {isUnitCollection(props.contents.character.content) ? (
           <Descriptions.Item label="過去イベント">
             <Row style={{ padding: '0px 10px 0px 0px' }}>
-              {event.revivalEvents.map((uid: string) => {
+              {props.contents.character.content.revivalEvents.map((uid: string) => {
                 const pastEvent = getEvent(uid);
                 return <Col key={uid}>{pastEvent ? pastEvent.name : uid}</Col>;
               })}
@@ -110,5 +115,6 @@ const Character = ({ event, ...props }: Props) =>
   ) : (
     <></>
   );
+};
 
 export default Character;

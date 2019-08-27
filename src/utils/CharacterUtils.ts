@@ -9,6 +9,16 @@ export const getCharacter = (uid: string): ICharacter | undefined => {
   return undefined;
 };
 
+export const getCharacters = () => {
+  const list: ICharacter[] = [];
+
+  characterIds
+    .map(getCharacter)
+    .filter(c => c !== undefined)
+    .map(c => list.push(c!));
+  return list;
+};
+
 export const characterIds = Object.keys(Character.character);
 
 export const toCharacter = (history: History, uid: string) =>

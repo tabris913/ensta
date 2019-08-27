@@ -1,6 +1,5 @@
 import Character from '../../../components/content/Character';
 import PageName from '../../../constants/PageName';
-import { getCharacter } from '../../../utils/CharacterUtils';
 import ContentPage from './ContentPage';
 
 const CharacterPage = ContentPage({
@@ -8,7 +7,6 @@ const CharacterPage = ContentPage({
   pageName: PageName.CHARACTER,
   component: Character,
   contentName: 'character',
-  getFunc: getCharacter,
 });
 
 export default CharacterPage;

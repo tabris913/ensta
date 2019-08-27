@@ -1,7 +1,7 @@
 import ListPage from './ListPage';
 
-import Scout from '../../../components/main/ScoutList';
+import Scout from '../../../components/list/scout';
 
-const ScoutListPage = ListPage({ pageTitle: 'Scout', component: Scout, contentName: 'scout' });
+const ScoutListPage = ListPage({ component: Scout, contentName: 'scout' });
 
 export default ScoutListPage;

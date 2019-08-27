@@ -1,6 +1,6 @@
-import Character from '../../../components/main/CharacterList';
+import Character from '../../../components/list/character';
 import ListPage from './ListPage';
 
-const CharacterListPage = ListPage({ pageTitle: 'Character', component: Character, contentName: 'character' });
+const CharacterListPage = ListPage({ component: Character, contentName: 'character' });
 
 export default CharacterListPage;
