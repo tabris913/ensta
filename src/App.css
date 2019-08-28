@@ -267,3 +267,6 @@ span.lens-input-time-picker.ant-time-picker > * {
   overflow-y: hidden;
 }
 /* --ここ--【未確定】--まで-- */
+.ant-descriptions-bordered .ant-descriptions-item-label {
+  background-color: rgb(192, 243, 227);
+}

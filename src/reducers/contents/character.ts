@@ -1,11 +1,11 @@
 import { characterActions } from '../../actions';
 import { ICard } from '../../models/card';
 import { ICharacter } from '../../models/character';
+import { IContentAdditionalState } from '../../models/content';
 import { IContentState } from '../../models/ContentState';
-import { IEvent } from '../../models/event';
+import { INormalEvent } from '../../models/event';
 import { IScout } from '../../models/scout';
 import { contentReducerBuilder } from './content';
-import { IContentAdditionalState } from '../../models/content';
 
 const initialCharacterValue: ICharacter = {
   uid: '',
@@ -25,7 +25,7 @@ const initialCharacterValue: ICharacter = {
 
 export interface ICharacterState extends IContentState<ICharacter, ICharacterAdditionalState> {}
 export interface ICharacterAdditionalState extends IContentAdditionalState {
-  event: IEvent[];
+  event: INormalEvent[];
   scout: IScout[];
   card: ICard[];
 }

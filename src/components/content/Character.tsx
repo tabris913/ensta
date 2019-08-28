@@ -1,10 +1,9 @@
-import { Button, Col, Descriptions, Row } from 'antd';
+import { Button, Col, Descriptions, Row, Typography } from 'antd';
 import * as R from 'ramda';
 import * as React from 'react';
 
 // import PageName, { toPublicUrl } from '../../constants/PageName';
 import { ICharacter } from '../../models/character';
-import { INormalEvent } from '../../models/event';
 import { MainContentProps } from '../../models/Main';
 import { ICharacterAdditionalState } from '../../reducers/contents/character';
 import { toEvent } from '../../utils/EventUtils';
@@ -25,15 +24,20 @@ const Character = (props: Props) => {
   });
 
   const content = props.contents && props.contents.character.content;
+
+  if (!content) return <></>;
+
   const additional: ICharacterAdditionalState = {
     event: R.path(['contents', 'character', 'additional', 'event'], props) || [],
     scout: R.path(['contents', 'character', 'additional', 'scout'], props) || [],
     card: R.path(['contents', 'character', 'additional', 'card'], props) || [],
   };
-  const latestEvent = R.last(additional.event);
+  const latestEventUid = R.last(additional.event).uid;
+  const latestRankingEvent = R.last(additional.event.filter(e => e.bonus.ranking['5'].includes(content.uid)));
+  const latestPointEvent = R.last(additional.event.filter(e => e.bonus.point['5'].includes(content.uid)));
   const latestScout = R.last(additional.scout);
 
-  return content ? (
+  return (
     <>
       <img src={`./images/character/${content.imgs[0]}`} alt="" style={{ padding: 0, maxWidth: 280, width: '100%' }} />
       <Descriptions
@@ -41,18 +45,9 @@ const Character = (props: Props) => {
         column={{ xs: 1, md: 2 }}
         style={{ height: '100%', overflowY: 'auto' }}
         bordered={true}
+        layout="vertical"
       >
-        <Descriptions.Item
-          label={
-            <span>
-              キャッチ
-              <br />
-              フレーズ
-            </span>
-          }
-        >
-          {content.catchPhrase}
-        </Descriptions.Item>
+        <Descriptions.Item label="キャッチフレーズ">{content.catchPhrase}</Descriptions.Item>
         <Descriptions.Item label="誕生日">{content.birthday}</Descriptions.Item>
         <Descriptions.Item label="身長">{content.height}</Descriptions.Item>
         <Descriptions.Item label="体重">{content.weight}</Descriptions.Item>
@@ -74,40 +69,52 @@ const Character = (props: Props) => {
           </Descriptions.Item>
         )}
         {content.club ? <Descriptions.Item label="部活">{content.club}</Descriptions.Item> : undefined}
-        <Descriptions.Item
-          label={
-            <span>
-              最新☆5
-              <br />
-              イベント
-            </span>
-          }
-        >
+        <Descriptions.Item label="最新☆5イベント (色が濃いのが最新)">
           <Row>
             <Col>
+              <Typography.Text strong={true}>ランキング</Typography.Text>
+            </Col>
+            <Col>
               <Button
-                onClick={() => toEvent(props.history, latestEvent.uid)}
+                onClick={() => toEvent(props.history, latestRankingEvent.uid)}
                 type="link"
-                style={{ whiteSpace: 'unset', padding: 0 }}
+                style={
+                  latestEventUid === latestRankingEvent.uid
+                    ? {
+                        whiteSpace: 'unset',
+                        padding: 0,
+                        color: 'blue',
+                      }
+                    : { whiteSpace: 'unset', padding: 0 }
+                }
               >
-                {latestEvent ? latestEvent.name : 'not yet'}
+                {latestRankingEvent ? latestRankingEvent.name : 'not yet'}
               </Button>
-              {latestEvent
-                ? ` (${(latestEvent as INormalEvent).bonus.point['5'].includes(content.uid) ? 'ポイボ' : 'ランボ'})`
-                : ''}
+            </Col>
+            <Col>
+              <Typography.Text strong={true}>ポイント</Typography.Text>
+            </Col>
+            <Col>
+              <Button
+                onClick={() => toEvent(props.history, latestPointEvent.uid)}
+                type="link"
+                style={
+                  latestEventUid === latestPointEvent.uid
+                    ? {
+                        whiteSpace: 'unset',
+                        padding: 0,
+                        color: 'blue',
+                      }
+                    : { whiteSpace: 'unset', padding: 0 }
+                }
+              >
+                {latestPointEvent ? latestPointEvent.name : 'not yet'}
+              </Button>
             </Col>
             <Col style={{ marginTop: 10 }}>その他を見る</Col>
           </Row>
         </Descriptions.Item>
-        <Descriptions.Item
-          label={
-            <span>
-              最新☆5
-              <br />
-              スカウト
-            </span>
-          }
-        >
+        <Descriptions.Item label="最新☆5スカウト">
           <Button
             onClick={() => toScout(props.history, latestScout.uid)}
             type="link"
@@ -121,8 +128,6 @@ const Character = (props: Props) => {
         リストに戻る
       </Button>
     </>
-  ) : (
-    <></>
   );
 };
 
