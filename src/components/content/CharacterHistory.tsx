@@ -1,9 +1,10 @@
-import { List } from 'antd';
+import { Button, Col, List, Row, Select } from 'antd';
 import * as R from 'ramda';
 import * as React from 'react';
 
 // import PageName, { toPublicUrl } from '../../constants/PageName';
 import { ICharacter } from '../../models/character';
+import { IEvent } from '../../models/event';
 import { MainContentProps, TypeType } from '../../models/Main';
 import { IScout } from '../../models/scout';
 import { ICharacterAdditionalState } from '../../reducers/contents/character';
@@ -14,7 +15,25 @@ import { toUnitCollection } from '../../utils/UCUtils';
 
 interface Props extends MainContentProps<ICharacter> {}
 
+interface ISelect {
+  kind: 'all' | 'event' | 'scout';
+  rarelity: 5 | 4 | 3 | 'all';
+}
+
+const kindFilter = (item: IEvent | IScout, select: ISelect, id: string) => {
+  switch (select.kind) {
+    case 'all':
+      return true;
+    case 'scout':
+      return isScout(item);
+    default:
+      return !isScout(item);
+  }
+};
+
 const CharacterHistory = (props: Props) => {
+  const [select, setSelect] = React.useState<ISelect>({ kind: 'all', rarelity: 'all' });
+
   React.useState(() => {
     if (
       !props.contents ||
@@ -39,10 +58,40 @@ const CharacterHistory = (props: Props) => {
 
   return (
     <>
-      ここにドロップダウンでフィルタ
+      <Row type="flex">
+        <Col xs={5}>種類:</Col>
+        <Col xs={19}>
+          <Select
+            defaultValue="all"
+            style={{ width: 150, margin: 5 }}
+            onChange={(e: 'all' | 'event' | 'scout') => setSelect({ ...select, kind: e })}
+          >
+            <Select.Option value="all">すべて</Select.Option>
+            <Select.Option value="event">イベント</Select.Option>
+            <Select.Option value="scout">スカウト</Select.Option>
+          </Select>
+        </Col>
+        <Col xs={5}>レアリティ:</Col>
+        <Col xs={19}>
+          <Select
+            defaultValue="all"
+            style={{ width: 150, margin: 5 }}
+            onChange={(e: 5 | 4 | 3 | 'all') => setSelect({ ...select, rarelity: e })}
+          >
+            <Select.Option value="all">すべて</Select.Option>
+            <Select.Option value={5}>☆☆☆☆☆</Select.Option>
+            <Select.Option value={4}>☆☆☆☆</Select.Option>
+            <Select.Option value={3}>☆☆☆</Select.Option>
+          </Select>
+        </Col>
+      </Row>
+
       <List
-        dataSource={additional.history}
-        renderItem={(item, idx) => {
+        dataSource={additional.history
+          .filter(h => kindFilter(h.content, select, props.match.params.id))
+          .filter(h => select.rarelity === 'all' || select.rarelity === h.rarelity)}
+        renderItem={(history, idx) => {
+          const item = history.content;
           if (!item) return undefined;
 
           let contentType: 'event' | 'scout' | undefined;
@@ -58,7 +107,7 @@ const CharacterHistory = (props: Props) => {
             subDirectory = 'uc';
           } else if (isScout(item)) {
             contentType = 'scout';
-            subDirectory = item.type || 'scout';
+            subDirectory = item.type;
           }
 
           if (!contentType || !subDirectory) return undefined;
@@ -66,7 +115,7 @@ const CharacterHistory = (props: Props) => {
           return (
             <div>
               <img
-                src={`./images/${subDirectory}/${item.img}`}
+                src={item.img}
                 alt={item.name}
                 style={{ padding: 0, maxWidth: 280, width: '100%', minHeight: 50 }}
                 onClick={() => {
@@ -91,6 +140,9 @@ const CharacterHistory = (props: Props) => {
         itemLayout="vertical"
         style={{ overflowY: 'auto', overflowX: 'visible' }}
       />
+      <Button onClick={props.history.goBack} type="primary" style={{ width: 'unset' }}>
+        戻る
+      </Button>
     </>
   );
 };

@@ -1,4 +1,7 @@
 import { IContent } from './content';
+import { IEvent } from './event';
+import { Rarelity } from './Main';
+import { IScout } from './scout';
 
 export interface ICharacter extends IContent {
   birthday: string;
@@ -12,4 +15,9 @@ export interface ICharacter extends IContent {
   club?: string;
   class?: string;
   unit: string[]; // unit uids
+}
+
+export interface ICharacterHistory {
+  content: IEvent | IScout;
+  rarelity: Rarelity;
 }

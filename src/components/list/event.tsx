@@ -12,13 +12,7 @@ import { isNormalEvent } from '../../utils/EventUtils';
 const EventList = (props: ListComponentProps<IEvent, IEventAdditionalState>) =>
   ListGenerator({
     ...props,
-    headers: item => (
-      <img
-        src={`./images/${props.query.type || 'event'}/${item.img}`}
-        alt={item.name}
-        style={{ padding: 0, maxWidth: 280, width: '100%' }}
-      />
-    ),
+    headers: item => <img src={item.img} alt={item.name} style={{ padding: 0, maxWidth: 280, width: '100%' }} />,
     descriptions: ({ item }) => (
       <>
         {isNormalEvent(item) ? <p>{item.description_short}</p> : undefined}

@@ -61,11 +61,7 @@ const Event = (props: Props) => {
 
   return props.contents && isEvent(props.contents.event.content) ? (
     <>
-      <img
-        src={`./images/${props.query.type || 'event'}/${props.contents.event.content.img}`}
-        alt=""
-        style={{ padding: 0, maxWidth: 280, width: '100%' }}
-      />
+      <img src={props.contents.event.content.img} alt="" style={{ padding: 0, maxWidth: 280, width: '100%' }} />
       <p>{props.contents.event.content.description}</p>
       <Descriptions
         title="Event Info"

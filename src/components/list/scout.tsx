@@ -11,13 +11,7 @@ import { IScoutAdditionalState } from '../../reducers/contents/scout';
 const ScoutList = (props: ListComponentProps<IScout, IScoutAdditionalState>) =>
   ListGenerator({
     ...props,
-    headers: item => (
-      <img
-        src={`./images/${props.query.type || 'scout'}/${item.img}`}
-        alt={item.name}
-        style={{ padding: 0, maxWidth: 280, width: '100%' }}
-      />
-    ),
+    headers: item => <img src={item.img} alt={item.name} style={{ padding: 0, maxWidth: 280, width: '100%' }} />,
     descriptions: ({ item }) => (
       <>
         <p>{item.description}</p>

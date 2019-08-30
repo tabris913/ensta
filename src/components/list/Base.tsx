@@ -1,7 +1,6 @@
 import * as React from 'react';
 
 import { Button, Collapse, List, Typography } from 'antd';
-import PageName, { toPublicUrl } from '../../constants/PageName';
 import { PageTitle } from '../../constants/PageTitle';
 import Wireframe from '../../containers/wireframe/Wireframe';
 import { IContent, IContentAdditionalState } from '../../models/content';
@@ -16,6 +15,7 @@ import { toUnit } from '../../utils/UnitUtils';
 
 const ListGenerator = <T extends IContent, A extends IContentAdditionalState>({
   descriptions: Descriptions,
+  filter = list => (list ? list : []),
   ...props
 }: ListComponentProps<T, A>) => {
   React.useState(() => {
@@ -76,7 +76,7 @@ const ListGenerator = <T extends IContent, A extends IContentAdditionalState>({
           },
         }}
         itemLayout="vertical"
-        dataSource={props.contents[props.contentName].list as any}
+        dataSource={filter(props.contents[props.contentName].list as any)}
         style={{ overflowY: 'auto', overflowX: 'visible' }}
         renderItem={(item: T, idx) =>
           !!item ? (
@@ -99,14 +99,8 @@ const ListGenerator = <T extends IContent, A extends IContentAdditionalState>({
           )
         }
       />
-      <Button
-        onClick={() => {
-          props.history.goBack();
-          props.history.replace(toPublicUrl(PageName.TOP));
-        }}
-        type="primary"
-      >
-        TOPに戻る
+      <Button onClick={props.history.goBack} type="primary">
+        戻る
       </Button>
     </Wireframe>
   ) : (

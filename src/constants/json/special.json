@@ -8,7 +8,25 @@
       "end": "2015-11-10",
       "relation": [],
       "banner": ["姫宮桃李"],
-      "img": "sp001.jpg"
+      "img": "./images/special/sp001.jpg",
+      "type": "special",
+      "bonus": {
+        "ranking": {
+          "5": [],
+          "4": [],
+          "3": []
+        },
+        "point": {
+          "5": [],
+          "4": [],
+          "3": []
+        },
+        "bonus": {
+          "5": [],
+          "4": [],
+          "3": []
+        }
+      }
     },
     "sp002": {
       "uid": "sp002",
@@ -18,7 +36,25 @@
       "end": "2016-01-12",
       "relation": [],
       "banner": ["紫乃創"],
-      "img": "sp002.jpg"
+      "img": "./images/special/sp002.jpg",
+      "type": "special",
+      "bonus": {
+        "ranking": {
+          "5": [],
+          "4": [],
+          "3": []
+        },
+        "point": {
+          "5": [],
+          "4": [],
+          "3": []
+        },
+        "bonus": {
+          "5": [],
+          "4": [],
+          "3": []
+        }
+      }
     },
     "sp003": {
       "uid": "sp003",
@@ -28,7 +64,25 @@
       "end": "2016-04-10",
       "relation": ["流星隊"],
       "banner": ["守沢千秋"],
-      "img": "sp003.jpg"
+      "img": "./images/special/sp003.jpg",
+      "type": "special",
+      "bonus": {
+        "ranking": {
+          "5": [],
+          "4": [],
+          "3": []
+        },
+        "point": {
+          "5": [],
+          "4": [],
+          "3": []
+        },
+        "bonus": {
+          "5": [],
+          "4": [],
+          "3": []
+        }
+      }
     },
     "sp004": {
       "uid": "sp004",
@@ -38,7 +92,25 @@
       "end": "2016-04-01",
       "relation": ["教師"],
       "banner": ["佐賀美陣"],
-      "img": "sp004.jpg"
+      "img": "./images/special/sp004.jpg",
+      "type": "special",
+      "bonus": {
+        "ranking": {
+          "5": [],
+          "4": [],
+          "3": []
+        },
+        "point": {
+          "5": [],
+          "4": [],
+          "3": []
+        },
+        "bonus": {
+          "5": [],
+          "4": [],
+          "3": []
+        }
+      }
     },
     "sp005": {
       "uid": "sp005",
@@ -48,7 +120,25 @@
       "end": "2016-05-26",
       "relation": ["演劇部"],
       "banner": ["三奇人"],
-      "img": "sp005.jpg"
+      "img": "./images/special/sp005.jpg",
+      "type": "special",
+      "bonus": {
+        "ranking": {
+          "5": [],
+          "4": [],
+          "3": []
+        },
+        "point": {
+          "5": [],
+          "4": [],
+          "3": []
+        },
+        "bonus": {
+          "5": [],
+          "4": [],
+          "3": []
+        }
+      }
     },
     "sp006": {
       "uid": "sp006",
@@ -58,7 +148,25 @@
       "end": "2017-04-01",
       "relation": ["教師"],
       "banner": ["教師"],
-      "img": "sp006.jpg"
+      "img": "./images/special/sp006.jpg",
+      "type": "special",
+      "bonus": {
+        "ranking": {
+          "5": [],
+          "4": [],
+          "3": []
+        },
+        "point": {
+          "5": [],
+          "4": [],
+          "3": []
+        },
+        "bonus": {
+          "5": [],
+          "4": [],
+          "3": []
+        }
+      }
     },
     "sp007": {
       "uid": "sp007",
@@ -68,7 +176,25 @@
       "end": "2017-09-01",
       "relation": ["fine"],
       "banner": ["富士田多々良"],
-      "img": "sp007.jpg"
+      "img": "./images/special/sp007.jpg",
+      "type": "special",
+      "bonus": {
+        "ranking": {
+          "5": [],
+          "4": [],
+          "3": []
+        },
+        "point": {
+          "5": [],
+          "4": [],
+          "3": []
+        },
+        "bonus": {
+          "5": [],
+          "4": [],
+          "3": []
+        }
+      }
     },
     "sp008": {
       "uid": "sp008",
@@ -78,7 +204,25 @@
       "end": "2017-09-27",
       "relation": ["Ra*bits"],
       "banner": ["オルトス"],
-      "img": "sp008.jpg"
+      "img": "./images/special/sp008.jpg",
+      "type": "special",
+      "bonus": {
+        "ranking": {
+          "5": [],
+          "4": [],
+          "3": []
+        },
+        "point": {
+          "5": [],
+          "4": [],
+          "3": []
+        },
+        "bonus": {
+          "5": [],
+          "4": [],
+          "3": []
+        }
+      }
     },
     "sp009": {
       "uid": "sp009",
@@ -88,7 +232,25 @@
       "end": "2018-02-28",
       "relation": [],
       "banner": ["ネロ"],
-      "img": "sp009.jpg"
+      "img": "./images/special/sp009.jpg",
+      "type": "special",
+      "bonus": {
+        "ranking": {
+          "5": [],
+          "4": [],
+          "3": []
+        },
+        "point": {
+          "5": [],
+          "4": [],
+          "3": []
+        },
+        "bonus": {
+          "5": [],
+          "4": [],
+          "3": []
+        }
+      }
     },
     "sp010": {
       "uid": "sp010",
@@ -98,7 +260,25 @@
       "end": "2018-06-29",
       "relation": [],
       "banner": ["小野田坂道"],
-      "img": "sp010.jpg"
+      "img": "./images/special/sp010.jpg",
+      "type": "special",
+      "bonus": {
+        "ranking": {
+          "5": [],
+          "4": [],
+          "3": []
+        },
+        "point": {
+          "5": [],
+          "4": [],
+          "3": []
+        },
+        "bonus": {
+          "5": [],
+          "4": [],
+          "3": []
+        }
+      }
     }
   }
 }

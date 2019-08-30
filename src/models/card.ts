@@ -1,9 +1,10 @@
 import { IContent } from './content';
+import { CardType, Rarelity } from './Main';
 
 export interface ICard extends IContent {
   character: string; // character uid
-  rank: 1 | 2 | 3 | 4 | 5;
-  type: 'Da' | 'Vo' | 'Pf';
+  rank: Rarelity;
+  type: CardType;
   date: string;
   skill?: ISkill;
   parameter?: {

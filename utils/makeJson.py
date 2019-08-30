@@ -61,7 +61,8 @@ def makeEvent():
       }},
       "relation": [{convert_list(line.relation)}],
       "banner": [{convert_list(line.banner)}],
-      "img": "{line.uid}.jpg"
+      "img": "./images/event/{line.uid}.jpg",
+      "type": "event"
     }}{',' if df.index[-1] != idx else ''}\n'''
 
         json_string += fmt
@@ -90,7 +91,25 @@ def makeSpecial():
       "end": "{line.end.strftime('%Y-%m-%d')}",
       "relation": [{convert_list(line.relation)}],
       "banner": [{convert_list(line.banner)}],
-      "img": "{line.uid}.jpg"
+      "img": "./images/special/{line.uid}.jpg",
+      "type": "special",
+      "bonus": {{
+        "ranking": {{
+          "5": [],
+          "4": [],
+          "3": []
+        }},
+        "point": {{
+          "5": [],
+          "4": [],
+          "3": []
+        }},
+        "bonus": {{
+          "5": [],
+          "4": [],
+          "3": []
+        }}
+      }}
     }}{',' if df.index[-1] != idx else ''}\n'''
 
         json_string += fmt
@@ -118,9 +137,10 @@ def makeUC():
       "end": "{line.end.strftime('%Y-%m-%d')}",
       "relation": [{convert_list(line.relation)}],
       "banner": [{convert_list(line.banner)}],
-      "img": "{line.uid}.jpg",
+      "img": "./images/uc/{line.uid}.jpg",
       "acquirableCards": [{convert_list(line.acquirableCards)}],
-      "revivalEvents": [{convert_list(line.revivalEvents)}]
+      "revivalEvents": [{convert_list(line.revivalEvents)}],
+      "type": "uc"
     }}{',' if df.index[-1] != idx else ''}\n'''
 
         json_string += fmt
@@ -146,13 +166,15 @@ def makeScout():
       "start": "{line.start.strftime('%Y-%m-%d')}",
       "end": "{line.end.strftime('%Y-%m-%d')}",
       "cards": {{
-        "5": ["{line.bonus}"]
+        "5": ["{line.bonus}"],
+        "4": [],
+        "3": []
       }},
       "relation": [{convert_list(line.relation)}],
       "banner": [{convert_list(line.banner)}],
-      "img": "{line.uid}.png",
+      "img": "./images/{line.type or 'scout'}/{line.uid}.jpg",
       "skill": "{line.skill}",
-      "type": "{line.type}"
+      "type": "{line.type or 'scout'}"
     }}{',' if df.index[-1] != idx else ''}\n'''
 
         json_string += fmt
@@ -208,7 +230,7 @@ def makeCard():
       }},
       "content": ["{line.content}"],
       "bonus": "{line.bonus}",
-      "img": ["{line.content}/{line.character}_A.jpg", "{line.content}/{line.character}_B.jpg"],
+      "img": ["./images/card/{line.content}/{line.character}_A.jpg", "./images/card/{line.content}/{line.character}_B.jpg"],
       "remarks": "{line.remarks}"
     }}{',' if df.index[-1] != idx else ''}\n'''
 

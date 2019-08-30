@@ -1,5 +1,6 @@
 import { ICards } from './card';
 import { IContent } from './content';
+import { EventType } from './Main';
 
 interface EventBody extends IContent {
   description: string;
@@ -8,6 +9,7 @@ interface EventBody extends IContent {
   relation?: string[]; // unit uid etc
   banner: string[];
   img?: string;
+  type: EventType;
 }
 
 export interface INormalEvent extends EventBody {
@@ -21,7 +23,9 @@ export interface IBonus {
   point: ICards;
 }
 
-export interface ISpecialEvent extends EventBody {}
+export interface ISpecialEvent extends EventBody {
+  bonus: IBonus & { bonus: ICards };
+}
 
 export interface IUnitCollection extends EventBody {
   acquirableCards: string[]; // card uids

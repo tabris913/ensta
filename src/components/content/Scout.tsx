@@ -18,11 +18,7 @@ const Scout = (props: MainContentProps<IScout>) => {
   });
   return props.contents && props.contents.scout.content ? (
     <>
-      <img
-        src={`./images/scout/${props.contents.scout.content.img}`}
-        alt=""
-        style={{ padding: 0, maxWidth: 280, width: '100%' }}
-      />
+      <img src={props.contents.scout.content.img} alt="" style={{ padding: 0, maxWidth: 280, width: '100%' }} />
       <p>{props.contents.scout.content.description}</p>
       <Descriptions
         title="Scout Info"

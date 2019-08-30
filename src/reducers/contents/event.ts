@@ -18,6 +18,7 @@ const initialEventValue: IEvent = {
   img: undefined,
   acquirableCards: [],
   revivalEvents: [],
+  type: '',
 };
 
 export interface IEventState extends IContentState<IEvent, IEventAdditionalState> {}

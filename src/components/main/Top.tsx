@@ -43,20 +43,20 @@ const Top = (props: MainProps) => {
         </div>
       ),
     },
-    { label: 'Scout', linkto: PageName.SCOUT_LIST, message: <p>→未作成</p> },
-    { label: 'Unit', linkto: PageName.UNIT_LIST, message: <p>→未作成</p> },
+    { label: 'Scout', linkto: PageName.SCOUT_LIST, message: <p>→まだ中途半端だけど原型は出来てる</p> },
+    { label: 'Unit', linkto: PageName.UNIT_LIST, message: <p>→まだできてない</p> },
     {
       label: 'Character',
       linkto: PageName.CHARACTER_LIST,
       message: (
         <p>
-          →未作成
+          →まだ中途半端だけど原型は出来てる
           <br />
           キャラ別にどのイベントorスカウトで来たか (つまり逆にいつから来てないか) もまとめたりするつもり
         </p>
       ),
     },
-    { label: 'Card', linkto: PageName.CARD_LIST, message: <p>→未作成</p> },
+    { label: 'Card', linkto: PageName.CARD_LIST, message: <p>→まだ中途半端だけど原型は出来てる</p> },
   ];
   return (
     <Row style={{ overflowY: 'auto' }}>

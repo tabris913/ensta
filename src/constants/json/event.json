@@ -22,7 +22,8 @@
       },
       "relation": ["Trickstar"],
       "banner": ["hokuto"],
-      "img": "e001.jpg"
+      "img": "./images/event/e001.jpg",
+      "type": "event"
     },
     "e002": {
       "uid": "e002",
@@ -46,7 +47,8 @@
       },
       "relation": ["fine", "2wink"],
       "banner": ["hinata"],
-      "img": "e002.jpg"
+      "img": "./images/event/e002.jpg",
+      "type": "event"
     },
     "e003": {
       "uid": "e003",
@@ -70,7 +72,8 @@
       },
       "relation": ["UNDEAD"],
       "banner": ["koga"],
-      "img": "e003.jpg"
+      "img": "./images/event/e003.jpg",
+      "type": "event"
     },
     "e004": {
       "uid": "e004",
@@ -94,7 +97,8 @@
       },
       "relation": ["Knights", "Trickstar"],
       "banner": ["izumi"],
-      "img": "e004.jpg"
+      "img": "./images/event/e004.jpg",
+      "type": "event"
     },
     "e005": {
       "uid": "e005",
@@ -118,7 +122,8 @@
       },
       "relation": ["Ra*bits", "紅月"],
       "banner": ["mitsuru"],
-      "img": "e005.jpg"
+      "img": "./images/event/e005.jpg",
+      "type": "event"
     },
     "e006": {
       "uid": "e006",
@@ -142,7 +147,8 @@
       },
       "relation": ["UNDEAD", "流星隊"],
       "banner": ["adnis"],
-      "img": "e006.jpg"
+      "img": "./images/event/e006.jpg",
+      "type": "event"
     },
     "e007": {
       "uid": "e007",
@@ -166,7 +172,8 @@
       },
       "relation": ["Trickstar"],
       "banner": ["mao"],
-      "img": "e007.jpg"
+      "img": "./images/event/e007.jpg",
+      "type": "event"
     },
     "e008": {
       "uid": "e008",
@@ -190,7 +197,8 @@
       },
       "relation": ["fine", "紅月"],
       "banner": ["eichi"],
-      "img": "e008.jpg"
+      "img": "./images/event/e008.jpg",
+      "type": "event"
     },
     "e009": {
       "uid": "e009",
@@ -214,7 +222,8 @@
       },
       "relation": ["バスケ部"],
       "banner": ["chiaki"],
-      "img": "e009.jpg"
+      "img": "./images/event/e009.jpg",
+      "type": "event"
     },
     "e010": {
       "uid": "e010",
@@ -238,7 +247,8 @@
       },
       "relation": ["Knights"],
       "banner": ["tsukasa"],
-      "img": "e010.jpg"
+      "img": "./images/event/e010.jpg",
+      "type": "event"
     },
     "e011": {
       "uid": "e011",
@@ -262,7 +272,8 @@
       },
       "relation": [],
       "banner": ["shinobu"],
-      "img": "e011.jpg"
+      "img": "./images/event/e011.jpg",
+      "type": "event"
     },
     "e012": {
       "uid": "e012",
@@ -286,7 +297,8 @@
       },
       "relation": ["UNDEAD"],
       "banner": ["ritsu"],
-      "img": "e012.jpg"
+      "img": "./images/event/e012.jpg",
+      "type": "event"
     },
     "e013": {
       "uid": "e013",
@@ -310,7 +322,8 @@
       },
       "relation": ["2年生"],
       "banner": ["arashi"],
-      "img": "e013.jpg"
+      "img": "./images/event/e013.jpg",
+      "type": "event"
     },
     "e014": {
       "uid": "e014",
@@ -334,7 +347,8 @@
       },
       "relation": [],
       "banner": ["kanata"],
-      "img": "e014.jpg"
+      "img": "./images/event/e014.jpg",
+      "type": "event"
     },
     "e015": {
       "uid": "e015",
@@ -358,7 +372,8 @@
       },
       "relation": ["流星隊"],
       "banner": ["midori"],
-      "img": "e015.jpg"
+      "img": "./images/event/e015.jpg",
+      "type": "event"
     },
     "e016": {
       "uid": "e016",
@@ -382,7 +397,8 @@
       },
       "relation": ["Knights", "Ra*bits"],
       "banner": ["wataru"],
-      "img": "e016.jpg"
+      "img": "./images/event/e016.jpg",
+      "type": "event"
     },
     "e017": {
       "uid": "e017",
@@ -406,7 +422,8 @@
       },
       "relation": ["紅月"],
       "banner": ["kuro"],
-      "img": "e017.jpg"
+      "img": "./images/event/e017.jpg",
+      "type": "event"
     },
     "e018": {
       "uid": "e018",
@@ -430,7 +447,8 @@
       },
       "relation": ["Trickstar", "陸上部"],
       "banner": ["hokuto"],
-      "img": "e018.jpg"
+      "img": "./images/event/e018.jpg",
+      "type": "event"
     },
     "e019": {
       "uid": "e019",
@@ -454,7 +472,8 @@
       },
       "relation": ["fine"],
       "banner": ["tori"],
-      "img": "e019.jpg"
+      "img": "./images/event/e019.jpg",
+      "type": "event"
     },
     "e020": {
       "uid": "e020",
@@ -478,7 +497,8 @@
       },
       "relation": ["軽音部"],
       "banner": ["hinata"],
-      "img": "e020.jpg"
+      "img": "./images/event/e020.jpg",
+      "type": "event"
     },
     "e021": {
       "uid": "e021",
@@ -502,7 +522,8 @@
       },
       "relation": ["Valkyrie", "Ra*bits"],
       "banner": ["nazuna"],
-      "img": "e021.jpg"
+      "img": "./images/event/e021.jpg",
+      "type": "event"
     },
     "e022": {
       "uid": "e022",
@@ -526,7 +547,8 @@
       },
       "relation": ["1年生"],
       "banner": ["hajime"],
-      "img": "e022.jpg"
+      "img": "./images/event/e022.jpg",
+      "type": "event"
     },
     "e023": {
       "uid": "e023",
@@ -550,7 +572,8 @@
       },
       "relation": ["fine", "紅月"],
       "banner": ["yuzuru"],
-      "img": "e023.jpg"
+      "img": "./images/event/e023.jpg",
+      "type": "event"
     },
     "e024": {
       "uid": "e024",
@@ -574,7 +597,8 @@
       },
       "relation": ["Trickstar", "UNDEAD"],
       "banner": ["mao"],
-      "img": "e024.jpg"
+      "img": "./images/event/e024.jpg",
+      "type": "event"
     },
     "e025": {
       "uid": "e025",
@@ -598,7 +622,8 @@
       },
       "relation": ["Knights", "Ra*bits"],
       "banner": ["izumi"],
-      "img": "e025.jpg"
+      "img": "./images/event/e025.jpg",
+      "type": "event"
     },
     "e026": {
       "uid": "e026",
@@ -622,7 +647,8 @@
       },
       "relation": ["流星隊"],
       "banner": ["kanata"],
-      "img": "e026.jpg"
+      "img": "./images/event/e026.jpg",
+      "type": "event"
     },
     "e027": {
       "uid": "e027",
@@ -646,7 +672,8 @@
       },
       "relation": ["紅月"],
       "banner": ["kuro"],
-      "img": "e027.jpg"
+      "img": "./images/event/e027.jpg",
+      "type": "event"
     },
     "e028": {
       "uid": "e028",
@@ -670,7 +697,8 @@
       },
       "relation": ["fine", "Valkyrie"],
       "banner": ["shu"],
-      "img": "e028.jpg"
+      "img": "./images/event/e028.jpg",
+      "type": "event"
     },
     "e029": {
       "uid": "e029",
@@ -694,7 +722,8 @@
       },
       "relation": ["UNDEAD", "Ra*bits"],
       "banner": ["adnis"],
-      "img": "e029.jpg"
+      "img": "./images/event/e029.jpg",
+      "type": "event"
     },
     "e030": {
       "uid": "e030",
@@ -718,7 +747,8 @@
       },
       "relation": ["Trickstar", "Knights"],
       "banner": ["makoto"],
-      "img": "e030.jpg"
+      "img": "./images/event/e030.jpg",
+      "type": "event"
     },
     "e031": {
       "uid": "e031",
@@ -742,7 +772,8 @@
       },
       "relation": ["流星隊", "2wink"],
       "banner": ["tetora"],
-      "img": "e031.jpg"
+      "img": "./images/event/e031.jpg",
+      "type": "event"
     },
     "e032": {
       "uid": "e032",
@@ -766,7 +797,8 @@
       },
       "relation": ["Switch"],
       "banner": ["natsume"],
-      "img": "e032.jpg"
+      "img": "./images/event/e032.jpg",
+      "type": "event"
     },
     "e033": {
       "uid": "e033",
@@ -790,7 +822,8 @@
       },
       "relation": [],
       "banner": ["ritsu"],
-      "img": "e033.jpg"
+      "img": "./images/event/e033.jpg",
+      "type": "event"
     },
     "e034": {
       "uid": "e034",
@@ -814,7 +847,8 @@
       },
       "relation": ["流星隊", "紅月"],
       "banner": ["shinobu"],
-      "img": "e034.jpg"
+      "img": "./images/event/e034.jpg",
+      "type": "event"
     },
     "e035": {
       "uid": "e035",
@@ -838,7 +872,8 @@
       },
       "relation": ["Trickstar", "UNDEAD"],
       "banner": ["subaru"],
-      "img": "e035.jpg"
+      "img": "./images/event/e035.jpg",
+      "type": "event"
     },
     "e036": {
       "uid": "e036",
@@ -862,7 +897,8 @@
       },
       "relation": ["Switch", "Valkyrie"],
       "banner": ["sora"],
-      "img": "e036.jpg"
+      "img": "./images/event/e036.jpg",
+      "type": "event"
     },
     "e037": {
       "uid": "e037",
@@ -886,7 +922,8 @@
       },
       "relation": ["2wink", "fine"],
       "banner": ["yuta"],
-      "img": "e037.jpg"
+      "img": "./images/event/e037.jpg",
+      "type": "event"
     },
     "e038": {
       "uid": "e038",
@@ -910,7 +947,8 @@
       },
       "relation": ["Knights", "Valkyrie"],
       "banner": ["leo"],
-      "img": "e038.jpg"
+      "img": "./images/event/e038.jpg",
+      "type": "event"
     },
     "e039": {
       "uid": "e039",
@@ -934,7 +972,8 @@
       },
       "relation": ["UNDEAD", "流星隊"],
       "banner": ["kaoru"],
-      "img": "e039.jpg"
+      "img": "./images/event/e039.jpg",
+      "type": "event"
     },
     "e040": {
       "uid": "e040",
@@ -958,7 +997,8 @@
       },
       "relation": ["Trickstar", "紅月"],
       "banner": ["keito"],
-      "img": "e040.jpg"
+      "img": "./images/event/e040.jpg",
+      "type": "event"
     },
     "e041": {
       "uid": "e041",
@@ -982,7 +1022,8 @@
       },
       "relation": ["fine"],
       "banner": ["eichi"],
-      "img": "e041.jpg"
+      "img": "./images/event/e041.jpg",
+      "type": "event"
     },
     "e042": {
       "uid": "e042",
@@ -1006,7 +1047,8 @@
       },
       "relation": ["2wink"],
       "banner": ["rei"],
-      "img": "e042.jpg"
+      "img": "./images/event/e042.jpg",
+      "type": "event"
     },
     "e043": {
       "uid": "e043",
@@ -1030,7 +1072,8 @@
       },
       "relation": ["Knights，Ra*bits"],
       "banner": ["tsukasa"],
-      "img": "e043.jpg"
+      "img": "./images/event/e043.jpg",
+      "type": "event"
     },
     "e044": {
       "uid": "e044",
@@ -1054,7 +1097,8 @@
       },
       "relation": ["流星隊"],
       "banner": ["chiaki"],
-      "img": "e044.jpg"
+      "img": "./images/event/e044.jpg",
+      "type": "event"
     },
     "e045": {
       "uid": "e045",
@@ -1078,7 +1122,8 @@
       },
       "relation": ["UNDEAD", "紅月"],
       "banner": ["soma"],
-      "img": "e045.jpg"
+      "img": "./images/event/e045.jpg",
+      "type": "event"
     },
     "e046": {
       "uid": "e046",
@@ -1102,7 +1147,8 @@
       },
       "relation": ["Trickstar"],
       "banner": ["subaru"],
-      "img": "e046.jpg"
+      "img": "./images/event/e046.jpg",
+      "type": "event"
     },
     "e047": {
       "uid": "e047",
@@ -1126,7 +1172,8 @@
       },
       "relation": ["Switch", "Valkyrie"],
       "banner": ["tsumugi"],
-      "img": "e047.jpg"
+      "img": "./images/event/e047.jpg",
+      "type": "event"
     },
     "e048": {
       "uid": "e048",
@@ -1150,7 +1197,8 @@
       },
       "relation": ["MaM", "陸上部"],
       "banner": ["madara"],
-      "img": "e048.jpg"
+      "img": "./images/event/e048.jpg",
+      "type": "event"
     },
     "e049": {
       "uid": "e049",
@@ -1174,7 +1222,8 @@
       },
       "relation": ["演劇部，紅月"],
       "banner": ["tomoya"],
-      "img": "e049.jpg"
+      "img": "./images/event/e049.jpg",
+      "type": "event"
     },
     "e050": {
       "uid": "e050",
@@ -1198,7 +1247,8 @@
       },
       "relation": ["Knights"],
       "banner": ["leo"],
-      "img": "e050.jpg"
+      "img": "./images/event/e050.jpg",
+      "type": "event"
     },
     "e051": {
       "uid": "e051",
@@ -1222,7 +1272,8 @@
       },
       "relation": ["Switch，2wink"],
       "banner": ["sora"],
-      "img": "e051.jpg"
+      "img": "./images/event/e051.jpg",
+      "type": "event"
     },
     "e052": {
       "uid": "e052",
@@ -1246,7 +1297,8 @@
       },
       "relation": ["流星隊"],
       "banner": ["tetora"],
-      "img": "e052.jpg"
+      "img": "./images/event/e052.jpg",
+      "type": "event"
     },
     "e053": {
       "uid": "e053",
@@ -1270,7 +1322,8 @@
       },
       "relation": ["Trickstar", "Eve"],
       "banner": ["hiyori"],
-      "img": "e053.jpg"
+      "img": "./images/event/e053.jpg",
+      "type": "event"
     },
     "e054": {
       "uid": "e054",
@@ -1294,7 +1347,8 @@
       },
       "relation": ["デッドマンズ"],
       "banner": ["rei"],
-      "img": "e054.jpg"
+      "img": "./images/event/e054.jpg",
+      "type": "event"
     },
     "e055": {
       "uid": "e055",
@@ -1318,7 +1372,8 @@
       },
       "relation": ["Switch", "Trickstar"],
       "banner": ["natsume"],
-      "img": "e055.jpg"
+      "img": "./images/event/e055.jpg",
+      "type": "event"
     },
     "e056": {
       "uid": "e056",
@@ -1342,7 +1397,8 @@
       },
       "relation": ["弓道部", "Valkyrie"],
       "banner": ["yuzuru"],
-      "img": "e056.jpg"
+      "img": "./images/event/e056.jpg",
+      "type": "event"
     },
     "e057": {
       "uid": "e057",
@@ -1366,7 +1422,8 @@
       },
       "relation": ["海洋生物部"],
       "banner": ["kanata"],
-      "img": "e057.jpg"
+      "img": "./images/event/e057.jpg",
+      "type": "event"
     },
     "e058": {
       "uid": "e058",
@@ -1390,7 +1447,8 @@
       },
       "relation": ["Knights"],
       "banner": ["ritsu"],
-      "img": "e058.jpg"
+      "img": "./images/event/e058.jpg",
+      "type": "event"
     },
     "e059": {
       "uid": "e059",
@@ -1414,7 +1472,8 @@
       },
       "relation": ["Trickstar", "Adam"],
       "banner": ["nagisa"],
-      "img": "e059.jpg"
+      "img": "./images/event/e059.jpg",
+      "type": "event"
     },
     "e060": {
       "uid": "e060",
@@ -1438,7 +1497,8 @@
       },
       "relation": ["流星隊", "Ra*bits", "MaM"],
       "banner": ["chiaki"],
-      "img": "e060.jpg"
+      "img": "./images/event/e060.jpg",
+      "type": "event"
     },
     "e061": {
       "uid": "e061",
@@ -1462,7 +1522,8 @@
       },
       "relation": [],
       "banner": ["shinobu"],
-      "img": "e061.jpg"
+      "img": "./images/event/e061.jpg",
+      "type": "event"
     },
     "e062": {
       "uid": "e062",
@@ -1486,7 +1547,8 @@
       },
       "relation": ["fine"],
       "banner": ["tori"],
-      "img": "e062.jpg"
+      "img": "./images/event/e062.jpg",
+      "type": "event"
     },
     "e063": {
       "uid": "e063",
@@ -1510,7 +1572,8 @@
       },
       "relation": [],
       "banner": ["leo"],
-      "img": "e063.jpg"
+      "img": "./images/event/e063.jpg",
+      "type": "event"
     },
     "e064": {
       "uid": "e064",
@@ -1534,7 +1597,8 @@
       },
       "relation": ["Trickstar", "Eden"],
       "banner": ["subaru", "hokuto"],
-      "img": "e064.jpg"
+      "img": "./images/event/e064.jpg",
+      "type": "event"
     },
     "e065": {
       "uid": "e065",
@@ -1558,7 +1622,8 @@
       },
       "relation": [],
       "banner": ["tsukasa"],
-      "img": "e065.jpg"
+      "img": "./images/event/e065.jpg",
+      "type": "event"
     },
     "e066": {
       "uid": "e066",
@@ -1582,7 +1647,8 @@
       },
       "relation": ["UNDEAD"],
       "banner": ["adnis"],
-      "img": "e066.jpg"
+      "img": "./images/event/e066.jpg",
+      "type": "event"
     },
     "e067": {
       "uid": "e067",
@@ -1606,7 +1672,8 @@
       },
       "relation": ["2wink", "流星隊"],
       "banner": ["hinata"],
-      "img": "e067.jpg"
+      "img": "./images/event/e067.jpg",
+      "type": "event"
     },
     "e068": {
       "uid": "e068",
@@ -1630,7 +1697,8 @@
       },
       "relation": ["Valkyrie", "Ra*bits"],
       "banner": ["shu"],
-      "img": "e068.jpg"
+      "img": "./images/event/e068.jpg",
+      "type": "event"
     },
     "e069": {
       "uid": "e069",
@@ -1654,7 +1722,8 @@
       },
       "relation": ["2A"],
       "banner": ["soma"],
-      "img": "e069.jpg"
+      "img": "./images/event/e069.jpg",
+      "type": "event"
     },
     "e070": {
       "uid": "e070",
@@ -1678,7 +1747,8 @@
       },
       "relation": ["UNDEAD"],
       "banner": ["rei"],
-      "img": "e070.jpg"
+      "img": "./images/event/e070.jpg",
+      "type": "event"
     },
     "e071": {
       "uid": "e071",
@@ -1702,7 +1772,8 @@
       },
       "relation": ["Knights", "Switch"],
       "banner": ["izumi"],
-      "img": "e071.jpg"
+      "img": "./images/event/e071.jpg",
+      "type": "event"
     },
     "e072": {
       "uid": "e072",
@@ -1726,7 +1797,8 @@
       },
       "relation": ["演劇部"],
       "banner": ["hokuto"],
-      "img": "e072.jpg"
+      "img": "./images/event/e072.jpg",
+      "type": "event"
     },
     "e073": {
       "uid": "e073",
@@ -1750,7 +1822,8 @@
       },
       "relation": ["流星隊"],
       "banner": ["midori"],
-      "img": "e073.jpg"
+      "img": "./images/event/e073.jpg",
+      "type": "event"
     },
     "e074": {
       "uid": "e074",
@@ -1774,7 +1847,8 @@
       },
       "relation": ["紅月", "MaM"],
       "banner": ["kuro"],
-      "img": "e074.jpg"
+      "img": "./images/event/e074.jpg",
+      "type": "event"
     },
     "e075": {
       "uid": "e075",
@@ -1798,7 +1872,8 @@
       },
       "relation": ["2wink，Ra*bits"],
       "banner": ["yuta"],
-      "img": "e075.jpg"
+      "img": "./images/event/e075.jpg",
+      "type": "event"
     },
     "e076": {
       "uid": "e076",
@@ -1822,7 +1897,8 @@
       },
       "relation": ["Trickstar，流星隊"],
       "banner": ["mao"],
-      "img": "e076.jpg"
+      "img": "./images/event/e076.jpg",
+      "type": "event"
     },
     "e077": {
       "uid": "e077",
@@ -1846,7 +1922,8 @@
       },
       "relation": ["Switch，Ra*bits"],
       "banner": ["tomoya"],
-      "img": "e077.jpg"
+      "img": "./images/event/e077.jpg",
+      "type": "event"
     },
     "e078": {
       "uid": "e078",
@@ -1870,7 +1947,8 @@
       },
       "relation": ["UNDEAD", "fine"],
       "banner": ["adnis"],
-      "img": "e078.jpg"
+      "img": "./images/event/e078.jpg",
+      "type": "event"
     },
     "e079": {
       "uid": "e079",
@@ -1894,7 +1972,8 @@
       },
       "relation": ["Knights", "Valkyrie"],
       "banner": ["arashi"],
-      "img": "e079.jpg"
+      "img": "./images/event/e079.jpg",
+      "type": "event"
     },
     "e080": {
       "uid": "e080",
@@ -1918,7 +1997,8 @@
       },
       "relation": ["紅月"],
       "banner": ["keito"],
-      "img": "e080.jpg"
+      "img": "./images/event/e080.jpg",
+      "type": "event"
     },
     "e081": {
       "uid": "e081",
@@ -1942,7 +2022,8 @@
       },
       "relation": [],
       "banner": ["rei"],
-      "img": "e081.jpg"
+      "img": "./images/event/e081.jpg",
+      "type": "event"
     },
     "e082": {
       "uid": "e082",
@@ -1966,7 +2047,8 @@
       },
       "relation": ["Rain-bows"],
       "banner": ["jin"],
-      "img": "e082.jpg"
+      "img": "./images/event/e082.jpg",
+      "type": "event"
     },
     "e083": {
       "uid": "e083",
@@ -1990,7 +2072,8 @@
       },
       "relation": ["UNDEAD", "Switch"],
       "banner": ["koga"],
-      "img": "e083.jpg"
+      "img": "./images/event/e083.jpg",
+      "type": "event"
     },
     "e084": {
       "uid": "e084",
@@ -2014,7 +2097,8 @@
       },
       "relation": ["Knights", "Trickstar"],
       "banner": ["izumi"],
-      "img": "e084.jpg"
+      "img": "./images/event/e084.jpg",
+      "type": "event"
     },
     "e085": {
       "uid": "e085",
@@ -2038,7 +2122,8 @@
       },
       "relation": ["Valkyrie", "2wink"],
       "banner": ["mika"],
-      "img": "e085.jpg"
+      "img": "./images/event/e085.jpg",
+      "type": "event"
     },
     "e086": {
       "uid": "e086",
@@ -2062,7 +2147,8 @@
       },
       "relation": ["UNDEAD", "Ra*bits"],
       "banner": ["kaoru"],
-      "img": "e086.jpg"
+      "img": "./images/event/e086.jpg",
+      "type": "event"
     },
     "e087": {
       "uid": "e087",
@@ -2086,7 +2172,8 @@
       },
       "relation": ["紅月"],
       "banner": ["soma"],
-      "img": "e087.jpg"
+      "img": "./images/event/e087.jpg",
+      "type": "event"
     },
     "e088": {
       "uid": "e088",
@@ -2110,7 +2197,8 @@
       },
       "relation": ["Rain-bows"],
       "banner": ["hokuto"],
-      "img": "e088.jpg"
+      "img": "./images/event/e088.jpg",
+      "type": "event"
     },
     "e089": {
       "uid": "e089",
@@ -2134,7 +2222,8 @@
       },
       "relation": ["ナイトキラーズ"],
       "banner": ["wataru"],
-      "img": "e089.jpg"
+      "img": "./images/event/e089.jpg",
+      "type": "event"
     },
     "e090": {
       "uid": "e090",
@@ -2158,7 +2247,8 @@
       },
       "relation": ["流星隊", "Valkyrie"],
       "banner": ["midori"],
-      "img": "e090.jpg"
+      "img": "./images/event/e090.jpg",
+      "type": "event"
     },
     "e091": {
       "uid": "e091",
@@ -2182,7 +2272,8 @@
       },
       "relation": ["Switch", "Eden"],
       "banner": ["tsumugi"],
-      "img": "e091.jpg"
+      "img": "./images/event/e091.jpg",
+      "type": "event"
     },
     "e092": {
       "uid": "e092",
@@ -2206,7 +2297,8 @@
       },
       "relation": ["Knights"],
       "banner": ["leo"],
-      "img": "e092.jpg"
+      "img": "./images/event/e092.jpg",
+      "type": "event"
     },
     "e093": {
       "uid": "e093",
@@ -2230,7 +2322,8 @@
       },
       "relation": ["Trickstar", "2wink"],
       "banner": ["subaru"],
-      "img": "e093.jpg"
+      "img": "./images/event/e093.jpg",
+      "type": "event"
     },
     "e094": {
       "uid": "e094",
@@ -2254,7 +2347,8 @@
       },
       "relation": ["流星隊"],
       "banner": ["kanata"],
-      "img": "e094.jpg"
+      "img": "./images/event/e094.jpg",
+      "type": "event"
     },
     "e095": {
       "uid": "e095",
@@ -2278,7 +2372,8 @@
       },
       "relation": ["Ra*bits"],
       "banner": ["nazuna"],
-      "img": "e095.jpg"
+      "img": "./images/event/e095.jpg",
+      "type": "event"
     },
     "e096": {
       "uid": "e096",
@@ -2302,7 +2397,8 @@
       },
       "relation": [],
       "banner": ["rei"],
-      "img": "e096.jpg"
+      "img": "./images/event/e096.jpg",
+      "type": "event"
     },
     "e097": {
       "uid": "e097",
@@ -2326,7 +2422,8 @@
       },
       "relation": ["Switch", "Valkyrie"],
       "banner": ["natsume"],
-      "img": "e097.jpg"
+      "img": "./images/event/e097.jpg",
+      "type": "event"
     },
     "e098": {
       "uid": "e098",
@@ -2350,7 +2447,8 @@
       },
       "relation": ["fine"],
       "banner": ["tori"],
-      "img": "e098.jpg"
+      "img": "./images/event/e098.jpg",
+      "type": "event"
     },
     "e099": {
       "uid": "e099",
@@ -2374,7 +2472,8 @@
       },
       "relation": [],
       "banner": ["subaru", "一条シン"],
-      "img": "e099.jpg"
+      "img": "./images/event/e099.jpg",
+      "type": "event"
     },
     "e100": {
       "uid": "e100",
@@ -2398,7 +2497,8 @@
       },
       "relation": ["Trickstar"],
       "banner": ["mao"],
-      "img": "e100.jpg"
+      "img": "./images/event/e100.jpg",
+      "type": "event"
     },
     "e101": {
       "uid": "e101",
@@ -2422,7 +2522,8 @@
       },
       "relation": ["紅月", "Ra*bits"],
       "banner": ["soma"],
-      "img": "e101.jpg"
+      "img": "./images/event/e101.jpg",
+      "type": "event"
     }
   }
 }

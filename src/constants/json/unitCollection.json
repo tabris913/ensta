@@ -8,9 +8,10 @@
       "end": "2019-07-25",
       "relation": ["trickstar"],
       "banner": ["trickstar"],
-      "img": "uc001.jpg",
+      "img": "./images/uc/uc001.jpg",
       "acquirableCards": ["hokuto", "subaru", "makoto", "mao"],
-      "revivalEvents": []
+      "revivalEvents": [],
+      "type": "uc"
     },
     "uc002": {
       "uid": "uc002",
@@ -20,9 +21,10 @@
       "end": "2019-08-25",
       "relation": ["undead"],
       "banner": ["undead"],
-      "img": "uc002.jpg",
+      "img": "./images/uc/uc002.jpg",
       "acquirableCards": ["rei", "kaoru", "koga", "adnis"],
-      "revivalEvents": []
+      "revivalEvents": [],
+      "type": "uc"
     }
   }
 }

@@ -7,13 +7,15 @@
       "start": "2015-05-21",
       "end": "2015-05-30",
       "cards": {
-        "5": ["nazuna"]
+        "5": ["nazuna"],
+        "4": [],
+        "3": []
       },
       "relation": ["Ra*bits"],
       "banner": ["nazuna"],
-      "img": "s001.png",
+      "img": "./images/scout/s001.jpg",
       "skill": "マーチングバンド",
-      "type": ""
+      "type": "scout"
     },
     "s002": {
       "uid": "s002",
@@ -22,13 +24,15 @@
       "start": "2015-05-31",
       "end": "2015-06-14",
       "cards": {
-        "5": ["ritsu"]
+        "5": ["ritsu"],
+        "4": [],
+        "3": []
       },
       "relation": ["Knights"],
       "banner": ["ritsu"],
-      "img": "s002.png",
+      "img": "./images/scout/s002.jpg",
       "skill": "スイーツパティシエ",
-      "type": ""
+      "type": "scout"
     },
     "s003": {
       "uid": "s003",
@@ -37,13 +41,15 @@
       "start": "2015-06-17",
       "end": "2015-06-28",
       "cards": {
-        "5": ["keito"]
+        "5": ["keito"],
+        "4": [],
+        "3": []
       },
       "relation": ["紅月"],
       "banner": ["keito"],
-      "img": "s003.png",
+      "img": "./images/scout/s003.jpg",
       "skill": "新緑の武芸者",
-      "type": ""
+      "type": "scout"
     },
     "s004": {
       "uid": "s004",
@@ -52,13 +58,15 @@
       "start": "2015-06-30",
       "end": "2015-07-10",
       "cards": {
-        "5": ["chiaki"]
+        "5": ["chiaki"],
+        "4": [],
+        "3": []
       },
       "relation": ["流星隊"],
       "banner": ["chiaki"],
-      "img": "s004.png",
+      "img": "./images/scout/s004.jpg",
       "skill": "ヒーローショウ",
-      "type": ""
+      "type": "scout"
     },
     "s005": {
       "uid": "s005",
@@ -67,13 +75,15 @@
       "start": "2015-07-15",
       "end": "2015-07-26",
       "cards": {
-        "5": ["yuzuru"]
+        "5": ["yuzuru"],
+        "4": [],
+        "3": []
       },
       "relation": ["生徒会"],
       "banner": ["yuzuru"],
-      "img": "s005.png",
+      "img": "./images/scout/s005.jpg",
       "skill": "プール掃除班",
-      "type": ""
+      "type": "scout"
     },
     "s006": {
       "uid": "s006",
@@ -82,13 +92,15 @@
       "start": "2015-08-01",
       "end": "2015-08-13",
       "cards": {
-        "5": ["yuta"]
+        "5": ["yuta"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["yuta"],
-      "img": "s006.png",
+      "img": "./images/scout/s006.jpg",
       "skill": "妖怪の仕業",
-      "type": ""
+      "type": "scout"
     },
     "s007": {
       "uid": "s007",
@@ -97,13 +109,15 @@
       "start": "2015-08-17",
       "end": "2015-08-28",
       "cards": {
-        "5": ["wataru"]
+        "5": ["wataru"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["wataru"],
-      "img": "s007.png",
+      "img": "./images/scout/s007.jpg",
       "skill": "リストランテ夢ノ咲",
-      "type": ""
+      "type": "scout"
     },
     "s008": {
       "uid": "s008",
@@ -112,13 +126,15 @@
       "start": "2015-08-31",
       "end": "2015-09-11",
       "cards": {
-        "5": ["hajime"]
+        "5": ["hajime"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["hajime"],
-      "img": "s008.png",
+      "img": "./images/scout/s008.jpg",
       "skill": "オフショット",
-      "type": ""
+      "type": "scout"
     },
     "s009": {
       "uid": "s009",
@@ -127,13 +143,15 @@
       "start": "2015-09-15",
       "end": "2015-09-26",
       "cards": {
-        "5": ["kanata"]
+        "5": ["kanata"],
+        "4": [],
+        "3": []
       },
       "relation": ["海洋生物部"],
       "banner": ["kanata"],
-      "img": "s009.png",
+      "img": "./images/scout/s009.jpg",
       "skill": "深海の神秘",
-      "type": ""
+      "type": "scout"
     },
     "s001st": {
       "uid": "s001st",
@@ -142,11 +160,13 @@
       "start": "2015-09-26",
       "end": "2015-10-03",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["leo"],
-      "img": "s001st.png",
+      "img": "./images/story/s001st.jpg",
       "skill": "",
       "type": "story"
     },
@@ -157,13 +177,15 @@
       "start": "2015-09-30",
       "end": "2015-10-11",
       "cards": {
-        "5": ["hinata"]
+        "5": ["hinata"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["hinata"],
-      "img": "s010.png",
+      "img": "./images/scout/s010.jpg",
       "skill": "カンフーアクション",
-      "type": ""
+      "type": "scout"
     },
     "s011": {
       "uid": "s011",
@@ -172,13 +194,15 @@
       "start": "2015-10-16",
       "end": "2015-10-27",
       "cards": {
-        "5": ["adnis"]
+        "5": ["adnis"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["adnis"],
-      "img": "s011.png",
+      "img": "./images/scout/s011.jpg",
       "skill": "ポリスマン",
-      "type": ""
+      "type": "scout"
     },
     "s002st": {
       "uid": "s002st",
@@ -187,11 +211,13 @@
       "start": "2015-10-27",
       "end": "2015-11-03",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["chiaki"],
-      "img": "s002st.png",
+      "img": "./images/story/s002st.jpg",
       "skill": "",
       "type": "story"
     },
@@ -202,13 +228,15 @@
       "start": "2015-10-30",
       "end": "2015-11-10",
       "cards": {
-        "5": ["izumi"]
+        "5": ["izumi"],
+        "4": [],
+        "3": []
       },
       "relation": ["テニス部"],
       "banner": ["izumi"],
-      "img": "s012.png",
+      "img": "./images/scout/s012.jpg",
       "skill": "お医者さんごっこ",
-      "type": ""
+      "type": "scout"
     },
     "s013": {
       "uid": "s013",
@@ -217,13 +245,15 @@
       "start": "2015-11-15",
       "end": "2015-11-26",
       "cards": {
-        "5": ["kuro"]
+        "5": ["kuro"],
+        "4": [],
+        "3": []
       },
       "relation": ["空手部", "流星隊"],
       "banner": ["kuro"],
-      "img": "s013.png",
+      "img": "./images/scout/s013.jpg",
       "skill": "男の中の漢",
-      "type": ""
+      "type": "scout"
     },
     "s003st": {
       "uid": "s003st",
@@ -232,11 +262,13 @@
       "start": "2015-11-26",
       "end": "2015-12-03",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["midori"],
-      "img": "s003st.png",
+      "img": "./images/story/s003st.jpg",
       "skill": "",
       "type": "story"
     },
@@ -247,13 +279,15 @@
       "start": "2015-11-29",
       "end": "2015-12-11",
       "cards": {
-        "5": ["soma"]
+        "5": ["soma"],
+        "4": [],
+        "3": []
       },
       "relation": ["陸上部"],
       "banner": ["soma"],
-      "img": "s014.png",
+      "img": "./images/scout/s014.jpg",
       "skill": "神々の輪舞",
-      "type": ""
+      "type": "scout"
     },
     "s015": {
       "uid": "s015",
@@ -262,13 +296,15 @@
       "start": "2015-12-14",
       "end": "2015-12-26",
       "cards": {
-        "5": ["mao"]
+        "5": ["mao"],
+        "4": [],
+        "3": []
       },
       "relation": ["生徒会"],
       "banner": ["mao"],
-      "img": "s015.png",
+      "img": "./images/scout/s015.jpg",
       "skill": "ミッションコンプリート",
-      "type": ""
+      "type": "scout"
     },
     "s004st": {
       "uid": "s004st",
@@ -277,11 +313,13 @@
       "start": "2015-12-26",
       "end": "2016-01-03",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["hokuto"],
-      "img": "s004st.png",
+      "img": "./images/story/s004st.jpg",
       "skill": "",
       "type": "story"
     },
@@ -292,13 +330,15 @@
       "start": "2015-12-30",
       "end": "2016-01-11",
       "cards": {
-        "5": ["subaru"]
+        "5": ["subaru"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["subaru"],
-      "img": "s016.png",
+      "img": "./images/scout/s016.jpg",
       "skill": "新春初詣",
-      "type": ""
+      "type": "scout"
     },
     "s017": {
       "uid": "s017",
@@ -307,13 +347,15 @@
       "start": "2016-01-14",
       "end": "2016-01-26",
       "cards": {
-        "5": ["kaoru"]
+        "5": ["kaoru"],
+        "4": [],
+        "3": []
       },
       "relation": ["UNDEAD"],
       "banner": ["kaoru"],
-      "img": "s017.png",
+      "img": "./images/scout/s017.jpg",
       "skill": "夜闇の魔物ランド",
-      "type": ""
+      "type": "scout"
     },
     "s005st": {
       "uid": "s005st",
@@ -322,11 +364,13 @@
       "start": "2016-01-27",
       "end": "2016-02-04",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["izumi"],
-      "img": "s005st.png",
+      "img": "./images/story/s005st.jpg",
       "skill": "",
       "type": "story"
     },
@@ -337,13 +381,15 @@
       "start": "2016-01-30",
       "end": "2016-02-11",
       "cards": {
-        "5": ["eichi"]
+        "5": ["eichi"],
+        "4": [],
+        "3": []
       },
       "relation": ["紅茶部"],
       "banner": ["eichi"],
-      "img": "s018.png",
+      "img": "./images/scout/s018.jpg",
       "skill": "マッド・ティー・パーティ",
-      "type": ""
+      "type": "scout"
     },
     "s019": {
       "uid": "s019",
@@ -352,13 +398,15 @@
       "start": "2016-02-14",
       "end": "2016-02-26",
       "cards": {
-        "5": ["makoto"]
+        "5": ["makoto"],
+        "4": [],
+        "3": []
       },
       "relation": ["放送委員会"],
       "banner": ["makoto"],
-      "img": "s019.png",
+      "img": "./images/scout/s019.jpg",
       "skill": "青春RADIO放送局",
-      "type": ""
+      "type": "scout"
     },
     "s020": {
       "uid": "s020",
@@ -367,13 +415,15 @@
       "start": "2016-02-28",
       "end": "2016-03-11",
       "cards": {
-        "5": ["arashi"]
+        "5": ["arashi"],
+        "4": [],
+        "3": []
       },
       "relation": ["Knights"],
       "banner": ["arashi"],
-      "img": "s020.png",
+      "img": "./images/scout/s020.jpg",
       "skill": "花鳥風月",
-      "type": ""
+      "type": "scout"
     },
     "s006st": {
       "uid": "s006st",
@@ -382,11 +432,13 @@
       "start": "2016-03-11",
       "end": "2016-03-18",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["valkyrie"],
-      "img": "s006st.png",
+      "img": "./images/story/s006st.jpg",
       "skill": "",
       "type": "story"
     },
@@ -397,13 +449,15 @@
       "start": "2016-03-14",
       "end": "2016-03-25",
       "cards": {
-        "5": ["koga"]
+        "5": ["koga"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["koga"],
-      "img": "s021.png",
+      "img": "./images/scout/s021.jpg",
       "skill": "春休みのピクニック",
-      "type": ""
+      "type": "scout"
     },
     "s022": {
       "uid": "s022",
@@ -412,13 +466,15 @@
       "start": "2016-03-30",
       "end": "2016-04-11",
       "cards": {
-        "5": ["shinobu"]
+        "5": ["shinobu"],
+        "4": [],
+        "3": []
       },
       "relation": ["1年生"],
       "banner": ["shinobu"],
-      "img": "s022.png",
+      "img": "./images/scout/s022.jpg",
       "skill": "春色ベリ－ズ",
-      "type": ""
+      "type": "scout"
     },
     "s023": {
       "uid": "s023",
@@ -427,13 +483,15 @@
       "start": "2016-04-14",
       "end": "2016-04-26",
       "cards": {
-        "5": ["soma"]
+        "5": ["soma"],
+        "4": [],
+        "3": []
       },
       "relation": ["海洋生物部"],
       "banner": ["soma"],
-      "img": "s023.png",
+      "img": "./images/scout/s023.jpg",
       "skill": "母なる海の仲間たち",
-      "type": ""
+      "type": "scout"
     },
     "s001sp": {
       "uid": "s001sp",
@@ -442,11 +500,13 @@
       "start": "2016-04-28",
       "end": "2016-05-05",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["trickstar"],
-      "img": "s001sp.png",
+      "img": "./images/special/s001sp.jpg",
       "skill": "",
       "type": "special"
     },
@@ -457,13 +517,15 @@
       "start": "2016-04-29",
       "end": "2016-05-10",
       "cards": {
-        "5": ["mika"]
+        "5": ["mika"],
+        "4": [],
+        "3": []
       },
       "relation": ["Valkyrie"],
       "banner": ["mika"],
-      "img": "s024.png",
+      "img": "./images/scout/s024.jpg",
       "skill": "玩具の見る夢",
-      "type": ""
+      "type": "scout"
     },
     "s025": {
       "uid": "s025",
@@ -472,13 +534,15 @@
       "start": "2016-05-14",
       "end": "2016-05-26",
       "cards": {
-        "5": ["wataru"]
+        "5": ["wataru"],
+        "4": [],
+        "3": []
       },
       "relation": ["演劇部"],
       "banner": ["wataru"],
-      "img": "s025.png",
+      "img": "./images/scout/s025.jpg",
       "skill": "夢の王国の王子様",
-      "type": ""
+      "type": "scout"
     },
     "s007st": {
       "uid": "s007st",
@@ -487,11 +551,13 @@
       "start": "2016-05-26",
       "end": "2016-06-03",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["shu"],
-      "img": "s007st.png",
+      "img": "./images/story/s007st.jpg",
       "skill": "",
       "type": "story"
     },
@@ -502,13 +568,15 @@
       "start": "2016-05-30",
       "end": "2016-06-11",
       "cards": {
-        "5": ["rei"]
+        "5": ["rei"],
+        "4": [],
+        "3": []
       },
       "relation": ["軽音部"],
       "banner": ["rei"],
-      "img": "s026.png",
+      "img": "./images/scout/s026.jpg",
       "skill": "雨音のハーモニー",
-      "type": ""
+      "type": "scout"
     },
     "s027": {
       "uid": "s027",
@@ -517,13 +585,15 @@
       "start": "2016-06-14",
       "end": "2016-06-26",
       "cards": {
-        "5": ["kaoru"]
+        "5": ["kaoru"],
+        "4": [],
+        "3": []
       },
       "relation": ["3A"],
       "banner": ["kaoru"],
-      "img": "s027.png",
+      "img": "./images/scout/s027.jpg",
       "skill": "舞台上の暴れん坊たち",
-      "type": ""
+      "type": "scout"
     },
     "s008st": {
       "uid": "s008st",
@@ -532,11 +602,13 @@
       "start": "2016-06-26",
       "end": "2016-07-03",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["mika"],
-      "img": "s008st.png",
+      "img": "./images/story/s008st.jpg",
       "skill": "",
       "type": "story"
     },
@@ -547,13 +619,15 @@
       "start": "2016-06-29",
       "end": "2016-07-11",
       "cards": {
-        "5": ["chiaki"]
+        "5": ["chiaki"],
+        "4": [],
+        "3": []
       },
       "relation": ["バスケ部"],
       "banner": ["chiaki"],
-      "img": "s028.png",
+      "img": "./images/scout/s028.jpg",
       "skill": "空を駆ける青春",
-      "type": ""
+      "type": "scout"
     },
     "s029": {
       "uid": "s029",
@@ -562,13 +636,15 @@
       "start": "2016-07-14",
       "end": "2016-07-29",
       "cards": {
-        "5": ["nazuna"]
+        "5": ["nazuna"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["nazuna"],
-      "img": "s029.png",
+      "img": "./images/scout/s029.jpg",
       "skill": "夏のお伴にアイスクリーム！",
-      "type": ""
+      "type": "scout"
     },
     "s009st": {
       "uid": "s009st",
@@ -577,11 +653,13 @@
       "start": "2016-07-26",
       "end": "2016-08-03",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["kuro"],
-      "img": "s009st.png",
+      "img": "./images/story/s009st.jpg",
       "skill": "",
       "type": "story"
     },
@@ -592,13 +670,15 @@
       "start": "2016-07-30",
       "end": "2016-08-14",
       "cards": {
-        "5": ["tori"]
+        "5": ["tori"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["tori"],
-      "img": "s030.png",
+      "img": "./images/scout/s030.jpg",
       "skill": "しゅわしゅわ金魚",
-      "type": ""
+      "type": "scout"
     },
     "s031": {
       "uid": "s031",
@@ -607,13 +687,15 @@
       "start": "2016-08-14",
       "end": "2016-08-29",
       "cards": {
-        "5": ["leo"]
+        "5": ["leo"],
+        "4": [],
+        "3": []
       },
       "relation": ["弓道部"],
       "banner": ["leo"],
-      "img": "s031.png",
+      "img": "./images/scout/s031.jpg",
       "skill": "弓矢の名手たち",
-      "type": ""
+      "type": "scout"
     },
     "s010st": {
       "uid": "s010st",
@@ -622,11 +704,13 @@
       "start": "2016-08-26",
       "end": "2016-09-11",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["switch"],
-      "img": "s010st.png",
+      "img": "./images/story/s010st.jpg",
       "skill": "",
       "type": "story"
     },
@@ -637,13 +721,15 @@
       "start": "2016-08-30",
       "end": "2016-09-14",
       "cards": {
-        "5": ["hokuto"]
+        "5": ["hokuto"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["hokuto"],
-      "img": "s032.png",
+      "img": "./images/scout/s032.jpg",
       "skill": "アンダルシアの情熱",
-      "type": ""
+      "type": "scout"
     },
     "s002sp": {
       "uid": "s002sp",
@@ -652,11 +738,13 @@
       "start": "2016-09-14",
       "end": "2016-09-25",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["trickstar"],
-      "img": "s002sp.png",
+      "img": "./images/special/s002sp.jpg",
       "skill": "",
       "type": "special"
     },
@@ -667,13 +755,15 @@
       "start": "2016-09-14",
       "end": "2016-09-29",
       "cards": {
-        "5": ["adnis"]
+        "5": ["adnis"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["adnis"],
-      "img": "s033.png",
+      "img": "./images/scout/s033.jpg",
       "skill": "千夜一夜の盗賊団",
-      "type": ""
+      "type": "scout"
     },
     "s011st": {
       "uid": "s011st",
@@ -682,11 +772,13 @@
       "start": "2016-09-26",
       "end": "2016-10-04",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["sora"],
-      "img": "s011st.png",
+      "img": "./images/story/s011st.jpg",
       "skill": "",
       "type": "story"
     },
@@ -697,13 +789,15 @@
       "start": "2016-09-29",
       "end": "2016-10-14",
       "cards": {
-        "5": ["tsukasa"]
+        "5": ["tsukasa"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["tsukasa"],
-      "img": "s034.png",
+      "img": "./images/scout/s034.jpg",
       "skill": "喫茶の誘惑",
-      "type": ""
+      "type": "scout"
     },
     "s035": {
       "uid": "s035",
@@ -712,13 +806,15 @@
       "start": "2016-10-14",
       "end": "2016-10-29",
       "cards": {
-        "5": ["tomoya"]
+        "5": ["tomoya"],
+        "4": [],
+        "3": []
       },
       "relation": ["演劇部"],
       "banner": ["tomoya"],
-      "img": "s035.png",
+      "img": "./images/scout/s035.jpg",
       "skill": "舞台の額縁",
-      "type": ""
+      "type": "scout"
     },
     "s012st": {
       "uid": "s012st",
@@ -727,11 +823,13 @@
       "start": "2016-10-26",
       "end": "2016-11-03",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["tsumugi"],
-      "img": "s012st.png",
+      "img": "./images/story/s012st.jpg",
       "skill": "",
       "type": "story"
     },
@@ -742,13 +840,15 @@
       "start": "2016-10-30",
       "end": "2016-11-14",
       "cards": {
-        "5": ["midori"]
+        "5": ["midori"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["midori"],
-      "img": "s036.png",
+      "img": "./images/scout/s036.jpg",
       "skill": "カラフルベジタブル",
-      "type": ""
+      "type": "scout"
     },
     "s037": {
       "uid": "s037",
@@ -757,13 +857,15 @@
       "start": "2016-11-14",
       "end": "2016-11-29",
       "cards": {
-        "5": ["mitsuru"]
+        "5": ["mitsuru"],
+        "4": [],
+        "3": []
       },
       "relation": ["Ra*bits"],
       "banner": ["mitsuru"],
-      "img": "s037.png",
+      "img": "./images/scout/s037.jpg",
       "skill": "BADBOYS",
-      "type": ""
+      "type": "scout"
     },
     "s013st": {
       "uid": "s013st",
@@ -772,11 +874,13 @@
       "start": "2016-11-26",
       "end": "2016-12-03",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["natsume"],
-      "img": "s013st.png",
+      "img": "./images/story/s013st.jpg",
       "skill": "",
       "type": "story"
     },
@@ -787,13 +891,15 @@
       "start": "2016-11-29",
       "end": "2016-12-14",
       "cards": {
-        "5": ["keito"]
+        "5": ["keito"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["keito"],
-      "img": "s038.png",
+      "img": "./images/scout/s038.jpg",
       "skill": "叡智への回顧",
-      "type": ""
+      "type": "scout"
     },
     "s039": {
       "uid": "s039",
@@ -802,13 +908,15 @@
       "start": "2016-12-14",
       "end": "2016-12-29",
       "cards": {
-        "5": ["shu"]
+        "5": ["shu"],
+        "4": [],
+        "3": []
       },
       "relation": ["手芸部"],
       "banner": ["shu"],
-      "img": "s039.png",
+      "img": "./images/scout/s039.jpg",
       "skill": "静夜のノクターン",
-      "type": ""
+      "type": "scout"
     },
     "s014st": {
       "uid": "s014st",
@@ -817,11 +925,13 @@
       "start": "2016-12-26",
       "end": "2017-01-03",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["ritsu"],
-      "img": "s014st.png",
+      "img": "./images/story/s014st.jpg",
       "skill": "",
       "type": "story"
     },
@@ -832,13 +942,15 @@
       "start": "2016-12-30",
       "end": "2017-01-14",
       "cards": {
-        "5": ["natsume"]
+        "5": ["natsume"],
+        "4": [],
+        "3": []
       },
       "relation": ["五奇人"],
       "banner": ["natsume"],
-      "img": "s040.png",
+      "img": "./images/scout/s040.jpg",
       "skill": "エキセントリックな時間",
-      "type": ""
+      "type": "scout"
     },
     "s041": {
       "uid": "s041",
@@ -847,13 +959,15 @@
       "start": "2017-01-14",
       "end": "2017-01-30",
       "cards": {
-        "5": ["izumi"]
+        "5": ["izumi"],
+        "4": [],
+        "3": []
       },
       "relation": ["Knights", "UNDEAD"],
       "banner": ["izumi"],
-      "img": "s041.png",
+      "img": "./images/scout/s041.jpg",
       "skill": "氷上に咲く華",
-      "type": ""
+      "type": "scout"
     },
     "s015st": {
       "uid": "s015st",
@@ -862,11 +976,13 @@
       "start": "2017-01-26",
       "end": "2017-02-03",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["soma"],
-      "img": "s015st.png",
+      "img": "./images/story/s015st.jpg",
       "skill": "",
       "type": "story"
     },
@@ -877,13 +993,15 @@
       "start": "2017-01-30",
       "end": "2017-02-14",
       "cards": {
-        "5": ["hajime"]
+        "5": ["hajime"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["hajime"],
-      "img": "s042.png",
+      "img": "./images/scout/s042.jpg",
       "skill": "香り立つ茶館",
-      "type": ""
+      "type": "scout"
     },
     "s043": {
       "uid": "s043",
@@ -892,13 +1010,15 @@
       "start": "2017-02-14",
       "end": "2017-02-27",
       "cards": {
-        "5": ["tetora"]
+        "5": ["tetora"],
+        "4": [],
+        "3": []
       },
       "relation": ["空手部"],
       "banner": ["tetora"],
-      "img": "s043.png",
+      "img": "./images/scout/s043.jpg",
       "skill": "拳闘の四獣",
-      "type": ""
+      "type": "scout"
     },
     "s044": {
       "uid": "s044",
@@ -907,13 +1027,15 @@
       "start": "2017-02-27",
       "end": "2017-03-14",
       "cards": {
-        "5": ["arashi"]
+        "5": ["arashi"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["arashi"],
-      "img": "s044.png",
+      "img": "./images/scout/s044.jpg",
       "skill": "心の花束",
-      "type": ""
+      "type": "scout"
     },
     "s045": {
       "uid": "s045",
@@ -922,13 +1044,15 @@
       "start": "2017-03-14",
       "end": "2017-03-30",
       "cards": {
-        "5": ["yuzuru"]
+        "5": ["yuzuru"],
+        "4": [],
+        "3": []
       },
       "relation": ["セレブ組"],
       "banner": ["yuzuru"],
-      "img": "s045.png",
+      "img": "./images/scout/s045.jpg",
       "skill": "絶対服従",
-      "type": ""
+      "type": "scout"
     },
     "s016st": {
       "uid": "s016st",
@@ -937,11 +1061,13 @@
       "start": "2017-03-26",
       "end": "2017-04-03",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["hinata"],
-      "img": "s016st.png",
+      "img": "./images/story/s016st.jpg",
       "skill": "",
       "type": "story"
     },
@@ -952,13 +1078,15 @@
       "start": "2017-03-30",
       "end": "2017-04-14",
       "cards": {
-        "5": ["yuta"]
+        "5": ["yuta"],
+        "4": [],
+        "3": []
       },
       "relation": ["一年生"],
       "banner": ["yuta"],
-      "img": "s046.png",
+      "img": "./images/scout/s046.jpg",
       "skill": "ピカピカの一年生",
-      "type": ""
+      "type": "scout"
     },
     "s047": {
       "uid": "s047",
@@ -967,13 +1095,15 @@
       "start": "2017-04-14",
       "end": "2017-04-29",
       "cards": {
-        "5": ["koga"]
+        "5": ["koga"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["koga"],
-      "img": "s047.png",
+      "img": "./images/scout/s047.jpg",
       "skill": "カード使いたち",
-      "type": ""
+      "type": "scout"
     },
     "s017st": {
       "uid": "s017st",
@@ -982,11 +1112,13 @@
       "start": "2017-04-26",
       "end": "2017-05-03",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["madara"],
-      "img": "s017st.png",
+      "img": "./images/story/s017st.jpg",
       "skill": "",
       "type": "story"
     },
@@ -997,13 +1129,15 @@
       "start": "2017-04-29",
       "end": "2017-05-14",
       "cards": {
-        "5": ["ritsu"]
+        "5": ["ritsu"],
+        "4": [],
+        "3": []
       },
       "relation": ["2B"],
       "banner": ["ritsu"],
-      "img": "s048.png",
+      "img": "./images/scout/s048.jpg",
       "skill": "パジャマタイム",
-      "type": ""
+      "type": "scout"
     },
     "s049": {
       "uid": "s049",
@@ -1012,13 +1146,15 @@
       "start": "2017-05-14",
       "end": "2017-05-29",
       "cards": {
-        "5": ["makoto"]
+        "5": ["makoto"],
+        "4": [],
+        "3": []
       },
       "relation": ["モデル"],
       "banner": ["makoto"],
-      "img": "s049.png",
+      "img": "./images/scout/s049.jpg",
       "skill": "ランウェイ",
-      "type": ""
+      "type": "scout"
     },
     "s018st": {
       "uid": "s018st",
@@ -1027,11 +1163,13 @@
       "start": "2017-05-26",
       "end": "2017-06-03",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["adnis"],
-      "img": "s018st.png",
+      "img": "./images/story/s018st.jpg",
       "skill": "",
       "type": "story"
     },
@@ -1042,13 +1180,15 @@
       "start": "2017-05-30",
       "end": "2017-06-14",
       "cards": {
-        "5": ["shinobu"]
+        "5": ["shinobu"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["shinobu"],
-      "img": "s050.png",
+      "img": "./images/scout/s050.jpg",
       "skill": "忍者集団『忍ばず者』",
-      "type": ""
+      "type": "scout"
     },
     "s051": {
       "uid": "s051",
@@ -1057,13 +1197,15 @@
       "start": "2017-06-14",
       "end": "2017-06-29",
       "cards": {
-        "5": ["tsumugi"]
+        "5": ["tsumugi"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["tsumugi"],
-      "img": "s051.png",
+      "img": "./images/scout/s051.jpg",
       "skill": "本の虫",
-      "type": ""
+      "type": "scout"
     },
     "s019st": {
       "uid": "s019st",
@@ -1072,11 +1214,13 @@
       "start": "2017-06-26",
       "end": "2017-07-03",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["yuzuru"],
-      "img": "s019st.png",
+      "img": "./images/story/s019st.jpg",
       "skill": "",
       "type": "story"
     },
@@ -1087,13 +1231,15 @@
       "start": "2017-06-29",
       "end": "2017-07-14",
       "cards": {
-        "5": ["tsukasa"]
+        "5": ["tsukasa"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["tsukasa"],
-      "img": "s052.png",
+      "img": "./images/scout/s052.jpg",
       "skill": "小さな王さまたち",
-      "type": ""
+      "type": "scout"
     },
     "s053": {
       "uid": "s053",
@@ -1102,13 +1248,15 @@
       "start": "2017-07-14",
       "end": "2017-07-29",
       "cards": {
-        "5": ["madara"]
+        "5": ["madara"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["madara"],
-      "img": "s053.png",
+      "img": "./images/scout/s053.jpg",
       "skill": "コンチェルト",
-      "type": ""
+      "type": "scout"
     },
     "s020st": {
       "uid": "s020st",
@@ -1117,11 +1265,13 @@
       "start": "2017-07-26",
       "end": "2017-08-03",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["nazuna"],
-      "img": "s020st.png",
+      "img": "./images/story/s020st.jpg",
       "skill": "",
       "type": "story"
     },
@@ -1132,13 +1282,15 @@
       "start": "2017-07-30",
       "end": "2017-08-14",
       "cards": {
-        "5": ["hinata"]
+        "5": ["hinata"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["hinata"],
-      "img": "s054.png",
+      "img": "./images/scout/s054.jpg",
       "skill": "妖怪七変化",
-      "type": ""
+      "type": "scout"
     },
     "s055": {
       "uid": "s055",
@@ -1147,13 +1299,15 @@
       "start": "2017-08-14",
       "end": "2017-08-30",
       "cards": {
-        "5": ["wataru"]
+        "5": ["wataru"],
+        "4": [],
+        "3": []
       },
       "relation": ["fine"],
       "banner": ["wataru"],
-      "img": "s055.png",
+      "img": "./images/scout/s055.jpg",
       "skill": "ダンスナイトフィーバー",
-      "type": ""
+      "type": "scout"
     },
     "s021st": {
       "uid": "s021st",
@@ -1162,11 +1316,13 @@
       "start": "2017-08-26",
       "end": "2017-09-03",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["mitsuru"],
-      "img": "s021st.png",
+      "img": "./images/story/s021st.jpg",
       "skill": "",
       "type": "story"
     },
@@ -1177,13 +1333,15 @@
       "start": "2017-08-30",
       "end": "2017-09-14",
       "cards": {
-        "5": ["tetora"]
+        "5": ["tetora"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["tetora"],
-      "img": "s056.png",
+      "img": "./images/scout/s056.jpg",
       "skill": "ボナペティ♪",
-      "type": ""
+      "type": "scout"
     },
     "s057": {
       "uid": "s057",
@@ -1192,13 +1350,15 @@
       "start": "2017-09-14",
       "end": "2017-09-29",
       "cards": {
-        "5": ["nazuna"]
+        "5": ["nazuna"],
+        "4": [],
+        "3": []
       },
       "relation": ["Ra*bits"],
       "banner": ["nazuna"],
-      "img": "s057.png",
+      "img": "./images/scout/s057.jpg",
       "skill": "天使とウサギのストーリア",
-      "type": ""
+      "type": "scout"
     },
     "s001u": {
       "uid": "s001u",
@@ -1207,11 +1367,13 @@
       "start": "2017-09-20",
       "end": "2017-10-04",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["ryuseitai"],
-      "img": "s001u.png",
+      "img": "./images/unit/s001u.jpg",
       "skill": "",
       "type": "unit"
     },
@@ -1222,13 +1384,15 @@
       "start": "2017-09-29",
       "end": "2017-10-14",
       "cards": {
-        "5": ["sora"]
+        "5": ["sora"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["sora"],
-      "img": "s058.png",
+      "img": "./images/scout/s058.jpg",
       "skill": "ショウタイム",
-      "type": ""
+      "type": "scout"
     },
     "s002u": {
       "uid": "s002u",
@@ -1237,11 +1401,13 @@
       "start": "2017-10-04",
       "end": "2017-10-18",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["knights"],
-      "img": "s002u.png",
+      "img": "./images/unit/s002u.jpg",
       "skill": "",
       "type": "unit"
     },
@@ -1252,13 +1418,15 @@
       "start": "2017-10-14",
       "end": "2017-10-30",
       "cards": {
-        "5": ["soma"]
+        "5": ["soma"],
+        "4": [],
+        "3": []
       },
       "relation": ["紅月"],
       "banner": ["soma"],
-      "img": "s059.png",
+      "img": "./images/scout/s059.jpg",
       "skill": "花の札",
-      "type": ""
+      "type": "scout"
     },
     "s003u": {
       "uid": "s003u",
@@ -1267,11 +1435,13 @@
       "start": "2017-10-18",
       "end": "2017-11-01",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["fine"],
-      "img": "s003u.png",
+      "img": "./images/unit/s003u.jpg",
       "skill": "",
       "type": "unit"
     },
@@ -1282,11 +1452,13 @@
       "start": "2017-10-27",
       "end": "2017-11-03",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["tori"],
-      "img": "s022st.png",
+      "img": "./images/story/s022st.jpg",
       "skill": "",
       "type": "story"
     },
@@ -1297,13 +1469,15 @@
       "start": "2017-10-30",
       "end": "2017-11-14",
       "cards": {
-        "5": ["subaru"]
+        "5": ["subaru"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["subaru"],
-      "img": "s060.png",
+      "img": "./images/scout/s060.jpg",
       "skill": "オーダーメイド",
-      "type": ""
+      "type": "scout"
     },
     "s004u": {
       "uid": "s004u",
@@ -1312,11 +1486,13 @@
       "start": "2017-11-01",
       "end": "2017-11-16",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["valkyrie"],
-      "img": "s004u.png",
+      "img": "./images/unit/s004u.jpg",
       "skill": "",
       "type": "unit"
     },
@@ -1327,13 +1503,15 @@
       "start": "2017-11-15",
       "end": "2017-11-29",
       "cards": {
-        "5": ["kuro"]
+        "5": ["kuro"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["kuro"],
-      "img": "s061.png",
+      "img": "./images/scout/s061.jpg",
       "skill": "森の中の生存競争",
-      "type": ""
+      "type": "scout"
     },
     "s005u": {
       "uid": "s005u",
@@ -1342,11 +1520,13 @@
       "start": "2017-11-16",
       "end": "2017-12-01",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["2wink"],
-      "img": "s005u.png",
+      "img": "./images/unit/s005u.jpg",
       "skill": "",
       "type": "unit"
     },
@@ -1357,11 +1537,13 @@
       "start": "2017-11-26",
       "end": "2017-12-03",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["makoto"],
-      "img": "s023st.png",
+      "img": "./images/story/s023st.jpg",
       "skill": "",
       "type": "story"
     },
@@ -1372,13 +1554,15 @@
       "start": "2017-11-29",
       "end": "2017-12-14",
       "cards": {
-        "5": ["mika"]
+        "5": ["mika"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["mika"],
-      "img": "s062.png",
+      "img": "./images/scout/s062.jpg",
       "skill": "テディベア",
-      "type": ""
+      "type": "scout"
     },
     "s006u": {
       "uid": "s006u",
@@ -1387,11 +1571,13 @@
       "start": "2017-12-01",
       "end": "2017-12-16",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["undead"],
-      "img": "s006u.png",
+      "img": "./images/unit/s006u.jpg",
       "skill": "",
       "type": "unit"
     },
@@ -1402,13 +1588,15 @@
       "start": "2017-12-14",
       "end": "2017-12-29",
       "cards": {
-        "5": ["tomoya"]
+        "5": ["tomoya"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["tomoya"],
-      "img": "s063.png",
+      "img": "./images/scout/s063.jpg",
       "skill": "サンタからの贈り物",
-      "type": ""
+      "type": "scout"
     },
     "s007u": {
       "uid": "s007u",
@@ -1417,11 +1605,13 @@
       "start": "2017-12-16",
       "end": "2018-01-01",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["rabbits"],
-      "img": "s007u.png",
+      "img": "./images/unit/s007u.jpg",
       "skill": "",
       "type": "unit"
     },
@@ -1432,13 +1622,15 @@
       "start": "2017-12-30",
       "end": "2018-01-14",
       "cards": {
-        "5": ["midori"]
+        "5": ["midori"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["midori"],
-      "img": "s064.png",
+      "img": "./images/scout/s064.jpg",
       "skill": "十二支、獣の舞",
-      "type": ""
+      "type": "scout"
     },
     "s008u": {
       "uid": "s008u",
@@ -1447,11 +1639,13 @@
       "start": "2018-01-01",
       "end": "2018-01-16",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["akatsuki"],
-      "img": "s008u.png",
+      "img": "./images/unit/s008u.jpg",
       "skill": "",
       "type": "unit"
     },
@@ -1462,13 +1656,15 @@
       "start": "2018-01-14",
       "end": "2018-01-30",
       "cards": {
-        "5": ["kanata"]
+        "5": ["kanata"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["kanata"],
-      "img": "s065.png",
+      "img": "./images/scout/s065.jpg",
       "skill": "十二支、獣の調べ",
-      "type": ""
+      "type": "scout"
     },
     "s009u": {
       "uid": "s009u",
@@ -1477,11 +1673,13 @@
       "start": "2018-01-16",
       "end": "2018-02-01",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["switch"],
-      "img": "s009u.png",
+      "img": "./images/unit/s009u.jpg",
       "skill": "",
       "type": "unit"
     },
@@ -1492,11 +1690,13 @@
       "start": "2018-01-26",
       "end": "2018-02-03",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["rei"],
-      "img": "s024st.png",
+      "img": "./images/story/s024st.jpg",
       "skill": "",
       "type": "story"
     },
@@ -1507,13 +1707,15 @@
       "start": "2018-01-30",
       "end": "2018-02-14",
       "cards": {
-        "5": ["natsume"]
+        "5": ["natsume"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["natsume"],
-      "img": "s066.png",
+      "img": "./images/scout/s066.jpg",
       "skill": "星屑宝石箱",
-      "type": ""
+      "type": "scout"
     },
     "s010u": {
       "uid": "s010u",
@@ -1522,11 +1724,13 @@
       "start": "2018-02-01",
       "end": "2018-02-16",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["trickstar"],
-      "img": "s010u.png",
+      "img": "./images/unit/s010u.jpg",
       "skill": "",
       "type": "unit"
     },
@@ -1537,13 +1741,15 @@
       "start": "2018-02-14",
       "end": "2018-02-27",
       "cards": {
-        "5": ["mao"]
+        "5": ["mao"],
+        "4": [],
+        "3": []
       },
       "relation": ["2B"],
       "banner": ["mao"],
-      "img": "s067.png",
+      "img": "./images/scout/s067.jpg",
       "skill": "螺旋がもたらす物語",
-      "type": ""
+      "type": "scout"
     },
     "s011u": {
       "uid": "s011u",
@@ -1552,11 +1758,13 @@
       "start": "2018-02-16",
       "end": "2018-03-01",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["mam"],
-      "img": "s011u.png",
+      "img": "./images/unit/s011u.jpg",
       "skill": "",
       "type": "unit"
     },
@@ -1567,13 +1775,15 @@
       "start": "2018-02-27",
       "end": "2018-03-14",
       "cards": {
-        "5": ["tori"]
+        "5": ["tori"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["tori"],
-      "img": "s068.png",
+      "img": "./images/scout/s068.jpg",
       "skill": "パーティタイム☆",
-      "type": ""
+      "type": "scout"
     },
     "s069": {
       "uid": "s069",
@@ -1582,13 +1792,15 @@
       "start": "2018-03-14",
       "end": "2018-03-29",
       "cards": {
-        "5": ["arashi"]
+        "5": ["arashi"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["arashi"],
-      "img": "s069.png",
+      "img": "./images/scout/s069.jpg",
       "skill": "ケダモノたち",
-      "type": ""
+      "type": "scout"
     },
     "s012u": {
       "uid": "s012u",
@@ -1597,11 +1809,13 @@
       "start": "2018-03-20",
       "end": "2018-04-25",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["ryuseitai"],
-      "img": "s012u.png",
+      "img": "./images/unit/s012u.jpg",
       "skill": "",
       "type": "unit"
     },
@@ -1612,11 +1826,13 @@
       "start": "2018-03-26",
       "end": "2018-04-03",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["eichi"],
-      "img": "s025st.png",
+      "img": "./images/story/s025st.jpg",
       "skill": "",
       "type": "story"
     },
@@ -1627,13 +1843,15 @@
       "start": "2018-03-29",
       "end": "2018-04-14",
       "cards": {
-        "5": ["mitsuru"]
+        "5": ["mitsuru"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["mitsuru"],
-      "img": "s070.png",
+      "img": "./images/scout/s070.jpg",
       "skill": "ハート宅急便",
-      "type": ""
+      "type": "scout"
     },
     "s071": {
       "uid": "s071",
@@ -1642,13 +1860,15 @@
       "start": "2018-04-14",
       "end": "2018-04-29",
       "cards": {
-        "5": ["yuzuru"]
+        "5": ["yuzuru"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["yuzuru"],
-      "img": "s071.png",
+      "img": "./images/scout/s071.jpg",
       "skill": "ギャングスター",
-      "type": ""
+      "type": "scout"
     },
     "s013u": {
       "uid": "s013u",
@@ -1657,11 +1877,13 @@
       "start": "2018-04-25",
       "end": "2018-05-30",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["rabbits"],
-      "img": "s013u.png",
+      "img": "./images/unit/s013u.jpg",
       "skill": "",
       "type": "unit"
     },
@@ -1672,11 +1894,13 @@
       "start": "2018-04-26",
       "end": "2018-05-03",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["shinobu"],
-      "img": "s026st.png",
+      "img": "./images/story/s026st.jpg",
       "skill": "",
       "type": "story"
     },
@@ -1687,13 +1911,15 @@
       "start": "2018-04-29",
       "end": "2018-05-14",
       "cards": {
-        "5": ["eichi"]
+        "5": ["eichi"],
+        "4": [],
+        "3": []
       },
       "relation": ["生徒会"],
       "banner": ["eichi"],
-      "img": "s072.png",
+      "img": "./images/scout/s072.jpg",
       "skill": "天使たちの仕事",
-      "type": ""
+      "type": "scout"
     },
     "s073": {
       "uid": "s073",
@@ -1702,13 +1928,15 @@
       "start": "2018-05-14",
       "end": "2018-05-30",
       "cards": {
-        "5": ["rei"]
+        "5": ["rei"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["rei"],
-      "img": "s073.png",
+      "img": "./images/scout/s073.jpg",
       "skill": "悪魔の囁き",
-      "type": ""
+      "type": "scout"
     },
     "s074": {
       "uid": "s074",
@@ -1717,13 +1945,15 @@
       "start": "2018-05-30",
       "end": "2018-06-14",
       "cards": {
-        "5": ["kaoru"]
+        "5": ["kaoru"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["kaoru"],
-      "img": "s074.png",
+      "img": "./images/scout/s074.jpg",
       "skill": "祝福のひととき",
-      "type": ""
+      "type": "scout"
     },
     "s014u": {
       "uid": "s014u",
@@ -1732,11 +1962,13 @@
       "start": "2018-05-30",
       "end": "2018-06-27",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["knights"],
-      "img": "s014u.png",
+      "img": "./images/unit/s014u.jpg",
       "skill": "",
       "type": "unit"
     },
@@ -1747,13 +1979,15 @@
       "start": "2018-06-14",
       "end": "2018-06-29",
       "cards": {
-        "5": ["shu"]
+        "5": ["shu"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["shu"],
-      "img": "s075.png",
+      "img": "./images/scout/s075.jpg",
       "skill": "アンティーク・ヴィクトリア",
-      "type": ""
+      "type": "scout"
     },
     "s076": {
       "uid": "s076",
@@ -1762,13 +1996,15 @@
       "start": "2018-06-19",
       "end": "2018-06-29",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["巻島裕介"],
-      "img": "s076.png",
+      "img": "./images/scout/s076.jpg",
       "skill": "",
-      "type": ""
+      "type": "scout"
     },
     "s015u": {
       "uid": "s015u",
@@ -1777,11 +2013,13 @@
       "start": "2018-06-27",
       "end": "2018-07-25",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["akatsuki"],
-      "img": "s015u.png",
+      "img": "./images/unit/s015u.jpg",
       "skill": "",
       "type": "unit"
     },
@@ -1792,13 +2030,15 @@
       "start": "2018-06-29",
       "end": "2018-07-14",
       "cards": {
-        "5": ["tsumugi"]
+        "5": ["tsumugi"],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["tsumugi"],
-      "img": "s077.png",
+      "img": "./images/scout/s077.jpg",
       "skill": "海上の案内人",
-      "type": ""
+      "type": "scout"
     },
     "s078": {
       "uid": "s078",
@@ -1807,13 +2047,15 @@
       "start": "2018-07-14",
       "end": "2018-07-30",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["keito"],
-      "img": "s078.png",
+      "img": "./images/scout/s078.jpg",
       "skill": "コミックキャラクター",
-      "type": ""
+      "type": "scout"
     },
     "s079": {
       "uid": "s079",
@@ -1822,13 +2064,15 @@
       "start": "2018-07-30",
       "end": "2018-08-14",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s079.png",
+      "img": "./images/scout/s079.jpg",
       "skill": "ターゲットロックオン",
-      "type": ""
+      "type": "scout"
     },
     "s080": {
       "uid": "s080",
@@ -1837,13 +2081,15 @@
       "start": "2018-08-14",
       "end": "2018-08-30",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s080.png",
+      "img": "./images/scout/s080.jpg",
       "skill": "夏空に咲く花々",
-      "type": ""
+      "type": "scout"
     },
     "s016u": {
       "uid": "s016u",
@@ -1852,11 +2098,13 @@
       "start": "2018-08-29",
       "end": "2018-09-26",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s016u.png",
+      "img": "./images/unit/s016u.jpg",
       "skill": "",
       "type": "unit"
     },
@@ -1867,13 +2115,15 @@
       "start": "2018-08-30",
       "end": "2018-09-14",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s081.png",
+      "img": "./images/scout/s081.jpg",
       "skill": "鬼火が集う夜",
-      "type": ""
+      "type": "scout"
     },
     "s082": {
       "uid": "s082",
@@ -1882,13 +2132,15 @@
       "start": "2018-09-14",
       "end": "2018-09-29",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s082.png",
+      "img": "./images/scout/s082.jpg",
       "skill": "インスピレーションの海",
-      "type": ""
+      "type": "scout"
     },
     "s027st": {
       "uid": "s027st",
@@ -1897,11 +2149,13 @@
       "start": "2018-09-19",
       "end": "2018-09-26",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s027st.png",
+      "img": "./images/story/s027st.jpg",
       "skill": "",
       "type": "story"
     },
@@ -1912,11 +2166,13 @@
       "start": "2018-09-26",
       "end": "2018-10-24",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s017u.png",
+      "img": "./images/unit/s017u.jpg",
       "skill": "",
       "type": "unit"
     },
@@ -1927,13 +2183,15 @@
       "start": "2018-09-29",
       "end": "2018-10-14",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s083.png",
+      "img": "./images/scout/s083.jpg",
       "skill": "未来への探求者たち",
-      "type": ""
+      "type": "scout"
     },
     "s084": {
       "uid": "s084",
@@ -1942,13 +2200,15 @@
       "start": "2018-10-14",
       "end": "2018-10-30",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s084.png",
+      "img": "./images/scout/s084.jpg",
       "skill": "ティータイム",
-      "type": ""
+      "type": "scout"
     },
     "s018u": {
       "uid": "s018u",
@@ -1957,11 +2217,13 @@
       "start": "2018-10-24",
       "end": "2018-11-28",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s018u.png",
+      "img": "./images/unit/s018u.jpg",
       "skill": "",
       "type": "unit"
     },
@@ -1972,11 +2234,13 @@
       "start": "2018-10-24",
       "end": "2018-11-28",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s019u.png",
+      "img": "./images/unit/s019u.jpg",
       "skill": "",
       "type": "unit"
     },
@@ -1987,13 +2251,15 @@
       "start": "2018-10-30",
       "end": "2018-11-14",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s085.png",
+      "img": "./images/scout/s085.jpg",
       "skill": "ゴロゴロ実りの森",
-      "type": ""
+      "type": "scout"
     },
     "s086": {
       "uid": "s086",
@@ -2002,13 +2268,15 @@
       "start": "2018-11-14",
       "end": "2018-11-29",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s086.png",
+      "img": "./images/scout/s086.jpg",
       "skill": "心を映す水鏡",
-      "type": ""
+      "type": "scout"
     },
     "s020u": {
       "uid": "s020u",
@@ -2017,11 +2285,13 @@
       "start": "2018-11-28",
       "end": "2018-12-26",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s020u.png",
+      "img": "./images/unit/s020u.jpg",
       "skill": "",
       "type": "unit"
     },
@@ -2032,13 +2302,15 @@
       "start": "2018-11-29",
       "end": "2018-12-14",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s087.png",
+      "img": "./images/scout/s087.jpg",
       "skill": "輝くゲレンデ",
-      "type": ""
+      "type": "scout"
     },
     "s088": {
       "uid": "s088",
@@ -2047,13 +2319,15 @@
       "start": "2018-12-14",
       "end": "2018-12-30",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s088.png",
+      "img": "./images/scout/s088.jpg",
       "skill": "夢を舞う蝶々",
-      "type": ""
+      "type": "scout"
     },
     "s021u": {
       "uid": "s021u",
@@ -2062,11 +2336,13 @@
       "start": "2018-12-26",
       "end": "2019-01-30",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s021u.png",
+      "img": "./images/unit/s021u.jpg",
       "skill": "",
       "type": "unit"
     },
@@ -2077,13 +2353,15 @@
       "start": "2018-12-30",
       "end": "2019-01-14",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s089.png",
+      "img": "./images/scout/s089.jpg",
       "skill": "めでたき春の演舞会",
-      "type": ""
+      "type": "scout"
     },
     "s090": {
       "uid": "s090",
@@ -2092,13 +2370,15 @@
       "start": "2019-01-14",
       "end": "2019-01-30",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s090.png",
+      "img": "./images/scout/s090.jpg",
       "skill": "福呼ぶ演武会",
-      "type": ""
+      "type": "scout"
     },
     "s091": {
       "uid": "s091",
@@ -2107,13 +2387,15 @@
       "start": "2019-01-30",
       "end": "2019-02-14",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s091.png",
+      "img": "./images/scout/s091.jpg",
       "skill": "色とりどりの仮面",
-      "type": ""
+      "type": "scout"
     },
     "s022u": {
       "uid": "s022u",
@@ -2122,11 +2404,13 @@
       "start": "2019-01-30",
       "end": "2019-02-27",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s022u.png",
+      "img": "./images/unit/s022u.jpg",
       "skill": "",
       "type": "unit"
     },
@@ -2137,13 +2421,15 @@
       "start": "2019-02-14",
       "end": "2019-02-27",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s092.png",
+      "img": "./images/scout/s092.jpg",
       "skill": "アラモードルーム",
-      "type": ""
+      "type": "scout"
     },
     "s023u": {
       "uid": "s023u",
@@ -2152,11 +2438,13 @@
       "start": "2019-02-26",
       "end": "2019-03-14",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s023u.png",
+      "img": "./images/unit/s023u.jpg",
       "skill": "",
       "type": "unit"
     },
@@ -2167,13 +2455,15 @@
       "start": "2019-02-27",
       "end": "2019-03-14",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s093.png",
+      "img": "./images/scout/s093.jpg",
       "skill": "鬼の島",
-      "type": ""
+      "type": "scout"
     },
     "s024u": {
       "uid": "s024u",
@@ -2182,11 +2472,13 @@
       "start": "2019-02-27",
       "end": "2019-03-27",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s024u.png",
+      "img": "./images/unit/s024u.jpg",
       "skill": "",
       "type": "unit"
     },
@@ -2197,13 +2489,15 @@
       "start": "2019-03-14",
       "end": "2019-03-30",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s094.png",
+      "img": "./images/scout/s094.jpg",
       "skill": "サバイバルゲーム",
-      "type": ""
+      "type": "scout"
     },
     "s095": {
       "uid": "s095",
@@ -2212,13 +2506,15 @@
       "start": "2019-03-30",
       "end": "2019-04-14",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s095.png",
+      "img": "./images/scout/s095.jpg",
       "skill": "ダークインフェルノ",
-      "type": ""
+      "type": "scout"
     },
     "s096": {
       "uid": "s096",
@@ -2227,13 +2523,15 @@
       "start": "2019-04-14",
       "end": "2019-04-29",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s096.png",
+      "img": "./images/scout/s096.jpg",
       "skill": "ローズガーデン",
-      "type": ""
+      "type": "scout"
     },
     "s025u": {
       "uid": "s025u",
@@ -2242,11 +2540,13 @@
       "start": "2019-04-24",
       "end": "2019-05-29",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s025u.png",
+      "img": "./images/unit/s025u.jpg",
       "skill": "",
       "type": "unit"
     },
@@ -2257,11 +2557,13 @@
       "start": "2019-04-24",
       "end": "2019-05-29",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s026u.png",
+      "img": "./images/unit/s026u.jpg",
       "skill": "",
       "type": "unit"
     },
@@ -2272,13 +2574,15 @@
       "start": "2019-04-29",
       "end": "2019-05-14",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s097.png",
+      "img": "./images/scout/s097.jpg",
       "skill": "ラビリンスサーキット",
-      "type": ""
+      "type": "scout"
     },
     "s098": {
       "uid": "s098",
@@ -2287,13 +2591,15 @@
       "start": "2019-05-14",
       "end": "2019-05-30",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s098.png",
+      "img": "./images/scout/s098.jpg",
       "skill": "プールプレイヤー",
-      "type": ""
+      "type": "scout"
     },
     "s099": {
       "uid": "s099",
@@ -2302,13 +2608,15 @@
       "start": "2019-05-30",
       "end": "2019-06-14",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s099.png",
+      "img": "./images/scout/s099.jpg",
       "skill": "タウンの住人たち",
-      "type": ""
+      "type": "scout"
     },
     "s100": {
       "uid": "s100",
@@ -2317,13 +2625,15 @@
       "start": "2019-06-14",
       "end": "2019-06-29",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s100.png",
+      "img": "./images/scout/s100.jpg",
       "skill": "ラウンドパーティ",
-      "type": ""
+      "type": "scout"
     },
     "s101": {
       "uid": "s101",
@@ -2332,13 +2642,15 @@
       "start": "2019-06-29",
       "end": "2019-07-30",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s101.png",
+      "img": "./images/scout/s101.jpg",
       "skill": "風と波のダンス",
-      "type": ""
+      "type": "scout"
     },
     "s027u": {
       "uid": "s027u",
@@ -2347,11 +2659,13 @@
       "start": "2019-07-14",
       "end": "2019-07-25",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["subaru"],
-      "img": "s027u.png",
+      "img": "./images/unit/s027u.jpg",
       "skill": "",
       "type": "unit"
     },
@@ -2362,13 +2676,15 @@
       "start": "2019-07-30",
       "end": "2019-08-30",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s102.png",
+      "img": "./images/scout/s102.jpg",
       "skill": "シネマドリーム",
-      "type": ""
+      "type": "scout"
     },
     "s001anime": {
       "uid": "s001anime",
@@ -2377,11 +2693,13 @@
       "start": "2019-08-04",
       "end": "2019-08-11",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s001anime.png",
+      "img": "./images/anime/s001anime.jpg",
       "skill": "",
       "type": "anime"
     },
@@ -2392,11 +2710,13 @@
       "start": "2019-08-11",
       "end": "2019-08-25",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["kuro"],
-      "img": "s002anime.png",
+      "img": "./images/anime/s002anime.jpg",
       "skill": "",
       "type": "anime"
     },
@@ -2407,11 +2727,13 @@
       "start": "2019-08-13",
       "end": "2019-08-25",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s001100.png",
+      "img": "./images/100/s001100.jpg",
       "skill": "",
       "type": "100"
     },
@@ -2422,11 +2744,13 @@
       "start": "2019-08-13",
       "end": "2019-08-25",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s002100.png",
+      "img": "./images/100/s002100.jpg",
       "skill": "",
       "type": "100"
     },
@@ -2437,11 +2761,13 @@
       "start": "2019-08-14",
       "end": "2019-08-25",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": [],
-      "img": "s028u.png",
+      "img": "./images/unit/s028u.jpg",
       "skill": "",
       "type": "unit"
     },
@@ -2452,11 +2778,13 @@
       "start": "2019-08-18",
       "end": "2019-08-25",
       "cards": {
-        "5": [""]
+        "5": [""],
+        "4": [],
+        "3": []
       },
       "relation": [],
       "banner": ["wataru"],
-      "img": "s003anime.png",
+      "img": "./images/anime/s003anime.jpg",
       "skill": "",
       "type": "anime"
     }

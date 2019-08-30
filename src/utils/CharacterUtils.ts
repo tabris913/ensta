@@ -3,9 +3,7 @@ import * as R from 'ramda';
 
 import * as Character from '../constants/json/character.json';
 import PageName, { toPublicUrl } from '../constants/PageName';
-import { ICharacter } from '../models/character';
-import { IEvent } from '../models/event';
-import { IScout } from '../models/scout';
+import { ICharacter, ICharacterHistory } from '../models/character';
 import { getCharacterCard } from './CardUtils';
 import { getEvent } from './EventUtils';
 import { getScout } from './ScoutUtils';
@@ -34,9 +32,9 @@ export const toCharacter = (history: History, uid: string) => history.push(toPub
 export const getCharacterHistory = (uid: string) =>
   getCharacterCard(uid)
     .filter(c => !R.isEmpty(c.content))
-    .map(c => c.content[0])
     .reduce(
-      (list, es) => {
+      (list, c) => {
+        const es = c.content[0];
         const content = es.startsWith('e')
           ? getEvent(es)
           : es.startsWith('sp')
@@ -47,7 +45,7 @@ export const getCharacterHistory = (uid: string) =>
           ? getScout(es)
           : undefined;
 
-        return content ? list.concat(content) : list;
+        return content ? list.concat({ content: content, rarelity: c.rank }) : list;
       },
-      [] as Array<IEvent | IScout>
+      [] as ICharacterHistory[]
     );

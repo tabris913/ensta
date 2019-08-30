@@ -45,11 +45,7 @@ const Character = (props: Props) => {
   return (
     <>
       <div style={{ height: '100%', overflowY: 'auto', marginBottom: 5 }}>
-        <img
-          src={`./images/character/${content.imgs[0]}`}
-          alt=""
-          style={{ padding: 0, maxWidth: 280, width: '100%' }}
-        />
+        <img src={content.imgs[0]} alt="" style={{ padding: 0, maxWidth: 280, width: '100%' }} />
         <Descriptions title="Character Info" column={{ xs: 1, md: 2 }} bordered={true} layout="vertical" size="small">
           <Descriptions.Item label="キャッチフレーズ" span={2}>
             {content.catchPhrase}
@@ -89,7 +85,11 @@ const Character = (props: Props) => {
                   style={{ whiteSpace: 'unset', padding: 0 }}
                 >
                   {latestRankingEvent ? (
-                    <img src={`./images/event/${latestRankingEvent.img}`} alt={latestRankingEvent.name} />
+                    <img
+                      src={latestRankingEvent.img}
+                      alt={latestRankingEvent.name}
+                      style={{ padding: 0, maxWidth: 280, width: '100%', verticalAlign: 'unset' }}
+                    />
                   ) : (
                     'not yet'
                   )}
@@ -108,9 +108,9 @@ const Character = (props: Props) => {
                 >
                   {latestPointEvent ? (
                     <img
-                      src={`./images/event/${latestPointEvent.img}`}
+                      src={latestPointEvent.img}
                       alt={latestPointEvent.name}
-                      style={{ padding: 0, maxWidth: 280, width: '100%' }}
+                      style={{ padding: 0, maxWidth: 280, width: '100%', verticalAlign: 'unset' }}
                     />
                   ) : (
                     'not yet'
@@ -130,9 +130,9 @@ const Character = (props: Props) => {
                 >
                   {latestScout ? (
                     <img
-                      src={`./images/${latestScout.type || 'scout'}/${latestScout.img}`}
+                      src={latestScout.img}
                       alt={latestScout.name}
-                      style={{ padding: 0, maxWidth: 280, width: '100%' }}
+                      style={{ padding: 0, maxWidth: 280, width: '100%', verticalAlign: 'unset' }}
                     />
                   ) : (
                     'not yet'
@@ -152,9 +152,17 @@ const Character = (props: Props) => {
         >
           イベント・スカウト履歴
         </Button>
+        <Button
+          style={{ marginTop: 5 }}
+          onClick={() => {
+            props.history.push(toPublicUrl(PageName.CARD_LIST, undefined, { id: props.match.params.id }));
+          }}
+        >
+          カード一覧
+        </Button>
       </div>
       <Button onClick={props.history.goBack} type="primary" style={{ width: 'unset' }}>
-        リストに戻る
+        戻る
       </Button>
     </>
   );

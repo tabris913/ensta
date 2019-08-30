@@ -7,8 +7,10 @@ import { IContentSaveRequest } from './request/ContentSaveRequest';
 import { IListRequest } from './request/ListRequest';
 
 export type EventType = '' | 'special' | 'uc';
-export type ScoutType = '' | 'story' | 'revival';
+export type ScoutType = '' | 'story' | 'unit' | 'anime' | '100' | 'special';
 export type TypeType = EventType | ScoutType;
+export type Rarelity = 1 | 2 | 3 | 4 | 5;
+export type CardType = 'Da' | 'Vo' | 'Pf';
 
 export interface QueryType {
   id?: string;
@@ -34,6 +36,7 @@ export interface ListComponentProps<T extends IContent, A extends IContentAdditi
   pageSize?: number;
   headers?: (item: T) => JSX.Element;
   descriptions?: (props: { item: T }) => JSX.Element;
+  filter?: (list?: T[]) => T[];
 }
 
 export interface MainContentProps<T extends IContent> extends MainProps {
