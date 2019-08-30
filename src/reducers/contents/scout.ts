@@ -15,6 +15,7 @@ const initialScoutValue: IScout = {
   relation: undefined,
   banner: undefined,
   img: undefined,
+  type: '',
 };
 
 export interface IScoutState extends IContentState<IScout, IScoutAdditionalState> {}

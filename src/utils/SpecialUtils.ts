@@ -2,7 +2,8 @@ import { History } from 'history';
 import * as R from 'ramda';
 
 import * as Event from '../constants/json/special.json';
-import { INormalEvent, ISpecialEvent, IUnitCollection } from '../models/event';
+import { IContent } from '../models/content.js';
+import { ISpecialEvent } from '../models/event';
 import { toEvent } from './EventUtils';
 
 export const getSpecial = (uid: string): ISpecialEvent | undefined => {
@@ -22,10 +23,12 @@ export const getSpecials = () => {
 
 export const specialEventIds = Object.keys(Event.special);
 
-export const isSpecial = (obj: INormalEvent | IUnitCollection | ISpecialEvent): obj is ISpecialEvent => {
+export const isSpecial = (obj: IContent): obj is ISpecialEvent => {
   const checkKeys = ['bonus', 'acquirableCards', 'revivalEvents'];
 
-  return R.all(R.equals<boolean>(true), checkKeys.map(key => !Object.keys(obj).includes(key)));
+  return (
+    obj.uid.startsWith('sp') && R.all(R.equals<boolean>(true), checkKeys.map(key => !Object.keys(obj).includes(key)))
+  );
 };
 
 export const toSpecial = (history: History, uid: string) => toEvent(history, uid, 'special');

@@ -12,6 +12,7 @@ enum PageName {
   UNIT = '/unit',
   CHARACTER_LIST = '/character/list',
   CHARACTER = '/character',
+  CHARACTER_HISTORY = '/character/history',
   CARD_LIST = '/card/list',
   CARD = '/card',
 

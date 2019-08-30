@@ -11,6 +11,7 @@ export interface ContentSaga<T extends IContent, A extends IContentAdditionalSta
   saveContent: (action: Action<IContentSaveRequest<T>>) => IterableIterator<any>;
   getList: (action: Action<IListRequest>) => IterableIterator<any>;
   changeListPage: (action: Action<number>) => IterableIterator<any>;
+  getHistory?: (action: Action<IContentRequest>) => IterableIterator<any>;
 }
 
 const saga = <T extends IContent, A extends IContentAdditionalState>(
@@ -35,6 +36,11 @@ const saga = <T extends IContent, A extends IContentAdditionalState>(
   changeListPage: () =>
     function*(action: Action<number>): IterableIterator<any> {
       console.log(`change page of ${contentName} list`);
+      yield null;
+    },
+  getHistory: () =>
+    function*(action: Action<IContentRequest>): IterableIterator<any> {
+      console.log(`get history`);
       yield null;
     },
 });

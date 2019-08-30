@@ -23,22 +23,27 @@ const Application = () => (
     <React.Fragment>
       <div className="App">
         <Switch>
+          <Route path={toPublicUrl(PageName.TOP)} component={Page.TopPage} exact={true} />
+
+          {/* ListPage */}
+          <Route path={toPublicUrl(PageName.EVENT_LIST, [':type?'])} component={Page.EventListPage} exact={true} />
           {[
-            [PageName.TOP, Page.TopPage],
-            [PageName.EVENT_LIST, Page.EventListPage],
             [PageName.SCOUT_LIST, Page.ScoutListPage],
             [PageName.UNIT_LIST, Page.UnitListPage],
             [PageName.CHARACTER_LIST, Page.CharacterListPage],
             [PageName.CARD_LIST, Page.CardListPage],
 
-            [PageName.EVENT, Page.EventPage],
-            [PageName.SCOUT, Page.ScoutPage],
-            [PageName.UNIT, Page.UnitPage],
-            [PageName.CHARACTER, Page.CharacterPage],
-            [PageName.CARD, Page.CardPage],
+            [PageName.EVENT, Page.EventPage, true],
+            [PageName.SCOUT, Page.ScoutPage, true],
+            [PageName.UNIT, Page.UnitPage, true],
+            [PageName.CHARACTER, Page.CharacterPage, true],
+            [PageName.CARD, Page.CardPage, true],
+
+            [PageName.CHARACTER_HISTORY, Page.CharacterHistoryPage, true],
           ]
             .map(e => e as MakeRoute)
             .map(e => makeRoute(e))}
+
           <Redirect to={toPublicUrl(PageName.TOP)} />
         </Switch>
       </div>

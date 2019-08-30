@@ -11,8 +11,8 @@ interface Props extends MainContentProps<IUnit> {}
 
 const Unit = (props: Props) => {
   React.useState(() => {
-    if (!props.contents || !props.contents.unit.content || props.contents.unit.content.uid !== props.query.id) {
-      props.getContent({ uid: props.query.id!, contentName: 'unit' });
+    if (!props.contents || !props.contents.unit.content || props.contents.unit.content.uid !== props.match.params.id) {
+      props.getContent({ uid: props.match.params.id, contentName: 'unit' });
     }
   });
 

@@ -8,8 +8,12 @@ import { getCharacter } from '../../utils/CharacterUtils';
 
 const Scout = (props: MainContentProps<IScout>) => {
   React.useState(() => {
-    if (!props.contents || !props.contents.scout.content || props.contents.scout.content.uid !== props.query.id) {
-      props.getContent({ uid: props.query.id!, contentName: 'scout' });
+    if (
+      !props.contents ||
+      !props.contents.scout.content ||
+      props.contents.scout.content.uid !== props.match.params.id
+    ) {
+      props.getContent({ uid: props.match.params.id!, contentName: 'scout' });
     }
   });
   return props.contents && props.contents.scout.content ? (

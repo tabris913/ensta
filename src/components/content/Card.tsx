@@ -12,8 +12,8 @@ interface Props extends MainContentProps<ICard> {
 
 const Card = (props: Props) => {
   React.useState(() => {
-    if (!props.contents || !props.contents.card.content || props.contents.card.content.uid !== props.query.id) {
-      props.getContent({ uid: props.query.id!, contentName: 'card' });
+    if (!props.contents || !props.contents.card.content || props.contents.card.content.uid !== props.match.params.id) {
+      props.getContent({ uid: props.match.params.id, contentName: 'card' });
     }
   });
   return props.contents && props.contents.card.content ? (

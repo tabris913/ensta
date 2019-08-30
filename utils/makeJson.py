@@ -151,7 +151,8 @@ def makeScout():
       "relation": [{convert_list(line.relation)}],
       "banner": [{convert_list(line.banner)}],
       "img": "{line.uid}.png",
-      "skill": "{line.skill}"
+      "skill": "{line.skill}",
+      "type": "{line.type}"
     }}{',' if df.index[-1] != idx else ''}\n'''
 
         json_string += fmt

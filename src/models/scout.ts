@@ -1,5 +1,6 @@
 import { ICards } from './card';
 import { IContent } from './content';
+import { ScoutType } from './Main';
 
 interface ScoutBody extends IContent {
   description: string;
@@ -9,6 +10,7 @@ interface ScoutBody extends IContent {
   relation?: string[];
   banner?: string[];
   img?: string;
+  type: ScoutType;
 }
 
 export interface IScout extends ScoutBody {

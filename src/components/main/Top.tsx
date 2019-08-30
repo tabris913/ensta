@@ -27,11 +27,7 @@ const Top = (props: MainProps) => {
           <p>
             <Button
               type="link"
-              onClick={() =>
-                props.history.push(
-                  toPublicUrl(PageName.EVENT_LIST || PageName.UNDEFINED, undefined, { type: 'special' })
-                )
-              }
+              onClick={() => props.history.push(toPublicUrl(PageName.EVENT_LIST || PageName.UNDEFINED, ['special']))}
             >
               スペシャルイベント
             </Button>
@@ -39,9 +35,7 @@ const Top = (props: MainProps) => {
           <p>
             <Button
               type="link"
-              onClick={() =>
-                props.history.push(toPublicUrl(PageName.EVENT_LIST || PageName.UNDEFINED, undefined, { type: 'uc' }))
-              }
+              onClick={() => props.history.push(toPublicUrl(PageName.EVENT_LIST || PageName.UNDEFINED, ['uc']))}
             >
               ユニットコレクション
             </Button>

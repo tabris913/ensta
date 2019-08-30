@@ -3,7 +3,7 @@ import { ContentActions } from '../../actions/content';
 import { IContent, IContentAdditionalState } from '../../models/content';
 import { IContentState } from '../../models/ContentState';
 import { getCard, getCards, getCharacterCard, getEventScoutCard } from '../../utils/CardUtils';
-import { getCharacter, getCharacters } from '../../utils/CharacterUtils';
+import { getCharacter, getCharacterHistory, getCharacters } from '../../utils/CharacterUtils';
 import { getCharacterEvent, getEvent, getEvents } from '../../utils/EventUtils';
 import { getCharacterScout, getScout, getScouts } from '../../utils/ScoutUtils';
 import { getSpecial, getSpecials } from '../../utils/SpecialUtils';
@@ -16,8 +16,8 @@ import { IScoutAdditionalState } from './scout';
 export const contentReducerBuilder = <T extends IContent, A extends IContentAdditionalState>(
   actions: ContentActions<T, A>,
   initialValue: T
-) =>
-  reducerWithInitialState<IContentState<T, A>>({})
+) => {
+  let reducer = reducerWithInitialState<IContentState<T, A>>({})
     .caseWithAction(actions.getContent, (state, action) => {
       switch (action.payload.contentName) {
         case 'event':
@@ -59,6 +59,7 @@ export const contentReducerBuilder = <T extends IContent, A extends IContentAddi
           return { ...state, content: getUnit(action.payload.uid) as any };
         case 'character':
           const characterAdditional: ICharacterAdditionalState = {
+            history: [],
             ...state.additional,
             event: getCharacterEvent(action.payload.uid),
             scout: getCharacterScout(action.payload.uid),
@@ -90,12 +91,13 @@ export const contentReducerBuilder = <T extends IContent, A extends IContentAddi
         case 'character':
           const characterAdditional: ICharacterAdditionalState = action.payload.content
             ? {
+                history: [],
                 ...state.additional,
                 event: getCharacterEvent(action.payload.content.uid),
                 scout: getCharacterScout(action.payload.content.uid),
                 card: getCharacterCard(action.payload.content.uid),
               }
-            : { event: [], scout: [], card: [], ...state.additional };
+            : { event: [], scout: [], card: [], history: [], ...state.additional };
           return { ...state, content: action.payload.content, additional: characterAdditional };
         case 'card':
           return { ...state, content: action.payload.content };
@@ -127,3 +129,22 @@ export const contentReducerBuilder = <T extends IContent, A extends IContentAddi
       }
     })
     .caseWithAction(actions.changeListPage, (state, action) => ({ ...state, listPage: action.payload }));
+
+  if (actions.getHistory) {
+    reducer = reducer.caseWithAction(actions.getHistory, (state, action) => {
+      if (action.payload.contentName !== 'character') return state;
+
+      const characterAdditional: ICharacterAdditionalState = {
+        event: [],
+        scout: [],
+        card: [],
+        ...state.additional,
+        history: getCharacterHistory(action.payload.uid),
+      };
+
+      return { ...state, additional: characterAdditional as any };
+    });
+  }
+
+  return reducer;
+};

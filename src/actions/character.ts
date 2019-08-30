@@ -8,4 +8,5 @@ export const characterActions = contentActionsBuilder<ICharacter, ICharacterAddi
   saveContent: ActionTypes.CHARACTER_SAVE_CONTENT,
   getList: ActionTypes.CHARACTER_GET_LIST,
   changeListPage: ActionTypes.CHARACTER_CHANGE_LIST_PAGE,
+  getHistory: ActionTypes.CHARACTER_GET_HISTORY,
 });

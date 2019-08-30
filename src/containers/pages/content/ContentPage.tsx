@@ -10,12 +10,12 @@ import { ContentName } from '../../../constants/ContentName';
 import PageName, { toPublicUrl } from '../../../constants/PageName';
 import { IContent } from '../../../models/content';
 import { IContentsState } from '../../../models/ContentState';
-import { MainContentProps, QueryType } from '../../../models/Main';
+import { IMatchParams, MainContentProps, QueryType } from '../../../models/Main';
 import { IContentRequest } from '../../../models/request/ContentRequest';
 import { IContentSaveRequest } from '../../../models/request/ContentSaveRequest';
 import { IStoreState } from '../../../reducers';
 
-interface IOwnProps extends RouteComponentProps<{}> {}
+interface IOwnProps extends RouteComponentProps<IMatchParams> {}
 
 interface IStateProps {
   query: QueryType;
@@ -26,6 +26,7 @@ interface IDispatchProps<T extends IContent> {
   actions: {
     getContent: (req: IContentRequest) => void;
     saveContent: (req: IContentSaveRequest<T>) => void;
+    getHistory?: (req: IContentRequest) => void;
   };
 }
 
@@ -57,6 +58,10 @@ const ContentPage = <T extends IContent>({
       actions: {
         getContent: (req: IContentRequest) => dispatch(contentActions[contentName].getContent(req)),
         saveContent: (req: IContentSaveRequest<T>) => dispatch(contentActions[contentName].saveContent(req)),
+        getHistory:
+          contentName === 'character'
+            ? (req: IContentRequest) => dispatch(contentActions[contentName].getHistory!(req))
+            : undefined,
       },
     };
   };
@@ -80,7 +85,7 @@ const ContentPage = <T extends IContent>({
             { label: localName },
           ]}
         >
-          <Component {...props} getContent={props.actions.getContent} />
+          <Component {...props} getContent={props.actions.getContent} getHistory={props.actions.getHistory} />
         </Wireframe>
       );
     })

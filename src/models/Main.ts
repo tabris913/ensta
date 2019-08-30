@@ -1,4 +1,4 @@
-import { History } from 'history';
+import { RouteComponentProps } from 'react-router-dom';
 import { ContentName } from '../constants/ContentName';
 import { IContent, IContentAdditionalState } from './content';
 import { IContentsState } from './ContentState';
@@ -16,8 +16,12 @@ export interface QueryType {
   type?: TypeType;
 }
 
-export interface MainProps {
-  history: History;
+export interface IMatchParams {
+  id: string;
+  type: string;
+}
+
+export interface MainProps extends RouteComponentProps<IMatchParams> {
   query: QueryType;
   contents?: IContentsState;
 }
@@ -34,6 +38,7 @@ export interface ListComponentProps<T extends IContent, A extends IContentAdditi
 
 export interface MainContentProps<T extends IContent> extends MainProps {
   getContent: (req: IContentRequest) => void;
+  getHistory?: (req: IContentRequest) => void;
 }
 
 export interface TitleProps<T extends IContent> extends MainContentProps<T> {}

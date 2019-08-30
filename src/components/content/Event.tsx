@@ -50,8 +50,12 @@ const EventBonus = ({ history, event, property }: { history: History; event: INo
 
 const Event = (props: Props) => {
   React.useState(() => {
-    if (!props.contents || !props.contents.event.content || props.contents.event.content.uid !== props.query.id) {
-      props.getContent({ uid: props.query.id!, type: props.query.type as EventType, contentName: 'event' });
+    if (
+      !props.contents ||
+      !props.contents.event.content ||
+      props.contents.event.content.uid !== props.match.params.id
+    ) {
+      props.getContent({ uid: props.match.params.id, type: props.query.type as EventType, contentName: 'event' });
     }
   });
 

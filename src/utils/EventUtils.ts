@@ -27,14 +27,17 @@ export const eventIds = Object.keys(Event.event);
 export const isEvent = (content?: IContent): content is IEvent => content !== undefined;
 
 export const toEvent = (history: History, uid: string, type?: EventType) =>
-  history.push(toPublicUrl(PageName.EVENT, undefined, type ? { id: uid, type: type } : { id: uid }));
+  history.push(toPublicUrl(PageName.EVENT, [uid], type ? { type: type } : {}));
 
-export const isNormalEvent = (obj: any): obj is INormalEvent => {
+export const isNormalEvent = (obj: IContent): obj is INormalEvent => {
   const checkKeys = ['bonus'];
 
-  return R.all(
-    R.equals<boolean>(true),
-    checkKeys.map(key => Object.keys(obj).includes(key) && !R.isNil(obj[key]) && !R.isEmpty(obj[key]))
+  return (
+    obj.uid.startsWith('e') &&
+    R.all(
+      R.equals<boolean>(true),
+      checkKeys.map(key => Object.keys(obj).includes(key) && !R.isNil(obj[key]) && !R.isEmpty(obj[key]))
+    )
   );
 };
 

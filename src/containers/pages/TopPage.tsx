@@ -6,10 +6,10 @@ import * as Redux from 'redux';
 import Wireframe from '../wireframe/Wireframe';
 
 import Top from '../../components/main/Top';
-import { QueryType } from '../../models/Main';
+import { IMatchParams, QueryType } from '../../models/Main';
 import { IStoreState } from '../../reducers';
 
-interface IOwnProps extends RouteComponentProps<{}> {}
+interface IOwnProps extends RouteComponentProps<IMatchParams> {}
 
 interface IStateProps {
   query: QueryType;

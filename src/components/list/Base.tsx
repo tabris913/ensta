@@ -5,7 +5,7 @@ import PageName, { toPublicUrl } from '../../constants/PageName';
 import { PageTitle } from '../../constants/PageTitle';
 import Wireframe from '../../containers/wireframe/Wireframe';
 import { IContent, IContentAdditionalState } from '../../models/content';
-import { EventType, ListComponentProps, ScoutType, TypeType } from '../../models/Main';
+import { EventType, ListComponentProps, ScoutType } from '../../models/Main';
 import { toCard } from '../../utils/CardUtils';
 import { toCharacter } from '../../utils/CharacterUtils';
 import { toEvent } from '../../utils/EventUtils';
@@ -19,10 +19,11 @@ const ListGenerator = <T extends IContent, A extends IContentAdditionalState>({
   ...props
 }: ListComponentProps<T, A>) => {
   React.useState(() => {
+    console.log(props);
     switch (props.contentName) {
       case 'event':
-        if (!props.contents || !props.contents.event.list || props.contents.event.type !== props.query.type) {
-          props.getList({ type: props.query.type as EventType, contentName: 'event' });
+        if (!props.contents || !props.contents.event.list || props.contents.event.type !== props.match.params.type) {
+          props.getList({ type: props.match.params.type as EventType, contentName: 'event' });
         }
         break;
       default:
@@ -32,11 +33,11 @@ const ListGenerator = <T extends IContent, A extends IContentAdditionalState>({
     }
   });
 
-  const handleName = (content: T, type?: TypeType) => {
+  const handleName = (content: T) => {
     props.saveContent({ content: content, contentName: props.contentName });
     switch (props.contentName) {
       case 'event':
-        switch (type as EventType) {
+        switch (props.match.params.type as EventType) {
           case 'special':
             toSpecial(props.history, content.uid);
             break;
@@ -48,7 +49,7 @@ const ListGenerator = <T extends IContent, A extends IContentAdditionalState>({
         }
         break;
       case 'scout':
-        toScout(props.history, content.uid, type as ScoutType);
+        toScout(props.history, content.uid, props.match.params.type as ScoutType);
         break;
       case 'unit':
         toUnit(props.history, content.uid);
@@ -86,10 +87,7 @@ const ListGenerator = <T extends IContent, A extends IContentAdditionalState>({
                 showArrow={false}
               >
                 <Typography.Title level={4} style={{ width: '100%' }} underline={true}>
-                  <div
-                    onClick={() => handleName(item, props.query.type as EventType)}
-                    onTouchEnd={() => handleName(item, props.query.type as EventType)}
-                  >
+                  <div onClick={() => handleName(item)} onTouchEnd={() => handleName(item)}>
                     {item.name}
                   </div>
                 </Typography.Title>

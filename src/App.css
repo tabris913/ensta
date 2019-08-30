@@ -270,3 +270,7 @@ span.lens-input-time-picker.ant-time-picker > * {
 .ant-descriptions-bordered .ant-descriptions-item-label {
   background-color: rgb(192, 243, 227);
 }
+
+td.ant-descriptions-item-label {
+  width: 50%;
+}

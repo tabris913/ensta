@@ -7,12 +7,12 @@ import { contentActions } from '../../../actions';
 import { ContentName } from '../../../constants/ContentName';
 import { IContent, IContentAdditionalState } from '../../../models/content';
 import { IContentsState } from '../../../models/ContentState';
-import { ListComponentProps, QueryType } from '../../../models/Main';
+import { IMatchParams, ListComponentProps, QueryType } from '../../../models/Main';
 import { IContentSaveRequest } from '../../../models/request/ContentSaveRequest';
 import { IListRequest } from '../../../models/request/ListRequest';
 import { IStoreState } from '../../../reducers';
 
-interface IOwnProps extends RouteComponentProps<{}> {}
+interface IOwnProps extends RouteComponentProps<IMatchParams> {}
 
 interface IStateProps {
   query: QueryType;

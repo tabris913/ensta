@@ -12,7 +12,8 @@
       "relation": ["Ra*bits"],
       "banner": ["nazuna"],
       "img": "s001.png",
-      "skill": "マーチングバンド"
+      "skill": "マーチングバンド",
+      "type": ""
     },
     "s002": {
       "uid": "s002",
@@ -26,7 +27,8 @@
       "relation": ["Knights"],
       "banner": ["ritsu"],
       "img": "s002.png",
-      "skill": "スイーツパティシエ"
+      "skill": "スイーツパティシエ",
+      "type": ""
     },
     "s003": {
       "uid": "s003",
@@ -40,7 +42,8 @@
       "relation": ["紅月"],
       "banner": ["keito"],
       "img": "s003.png",
-      "skill": "新緑の武芸者"
+      "skill": "新緑の武芸者",
+      "type": ""
     },
     "s004": {
       "uid": "s004",
@@ -54,7 +57,8 @@
       "relation": ["流星隊"],
       "banner": ["chiaki"],
       "img": "s004.png",
-      "skill": "ヒーローショウ"
+      "skill": "ヒーローショウ",
+      "type": ""
     },
     "s005": {
       "uid": "s005",
@@ -68,7 +72,8 @@
       "relation": ["生徒会"],
       "banner": ["yuzuru"],
       "img": "s005.png",
-      "skill": "プール掃除班"
+      "skill": "プール掃除班",
+      "type": ""
     },
     "s006": {
       "uid": "s006",
@@ -82,7 +87,8 @@
       "relation": [],
       "banner": ["yuta"],
       "img": "s006.png",
-      "skill": "妖怪の仕業"
+      "skill": "妖怪の仕業",
+      "type": ""
     },
     "s007": {
       "uid": "s007",
@@ -96,7 +102,8 @@
       "relation": [],
       "banner": ["wataru"],
       "img": "s007.png",
-      "skill": "リストランテ夢ノ咲"
+      "skill": "リストランテ夢ノ咲",
+      "type": ""
     },
     "s008": {
       "uid": "s008",
@@ -110,7 +117,8 @@
       "relation": [],
       "banner": ["hajime"],
       "img": "s008.png",
-      "skill": "オフショット"
+      "skill": "オフショット",
+      "type": ""
     },
     "s009": {
       "uid": "s009",
@@ -124,7 +132,8 @@
       "relation": ["海洋生物部"],
       "banner": ["kanata"],
       "img": "s009.png",
-      "skill": "深海の神秘"
+      "skill": "深海の神秘",
+      "type": ""
     },
     "s001st": {
       "uid": "s001st",
@@ -138,7 +147,8 @@
       "relation": [],
       "banner": ["leo"],
       "img": "s001st.png",
-      "skill": ""
+      "skill": "",
+      "type": "story"
     },
     "s010": {
       "uid": "s010",
@@ -152,7 +162,8 @@
       "relation": [],
       "banner": ["hinata"],
       "img": "s010.png",
-      "skill": "カンフーアクション"
+      "skill": "カンフーアクション",
+      "type": ""
     },
     "s011": {
       "uid": "s011",
@@ -166,7 +177,8 @@
       "relation": [],
       "banner": ["adnis"],
       "img": "s011.png",
-      "skill": "ポリスマン"
+      "skill": "ポリスマン",
+      "type": ""
     },
     "s002st": {
       "uid": "s002st",
@@ -180,7 +192,8 @@
       "relation": [],
       "banner": ["chiaki"],
       "img": "s002st.png",
-      "skill": ""
+      "skill": "",
+      "type": "story"
     },
     "s012": {
       "uid": "s012",
@@ -194,7 +207,8 @@
       "relation": ["テニス部"],
       "banner": ["izumi"],
       "img": "s012.png",
-      "skill": "お医者さんごっこ"
+      "skill": "お医者さんごっこ",
+      "type": ""
     },
     "s013": {
       "uid": "s013",
@@ -208,7 +222,8 @@
       "relation": ["空手部", "流星隊"],
       "banner": ["kuro"],
       "img": "s013.png",
-      "skill": "男の中の漢"
+      "skill": "男の中の漢",
+      "type": ""
     },
     "s003st": {
       "uid": "s003st",
@@ -222,7 +237,8 @@
       "relation": [],
       "banner": ["midori"],
       "img": "s003st.png",
-      "skill": ""
+      "skill": "",
+      "type": "story"
     },
     "s014": {
       "uid": "s014",
@@ -236,7 +252,8 @@
       "relation": ["陸上部"],
       "banner": ["soma"],
       "img": "s014.png",
-      "skill": "神々の輪舞"
+      "skill": "神々の輪舞",
+      "type": ""
     },
     "s015": {
       "uid": "s015",
@@ -250,7 +267,8 @@
       "relation": ["生徒会"],
       "banner": ["mao"],
       "img": "s015.png",
-      "skill": "ミッションコンプリート"
+      "skill": "ミッションコンプリート",
+      "type": ""
     },
     "s004st": {
       "uid": "s004st",
@@ -264,7 +282,8 @@
       "relation": [],
       "banner": ["hokuto"],
       "img": "s004st.png",
-      "skill": ""
+      "skill": "",
+      "type": "story"
     },
     "s016": {
       "uid": "s016",
@@ -278,7 +297,8 @@
       "relation": [],
       "banner": ["subaru"],
       "img": "s016.png",
-      "skill": "新春初詣"
+      "skill": "新春初詣",
+      "type": ""
     },
     "s017": {
       "uid": "s017",
@@ -292,7 +312,8 @@
       "relation": ["UNDEAD"],
       "banner": ["kaoru"],
       "img": "s017.png",
-      "skill": "夜闇の魔物ランド"
+      "skill": "夜闇の魔物ランド",
+      "type": ""
     },
     "s005st": {
       "uid": "s005st",
@@ -306,7 +327,8 @@
       "relation": [],
       "banner": ["izumi"],
       "img": "s005st.png",
-      "skill": ""
+      "skill": "",
+      "type": "story"
     },
     "s018": {
       "uid": "s018",
@@ -320,7 +342,8 @@
       "relation": ["紅茶部"],
       "banner": ["eichi"],
       "img": "s018.png",
-      "skill": "マッド・ティー・パーティ"
+      "skill": "マッド・ティー・パーティ",
+      "type": ""
     },
     "s019": {
       "uid": "s019",
@@ -334,7 +357,8 @@
       "relation": ["放送委員会"],
       "banner": ["makoto"],
       "img": "s019.png",
-      "skill": "青春RADIO放送局"
+      "skill": "青春RADIO放送局",
+      "type": ""
     },
     "s020": {
       "uid": "s020",
@@ -348,7 +372,8 @@
       "relation": ["Knights"],
       "banner": ["arashi"],
       "img": "s020.png",
-      "skill": "花鳥風月"
+      "skill": "花鳥風月",
+      "type": ""
     },
     "s006st": {
       "uid": "s006st",
@@ -362,7 +387,8 @@
       "relation": [],
       "banner": ["valkyrie"],
       "img": "s006st.png",
-      "skill": ""
+      "skill": "",
+      "type": "story"
     },
     "s021": {
       "uid": "s021",
@@ -376,7 +402,8 @@
       "relation": [],
       "banner": ["koga"],
       "img": "s021.png",
-      "skill": "春休みのピクニック"
+      "skill": "春休みのピクニック",
+      "type": ""
     },
     "s022": {
       "uid": "s022",
@@ -390,7 +417,8 @@
       "relation": ["1年生"],
       "banner": ["shinobu"],
       "img": "s022.png",
-      "skill": "春色ベリ－ズ"
+      "skill": "春色ベリ－ズ",
+      "type": ""
     },
     "s023": {
       "uid": "s023",
@@ -404,7 +432,8 @@
       "relation": ["海洋生物部"],
       "banner": ["soma"],
       "img": "s023.png",
-      "skill": "母なる海の仲間たち"
+      "skill": "母なる海の仲間たち",
+      "type": ""
     },
     "s001sp": {
       "uid": "s001sp",
@@ -418,7 +447,8 @@
       "relation": [],
       "banner": ["trickstar"],
       "img": "s001sp.png",
-      "skill": ""
+      "skill": "",
+      "type": "special"
     },
     "s024": {
       "uid": "s024",
@@ -432,7 +462,8 @@
       "relation": ["Valkyrie"],
       "banner": ["mika"],
       "img": "s024.png",
-      "skill": "玩具の見る夢"
+      "skill": "玩具の見る夢",
+      "type": ""
     },
     "s025": {
       "uid": "s025",
@@ -446,7 +477,8 @@
       "relation": ["演劇部"],
       "banner": ["wataru"],
       "img": "s025.png",
-      "skill": "夢の王国の王子様"
+      "skill": "夢の王国の王子様",
+      "type": ""
     },
     "s007st": {
       "uid": "s007st",
@@ -460,7 +492,8 @@
       "relation": [],
       "banner": ["shu"],
       "img": "s007st.png",
-      "skill": ""
+      "skill": "",
+      "type": "story"
     },
     "s026": {
       "uid": "s026",
@@ -474,7 +507,8 @@
       "relation": ["軽音部"],
       "banner": ["rei"],
       "img": "s026.png",
-      "skill": "雨音のハーモニー"
+      "skill": "雨音のハーモニー",
+      "type": ""
     },
     "s027": {
       "uid": "s027",
@@ -488,7 +522,8 @@
       "relation": ["3A"],
       "banner": ["kaoru"],
       "img": "s027.png",
-      "skill": "舞台上の暴れん坊たち"
+      "skill": "舞台上の暴れん坊たち",
+      "type": ""
     },
     "s008st": {
       "uid": "s008st",
@@ -502,7 +537,8 @@
       "relation": [],
       "banner": ["mika"],
       "img": "s008st.png",
-      "skill": ""
+      "skill": "",
+      "type": "story"
     },
     "s028": {
       "uid": "s028",
@@ -516,7 +552,8 @@
       "relation": ["バスケ部"],
       "banner": ["chiaki"],
       "img": "s028.png",
-      "skill": "空を駆ける青春"
+      "skill": "空を駆ける青春",
+      "type": ""
     },
     "s029": {
       "uid": "s029",
@@ -530,7 +567,8 @@
       "relation": [],
       "banner": ["nazuna"],
       "img": "s029.png",
-      "skill": "夏のお伴にアイスクリーム！"
+      "skill": "夏のお伴にアイスクリーム！",
+      "type": ""
     },
     "s009st": {
       "uid": "s009st",
@@ -544,7 +582,8 @@
       "relation": [],
       "banner": ["kuro"],
       "img": "s009st.png",
-      "skill": ""
+      "skill": "",
+      "type": "story"
     },
     "s030": {
       "uid": "s030",
@@ -558,7 +597,8 @@
       "relation": [],
       "banner": ["tori"],
       "img": "s030.png",
-      "skill": "しゅわしゅわ金魚"
+      "skill": "しゅわしゅわ金魚",
+      "type": ""
     },
     "s031": {
       "uid": "s031",
@@ -572,7 +612,8 @@
       "relation": ["弓道部"],
       "banner": ["leo"],
       "img": "s031.png",
-      "skill": "弓矢の名手たち"
+      "skill": "弓矢の名手たち",
+      "type": ""
     },
     "s010st": {
       "uid": "s010st",
@@ -586,7 +627,8 @@
       "relation": [],
       "banner": ["switch"],
       "img": "s010st.png",
-      "skill": ""
+      "skill": "",
+      "type": "story"
     },
     "s032": {
       "uid": "s032",
@@ -600,7 +642,8 @@
       "relation": [],
       "banner": ["hokuto"],
       "img": "s032.png",
-      "skill": "アンダルシアの情熱"
+      "skill": "アンダルシアの情熱",
+      "type": ""
     },
     "s002sp": {
       "uid": "s002sp",
@@ -614,7 +657,8 @@
       "relation": [],
       "banner": ["trickstar"],
       "img": "s002sp.png",
-      "skill": ""
+      "skill": "",
+      "type": "special"
     },
     "s033": {
       "uid": "s033",
@@ -628,7 +672,8 @@
       "relation": [],
       "banner": ["adnis"],
       "img": "s033.png",
-      "skill": "千夜一夜の盗賊団"
+      "skill": "千夜一夜の盗賊団",
+      "type": ""
     },
     "s011st": {
       "uid": "s011st",
@@ -642,7 +687,8 @@
       "relation": [],
       "banner": ["sora"],
       "img": "s011st.png",
-      "skill": ""
+      "skill": "",
+      "type": "story"
     },
     "s034": {
       "uid": "s034",
@@ -656,7 +702,8 @@
       "relation": [],
       "banner": ["tsukasa"],
       "img": "s034.png",
-      "skill": "喫茶の誘惑"
+      "skill": "喫茶の誘惑",
+      "type": ""
     },
     "s035": {
       "uid": "s035",
@@ -670,7 +717,8 @@
       "relation": ["演劇部"],
       "banner": ["tomoya"],
       "img": "s035.png",
-      "skill": "舞台の額縁"
+      "skill": "舞台の額縁",
+      "type": ""
     },
     "s012st": {
       "uid": "s012st",
@@ -684,7 +732,8 @@
       "relation": [],
       "banner": ["tsumugi"],
       "img": "s012st.png",
-      "skill": ""
+      "skill": "",
+      "type": "story"
     },
     "s036": {
       "uid": "s036",
@@ -698,7 +747,8 @@
       "relation": [],
       "banner": ["midori"],
       "img": "s036.png",
-      "skill": "カラフルベジタブル"
+      "skill": "カラフルベジタブル",
+      "type": ""
     },
     "s037": {
       "uid": "s037",
@@ -712,7 +762,8 @@
       "relation": ["Ra*bits"],
       "banner": ["mitsuru"],
       "img": "s037.png",
-      "skill": "BADBOYS"
+      "skill": "BADBOYS",
+      "type": ""
     },
     "s013st": {
       "uid": "s013st",
@@ -726,7 +777,8 @@
       "relation": [],
       "banner": ["natsume"],
       "img": "s013st.png",
-      "skill": ""
+      "skill": "",
+      "type": "story"
     },
     "s038": {
       "uid": "s038",
@@ -740,7 +792,8 @@
       "relation": [],
       "banner": ["keito"],
       "img": "s038.png",
-      "skill": "叡智への回顧"
+      "skill": "叡智への回顧",
+      "type": ""
     },
     "s039": {
       "uid": "s039",
@@ -754,7 +807,8 @@
       "relation": ["手芸部"],
       "banner": ["shu"],
       "img": "s039.png",
-      "skill": "静夜のノクターン"
+      "skill": "静夜のノクターン",
+      "type": ""
     },
     "s014st": {
       "uid": "s014st",
@@ -768,7 +822,8 @@
       "relation": [],
       "banner": ["ritsu"],
       "img": "s014st.png",
-      "skill": ""
+      "skill": "",
+      "type": "story"
     },
     "s040": {
       "uid": "s040",
@@ -782,7 +837,8 @@
       "relation": ["五奇人"],
       "banner": ["natsume"],
       "img": "s040.png",
-      "skill": "エキセントリックな時間"
+      "skill": "エキセントリックな時間",
+      "type": ""
     },
     "s041": {
       "uid": "s041",
@@ -796,7 +852,8 @@
       "relation": ["Knights", "UNDEAD"],
       "banner": ["izumi"],
       "img": "s041.png",
-      "skill": "氷上に咲く華"
+      "skill": "氷上に咲く華",
+      "type": ""
     },
     "s015st": {
       "uid": "s015st",
@@ -810,7 +867,8 @@
       "relation": [],
       "banner": ["soma"],
       "img": "s015st.png",
-      "skill": ""
+      "skill": "",
+      "type": "story"
     },
     "s042": {
       "uid": "s042",
@@ -824,7 +882,8 @@
       "relation": [],
       "banner": ["hajime"],
       "img": "s042.png",
-      "skill": "香り立つ茶館"
+      "skill": "香り立つ茶館",
+      "type": ""
     },
     "s043": {
       "uid": "s043",
@@ -838,7 +897,8 @@
       "relation": ["空手部"],
       "banner": ["tetora"],
       "img": "s043.png",
-      "skill": "拳闘の四獣"
+      "skill": "拳闘の四獣",
+      "type": ""
     },
     "s044": {
       "uid": "s044",
@@ -852,7 +912,8 @@
       "relation": [],
       "banner": ["arashi"],
       "img": "s044.png",
-      "skill": "心の花束"
+      "skill": "心の花束",
+      "type": ""
     },
     "s045": {
       "uid": "s045",
@@ -866,7 +927,8 @@
       "relation": ["セレブ組"],
       "banner": ["yuzuru"],
       "img": "s045.png",
-      "skill": "絶対服従"
+      "skill": "絶対服従",
+      "type": ""
     },
     "s016st": {
       "uid": "s016st",
@@ -880,7 +942,8 @@
       "relation": [],
       "banner": ["hinata"],
       "img": "s016st.png",
-      "skill": ""
+      "skill": "",
+      "type": "story"
     },
     "s046": {
       "uid": "s046",
@@ -894,7 +957,8 @@
       "relation": ["一年生"],
       "banner": ["yuta"],
       "img": "s046.png",
-      "skill": "ピカピカの一年生"
+      "skill": "ピカピカの一年生",
+      "type": ""
     },
     "s047": {
       "uid": "s047",
@@ -908,7 +972,8 @@
       "relation": [],
       "banner": ["koga"],
       "img": "s047.png",
-      "skill": "カード使いたち"
+      "skill": "カード使いたち",
+      "type": ""
     },
     "s017st": {
       "uid": "s017st",
@@ -922,7 +987,8 @@
       "relation": [],
       "banner": ["madara"],
       "img": "s017st.png",
-      "skill": ""
+      "skill": "",
+      "type": "story"
     },
     "s048": {
       "uid": "s048",
@@ -936,7 +1002,8 @@
       "relation": ["2B"],
       "banner": ["ritsu"],
       "img": "s048.png",
-      "skill": "パジャマタイム"
+      "skill": "パジャマタイム",
+      "type": ""
     },
     "s049": {
       "uid": "s049",
@@ -950,7 +1017,8 @@
       "relation": ["モデル"],
       "banner": ["makoto"],
       "img": "s049.png",
-      "skill": "ランウェイ"
+      "skill": "ランウェイ",
+      "type": ""
     },
     "s018st": {
       "uid": "s018st",
@@ -964,7 +1032,8 @@
       "relation": [],
       "banner": ["adnis"],
       "img": "s018st.png",
-      "skill": ""
+      "skill": "",
+      "type": "story"
     },
     "s050": {
       "uid": "s050",
@@ -978,7 +1047,8 @@
       "relation": [],
       "banner": ["shinobu"],
       "img": "s050.png",
-      "skill": "忍者集団『忍ばず者』"
+      "skill": "忍者集団『忍ばず者』",
+      "type": ""
     },
     "s051": {
       "uid": "s051",
@@ -992,7 +1062,8 @@
       "relation": [],
       "banner": ["tsumugi"],
       "img": "s051.png",
-      "skill": "本の虫"
+      "skill": "本の虫",
+      "type": ""
     },
     "s019st": {
       "uid": "s019st",
@@ -1006,7 +1077,8 @@
       "relation": [],
       "banner": ["yuzuru"],
       "img": "s019st.png",
-      "skill": ""
+      "skill": "",
+      "type": "story"
     },
     "s052": {
       "uid": "s052",
@@ -1020,7 +1092,8 @@
       "relation": [],
       "banner": ["tsukasa"],
       "img": "s052.png",
-      "skill": "小さな王さまたち"
+      "skill": "小さな王さまたち",
+      "type": ""
     },
     "s053": {
       "uid": "s053",
@@ -1034,7 +1107,8 @@
       "relation": [],
       "banner": ["madara"],
       "img": "s053.png",
-      "skill": "コンチェルト"
+      "skill": "コンチェルト",
+      "type": ""
     },
     "s020st": {
       "uid": "s020st",
@@ -1048,7 +1122,8 @@
       "relation": [],
       "banner": ["nazuna"],
       "img": "s020st.png",
-      "skill": ""
+      "skill": "",
+      "type": "story"
     },
     "s054": {
       "uid": "s054",
@@ -1062,7 +1137,8 @@
       "relation": [],
       "banner": ["hinata"],
       "img": "s054.png",
-      "skill": "妖怪七変化"
+      "skill": "妖怪七変化",
+      "type": ""
     },
     "s055": {
       "uid": "s055",
@@ -1076,7 +1152,8 @@
       "relation": ["fine"],
       "banner": ["wataru"],
       "img": "s055.png",
-      "skill": "ダンスナイトフィーバー"
+      "skill": "ダンスナイトフィーバー",
+      "type": ""
     },
     "s021st": {
       "uid": "s021st",
@@ -1090,7 +1167,8 @@
       "relation": [],
       "banner": ["mitsuru"],
       "img": "s021st.png",
-      "skill": ""
+      "skill": "",
+      "type": "story"
     },
     "s056": {
       "uid": "s056",
@@ -1104,7 +1182,8 @@
       "relation": [],
       "banner": ["tetora"],
       "img": "s056.png",
-      "skill": "ボナペティ♪"
+      "skill": "ボナペティ♪",
+      "type": ""
     },
     "s057": {
       "uid": "s057",
@@ -1118,7 +1197,8 @@
       "relation": ["Ra*bits"],
       "banner": ["nazuna"],
       "img": "s057.png",
-      "skill": "天使とウサギのストーリア"
+      "skill": "天使とウサギのストーリア",
+      "type": ""
     },
     "s001u": {
       "uid": "s001u",
@@ -1132,7 +1212,8 @@
       "relation": [],
       "banner": ["ryuseitai"],
       "img": "s001u.png",
-      "skill": ""
+      "skill": "",
+      "type": "unit"
     },
     "s058": {
       "uid": "s058",
@@ -1146,7 +1227,8 @@
       "relation": [],
       "banner": ["sora"],
       "img": "s058.png",
-      "skill": "ショウタイム"
+      "skill": "ショウタイム",
+      "type": ""
     },
     "s002u": {
       "uid": "s002u",
@@ -1160,7 +1242,8 @@
       "relation": [],
       "banner": ["knights"],
       "img": "s002u.png",
-      "skill": ""
+      "skill": "",
+      "type": "unit"
     },
     "s059": {
       "uid": "s059",
@@ -1174,7 +1257,8 @@
       "relation": ["紅月"],
       "banner": ["soma"],
       "img": "s059.png",
-      "skill": "花の札"
+      "skill": "花の札",
+      "type": ""
     },
     "s003u": {
       "uid": "s003u",
@@ -1188,7 +1272,8 @@
       "relation": [],
       "banner": ["fine"],
       "img": "s003u.png",
-      "skill": ""
+      "skill": "",
+      "type": "unit"
     },
     "s022st": {
       "uid": "s022st",
@@ -1202,7 +1287,8 @@
       "relation": [],
       "banner": ["tori"],
       "img": "s022st.png",
-      "skill": ""
+      "skill": "",
+      "type": "story"
     },
     "s060": {
       "uid": "s060",
@@ -1216,7 +1302,8 @@
       "relation": [],
       "banner": ["subaru"],
       "img": "s060.png",
-      "skill": "オーダーメイド"
+      "skill": "オーダーメイド",
+      "type": ""
     },
     "s004u": {
       "uid": "s004u",
@@ -1230,7 +1317,8 @@
       "relation": [],
       "banner": ["valkyrie"],
       "img": "s004u.png",
-      "skill": ""
+      "skill": "",
+      "type": "unit"
     },
     "s061": {
       "uid": "s061",
@@ -1244,7 +1332,8 @@
       "relation": [],
       "banner": ["kuro"],
       "img": "s061.png",
-      "skill": "森の中の生存競争"
+      "skill": "森の中の生存競争",
+      "type": ""
     },
     "s005u": {
       "uid": "s005u",
@@ -1258,7 +1347,8 @@
       "relation": [],
       "banner": ["2wink"],
       "img": "s005u.png",
-      "skill": ""
+      "skill": "",
+      "type": "unit"
     },
     "s023st": {
       "uid": "s023st",
@@ -1272,7 +1362,8 @@
       "relation": [],
       "banner": ["makoto"],
       "img": "s023st.png",
-      "skill": ""
+      "skill": "",
+      "type": "story"
     },
     "s062": {
       "uid": "s062",
@@ -1286,7 +1377,8 @@
       "relation": [],
       "banner": ["mika"],
       "img": "s062.png",
-      "skill": "テディベア"
+      "skill": "テディベア",
+      "type": ""
     },
     "s006u": {
       "uid": "s006u",
@@ -1300,7 +1392,8 @@
       "relation": [],
       "banner": ["undead"],
       "img": "s006u.png",
-      "skill": ""
+      "skill": "",
+      "type": "unit"
     },
     "s063": {
       "uid": "s063",
@@ -1314,7 +1407,8 @@
       "relation": [],
       "banner": ["tomoya"],
       "img": "s063.png",
-      "skill": "サンタからの贈り物"
+      "skill": "サンタからの贈り物",
+      "type": ""
     },
     "s007u": {
       "uid": "s007u",
@@ -1328,7 +1422,8 @@
       "relation": [],
       "banner": ["rabbits"],
       "img": "s007u.png",
-      "skill": ""
+      "skill": "",
+      "type": "unit"
     },
     "s064": {
       "uid": "s064",
@@ -1342,7 +1437,8 @@
       "relation": [],
       "banner": ["midori"],
       "img": "s064.png",
-      "skill": "十二支、獣の舞"
+      "skill": "十二支、獣の舞",
+      "type": ""
     },
     "s008u": {
       "uid": "s008u",
@@ -1356,7 +1452,8 @@
       "relation": [],
       "banner": ["akatsuki"],
       "img": "s008u.png",
-      "skill": ""
+      "skill": "",
+      "type": "unit"
     },
     "s065": {
       "uid": "s065",
@@ -1370,7 +1467,8 @@
       "relation": [],
       "banner": ["kanata"],
       "img": "s065.png",
-      "skill": "十二支、獣の調べ"
+      "skill": "十二支、獣の調べ",
+      "type": ""
     },
     "s009u": {
       "uid": "s009u",
@@ -1384,7 +1482,8 @@
       "relation": [],
       "banner": ["switch"],
       "img": "s009u.png",
-      "skill": ""
+      "skill": "",
+      "type": "unit"
     },
     "s024st": {
       "uid": "s024st",
@@ -1398,7 +1497,8 @@
       "relation": [],
       "banner": ["rei"],
       "img": "s024st.png",
-      "skill": ""
+      "skill": "",
+      "type": "story"
     },
     "s066": {
       "uid": "s066",
@@ -1412,7 +1512,8 @@
       "relation": [],
       "banner": ["natsume"],
       "img": "s066.png",
-      "skill": "星屑宝石箱"
+      "skill": "星屑宝石箱",
+      "type": ""
     },
     "s010u": {
       "uid": "s010u",
@@ -1426,7 +1527,8 @@
       "relation": [],
       "banner": ["trickstar"],
       "img": "s010u.png",
-      "skill": ""
+      "skill": "",
+      "type": "unit"
     },
     "s067": {
       "uid": "s067",
@@ -1440,7 +1542,8 @@
       "relation": ["2B"],
       "banner": ["mao"],
       "img": "s067.png",
-      "skill": "螺旋がもたらす物語"
+      "skill": "螺旋がもたらす物語",
+      "type": ""
     },
     "s011u": {
       "uid": "s011u",
@@ -1454,7 +1557,8 @@
       "relation": [],
       "banner": ["mam"],
       "img": "s011u.png",
-      "skill": ""
+      "skill": "",
+      "type": "unit"
     },
     "s068": {
       "uid": "s068",
@@ -1468,7 +1572,8 @@
       "relation": [],
       "banner": ["tori"],
       "img": "s068.png",
-      "skill": "パーティタイム☆"
+      "skill": "パーティタイム☆",
+      "type": ""
     },
     "s069": {
       "uid": "s069",
@@ -1482,7 +1587,8 @@
       "relation": [],
       "banner": ["arashi"],
       "img": "s069.png",
-      "skill": "ケダモノたち"
+      "skill": "ケダモノたち",
+      "type": ""
     },
     "s012u": {
       "uid": "s012u",
@@ -1496,7 +1602,8 @@
       "relation": [],
       "banner": ["ryuseitai"],
       "img": "s012u.png",
-      "skill": ""
+      "skill": "",
+      "type": "unit"
     },
     "s025st": {
       "uid": "s025st",
@@ -1510,7 +1617,8 @@
       "relation": [],
       "banner": ["eichi"],
       "img": "s025st.png",
-      "skill": ""
+      "skill": "",
+      "type": "story"
     },
     "s070": {
       "uid": "s070",
@@ -1524,7 +1632,8 @@
       "relation": [],
       "banner": ["mitsuru"],
       "img": "s070.png",
-      "skill": "ハート宅急便"
+      "skill": "ハート宅急便",
+      "type": ""
     },
     "s071": {
       "uid": "s071",
@@ -1538,7 +1647,8 @@
       "relation": [],
       "banner": ["yuzuru"],
       "img": "s071.png",
-      "skill": "ギャングスター"
+      "skill": "ギャングスター",
+      "type": ""
     },
     "s013u": {
       "uid": "s013u",
@@ -1552,7 +1662,8 @@
       "relation": [],
       "banner": ["rabbits"],
       "img": "s013u.png",
-      "skill": ""
+      "skill": "",
+      "type": "unit"
     },
     "s026st": {
       "uid": "s026st",
@@ -1566,7 +1677,8 @@
       "relation": [],
       "banner": ["shinobu"],
       "img": "s026st.png",
-      "skill": ""
+      "skill": "",
+      "type": "story"
     },
     "s072": {
       "uid": "s072",
@@ -1580,7 +1692,8 @@
       "relation": ["生徒会"],
       "banner": ["eichi"],
       "img": "s072.png",
-      "skill": "天使たちの仕事"
+      "skill": "天使たちの仕事",
+      "type": ""
     },
     "s073": {
       "uid": "s073",
@@ -1594,7 +1707,8 @@
       "relation": [],
       "banner": ["rei"],
       "img": "s073.png",
-      "skill": "悪魔の囁き"
+      "skill": "悪魔の囁き",
+      "type": ""
     },
     "s074": {
       "uid": "s074",
@@ -1608,7 +1722,8 @@
       "relation": [],
       "banner": ["kaoru"],
       "img": "s074.png",
-      "skill": "祝福のひととき"
+      "skill": "祝福のひととき",
+      "type": ""
     },
     "s014u": {
       "uid": "s014u",
@@ -1622,7 +1737,8 @@
       "relation": [],
       "banner": ["knights"],
       "img": "s014u.png",
-      "skill": ""
+      "skill": "",
+      "type": "unit"
     },
     "s075": {
       "uid": "s075",
@@ -1636,7 +1752,8 @@
       "relation": [],
       "banner": ["shu"],
       "img": "s075.png",
-      "skill": "アンティーク・ヴィクトリア"
+      "skill": "アンティーク・ヴィクトリア",
+      "type": ""
     },
     "s076": {
       "uid": "s076",
@@ -1650,7 +1767,8 @@
       "relation": [],
       "banner": ["巻島裕介"],
       "img": "s076.png",
-      "skill": ""
+      "skill": "",
+      "type": ""
     },
     "s015u": {
       "uid": "s015u",
@@ -1664,7 +1782,8 @@
       "relation": [],
       "banner": ["akatsuki"],
       "img": "s015u.png",
-      "skill": ""
+      "skill": "",
+      "type": "unit"
     },
     "s077": {
       "uid": "s077",
@@ -1678,7 +1797,8 @@
       "relation": [],
       "banner": ["tsumugi"],
       "img": "s077.png",
-      "skill": "海上の案内人"
+      "skill": "海上の案内人",
+      "type": ""
     },
     "s078": {
       "uid": "s078",
@@ -1692,7 +1812,8 @@
       "relation": [],
       "banner": ["keito"],
       "img": "s078.png",
-      "skill": "コミックキャラクター"
+      "skill": "コミックキャラクター",
+      "type": ""
     },
     "s079": {
       "uid": "s079",
@@ -1706,7 +1827,8 @@
       "relation": [],
       "banner": [],
       "img": "s079.png",
-      "skill": "ターゲットロックオン"
+      "skill": "ターゲットロックオン",
+      "type": ""
     },
     "s080": {
       "uid": "s080",
@@ -1720,7 +1842,8 @@
       "relation": [],
       "banner": [],
       "img": "s080.png",
-      "skill": "夏空に咲く花々"
+      "skill": "夏空に咲く花々",
+      "type": ""
     },
     "s016u": {
       "uid": "s016u",
@@ -1734,7 +1857,8 @@
       "relation": [],
       "banner": [],
       "img": "s016u.png",
-      "skill": ""
+      "skill": "",
+      "type": "unit"
     },
     "s081": {
       "uid": "s081",
@@ -1748,7 +1872,8 @@
       "relation": [],
       "banner": [],
       "img": "s081.png",
-      "skill": "鬼火が集う夜"
+      "skill": "鬼火が集う夜",
+      "type": ""
     },
     "s082": {
       "uid": "s082",
@@ -1762,7 +1887,8 @@
       "relation": [],
       "banner": [],
       "img": "s082.png",
-      "skill": "インスピレーションの海"
+      "skill": "インスピレーションの海",
+      "type": ""
     },
     "s027st": {
       "uid": "s027st",
@@ -1776,7 +1902,8 @@
       "relation": [],
       "banner": [],
       "img": "s027st.png",
-      "skill": ""
+      "skill": "",
+      "type": "story"
     },
     "s017u": {
       "uid": "s017u",
@@ -1790,7 +1917,8 @@
       "relation": [],
       "banner": [],
       "img": "s017u.png",
-      "skill": ""
+      "skill": "",
+      "type": "unit"
     },
     "s083": {
       "uid": "s083",
@@ -1804,7 +1932,8 @@
       "relation": [],
       "banner": [],
       "img": "s083.png",
-      "skill": "未来への探求者たち"
+      "skill": "未来への探求者たち",
+      "type": ""
     },
     "s084": {
       "uid": "s084",
@@ -1818,7 +1947,8 @@
       "relation": [],
       "banner": [],
       "img": "s084.png",
-      "skill": "ティータイム"
+      "skill": "ティータイム",
+      "type": ""
     },
     "s018u": {
       "uid": "s018u",
@@ -1832,7 +1962,8 @@
       "relation": [],
       "banner": [],
       "img": "s018u.png",
-      "skill": ""
+      "skill": "",
+      "type": "unit"
     },
     "s019u": {
       "uid": "s019u",
@@ -1846,7 +1977,8 @@
       "relation": [],
       "banner": [],
       "img": "s019u.png",
-      "skill": ""
+      "skill": "",
+      "type": "unit"
     },
     "s085": {
       "uid": "s085",
@@ -1860,7 +1992,8 @@
       "relation": [],
       "banner": [],
       "img": "s085.png",
-      "skill": "ゴロゴロ実りの森"
+      "skill": "ゴロゴロ実りの森",
+      "type": ""
     },
     "s086": {
       "uid": "s086",
@@ -1874,7 +2007,8 @@
       "relation": [],
       "banner": [],
       "img": "s086.png",
-      "skill": "心を映す水鏡"
+      "skill": "心を映す水鏡",
+      "type": ""
     },
     "s020u": {
       "uid": "s020u",
@@ -1888,7 +2022,8 @@
       "relation": [],
       "banner": [],
       "img": "s020u.png",
-      "skill": ""
+      "skill": "",
+      "type": "unit"
     },
     "s087": {
       "uid": "s087",
@@ -1902,7 +2037,8 @@
       "relation": [],
       "banner": [],
       "img": "s087.png",
-      "skill": "輝くゲレンデ"
+      "skill": "輝くゲレンデ",
+      "type": ""
     },
     "s088": {
       "uid": "s088",
@@ -1916,7 +2052,8 @@
       "relation": [],
       "banner": [],
       "img": "s088.png",
-      "skill": "夢を舞う蝶々"
+      "skill": "夢を舞う蝶々",
+      "type": ""
     },
     "s021u": {
       "uid": "s021u",
@@ -1930,7 +2067,8 @@
       "relation": [],
       "banner": [],
       "img": "s021u.png",
-      "skill": ""
+      "skill": "",
+      "type": "unit"
     },
     "s089": {
       "uid": "s089",
@@ -1944,7 +2082,8 @@
       "relation": [],
       "banner": [],
       "img": "s089.png",
-      "skill": "めでたき春の演舞会"
+      "skill": "めでたき春の演舞会",
+      "type": ""
     },
     "s090": {
       "uid": "s090",
@@ -1958,7 +2097,8 @@
       "relation": [],
       "banner": [],
       "img": "s090.png",
-      "skill": "福呼ぶ演武会"
+      "skill": "福呼ぶ演武会",
+      "type": ""
     },
     "s091": {
       "uid": "s091",
@@ -1972,7 +2112,8 @@
       "relation": [],
       "banner": [],
       "img": "s091.png",
-      "skill": "色とりどりの仮面"
+      "skill": "色とりどりの仮面",
+      "type": ""
     },
     "s022u": {
       "uid": "s022u",
@@ -1986,7 +2127,8 @@
       "relation": [],
       "banner": [],
       "img": "s022u.png",
-      "skill": ""
+      "skill": "",
+      "type": "unit"
     },
     "s092": {
       "uid": "s092",
@@ -2000,7 +2142,8 @@
       "relation": [],
       "banner": [],
       "img": "s092.png",
-      "skill": "アラモードルーム"
+      "skill": "アラモードルーム",
+      "type": ""
     },
     "s023u": {
       "uid": "s023u",
@@ -2014,7 +2157,8 @@
       "relation": [],
       "banner": [],
       "img": "s023u.png",
-      "skill": ""
+      "skill": "",
+      "type": "unit"
     },
     "s093": {
       "uid": "s093",
@@ -2028,7 +2172,8 @@
       "relation": [],
       "banner": [],
       "img": "s093.png",
-      "skill": "鬼の島"
+      "skill": "鬼の島",
+      "type": ""
     },
     "s024u": {
       "uid": "s024u",
@@ -2042,7 +2187,8 @@
       "relation": [],
       "banner": [],
       "img": "s024u.png",
-      "skill": ""
+      "skill": "",
+      "type": "unit"
     },
     "s094": {
       "uid": "s094",
@@ -2056,7 +2202,8 @@
       "relation": [],
       "banner": [],
       "img": "s094.png",
-      "skill": "サバイバルゲーム"
+      "skill": "サバイバルゲーム",
+      "type": ""
     },
     "s095": {
       "uid": "s095",
@@ -2070,7 +2217,8 @@
       "relation": [],
       "banner": [],
       "img": "s095.png",
-      "skill": "ダークインフェルノ"
+      "skill": "ダークインフェルノ",
+      "type": ""
     },
     "s096": {
       "uid": "s096",
@@ -2084,7 +2232,8 @@
       "relation": [],
       "banner": [],
       "img": "s096.png",
-      "skill": "ローズガーデン"
+      "skill": "ローズガーデン",
+      "type": ""
     },
     "s025u": {
       "uid": "s025u",
@@ -2098,7 +2247,8 @@
       "relation": [],
       "banner": [],
       "img": "s025u.png",
-      "skill": ""
+      "skill": "",
+      "type": "unit"
     },
     "s026u": {
       "uid": "s026u",
@@ -2112,7 +2262,8 @@
       "relation": [],
       "banner": [],
       "img": "s026u.png",
-      "skill": ""
+      "skill": "",
+      "type": "unit"
     },
     "s097": {
       "uid": "s097",
@@ -2126,7 +2277,8 @@
       "relation": [],
       "banner": [],
       "img": "s097.png",
-      "skill": "ラビリンスサーキット"
+      "skill": "ラビリンスサーキット",
+      "type": ""
     },
     "s098": {
       "uid": "s098",
@@ -2140,7 +2292,8 @@
       "relation": [],
       "banner": [],
       "img": "s098.png",
-      "skill": "プールプレイヤー"
+      "skill": "プールプレイヤー",
+      "type": ""
     },
     "s099": {
       "uid": "s099",
@@ -2154,7 +2307,8 @@
       "relation": [],
       "banner": [],
       "img": "s099.png",
-      "skill": "タウンの住人たち"
+      "skill": "タウンの住人たち",
+      "type": ""
     },
     "s100": {
       "uid": "s100",
@@ -2168,7 +2322,8 @@
       "relation": [],
       "banner": [],
       "img": "s100.png",
-      "skill": "ラウンドパーティ"
+      "skill": "ラウンドパーティ",
+      "type": ""
     },
     "s101": {
       "uid": "s101",
@@ -2182,7 +2337,8 @@
       "relation": [],
       "banner": [],
       "img": "s101.png",
-      "skill": "風と波のダンス"
+      "skill": "風と波のダンス",
+      "type": ""
     },
     "s027u": {
       "uid": "s027u",
@@ -2196,7 +2352,8 @@
       "relation": [],
       "banner": ["subaru"],
       "img": "s027u.png",
-      "skill": ""
+      "skill": "",
+      "type": "unit"
     },
     "s102": {
       "uid": "s102",
@@ -2210,7 +2367,8 @@
       "relation": [],
       "banner": [],
       "img": "s102.png",
-      "skill": "シネマドリーム"
+      "skill": "シネマドリーム",
+      "type": ""
     },
     "s001anime": {
       "uid": "s001anime",
@@ -2224,7 +2382,8 @@
       "relation": [],
       "banner": [],
       "img": "s001anime.png",
-      "skill": ""
+      "skill": "",
+      "type": "anime"
     },
     "s002anime": {
       "uid": "s002anime",
@@ -2238,7 +2397,8 @@
       "relation": [],
       "banner": ["kuro"],
       "img": "s002anime.png",
-      "skill": ""
+      "skill": "",
+      "type": "anime"
     },
     "s001100": {
       "uid": "s001100",
@@ -2252,7 +2412,8 @@
       "relation": [],
       "banner": [],
       "img": "s001100.png",
-      "skill": ""
+      "skill": "",
+      "type": "100"
     },
     "s002100": {
       "uid": "s002100",
@@ -2266,7 +2427,8 @@
       "relation": [],
       "banner": [],
       "img": "s002100.png",
-      "skill": ""
+      "skill": "",
+      "type": "100"
     },
     "s028u": {
       "uid": "s028u",
@@ -2280,7 +2442,8 @@
       "relation": [],
       "banner": [],
       "img": "s028u.png",
-      "skill": ""
+      "skill": "",
+      "type": "unit"
     },
     "s003anime": {
       "uid": "s003anime",
@@ -2294,7 +2457,8 @@
       "relation": [],
       "banner": ["wataru"],
       "img": "s003anime.png",
-      "skill": ""
+      "skill": "",
+      "type": "anime"
     }
   }
 }

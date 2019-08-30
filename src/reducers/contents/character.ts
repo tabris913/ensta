@@ -3,7 +3,7 @@ import { ICard } from '../../models/card';
 import { ICharacter } from '../../models/character';
 import { IContentAdditionalState } from '../../models/content';
 import { IContentState } from '../../models/ContentState';
-import { INormalEvent } from '../../models/event';
+import { IEvent, INormalEvent } from '../../models/event';
 import { IScout } from '../../models/scout';
 import { contentReducerBuilder } from './content';
 
@@ -28,5 +28,6 @@ export interface ICharacterAdditionalState extends IContentAdditionalState {
   event: INormalEvent[];
   scout: IScout[];
   card: ICard[];
+  history: Array<IEvent | IScout>;
 }
 export const reducer = contentReducerBuilder(characterActions, initialCharacterValue);
