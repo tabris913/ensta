@@ -1,50 +1,68 @@
-import { Button, Col, Descriptions, Row } from 'antd';
+import { Button, Col, Descriptions, Divider, Rate, Row } from 'antd';
 import { History } from 'history';
 import * as R from 'ramda';
 import * as React from 'react';
 
 // import PageName, { toPublicUrl } from '../../constants/PageName';
+import { ICard } from '../../models/card';
 import { INormalEvent, ISpecialEvent, IUnitCollection } from '../../models/event';
 import { EventType, MainContentProps } from '../../models/Main';
-import { searchCard, toCard } from '../../utils/CardUtils';
+import { toCard } from '../../utils/CardUtils';
 import { getCharacter } from '../../utils/CharacterUtils';
-import { getEvent, isEvent, isNormalEvent } from '../../utils/EventUtils';
+import { getEvent, isNormalEvent } from '../../utils/EventUtils';
+import { isSpecialUid } from '../../utils/SpecialUtils';
 import { isUnitCollection } from '../../utils/UCUtils';
 
 interface Props extends MainContentProps<INormalEvent | ISpecialEvent | IUnitCollection> {}
 
-const EventBonus = ({ history, event, property }: { history: History; event: INormalEvent; property: string }) => (
+const EventBonus = ({
+  history,
+  property,
+  cards: bonusCards,
+}: {
+  history: History;
+  property: string;
+  cards: ICard[];
+}) => (
   <>
-    {['5', '4', '3']
-      .filter(r => Object.keys(event.bonus[property]).includes(r) && !R.isEmpty(event.bonus[property][r]))
-      .map(r => (
-        <Row type="flex" key={`${property}Bonus.${r}`}>
-          <Col>{r}</Col>
-          <Col style={{ margin: '0 4px' }}>:</Col>
-          <Col>
-            <Row style={{ padding: '0px 10px 0px 0px' }}>
-              {event.bonus[property][r].map((uid: string) => {
-                const cards = searchCard(event.uid, uid, r);
-                const card = cards.length === 1 ? cards[0] : cards[0];
-                const character = getCharacter(uid);
-                return (
-                  <Col key={uid}>
-                    <Button
-                      type="link"
-                      style={{ whiteSpace: 'unset', padding: 0 }}
-                      onClick={() => toCard(history, card.uid)}
-                    >
-                      {card.name}
-                    </Button>
-                    <br />
-                    <span>{character ? character.name : uid}</span>
-                  </Col>
-                );
-              })}
-            </Row>
-          </Col>
-        </Row>
-      ))}
+    {R.intersperse(
+      <Divider style={{ margin: 0 }} />,
+      [5, 4, 3]
+        .filter(r => !R.isEmpty(bonusCards.filter(c => c.rank === r)))
+        .map(r => (
+          <Row key={`${property}Bonus.${r}`}>
+            <Col>
+              <Rate value={r} />
+            </Col>
+            <Col>
+              <Row style={{ padding: '0px 10px 0px 0px' }}>
+                {bonusCards
+                  .filter(c => c.rank === r)
+                  .map(card => {
+                    // const cards = searchCard(event.uid, uid, r);
+                    // const card = cards.length === 1 ? cards[0] : cards[0];
+                    const character = getCharacter(card.character);
+                    return (
+                      <Col key={card.character}>
+                        「
+                        <Button
+                          type="link"
+                          style={{ whiteSpace: 'unset', padding: 0 }}
+                          onClick={() => toCard(history, card.uid)}
+                        >
+                          {card.name}
+                        </Button>
+                        」
+                        <br />
+                        <span>{character ? character.name : card.character}</span>
+                      </Col>
+                    );
+                  })}
+              </Row>
+            </Col>
+          </Row>
+        ))
+    )}
   </>
 );
 
@@ -59,46 +77,58 @@ const Event = (props: Props) => {
     }
   });
 
-  return props.contents && isEvent(props.contents.event.content) ? (
+  const content = props.contents && props.contents.event.content;
+
+  const bonusCards = (props.contents && props.contents.event.additional && props.contents.event.additional.card) || [];
+
+  return content ? (
     <>
-      <img src={props.contents.event.content.img} alt="" style={{ padding: 0, maxWidth: 280, width: '100%' }} />
-      <p>{props.contents.event.content.description}</p>
+      <img src={content.img} alt="" style={{ padding: 0, maxWidth: 280, width: '100%' }} />
+      <p>{content.description}</p>
       <Descriptions
         title="Event Info"
         column={{ xs: 1, md: 2 }}
         style={{ height: '100%', overflowY: 'auto' }}
         bordered={true}
       >
-        <Descriptions.Item label="開始">{props.contents.event.content.start}</Descriptions.Item>
-        <Descriptions.Item label="終了">{props.contents.event.content.end}</Descriptions.Item>
-        {isNormalEvent(props.contents.event.content) ? (
+        <Descriptions.Item label="開始">{content.start}</Descriptions.Item>
+        <Descriptions.Item label="終了">{content.end}</Descriptions.Item>
+        {(isNormalEvent(content) || isSpecialUid(content.uid)) &&
+        !R.isEmpty(bonusCards.filter(c => c.bonus === 'ranking')) ? (
           <Descriptions.Item label="ランキング">
-            <EventBonus event={props.contents.event.content} property="ranking" history={props.history} />
+            <EventBonus
+              property="ranking"
+              history={props.history}
+              cards={bonusCards.filter(c => c.bonus === 'ranking')}
+            />
           </Descriptions.Item>
         ) : null}
-        {isNormalEvent(props.contents.event.content) ? (
+        {(isNormalEvent(content) || isSpecialUid(content.uid)) &&
+        !R.isEmpty(bonusCards.filter(c => c.bonus === 'point')) ? (
           <Descriptions.Item label="ポイント">
-            <EventBonus event={props.contents.event.content} property="point" history={props.history} />
+            <EventBonus property="point" history={props.history} cards={bonusCards.filter(c => c.bonus === 'point')} />
           </Descriptions.Item>
         ) : null}
-        {isUnitCollection(props.contents.event.content) ? (
+        {(isUnitCollection(content) || isSpecialUid(content.uid)) &&
+        !R.isEmpty(bonusCards.filter(c => c.bonus === '')) ? (
+          // <Descriptions.Item label="獲得カード">
+          //   <Row style={{ padding: '0px 10px 0px 0px' }}>
+          //     {bonusCards
+          //       .filter(c => c.bonus === '')
+          //       .map(card => {
+          //         const character = getCharacter(card.character);
+          //         return <Col key={card.uid}>{`「${card.name}」 ${character ? character.name : card.character}`}</Col>;
+          //       })}
+          //   </Row>
+          // </Descriptions.Item>
           <Descriptions.Item label="獲得カード">
-            <Row style={{ padding: '0px 10px 0px 0px' }}>
-              {props.contents.event.content.acquirableCards.map((uid: string) => {
-                const cards = searchCard(props.contents!.event.content!.uid, uid, '5');
-                const card = cards.length === 1 ? cards[0] : cards[0];
-                const character = card ? getCharacter(card.character) : '';
-                return (
-                  <Col key={uid}>{card ? `「${card.name}」 ${character ? character.name : card.character}` : uid}</Col>
-                );
-              })}
-            </Row>
+            <EventBonus property="acquirable" history={props.history} cards={bonusCards.filter(c => c.bonus === '')} />
           </Descriptions.Item>
         ) : null}
-        {isUnitCollection(props.contents.event.content) ? (
+        {isUnitCollection(content) ? (
           <Descriptions.Item label="過去イベント">
             <Row style={{ padding: '0px 10px 0px 0px' }}>
-              {props.contents.event.content.revivalEvents.map((uid: string) => {
+              {content.revivalEvents.map((uid: string) => {
                 const pastEvent = getEvent(uid);
                 return <Col key={uid}>{pastEvent ? pastEvent.name : uid}</Col>;
               })}

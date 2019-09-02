@@ -11,11 +11,17 @@ export type ScoutType = '' | 'story' | 'unit' | 'anime' | '100' | 'special';
 export type TypeType = EventType | ScoutType;
 export type Rarelity = 1 | 2 | 3 | 4 | 5;
 export type CardType = 'Da' | 'Vo' | 'Pf';
+export type HistorySelectKindType = 'all' | 'event' | 'scout';
+export type HistorySelectRarelityType = 5 | 4 | 3 | 'all';
 
 export interface QueryType {
   id?: string;
   page?: number;
   type?: TypeType;
+  kind?: HistorySelectKindType;
+  rarelity?: HistorySelectRarelityType;
+  cardType?: CardType;
+  rank?: Rarelity;
 }
 
 export interface IMatchParams {
@@ -37,6 +43,7 @@ export interface ListComponentProps<T extends IContent, A extends IContentAdditi
   headers?: (item: T) => JSX.Element;
   descriptions?: (props: { item: T }) => JSX.Element;
   filter?: (list?: T[]) => T[];
+  selector?: ({ localState, setLocalState }: { localState: any; setLocalState: (o: any) => void }) => JSX.Element;
 }
 
 export interface MainContentProps<T extends IContent> extends MainProps {

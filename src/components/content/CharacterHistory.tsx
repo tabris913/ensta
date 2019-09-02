@@ -3,9 +3,10 @@ import * as R from 'ramda';
 import * as React from 'react';
 
 // import PageName, { toPublicUrl } from '../../constants/PageName';
+import PageName, { toPublicUrl } from '../../constants/PageName';
 import { ICharacter } from '../../models/character';
 import { IEvent } from '../../models/event';
-import { MainContentProps, TypeType } from '../../models/Main';
+import { HistorySelectKindType, HistorySelectRarelityType, MainContentProps, TypeType } from '../../models/Main';
 import { IScout } from '../../models/scout';
 import { ICharacterAdditionalState } from '../../reducers/contents/character';
 import { toEvent } from '../../utils/EventUtils';
@@ -16,8 +17,8 @@ import { toUnitCollection } from '../../utils/UCUtils';
 interface Props extends MainContentProps<ICharacter> {}
 
 interface ISelect {
-  kind: 'all' | 'event' | 'scout';
-  rarelity: 5 | 4 | 3 | 'all';
+  kind: HistorySelectKindType;
+  rarelity: HistorySelectRarelityType;
 }
 
 const kindFilter = (item: IEvent | IScout, select: ISelect, id: string) => {
@@ -32,7 +33,10 @@ const kindFilter = (item: IEvent | IScout, select: ISelect, id: string) => {
 };
 
 const CharacterHistory = (props: Props) => {
-  const [select, setSelect] = React.useState<ISelect>({ kind: 'all', rarelity: 'all' });
+  const [select, setSelect] = React.useState<ISelect>({
+    kind: props.query.kind || 'all',
+    rarelity: props.query.rarelity || 'all',
+  });
 
   React.useState(() => {
     if (
@@ -62,9 +66,25 @@ const CharacterHistory = (props: Props) => {
         <Col xs={5}>種類:</Col>
         <Col xs={19}>
           <Select
-            defaultValue="all"
+            value={select.kind}
             style={{ width: 150, margin: 5 }}
-            onChange={(e: 'all' | 'event' | 'scout') => setSelect({ ...select, kind: e })}
+            onChange={
+              (e: HistorySelectKindType) => {
+                setSelect({ ...select, kind: e });
+                props.history.replace(
+                  toPublicUrl(
+                    PageName.CHARACTER_HISTORY,
+                    [props.match.params.id],
+                    props.query.rarelity
+                      ? {
+                          kind: e,
+                          rarelity: props.query.rarelity,
+                        }
+                      : { kind: e }
+                  )
+                );
+              } // setSelect({ ...select, kind: e })
+            }
           >
             <Select.Option value="all">すべて</Select.Option>
             <Select.Option value="event">イベント</Select.Option>
@@ -74,9 +94,12 @@ const CharacterHistory = (props: Props) => {
         <Col xs={5}>レアリティ:</Col>
         <Col xs={19}>
           <Select
-            defaultValue="all"
+            value={select.rarelity}
             style={{ width: 150, margin: 5 }}
-            onChange={(e: 5 | 4 | 3 | 'all') => setSelect({ ...select, rarelity: e })}
+            onChange={(e: HistorySelectRarelityType) => {
+              setSelect({ ...select, rarelity: e });
+              setSelect({ ...select, rarelity: e });
+            }}
           >
             <Select.Option value="all">すべて</Select.Option>
             <Select.Option value={5}>☆☆☆☆☆</Select.Option>

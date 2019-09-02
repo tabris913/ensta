@@ -30,3 +30,5 @@ export const getCharacterScout = (uid: string) => getScouts().filter(s => s.card
 
 export const isScout = (content: IContent): content is IScout =>
   content.uid.startsWith('s') && !content.uid.startsWith('sp');
+
+export const isScoutUid = (uid: string) => uid.startsWith('s') && !uid.startsWith('sp');

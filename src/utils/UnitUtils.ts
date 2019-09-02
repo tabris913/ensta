@@ -24,5 +24,4 @@ export const unitIds = Object.keys(Unit.unit);
 
 export const isUnit = (content?: IContent): content is IUnit => content !== undefined;
 
-export const toUnit = (history: History, uid: string) =>
-  history.push(toPublicUrl(PageName.UNIT, undefined, { id: uid }));
+export const toUnit = (history: History, uid: string) => history.push(toPublicUrl(PageName.UNIT, [uid]));

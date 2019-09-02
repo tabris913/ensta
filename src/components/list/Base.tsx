@@ -1,10 +1,12 @@
 import * as React from 'react';
+import { Button, Collapse, List, Modal, Typography } from 'antd';
+import * as R from 'ramda';
 
-import { Button, Collapse, List, Typography } from 'antd';
+import PageName, { toPublicUrl } from '../../constants/PageName';
 import { PageTitle } from '../../constants/PageTitle';
 import Wireframe from '../../containers/wireframe/Wireframe';
 import { IContent, IContentAdditionalState } from '../../models/content';
-import { EventType, ListComponentProps, ScoutType } from '../../models/Main';
+import { EventType, ListComponentProps, QueryType, ScoutType } from '../../models/Main';
 import { toCard } from '../../utils/CardUtils';
 import { toCharacter } from '../../utils/CharacterUtils';
 import { toEvent } from '../../utils/EventUtils';
@@ -16,10 +18,13 @@ import { toUnit } from '../../utils/UnitUtils';
 const ListGenerator = <T extends IContent, A extends IContentAdditionalState>({
   descriptions: Descriptions,
   filter = list => (list ? list : []),
+  selector: Selector,
   ...props
 }: ListComponentProps<T, A>) => {
+  const [visible, setVisible] = React.useState(false);
+  const [localState, setLocalState] = React.useState<QueryType>(R.omit([''], props.query));
+
   React.useState(() => {
-    console.log(props);
     switch (props.contentName) {
       case 'event':
         if (!props.contents || !props.contents.event.list || props.contents.event.type !== props.match.params.type) {
@@ -66,6 +71,36 @@ const ListGenerator = <T extends IContent, A extends IContentAdditionalState>({
 
   return props.contents ? (
     <Wireframe title={pageTitle} breadcrump={[{ label: pageTitle }]}>
+      {Selector ? (
+        <>
+          <Button style={{ width: 150, margin: 5 }} onClick={() => setVisible(true)}>
+            検索条件を指定する
+          </Button>
+          <Modal
+            visible={visible}
+            onCancel={() => setVisible(false)}
+            onOk={() => {
+              setVisible(false);
+              switch (props.contentName) {
+                case 'card':
+                  props.history.replace(
+                    R.any(v => v !== undefined, R.values(localState))
+                      ? toPublicUrl(PageName.CARD_LIST, undefined, localState)
+                      : toPublicUrl(PageName.CARD_LIST)
+                  );
+                  break;
+              }
+            }}
+            destroyOnClose={true}
+            title="検索条件"
+          >
+            <Selector localState={localState} setLocalState={setLocalState} />
+          </Modal>
+        </>
+      ) : (
+        undefined
+      )}
+
       <List
         pagination={{
           pageSize: props.pageSize || 10,
@@ -76,7 +111,7 @@ const ListGenerator = <T extends IContent, A extends IContentAdditionalState>({
           },
         }}
         itemLayout="vertical"
-        dataSource={filter(props.contents[props.contentName].list as any)}
+        dataSource={R.clone(filter(props.contents[props.contentName].list as any))}
         style={{ overflowY: 'auto', overflowX: 'visible' }}
         renderItem={(item: T, idx) =>
           !!item ? (

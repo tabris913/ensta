@@ -31,4 +31,6 @@ export const isSpecial = (obj: IContent): obj is ISpecialEvent => {
   );
 };
 
+export const isSpecialUid = (uid: string) => uid.startsWith('sp');
+
 export const toSpecial = (history: History, uid: string) => toEvent(history, uid, 'special');

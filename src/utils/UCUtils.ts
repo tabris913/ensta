@@ -32,4 +32,6 @@ export const isUnitCollection = (obj: IContent): obj is IUnitCollection => {
   );
 };
 
+export const isUnitCollectionUid = (uid: string) => uid.startsWith('uc');
+
 export const toUnitCollection = (history: History, uid: string) => toEvent(history, uid, 'uc');

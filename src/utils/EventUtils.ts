@@ -26,6 +26,8 @@ export const eventIds = Object.keys(Event.event);
 
 export const isEvent = (content?: IContent): content is IEvent => content !== undefined;
 
+export const isEventUid = (uid: string) => uid.startsWith('e');
+
 export const toEvent = (history: History, uid: string, type?: EventType) =>
   history.push(toPublicUrl(PageName.EVENT, [uid], type ? { type: type } : {}));
 

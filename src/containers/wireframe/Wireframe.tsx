@@ -34,7 +34,7 @@ const Wireframe = (props: Props) => (
   <Layout style={{ height: '100vh' }}>
     <Header {...props} />
     <Divider style={{ marginTop: 10, marginBottom: 10 }} />
-    <Layout style={{ padding: '0 40px' }}>
+    <Layout style={{ padding: '0 20px' }}>
       {breadCrump(props.breadcrump || [], props.history)}
       {props.title && (
         <Typography.Title underline={true} level={3} style={{ marginBottom: 5 }}>
